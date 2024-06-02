@@ -1,0 +1,363 @@
+
+.dashboard-container {
+  display: flex;
+  width: 1855px;
+}
+
+.compress{
+  position: relative;
+  width: 100%;
+
+}
+
+header {
+    width: 100% !important;
+    height: 73px;
+    position:fixed !important;
+    align-items: center;
+    top: 0;
+    box-sizing: border-box;
+    background-color: #fdd670;
+    min-width: 350px;
+    border-bottom: 1px solid #ffd670;
+    z-index: 1100;
+  }
+  .img{
+    width: 155px;
+    height: 45px;
+    place-items: center;
+    display: flex;
+    position: sticky;
+  
+  }
+  .searchBarContainer{
+    margin-left:50px;
+    width:1000px;
+    position: sticky;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+  }
+  
+  .menu-button {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
+  
+  
+  .lcn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+  }
+  
+  .login_D {
+    width: 150px;
+    height: 55px;
+    place-items: center;
+    display: flex;
+  }
+  
+  .login .btn {
+  
+   margin:20px;
+   border:0;
+   border-radius:5px;
+   width:100%;
+   background:#ff686e;
+   border-bottom:1px solid #ff4e56;
+   height:65%;
+   color:#fff;
+   font-size:16px;
+   font-weight:200;
+   box-shadow:0 0 10px #00029;
+   -webkit-transition:all 100ms ease-in-out;
+   transition:all 100ms ease-in-out
+  }
+  .login .btn:hover{
+    background:#e04f54
+  }
+  .btn_grp_D {
+    margin-top: 14px;
+    width: 78px;
+    height: 25px;
+    place-items: center;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .btn_grp {
+    margin-bottom: 11px;
+    width: 100%;
+    height: 29px;
+    border: 2px;
+    border-radius: 10px;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .location_btn {
+    display: flex;
+    margin-left: 1250px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    border: 2px;
+    border-radius: 10px;
+    justify-content: space-between;
+  }
+  
+  .L_1:hover {
+    background-color: #ff686e;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex {
+      margin-left: 5px;
+    }
+  
+    .lcn {
+      margin-left: 5px;
+    }
+  
+  }
+
+
+
+
+
+
+
+  .landingBanner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    height: 580px;
+  }
+  @media(max-width: 768px) {
+  
+    .landingBanner{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-size:cover !important;
+      height: 580px;
+      overflow: hidden;
+      padding-bottom:40px
+
+    }
+}
+
+
+
+  .landingBanner .floatingSearchBar {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    min-width: 440px;
+    padding-left: 20px;
+    align-items: center;
+    width: 50%
+}
+
+@media(max-width: 768px) {
+      .landingBanner .floatingSearchBar {
+        padding-top:40px;
+        min-width: 340px;
+        width: 70%
+    }
+}
+
+  .landingBanner .floatingSearchBar .searchBarContainer {
+    display: inline-block
+}
+
+  .landingBanner .floatingSearchBar .searchBarContainer h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 10px;
+    text-align: left
+}
+
+@media(min-width: 1200px) {
+      .landingBanner .floatingSearchBar .searchBarContainer h2 {
+        font-size:40px
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+      .landingBanner .floatingSearchBar .searchBarContainer h2 {
+        font-size:30px
+    }
+}
+
+  .landingBanner .floatingSearchBar .searchBarContainer .searchFormHelp {
+    color: #fdd670;
+    text-align: left;
+    padding: 0 15px
+}
+
+  
+
+
+
+  .landingBanner .banner-image {
+    display: flex;
+
+
+    flex-direction: row-reverse;
+    flex: 1;
+    height: clamp(300px,25vw,500px);
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-right: 0px;
+
+}
+
+  .landingBanner .banner-image img {
+    position: relative;
+    align-items: center;
+    bottom: -20px;
+    height: 100%
+}
+
+@media(max-width: 768px) {
+      .landingBanner .banner-image {
+        display:none
+    }
+}
+
+@media(max-width: 767px) {
+      .chat_launcher {
+        position:absolute;
+        background: 0 0;
+        left: initial;
+        bottom: 5px
+    }
+
+      .chat_launcher:hover {
+        background: 0 0!important
+    }
+}
+
+  section {
+    margin-bottom: 20px
+}
+
+@media(max-width: 767px) {
+      section {
+        margin-bottom:10px
+    }
+}
+
+  section#chaldalApps {
+    margin-bottom: 0
+}
+
+  .popularSection {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+  .popularSection .initialLabel h2 {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500
+}
+
+@media(max-width: 768px) {
+      .popularSection .initialLabel h2 {
+        font-size:10px;
+        text-align: center
+    }
+}
+
+@media(max-width: 480px) {
+      .popularSection .initialLabel h2 {
+        font-size:10px;
+        text-align: center
+    }
+}
+
+  .popularBrandContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+  .popularBrandContainer img {
+    flex-basis: 5%;
+    max-width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 5px 15px
+}
+
+@media(max-width: 767px) {
+      .popularBrandContainer img {
+        flex-basis:30%;
+        max-width: 50%
+    }
+}
+
+@media(max-width: 480px) {
+      .popularBrandContainer {
+        flex-wrap:wrap
+    }
+
+      .popularBrandContainer img {
+        flex-basis: 20%;
+        max-width: 100%
+    }
+}
+
+@media(max-width: 768px) {
+      .popularBrandContainer {
+        flex-wrap:wrap
+    }
+
+      .popularBrandContainer img {
+        flex-basis: 10%;
+        max-width: 100%
+    }
+}
+
+@media(min-width: 1700px) {
+      .popularBrandContainer img {
+        flex-basis:10%;
+        max-width: 100%;
+        padding: 0 50px
+    }
+}
+
+
+
+
+
+
+
+
+
