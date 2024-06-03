@@ -4,44 +4,78 @@
   width: 240px;
   transition: width 0.3s ease;
   background: rgb(255, 255, 255);
-
-}
-
-.m1.open {
-  width: 240px;
-  background: rgb(255, 255, 255);
-  overflow: hidden;
-
-
 }
 
 .Main {
   font-size: 12px;
   position: sticky;
   position:-webkit-stick;
-  width: 230px;
-  padding-left: 6px;
+  width: 240px;
+  padding-left: 7px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding-bottom: 10px;
-  overflow-y: auto;
   background: rgb(255, 255, 255);
+  overflow-x: scroll;
 
 }
-
-.flex {
-  display: flex;
-  justify-content: space-around;
+.store-menu {
+  display: inline-flex;
   align-items: flex-start;
-  padding-left: -10px;
+  padding: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-bottom: 1px solid #eee
 }
 
-.menu-item {
-  display: inline-block;
-  justify-content: space-around;
+.store-menu h4 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 5px
+}
 
+.store-menu .store-menu-block {
+  display: flex;
 
+}
+
+  .store-menu .store-menu-block .store-item {
+  background-color: #fff;
+  padding: 6px 5px;
+  min-width: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ff686e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 5px
+}
+
+  .store-menu .store-menu-block .store-item .name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+  .store-menu .store-menu-block .store-item.selected {
+  background-color: white;
+  color: black
+}
+.store-menu .store-menu-block .store-item:hover {
+  background-color: #ff686e;
+  color: white;
+  border-radius: 5px;
+}
+   .store-menu .store-menu-block .store-item:first-of-type {
+  margin-right: 5px
+}
+
+   .store-menu .store-menu-block .store-item:last-of-type {
+  margin-left: 3px
 }
 
 .px-3 {
@@ -49,11 +83,13 @@
   border: 1px solid #ff686e;
   border-radius: 5px;
   align-items: center;
+  background-color: white;
+  color: #ff4a85;
 }
 
 .px-3:hover {
   background-color: #ff686e;
-  color: #fff;
+  color: white;
   border-radius: 5px;
 }
 

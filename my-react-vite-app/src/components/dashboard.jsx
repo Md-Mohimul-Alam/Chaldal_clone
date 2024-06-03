@@ -31,7 +31,7 @@ const Dashboard = () => {
       <header className="header">
         <div className='flex'>
           <div className="menu-button" onClick={toggleSidebar}>
-            <MenuRoundedIcon aria-label="menu" />
+            <MenuRoundedIcon aria-label="menu" style={{color:'black'}} />
           </div>
 
           <div className="logo hidden-xs">

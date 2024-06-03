@@ -2,6 +2,8 @@
 .dashboard-container {
   display: flex;
   width: 1855px;
+  overflow: hidden;
+
 }
 
 .compress{
