@@ -7,6 +7,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ width: '240px', position: 'sticky', background: '#fff' }} onClick={toggleSidebar}>
       <div className="Main">
+        <div className="mmm">
           <div className="store-menu">
             <div className="store-menu-block">
               <div className="store-item selected">
@@ -203,6 +204,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </a>
           </li>
         </ul>
+        </div>
 
         <div className="quick-access-menu">
           <a href="#" className="help">
@@ -219,7 +221,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </a>
           <div className="complaint">
             <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20">
-              <path fill="url(#paint0_linear_800_2512)" fill-rule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clip-rule="evenodd"></path>
+              <path fill="url(#paint0_linear_800_2512)" fill-rule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
               <defs>
                 <linearGradient id="paint0_linear_800_2512" x1="10" x2="10" y1="0" y2="20" gradientUnits="userSpaceOnUse">
                   <stop stop-color="#FD4A85"></stop>

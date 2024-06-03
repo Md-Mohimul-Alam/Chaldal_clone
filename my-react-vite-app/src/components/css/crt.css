@@ -10,13 +10,16 @@
 #delivery-info .mainTile {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    width:1750px;
 }
 
 #delivery-info .mainTile .categoryBox {
     max-width: 100%;
     width: 40%;
     min-height: 50px;
+    color: #fff;
     border: 2px solid rgba(0,0,0,.05);
     margin: 1%;
     padding: 10px 5px 10px 0;
@@ -32,25 +35,29 @@
 @media(min-width: 1400px) {
     #delivery-info .mainTile .categoryBox {
         width:20%;
-        min-height: 110px
+        min-height: 110px;
+        background: White
     }
 }
 
 @media(max-width: 991px) {
     #delivery-info .mainTile .categoryBox {
-        min-height:70px
+        min-height:70px;
+        background: White
     }
 }
 
 @media(max-width: 767px) {
     #delivery-info .mainTile .categoryBox {
-        min-height:80px
+        min-height:80px;
+        background: White
     }
 }
 
 @media(max-width: 360px) {
     #delivery-info .mainTile .categoryBox {
-        min-height:85px
+        min-height:85px;
+        background: White
     }
 }
 
@@ -127,7 +134,7 @@
     color: #000;
     align-items: center;
     padding-left: 300px;
-    margin-left: 400px;
+    margin-left: 300px;
 
     
 }
@@ -135,7 +142,7 @@
 .landingPage2 #bannerContainer {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     justify-content: center;
     align-items: center;
     margin: 0 auto 25px
@@ -178,12 +185,12 @@
 
 
 #product-categories {
-    width: 100%;
+    width: 1600px;
     padding: 0;
-    margin: 0 5px
 }
 
 #product-categories .headerContainer {
+    width: 1400px;
     display: flex;
     justify-content: center;
     margin: 0 2%
@@ -204,7 +211,7 @@
 
 @media(min-width: 1500px) {
     #product-categories .headerContainer .initialLabel {
-        padding-left:6%
+        padding-left:0%
     }
 }
 
@@ -275,13 +282,17 @@
 }
 
 #product-categories .mainTile {
-    padding: 0 15px
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    left: 30px;
+
 }
 
 #product-categories .mainTile .categoryContainer {
     display: flex;
     justify-content: space-between;
-    overflow-x: scroll;
+    overflow-y: scroll;
     flex-wrap: nowrap
 }
 
@@ -304,6 +315,7 @@
 #product-categories .mainTile .categoryContainer .categoryBox {
     display: flex;
     flex-direction: column;
+    background-color: transparent;
     padding: 20px 0;
     max-height: 200px;
     min-width: 100px;
@@ -316,19 +328,25 @@
 
 @media(max-width: 1200px) {
     #product-categories .mainTile .categoryContainer .categoryBox {
-        width:150px
+        width:150px;
+        background-color: transparent !important;
+
     }
 }
 
 @media(max-width: 991px) {
     #product-categories .mainTile .categoryContainer .categoryBox {
-        width:130px
+        width:130px;
+        background-color: #f5f5f5;
+
     }
 }
 
 @media(min-width: 1200px) {
     #product-categories .mainTile .categoryContainer .categoryBox {
-        width:180px
+        width:180px; 
+        background-color: #f5f5f5;
+
     }
 }
 
@@ -372,14 +390,19 @@
 
 
 .landingPage2 .mainContainer {
-    max-width: 100%;
-    margin: 25px;
+    max-width: 90%;
+    margin: 15px;
     padding: 0 15px;
     justify-content: center
 }
+.landingPage2 .mainContainer:first-of-type .initialLabel{
+    font-size: 20px;
+    font: 1em sans-serif;
+    font-weight: 400;
+}
 
 .landingPage2 .mainContainer:first-of-type .initialLabel:first-of-type {
-    padding-top: 50px
+    padding-top: 40px;
 }
 
 .landingPage2 #bannerContainer {
@@ -507,7 +530,9 @@
     overflow: visible;
     text-align: center;
     justify-items: center;
-    align-items: center
+    align-items: center;
+    position: relative;
+    left:50px
 }
 
 .landingPage2 .mainTile a {
@@ -606,7 +631,7 @@
 .landingPage2 #chaldal-family .headerContainer .initalLabel h2 {
     font-size: 20px;
     color: #2d3a3f;
-    font-weight: 400
+    font-weight: 300
 }
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons {
@@ -622,14 +647,12 @@
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollLeft,.landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollRight {
     position: relative;
+    background: transparent;
     border-radius: 25px;
     width: 20px;
     height: 20px;
-    border: 0;
-    padding: 0;
-    margin-top: 0;
     opacity: .8;
-    z-index: 2;
+    z-index: 3;
     float: right;
     right: 0;
     box-shadow: 1px 1px 2px rgba(0,0,0,.3)
@@ -637,7 +660,7 @@
 
 @media(max-width: 991px) {
     .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollLeft,.landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollRight {
-        display:none
+        display:none;
     }
 }
 
@@ -646,11 +669,17 @@
 }
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollLeft:hover,.landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollRight:hover {
-    opacity: .9
+    opacity: .9;
+    background: transparent;
+
 }
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollRight {
-    right: -3px
+    right: -3px;
+    background: transparent;
+    align-items: center;
+
+
 }
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollRight svg {
@@ -658,7 +687,10 @@
 }
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollLeft {
-    left: -3px
+    left: -3px;
+    color: transparent;
+    align-items: center;
+
 }
 
 .landingPage2 #chaldal-family .headerContainer .scrollButtons .scrollLeft svg {
@@ -1048,5 +1080,496 @@
         flex-basis:10%;
         max-width: 100%;
         padding: 0 50px
+    }
+}
+
+
+
+
+#shopInfoComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    padding-left: 150px;
+}
+
+#shopInfoComponent .headerComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+ #shopInfoComponent .headerComponent .initalLabel {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    min-height: 40px
+}
+
+ #shopInfoComponent .headerComponent .initalLabel h2 {
+    font-size: 20px;
+    color: #2d3a3f
+}
+
+ #shopInfoComponent .headerComponent h2 {
+    font-size: 20px;
+    color: #000;
+    text-align: left
+}
+
+@media(max-width: 991px) {
+ #shopInfoComponent .headerComponent h2 {
+        font-size:16px
+    }
+}
+
+ #shopInfoComponent .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px
+}
+#shopInfoComponent .wrapper .shopContainer .container .initialLabel {
+    flex: 1;
+    padding: 10px;
+    text-align: left;border-radius: 5px;
+
+}
+ #shopInfoComponent .wrapper .shopContainer {
+    display: flex;
+    flex-direction: row;
+    margin-inline:3%
+    
+}
+
+ #shopInfoComponent .wrapper .shopContainer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    min-height: 400px;
+    width: 100%;
+    margin: 5px 10px;
+    max-width: 550px
+}
+
+ #shopInfoComponent .wrapper .shopContainer .container .initialLabel {
+    flex: 1;
+    padding: 10px;
+    text-align: left
+}
+
+#shopInfoComponent .wrapper .shopContainer .container .initialLabel h3 {
+    color: #000;
+    font-weight: 700;
+    margin: 10px;
+    font-size: 25px
+}
+
+#shopInfoComponent .wrapper .shopContainer .container .initialLabel p {
+    color: #2d3a3f;
+    margin: 0 10px;
+    font-size: 15px
+}
+
+ #shopInfoComponent .wrapper .shopContainer .container .imageContainer {
+    width: 100%;
+    flex: 1
+}
+ #shopInfoComponent .wrapper .shopContainer .container .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+@media(max-width: 1200px) {
+     #shopInfoComponent .wrapper .shopContainer {
+        flex-wrap:nowrap;
+    }
+
+ 
+     #shopInfoComponent .wrapper .shopContainer .container {
+        min-width: 350px
+    }
+
+     #shopInfoComponent .wrapper .shopContainer .container .initialLabel {
+        padding: 15px
+    }
+
+    #shopInfoComponent .wrapper .shopContainer .container .initialLabel h3 {
+        font-size: 25px
+    }
+
+     #shopInfoComponent .wrapper .shopContainer .container .initialLabel p {
+        font-size: 16px
+    }
+}
+
+@media(max-width: 991px) {
+    #shopInfoComponent .wrapper .shopContainer {
+        flex-wrap:nowrap
+    }
+
+     #shopInfoComponent .wrapper .shopContainer .container {
+        min-width: 350px
+    }
+
+    #shopInfoComponent .wrapper .shopContainer .container .initialLabel {
+        padding: 15px;
+        max-height: 150px
+    }
+
+    #shopInfoComponent .wrapper .shopContainer .container .initialLabel h3 {
+        font-size: 20px
+    }
+    #shopInfoComponent .wrapper .shopContainer .container .initialLabel p {
+        font-size: 12px
+    }
+}
+
+
+
+
+
+
+.landingPage2 #how-to-shop {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap
+}
+
+.landingPage2 #how-to-shop .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-inline:4%}
+
+@media(min-width: 2240px) {
+    .landingPage2 #how-to-shop .wrapper {
+        margin-inline:13%
+    }
+}
+
+@media(max-width: 991px) {
+    .landingPage2 #how-to-shop .wrapper {
+        margin-inline:5%;
+        min-width: 50%
+    }
+}
+
+.landingPage2 #how-to-shop .wrapper .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 5px
+}
+
+@media(max-width: 991px) {
+    .landingPage2 #how-to-shop .wrapper .container {
+        flex-wrap:nowrap;
+        overflow-x: scroll;
+        justify-content: normal
+    }
+
+    .landingPage2 #how-to-shop .wrapper .container::-webkit-scrollbar {
+        height: 0
+    }
+
+    .landingPage2 #how-to-shop .wrapper .container::-webkit-scrollbar-track {
+        color: transparent
+    }
+
+    .landingPage2 #how-to-shop .wrapper .container::-webkit-scrollbar-thumb {
+        color: transparent
+    }
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    max-width: 50%
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
+    width: 55%;
+    margin: 10px;
+    padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
+    height: auto
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label {
+    width: 100%;
+    margin: 0;
+    white-space: wrap
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label h3 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label p {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+    padding: 8px 15px 9px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff686e;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    text-align: center;
+    width: 65%;
+    border-radius: 10px;
+    font-size: 12px;
+    text-transform: none
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:active,.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:focus {
+    outline: 0
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.alert {
+    background-color: #ff686e
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.alert:hover {
+    background-color: #ff353d
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.success {
+    background-color: #82a900
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.success:hover {
+    background-color: #5b7600
+}
+
+.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:hover {
+    background-color: #e04f54
+}
+
+@media(max-width: 767px) {
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
+        width:60%
+    }
+}
+
+@media(max-width: 300px) {
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
+        width:65%
+    }
+}
+
+@media(min-width: 1200px) {
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label h3 {
+        font-size:25px
+    }
+
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label p,.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+        font-size: 16px
+    }
+}
+
+@media(max-width: 991px) {
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities {
+        min-width:450px
+    }
+
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+        font-size: 12px;
+        width: 55%
+    }
+}
+
+@media(max-width: 767px) {
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities {
+        min-width:350px
+    }
+
+    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+        font-size: 12px;
+        width: 80%
+    }
+}
+
+.landingPage2 #how-to-shop .wrapper .container #videoContainer {
+    display: flex;
+    border-radius: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    width: 100%;
+    max-width: 50%
+}
+
+.landingPage2 #how-to-shop .wrapper .container #videoContainer iframe {
+    border-radius: 10px;
+    width: 100%
+}
+
+@media(max-width: 991px) {
+    .landingPage2 #how-to-shop .wrapper .container #videoContainer {
+        min-width:450px
+    }
+}
+
+@media(max-width: 767px) {
+    .landingPage2 #how-to-shop .wrapper .container #videoContainer {
+        min-width:350px
+    }
+}
+
+
+/* download */
+
+#downloadChaldalApp {
+    margin: 0;
+    padding: 0;
+    height: 323px;
+}
+
+#downloadChaldalApp.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    padding: 0
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp h2 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    max-width: 400px
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400
+}
+
+@media screen and (max-width: 767px) {
+    #downloadChaldalApp.wrapper .downloadAppContainer .downloadApp p {
+        font-size:12px
+    }
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .iconContainer div {
+    margin-right: 10px
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .iconContainer div svg {
+    width: 100px;
+    height: 100px
+}
+
+#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .header {
+    padding: 10px;
+    text-align: center
+}
+
+#downloadChaldalApp.wrapper .imageContainer {
+    align-self: flex-end;
+    position: relative;
+    width: 50%;
+    margin: -4px;
+    padding: 0
+}
+
+#downloadChaldalApp.wrapper .imageContainer img {
+    width: 100%;
+    height: 100%
+}
+
+@media screen and (min-width: 1800px) {
+    #downloadChaldalApp.wrapper .imageContainer {
+        align-self:center;
+        position: relative;
+        width: 30%
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #downloadChaldalApp.wrapper {
+        flex-direction:column
+    }
+
+    #downloadChaldalApp.wrapper .imageContainer {
+        align-self: center;
+        width: 60%
+    }
+
+    #downloadChaldalApp.wrapper .downloadAppContainer {
+        width: 100%;
+        margin-top: 5%
+    }
+
+    #downloadChaldalApp.wrapper .downloadAppContainer .downloadApp h2 {
+        font-size: 20px
+    }
+
+    #downloadChaldalApp.wrapper .downloadAppContainer .downloadApp p {
+        font-size: 12px
     }
 }

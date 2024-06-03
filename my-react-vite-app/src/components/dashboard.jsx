@@ -9,10 +9,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import DeliveryInfo from './crt';
 
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
-import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
+import CustomizedInputBase from './search'
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,7 +22,7 @@ const Dashboard = () => {
   const handleLanguageToggle = () => {
     setIsEnglish(!isEnglish);
   };
-
+  
   return (
     <div className='dashboard-container'>
       <header className="header">
@@ -81,20 +78,15 @@ const Dashboard = () => {
           backgroundSize: 'cover',
           flex: '1'
         }}>
-          <div itemscope="" itemprop="google" content="nositelinkssearchbox" className="floatingSearchBar">
-            <meta itemprop="url" content="https://chaldal.com/" />
+          <div  content="nositelinkssearchbox" className="floatingSearchBar">
+            <meta  content="https://chaldal.com/" />
             <div className="searchBarContainer">
               <h2>
                 <span> </span>
                 <span>Grocery Delivered at your Doorstep</span>
                 <span> </span>
               </h2>
-                <Paper component="form" sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 700 }}>
-                    <InputBase sx={{ ml: 1, flex: 1 }}placeholder="Search Google Maps" inputProps={{ 'aria-label': 'search google maps' }}/>
-                    <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
-                    <SearchIcon />
-                    </IconButton>
-                </Paper>
+                <CustomizedInputBase/>
             </div>
           </div>
           <div className="banner-image">
