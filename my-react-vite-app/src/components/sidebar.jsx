@@ -1,7 +1,10 @@
 // sidebar.jsx
 import React from "react";
-import LocalGroceryStoreTwoToneIcon from '@mui/icons-material/LocalGroceryStoreTwoTone';
 import './css/sidebar.css';
+ 
+import { Link } from 'react-router-dom';
+
+
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -27,6 +30,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   </g>
                 </svg>
                 <h4 className="name">Grocery</h4>
+                
               </div>
             </div>
             <div className="store-menu-block">
