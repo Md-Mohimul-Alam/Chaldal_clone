@@ -1,6 +1,6 @@
 
 .dashboard-container {
-  display: flex;
+  position: relative;
   width: 1855px;
   overflow: hidden;
   background-color: white;
@@ -12,11 +12,22 @@
   width: 100%;
 
 }
+.sticky-wrapper {
+  position: relative;
+}
+
+.sticky-wrapper.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
 
 header {
     width: 100% !important;
     height: 66px;
-    position:fixed !important;
+    position:fixed;
     align-items: center;
     top: 0;
     box-sizing: border-box;
