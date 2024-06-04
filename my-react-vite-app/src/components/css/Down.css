@@ -4,20 +4,21 @@
 #downloadChaldalApp {
     margin: 0;
     padding: 0;
-    height: 323px;
 }
 
-#downloadChaldalApp.wrapper {
+#downloadChaldalApp .wrapper {
+    position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
     padding: 0
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer {
+#downloadChaldalApp .wrapper .downloadAppContainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -26,7 +27,7 @@
     padding: 0
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -37,46 +38,46 @@
     padding: 0
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp h2 {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp h2 {
     color: #000;
     font-size: 25px;
     font-weight: 700;
     max-width: 400px
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp p {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp p {
     color: #000;
     font-size: 16px;
     font-weight: 400
 }
 
 @media screen and (max-width: 767px) {
-    #downloadChaldalApp.wrapper .downloadAppContainer .downloadApp p {
+    #downloadChaldalApp .wrapper .downloadAppContainer .downloadApp p {
         font-size:12px
     }
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .iconContainer {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp .iconContainer {
     display: flex;
     justify-content: center;
     align-items: center
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .iconContainer div {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp .iconContainer div {
     margin-right: 10px
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .iconContainer div svg {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp .iconContainer div svg {
     width: 100px;
     height: 100px
 }
 
-#downloadChaldalApp.wrapper .downloadAppContainer .downloadApp .header {
+#downloadChaldalApp .wrapper .downloadAppContainer .downloadApp .header {
     padding: 10px;
     text-align: center
 }
 
-#downloadChaldalApp.wrapper .imageContainer {
+#downloadChaldalApp .wrapper .imageContainer {
     align-self: flex-end;
     position: relative;
     width: 50%;
@@ -84,13 +85,13 @@
     padding: 0
 }
 
-#downloadChaldalApp.wrapper .imageContainer img {
+#downloadChaldalApp .wrapper .imageContainer img {
     width: 100%;
     height: 100%
 }
 
 @media screen and (min-width: 1800px) {
-    #downloadChaldalApp.wrapper .imageContainer {
+    #downloadChaldalApp .wrapper .imageContainer {
         align-self:center;
         position: relative;
         width: 30%
@@ -102,21 +103,20 @@
         flex-direction:column
     }
 
-    #downloadChaldalApp.wrapper .imageContainer {
+    #downloadChaldalApp .wrapper .imageContainer {
         align-self: center;
         width: 60%
     }
 
-    #downloadChaldalApp.wrapper .downloadAppContainer {
+    #downloadChaldalApp .wrapper .downloadAppContainer {
         width: 100%;
         margin-top: 5%
     }
 
-    #downloadChaldalApp.wrapper .downloadAppContainer .downloadApp h2 {
+    #downloadChaldalApp .wrapper .downloadAppContainer .downloadApp h2 {
         font-size: 20px
     }
-
-    #downloadChaldalApp.wrapper .downloadAppContainer .downloadApp p {
+    #downloadChaldalApp .wrapper .downloadAppContainer .downloadApp p {
         font-size: 12px
     }
 }
