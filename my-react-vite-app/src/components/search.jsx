@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function CustomizedInputBase() {
   return (
-    <Paper component="form" sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 700 }}>
+    <Paper component="form" sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: '100%' }}>
       <InputBase sx={{ ml: 1, flex: 1 }}placeholder="Search for products (e.g. eggs, milk, potato)" inputProps={{ 'aria-label': 'Search for products (e.g. eggs, milk, potato)' }}/>
       <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
       <SearchIcon />

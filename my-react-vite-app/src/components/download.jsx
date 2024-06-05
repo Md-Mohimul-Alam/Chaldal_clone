@@ -146,11 +146,106 @@ const Down = () => {
             </section>
 
 
-
-
-
-
+        <div className="cityBox" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-504/Default/stores/chaldal/components/landingPage2/LandingPage/images/city-background.png) no-repeat center', backgroundSize: 'cover', height: '550px' }}>
+            <div className="cityArea">                    
+                <h2>Currently Delivering in</h2>
+                <div className="deliveryCity">
+                    <div className="cityContainer">Dhaka</div>
+                    <div className="cityContainer">Chattogram</div>
+                    <div className="cityContainer">Jashore</div>
+                </div>
+            </div>
         </div>
+         
+            <section id="commonQuestions">
+        <div class="faqTop">
+                <div>
+                    <h2>Common Questions</h2>
+                </div>
+                <div class="faq-items">
+                    <div class="faq-container">
+                        <div class="faq-item selected-faq-item faq-border-large-screen">
+                            <div class="query-container">
+                                <div class="query2"><span>Q. How much do deliveries cost?</span></div>
+                                    <div class="arrow-container">
+                                        <i class="minus-sign"></i>
+                                    </div>
+                                </div>
+                                <div class="answer-container">
+                                    <span>A. The delivery fee across the country is in the table below:
+                                         <pre>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>City</th>
+                                                        <th>Orders below 400</th>
+                                                        <th>Orders above 400</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Dhaka</td>
+                                                        <td>49</td>
+                                                        <td>39</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chattogram</td>
+                                                        <td>29</td>
+                                                        <td>19</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jashore</td>
+                                                        <td>29</td>
+                                                        <td>19</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </pre>
+                                    </span>
+                                </div>
+                            </div>
+                        <div class="faq-item faq-border-large-screen">
+                            <div class="query-container">
+                                <div class="query2"><span>Q. What are your delivery hours?</span></div>
+                                    <div class="arrow-container">
+                                        <i class="plus-sign"></i>
+                                    </div>
+                                </div>
+                            <div class="answer-container"><span>We deliver from 7.30 am to 11 pm every day. You can choose from available slots to find something that is convenient for you.</span></div>
+                        </div>
+                        <div class="faq-item faq-border-large-screen">
+                            <div class="query-container">
+                                <div class="query2"><span>Q. What is your policy on refunds?</span></div>
+                                    <div class="arrow-container">
+                                        <i class="plus-sign"></i>
+                                    </div>
+                                </div>
+                            <div class="answer-container"><span>We offer a refund or return policy of seven (7) days on most unopened or unspoilt packaged products. </span><ol class="answer-pointers"><li>For perishable products such as milk, fruits, and fresh vegetables, we have a 1 (one) day return policy. </li><li>Diaper items must be returned for refunds before 10% or 3 pieces (whichever comes first) have been used. </li><li>Certain products; Face Mask, Disposable Vinyl Gloves, Alcohol Pads, and Covid Testing Kits are not acceptable for refund or return either opened or unopened.</li></ol></div>
+                        </div>
+                        <div class="faq-item faq-border-large-screen">
+                            <div class="query-container">
+                                <div class="query2"><span>Q. What about the prices?</span></div>
+                                    <div class="arrow-container">
+                                        <i class="plus-sign"></i>
+                                    </div>
+                                </div>
+                            <div class="answer-container"><span>Our prices are our own but we try our best to offer them to you at or below market prices. Our prices are the same as the local market and we are working hard to get them even lower! If you feel that any product is priced unfairly, please let us know.</span></div>
+                        </div>
+                        <div class="faq-item faq-border-large-screen">
+                            <div class="query-container">
+                                <div class="query2"><span>Q. Do you serve my area?</span></div>
+                                    <div class="arrow-container">
+                                        <i class="plus-sign"></i>
+                                    </div>
+                                </div>
+                            <div class="answer-container"><span>We are currently serving in three big cities of Bangladesh including Dhaka, Chattogram, Jashore.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="faq-subText">Have further questions?</div>
+    </section>
+</div>
     );
 };
 
