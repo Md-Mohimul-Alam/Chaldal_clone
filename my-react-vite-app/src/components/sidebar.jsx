@@ -7,8 +7,8 @@ import './css/sidebar.css';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
-    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ width: '240px', position: 'sticky', background: '#fff' }} onClick={toggleSidebar}>
-      <div className="Main" style={{ width: '240px', position: 'sticky', background: '#fff' }}>
+    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+      <div className="Main" style={{ width: '230px', background: '#fff'}}>
           <div className="store-menu">
             <div className="store-menu-block">
               <div className="store-item selected">
@@ -105,32 +105,35 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <aside className="sidebar">
           <ul>
             <li className="unselected topLevel">
-              <div class="name">
-              <img class="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
+              
+              <div className="name">
+              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
                 <a href="#">Favourites</a>
                 </div>
             </li>
-            <li data-cid="1506" class="not-in-selection-tree unselected topLevel">
-              <div class="name">
-              <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/summer-collection?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D155983&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <li data-cid="1506" className="not-in-selection-tree unselected topLevel">
+              <div className="name">
+              <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/summer-collection?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D155983&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
                 <a href="#">Summer Collection</a>
               </div>
             </li>
 
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/flash-sales?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95784&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/flash-sales?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95784&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
 
               <a href="#">Flash Sales</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95790&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95790&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
 
               <a href="#">Popular</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
 
               <a href="#">Food</a>
+              
+
             </li>
             <li className="unselected topLevel">
             <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
@@ -215,8 +218,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <path fill="url(#paint0_linear_1006_2150)" d="M256 42.666C138.24 42.666 42.667 138.24 42.667 256S138.24 469.333 256 469.333 469.333 373.76 469.333 256 373.76 42.666 256 42.666zm21.333 362.667h-42.666v-42.666h42.666v42.666zM321.493 240l-19.2 19.627C286.933 275.2 277.333 288 277.333 320h-42.666v-10.667c0-23.466 9.6-44.8 24.96-60.373l26.453-26.88c7.893-7.68 12.587-18.347 12.587-30.08 0-23.467-19.2-42.667-42.667-42.667-23.467 0-42.667 19.2-42.667 42.667h-42.666c0-47.147 38.186-85.333 85.333-85.333s85.333 38.186 85.333 85.333c0 18.773-7.68 35.84-19.84 48z"></path>
               <defs>
                 <linearGradient id="paint0_linear_1006_2150" x1="256" x2="256" y1="42.666" y2="469.333" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FD4A85"></stop>
-                  <stop offset="1" stop-color="#FF9D8C"></stop>
+                  <stop stopColor="#FD4A85"></stop>
+                  <stop offset="1" stopColor="#FF9D8C"></stop>
                 </linearGradient>
               </defs>
             </svg>
@@ -227,8 +230,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <path fill="url(#paint0_linear_800_2512)" fillRule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
               <defs>
                 <linearGradient id="paint0_linear_800_2512" x1="10" x2="10" y1="0" y2="20" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FD4A85"></stop>
-                  <stop offset="1" stop-color="#FF9D8C"></stop>
+                  <stop stopColor="#FD4A85"></stop>
+                  <stop offset="1" stopColor="#FF9D8C"></stop>
                 </linearGradient>
               </defs>
             </svg>

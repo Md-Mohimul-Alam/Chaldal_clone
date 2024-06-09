@@ -1,12 +1,11 @@
 
 
 .m1 {
-  width: 240px;
   height: auto;
   transition: width 0.3s ease;
   background: rgb(255, 255, 255);
   border-right: 2px solid #ccc;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 200;
   border-right: 1px solid #ccc;
   font-family: sans-serif;
@@ -14,10 +13,9 @@
 }
 
 .Main {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 200;
-  position: relative;
-  width: 240px;
+
   padding-left: 2px;
   height: 100%;
   display: flex;
@@ -31,10 +29,11 @@
 
   display: inline-flex;
   align-items: flex-start;
-  padding-right: 2px;
+  padding-right: 0px;
   border-bottom: 1px solid #ccc;
   font-weight: 200;
-  padding-bottom: 5px
+  padding-bottom: 5px;
+  padding-top: 5px;
 
 }
 
@@ -44,12 +43,12 @@
   padding-bottom: 5px
 }
 
-.store-menu .store-menu-block {
+.store-menu-block {
   display: flex;
 
 }
 
-  .store-menu .store-menu-block .store-item {
+  .store-item {
   background-color: #fff;
   padding: 6px 5px;
   min-width: 0;
@@ -64,43 +63,29 @@
   border-radius: 5px
 }
 
-  .store-menu .store-menu-block .store-item .name {
+  .store-item .name {
   font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
 
-  .store-menu .store-menu-block .store-item.selected {
+  .store-item.selected {
   background-color: white;
   color: black
 }
-.store-menu .store-menu-block .store-item:hover {
+.store-item:hover {
   background-color: #ff686e;
   color: white;
   border-radius: 5px;
 }
-   .store-menu .store-menu-block .store-item:first-of-type {
+   .store-item:first-of-type {
   margin-right: 5px
 }
 
-   .store-menu .store-menu-block .store-item:last-of-type {
+   .store-item:last-of-type {
   margin-left: 3px
 }
 
-.px-3 {
-  
-  border: 1px solid #ff686e;
-  border-radius: 5px;
-  align-items: center;
-  background-color: white;
-  color: #ff4a85;
-}
-
-.px-3:hover {
-  background-color: #ff686e;
-  color: white;
-  border-radius: 5px;
-}
 
 .first_menu {
   display: flex;

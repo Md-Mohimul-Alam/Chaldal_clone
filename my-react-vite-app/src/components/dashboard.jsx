@@ -8,6 +8,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
+import Footer from './footer/footer';
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -23,8 +24,8 @@ const Dashboard = () => {
   const handleScroll = () => {
     if (logoRef.current && searchBarRef.current) {
       const logoBottom = logoRef.current.getBoundingClientRect().bottom;
-      setIsSticky(window.pageYOffset > logoBottom);
-      setIsSearchVisible(window.pageYOffset <= logoBottom);
+      setIsSticky(window > logoBottom);
+      setIsSearchVisible(window <= logoBottom);
     }
   };
 
@@ -54,7 +55,7 @@ const Dashboard = () => {
           </div>
 
           {!isSearchVisible && (
-                <div className='search_header'>
+                <div className='search_header' style={{  top:'1px' }}>
                   <CustomizedInputBase/>
                 </div>
               )}

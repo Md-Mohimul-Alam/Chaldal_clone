@@ -1090,8 +1090,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1500px;
-    padding-left: 150px;
+    width: 1450px;
+    padding-left: 200px;
 }
 
 #shopInfoComponent .headerComponent {
@@ -1239,13 +1239,14 @@
 
 
 
-.landingPage2 #how-to-shop {
+ #how-to-shop {
     display: flex;
     flex-direction: row;
-    white-space: nowrap
+    width: 1450px;
+    padding-left: 200px;
 }
 
-.landingPage2 #how-to-shop .wrapper {
+ #how-to-shop .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1253,19 +1254,19 @@
     margin-inline:4%}
 
 @media(min-width: 2240px) {
-    .landingPage2 #how-to-shop .wrapper {
+     #how-to-shop .wrapper {
         margin-inline:13%
     }
 }
 
 @media(max-width: 991px) {
-    .landingPage2 #how-to-shop .wrapper {
+     #how-to-shop .wrapper {
         margin-inline:5%;
         min-width: 50%
     }
 }
 
-.landingPage2 #how-to-shop .wrapper .container {
+ #how-to-shop .wrapper .container {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1273,26 +1274,26 @@
 }
 
 @media(max-width: 991px) {
-    .landingPage2 #how-to-shop .wrapper .container {
+     #how-to-shop .wrapper .container {
         flex-wrap:nowrap;
         overflow-x: scroll;
         justify-content: normal
     }
 
-    .landingPage2 #how-to-shop .wrapper .container::-webkit-scrollbar {
+     #how-to-shop .wrapper .container::-webkit-scrollbar {
         height: 0
     }
 
-    .landingPage2 #how-to-shop .wrapper .container::-webkit-scrollbar-track {
+     #how-to-shop .wrapper .container::-webkit-scrollbar-track {
         color: transparent
     }
 
-    .landingPage2 #how-to-shop .wrapper .container::-webkit-scrollbar-thumb {
+     #how-to-shop .wrapper .container::-webkit-scrollbar-thumb {
         color: transparent
     }
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -1300,7 +1301,7 @@
     max-width: 50%
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
     width: 55%;
     margin: 10px;
     padding-left: 2%;
@@ -1312,25 +1313,25 @@
     height: auto
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label {
     width: 100%;
     margin: 0;
     white-space: wrap
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label h3 {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label h3 {
     font-weight: 700;
     font-size: 20px;
     text-align: left
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label p {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label p {
     font-weight: 400;
     font-size: 12px;
     text-align: left
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
     padding: 8px 15px 9px;
     display: inline-block;
     border: 0;
@@ -1350,81 +1351,81 @@
     text-transform: none
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:active,.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:focus {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:active, #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:focus {
     outline: 0
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:active {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.alert {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.alert {
     background-color: #ff686e
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.alert:hover {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.alert:hover {
     background-color: #ff353d
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.success {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.success {
     background-color: #82a900
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.success:hover {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a.success:hover {
     background-color: #5b7600
 }
 
-.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:hover {
+ #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a:hover {
     background-color: #e04f54
 }
 
 @media(max-width: 767px) {
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
         width:60%
     }
 }
 
 @media(max-width: 300px) {
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox {
         width:65%
     }
 }
 
 @media(min-width: 1200px) {
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label h3 {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label h3 {
         font-size:25px
     }
 
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label p,.landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox .label p, #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
         font-size: 16px
     }
 }
 
 @media(max-width: 991px) {
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities {
         min-width:450px
     }
 
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
         font-size: 12px;
         width: 55%
     }
 }
 
 @media(max-width: 767px) {
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities {
         min-width:350px
     }
 
-    .landingPage2 #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
+     #how-to-shop .wrapper .container #chaldal-daily-necessities .descriptionBox a {
         font-size: 12px;
         width: 80%
     }
 }
 
-.landingPage2 #how-to-shop .wrapper .container #videoContainer {
+ #how-to-shop .wrapper .container #videoContainer {
     display: flex;
     border-radius: 10px;
     margin-left: 5px;
@@ -1433,19 +1434,19 @@
     max-width: 50%
 }
 
-.landingPage2 #how-to-shop .wrapper .container #videoContainer iframe {
+ #how-to-shop .wrapper .container #videoContainer iframe {
     border-radius: 10px;
     width: 100%
 }
 
 @media(max-width: 991px) {
-    .landingPage2 #how-to-shop .wrapper .container #videoContainer {
+     #how-to-shop .wrapper .container #videoContainer {
         min-width:450px
     }
 }
 
 @media(max-width: 767px) {
-    .landingPage2 #how-to-shop .wrapper .container #videoContainer {
+     #how-to-shop .wrapper .container #videoContainer {
         min-width:350px
     }
 }
