@@ -8,6 +8,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
+import STC_ChT from './Sticky_chat/sticky_chat';
+
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -50,6 +52,7 @@ const Dashboard = () => {
   return (
     <div className='dashboard-container'>
       <header className="header" ref={logoRef}>
+      <STC_ChT/>
         <div className='flex' >
         <button className={`hamburgerMenu ${isActive ? 'active' : ''}`}
             onClick={handleClick}>
@@ -143,6 +146,7 @@ const Dashboard = () => {
         </div>
         <DeliveryInfo/>
       </div>
+
     </div>
   );
 };

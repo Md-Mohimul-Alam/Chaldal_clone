@@ -1,0 +1,884 @@
+
+.chat_area {
+    width: auto;
+    height: auto;
+    position: fixed;
+    bottom: 10px;
+    right: 34px;
+    z-index: 999
+}
+
+.chat_area .chatIcon svg {
+    width: 85px;
+    height: 85px
+}
+
+@media(max-width: 991px) {
+    .chat_area .chatIcon svg {
+        width:45px;
+        height: 45px
+    }
+}
+
+.chat_launcher {
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    width: 230px;
+    height: 40px;
+    background: #ff8641;
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    z-index: 3;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 4px 0 #ff8641;
+    -moz-box-shadow: 0 0 4px 0 #ff8641;
+    box-shadow: 0 0 4px 0 #983903;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out
+}
+
+.chat_launcher .chatContent {
+    display: inline-block
+}
+
+.chat_launcher .chatContent span {
+    float: right;
+    font-size: 17px;
+    line-height: 40px
+}
+
+.chat_launcher .chatContent svg {
+    float: left;
+    width: 38px;
+    height: 38px;
+    fill: #fff;
+    margin-right: 10px;
+    margin-left: -10px
+}
+
+@media(max-width: 767px) {
+    .chat_launcher .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+.chat_launcher .chatContent .waiting svg {
+    display: block;
+    width: 20px!important;
+    -webkit-animation: spin 2s infinite linear
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.chat_launcher:hover {
+    background: #ef691e;
+    height: 42px
+}
+
+.chat_launcher:active {
+    -webkit-box-shadow: 0 0 2px #ccc;
+    -moz-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc
+}
+
+.chat_launcher2_expanded {
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    width: 140px;
+    height: 42px;
+    background: #ff6f71;
+    position: fixed;
+    bottom: 15px;
+    right: 80px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.29);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.29);
+    box-shadow: 0 0 4px rgba(0,0,0,.29);
+    border-radius: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out
+}
+
+.chat_launcher2_expanded .chatContent {
+    display: inline-block
+}
+
+.chat_launcher2_expanded .chatContent span {
+    float: right;
+    font-size: 16px;
+    line-height: 42px
+}
+
+.chat_launcher2_expanded .chatContent svg {
+    float: left;
+    width: 42px;
+    height: 42px;
+    fill: #fff
+}
+
+@media(max-width: 767px) {
+    .chat_launcher2_expanded .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+.chat_launcher2_expanded .chatContent .waiting svg {
+    display: block;
+    width: 20px!important;
+    -webkit-animation: spin 2s infinite linear
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.chat_launcher2_expanded:hover {
+    background: #ff6f71;
+    height: 42px
+}
+
+.chat_launcher2_expanded:active {
+    -webkit-box-shadow: 0 0 2px #ccc;
+    -moz-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc
+}
+
+@media(max-width: 991px) {
+    .chat_launcher2_expanded {
+        width:120px;
+        height: 38px
+    }
+
+    .chat_launcher2_expanded .chatContent {
+        display: inline-block
+    }
+
+    .chat_launcher2_expanded .chatContent span {
+        float: right;
+        font-size: 12px;
+        line-height: 38px
+    }
+
+    .chat_launcher2_expanded .chatContent svg {
+        width: 38px;
+        height: 38px
+    }
+}
+
+.chat_launcher2 {
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    width: 140px;
+    height: 42px;
+    background: #ff6f71;
+    position: fixed;
+    bottom: 10px;
+    right: 34px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.29);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.29);
+    box-shadow: 0 0 4px rgba(0,0,0,.29);
+    border-radius: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out
+}
+
+.chat_launcher2 .chatContent {
+    display: inline-block
+}
+
+.chat_launcher2 .chatContent span {
+    float: right;
+    font-size: 16px;
+    line-height: 42px
+}
+
+.chat_launcher2 .chatContent svg {
+    float: left;
+    width: 42px;
+    height: 42px;
+    fill: #fff
+}
+
+@media(max-width: 767px) {
+    .chat_launcher2 .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+.chat_launcher2 .chatContent .waiting svg {
+    display: block;
+    width: 20px!important;
+    -webkit-animation: spin 2s infinite linear
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.chat_launcher2:hover {
+    background: #ff6f71;
+    height: 42px
+}
+
+.chat_launcher2:active {
+    -webkit-box-shadow: 0 0 2px #ccc;
+    -moz-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc
+}
+
+@media(max-width: 991px) {
+    .chat_launcher2 {
+        width:120px;
+        height: 38px
+    }
+
+    .chat_launcher2 .chatContent {
+        display: inline-block
+    }
+
+    .chat_launcher2 .chatContent span {
+        float: right;
+        font-size: 12px;
+        line-height: 38px
+    }
+
+    .chat_launcher2 .chatContent svg {
+        width: 38px;
+        height: 38px
+    }
+}
+
+.chat_disabled {
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    width: 140px;
+    height: 42px;
+    position: fixed;
+    bottom: 15px;
+    right: 80px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    z-index: 999;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.29);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.29);
+    box-shadow: 0 0 4px rgba(0,0,0,.29);
+    border-radius: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background: #789;
+    cursor: initial
+}
+
+.chat_disabled .chatContent svg {
+    margin-right: 10px;
+    margin-left: -10px
+}
+
+@media(max-width: 767px) {
+    .chat_disabled .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@media(max-width: 767px) {
+    .chat_disabled .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@media(max-width: 991px) {
+    .chat_disabled {
+        width:120px;
+        height: 38px
+    }
+
+    .chat_disabled .chatContent {
+        display: inline-block
+    }
+
+    .chat_disabled .chatContent span {
+        float: right;
+        font-size: 12px;
+        line-height: 38px
+    }
+
+    .chat_disabled .chatContent svg {
+        width: 38px;
+        height: 38px
+    }
+}
+
+.chat_disabled .chatContent {
+    display: inline-block
+}
+
+.chat_disabled .chatContent span {
+    float: right;
+    font-size: 16px;
+    line-height: 42px
+}
+
+.chat_disabled .chatContent svg {
+    float: left;
+    width: 42px;
+    height: 42px;
+    fill: #fff
+}
+
+@media(max-width: 767px) {
+    .chat_disabled .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+.chat_disabled .chatContent .waiting svg {
+    display: block;
+    width: 20px!important;
+    -webkit-animation: spin 2s infinite linear
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.chat_disabled:active {
+    -webkit-box-shadow: 0 0 2px #ccc;
+    -moz-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc
+}
+
+@media(max-width: 991px) {
+    .chat_disabled {
+        width:120px;
+        height: 38px
+    }
+
+    .chat_disabled .chatContent {
+        display: inline-block
+    }
+
+    .chat_disabled .chatContent span {
+        float: right;
+        font-size: 12px;
+        line-height: 38px
+    }
+
+    .chat_disabled .chatContent svg {
+        width: 38px;
+        height: 38px
+    }
+}
+
+.chat_disabled:hover {
+    background: #789;
+    height: 40px
+}
+
+.chat_disabled .chatContent {
+    line-height: 40px
+}
+
+.chat_disabled .chatIcon {
+    display: none
+}
+
+.sc-fullscreen .chat_launcher {
+    z-index: 4
+}
+
+@media(max-width: 767px) {
+    .chat_area {
+        position:fixed;
+        width: 60px;
+        bottom: 0;
+        height: 47px;
+        left: 0;
+        background-color: #fff;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left
+    }
+
+    .chat_area_shopping_expanded {
+        display: none!important
+    }
+
+    .chat_launcher {
+        width: auto;
+        height: 40px;
+        background: 0 0;
+        border: 0;
+        display: inline-block;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        position: fixed;
+        top: 63px;
+        right: 50px;
+        z-index: 3
+    }
+
+    .chat_launcher span span {
+        display: none
+    }
+
+    .chat_launcher .chatIcon {
+        display: block
+    }
+
+    .chat_launcher .waiting svg {
+        display: block;
+        width: 20px!important;
+        margin: auto;
+        -webkit-animation: spin 2s infinite linear
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+
+    .chat_launcher:active,.chat_launcher:focus,.chat_launcher:hover {
+        background: 0 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: inherit
+    }
+
+    .chat_launcher .chatContent svg {
+        fill: #ff6f71;
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .chat_launcher2 {
+        width: auto;
+        height: 40px;
+        background: 0 0;
+        border: 0;
+        display: inline-block;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        position: fixed;
+        top: 63px;
+        right: 50px;
+        z-index: 3
+    }
+
+    .chat_launcher2 span span {
+        display: none
+    }
+
+    .chat_launcher2 .chatIcon {
+        display: block
+    }
+
+    .chat_launcher2 .waiting svg {
+        display: block;
+        width: 20px!important;
+        margin: auto;
+        -webkit-animation: spin 2s infinite linear
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+
+    .chat_launcher2:active,.chat_launcher2:focus,.chat_launcher2:hover {
+        background: 0 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: inherit
+    }
+
+    .chat_launcher2 .chatContent svg {
+        fill: #ff6f71;
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .chat_disabled {
+        -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+        -o-transition: all 300ms;
+        bottom: 15px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        width: auto;
+        height: 40px;
+        background: #789;
+        border: 0;
+        display: inline-block;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        position: fixed;
+        top: 63px;
+        right: 50px;
+        z-index: 3
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+
+    .chat_disabled .chatContent {
+        display: inline-block
+    }
+
+    .chat_disabled .chatContent span {
+        float: right;
+        font-size: 16px;
+        line-height: 42px
+    }
+
+    .chat_disabled .chatContent svg {
+        float: left;
+        width: 42px;
+        height: 42px
+    }
+
+    .chat_disabled .chatContent .waiting svg {
+        display: block;
+        width: 20px!important;
+        -webkit-animation: spin 2s infinite linear
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+
+    .chat_disabled span span {
+        display: none
+    }
+
+    .chat_disabled .chatIcon {
+        display: block
+    }
+
+    .chat_disabled .waiting svg {
+        display: block;
+        width: 20px!important;
+        margin: auto;
+        -webkit-animation: spin 2s infinite linear
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+
+    .chat_disabled:active,.chat_disabled:focus,.chat_disabled:hover {
+        background: 0 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: inherit
+    }
+
+    .chat_disabled .chatContent svg {
+        fill: #ff6f71;
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .chat_disabled:hover {
+        background: #789
+    }
+
+    .dialog-on .chat_launcher .chat_disabled,.dialog-on .chat_launcher2 .chat_disabled,.dialog-on .chat_launcher2_expanded .chat_disabled,.fullscreen-menu .chat_launcher .chat_disabled,.fullscreen-menu .chat_launcher2 .chat_disabled,.fullscreen-menu .chat_launcher2_expanded .chat_disabled,.hiddenOverflow .chat_launcher .chat_disabled,.hiddenOverflow .chat_launcher2 .chat_disabled,.hiddenOverflow .chat_launcher2_expanded .chat_disabled,.sc-fullscreen .chat_launcher .chat_disabled,.sc-fullscreen .chat_launcher2 .chat_disabled,.sc-fullscreen .chat_launcher2_expanded .chat_disabled {
+        display: none!important
+    }
+}
+
+@media(max-width: 767px) and (max-width:767px) {
+    .chat_disabled .chatContent svg {
+        fill:#4f4f4f!important
+    }
+}
+
+@media(max-width: 767px) and (max-width:991px) {
+    .chat_disabled {
+        width:120px;
+        height: 38px
+    }
+
+    .chat_disabled .chatContent {
+        display: inline-block
+    }
+
+    .chat_disabled .chatContent span {
+        float: right;
+        font-size: 12px;
+        line-height: 38px
+    }
+
+    .chat_disabled .chatContent svg {
+        width: 38px;
+        height: 38px
+    }
+}
+
+@media(max-width: 767px) {
+    .chat_launcher {
+        position:fixed;
+        background: #fff;
+        left: 0;
+        top: initial;
+        bottom: 0;
+        width: 60px;
+        height: 47px;
+        border-radius: 0
+    }
+
+    .chat_launcher:hover {
+        background: #fff;
+        height: 47px
+    }
+
+    .chat_launcher .chatContent {
+        margin-top: 5px
+    }
+
+    .chat_launcher2 {
+        position: fixed;
+        background: #fff;
+        left: 0;
+        top: initial;
+        bottom: 0;
+        width: 60px;
+        height: 47px;
+        border-radius: 0
+    }
+
+    .chat_launcher2:hover {
+        background: #fff;
+        height: 47px
+    }
+
+    .chat_launcher2 .chatContent {
+        margin-top: 5px
+    }
+
+    .chat_disabled {
+        position: fixed;
+        left: 0;
+        top: initial;
+        bottom: 0;
+        width: 60px;
+        height: 47px;
+        border-radius: 0;
+        background: #789
+    }
+
+    .chat_disabled:hover {
+        height: 47px
+    }
+
+    .chat_disabled .chatContent {
+        margin-top: 5px
+    }
+
+    .chat_disabled:hover {
+        background: #789
+    }
+
+    .chat_disabled .chatIcon {
+        align-items: center;
+        display: flex;
+        height: 47px;
+        justify-content: center;
+        margin: auto
+    }
+
+    .chat_disabled .chatContent {
+        display: none
+    }
+
+    .chat_launcher .chatContent .chat_disabled svg {
+        margin-right: 0;
+        margin-left: 0
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .shoppingCartIsExpanded .chat_disabled,.shoppingCartIsExpanded .chat_launcher,.shoppingCartIsExpanded .chat_launcher2 {
+        display:none
+    }
+}
+
+.sc-fullscreen .chat_area {
+    display: none
+}
+
+.sc-fullscreen .chat-section {
+    right: 355px!important
+}
+
+@media(max-width: 520px) {
+    .sc-fullscreen .chat-section {
+        right:0!important
+    }
+}
+
+.chat-section {
+    position: fixed;
+    width: 360px;
+    height: 400px;
+    right: 80px;
+    bottom: 0;
+    z-index: 4;
+    -webkit-box-shadow: 0 12px 34px 0 rgba(0,0,0,.175);
+    -moz-box-shadow: 0 12px 34px 0 rgba(0,0,0,.175);
+    box-shadow: 0 12px 34px 0 rgba(0,0,0,.175)
+}
+
+@media(max-width: 766px) and (min-width:520px) {
+    .chat-section {
+        bottom:48px
+    }
+}
+
+@media(max-width: 520px) {
+    .chat-section {
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: auto!important;
+        height: auto!important;
+        z-index: 5!important;
+        -webkit-border-radius: 0!important;
+        -moz-border-radius: 0!important;
+        border-radius: 0!important
+    }
+}
+
+.chat-section .chatWindowCloseBtn {
+    padding: 10px!important;
+    position: absolute!important;
+    right: 12px!important;
+    top: 10px!important;
+    transition: transform .2s ease-in-out;
+    z-index: 99;
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: #e76060;
+    border: none
+}
+
+.chat-section .chatWindowCloseBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #ff686e
+}
+
+.chat-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none
+}

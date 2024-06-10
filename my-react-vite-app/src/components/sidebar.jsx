@@ -4,7 +4,6 @@ import './css/sidebar.css';
  
 
 
-
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
