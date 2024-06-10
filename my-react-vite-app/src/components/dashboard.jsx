@@ -26,13 +26,19 @@ const Dashboard = () => {
   };
 
   const handleScroll = () => {
+    const scrollY = window.scrollY || window.pageYOffset;
     if (logoRef.current && searchBarRef.current) {
       const logoBottom = logoRef.current.getBoundingClientRect().bottom;
-      setIsSticky(window > logoBottom);
-      setIsSearchVisible(window <= logoBottom);
+      setIsSticky(scrollY > logoBottom);
+      if (scrollY === 0) {
+        setIsSearchVisible(true); 
+      }
+      else{
+        setIsSearchVisible(scrollY <= logoBottom && scrollY !== 0); 
+      }
     }
   };
-
+  
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -115,7 +121,7 @@ const Dashboard = () => {
         {isSidebarOpen && <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />}
 
       </header>
-      <div className='compress' style={{ width: isSidebarOpen ? '100%' : '100%', marginLeft: isSidebarOpen ? '12.5%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
+      <div className='compress' style={{ width: isSidebarOpen ? '98%' : '100%', marginLeft: isSidebarOpen ? '12%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
         <div className="landingBanner" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-501/Default/stores/chaldal/components/landingPage2/LandingPage/images/landingBanner.png) no-repeat center', backgroundSize: 'cover', flex: '1' }}>
           <div className="floatingSearchBar">
             <meta content="https://chaldal.com/" />
@@ -134,7 +140,6 @@ const Dashboard = () => {
           <div className="banner-image">
             <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-501/Default/stores/chaldal/components/landingPage2/LandingPage/images/imageBanner.png?q=low&amp;webp=1" alt="banner" />
           </div>
-          
         </div>
         <DeliveryInfo/>
       </div>

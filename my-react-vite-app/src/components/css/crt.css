@@ -12,7 +12,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width:1750px;
+    width:1700px;
+    padding-left: 20px;
 }
 
 #delivery-info .mainTile .categoryBox {

@@ -1430,8 +1430,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-right: 80px;
-  margin-right: 80px;
+  padding-right: 100px;
+  margin-right: 100px;
 }
 
 #footerSocial .iconContainer .icons {

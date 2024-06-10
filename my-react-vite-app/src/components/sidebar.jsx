@@ -7,7 +7,7 @@ import './css/sidebar.css';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
-    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
       <div className="Main" style={{ width: '230px', background: '#fff'}}>
           <div className="store-menu">
             <div className="store-menu-block">
@@ -70,10 +70,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </div>
           </div>
 
-
-
-
-
         <ul className="mid_menu">
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
@@ -106,10 +102,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <ul>
             <li className="unselected topLevel">
               
-              <div className="name">
-              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
-                <a href="#">Favourites</a>
-                </div>
+              <ul className="name">
+                <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
+                  <a href="#">Favourites</a>
+              </ul>
             </li>
             <li data-cid="1506" className="not-in-selection-tree unselected topLevel">
               <div className="name">
