@@ -8,7 +8,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
-import Footer from './footer/footer';
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,7 +15,12 @@ const Dashboard = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(true);
   const logoRef = useRef(null);
   const searchBarRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
 
+  const handleClick = () => {
+    setIsActive(!isActive);
+    toggleSidebar();
+};
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -41,13 +45,35 @@ const Dashboard = () => {
     <div className='dashboard-container'>
       <header className="header" ref={logoRef}>
         <div className='flex' >
-          <button className="hamburgerMenu" onClick={toggleSidebar}>
-            <svg id="noun_menu_1119465" width="23px" height="23px" viewBox="0 0 24 19.641">
-              <path id="Path_50263" data-name="Path 50263" d="M27.663,33.527H43.246a1.563,1.563,0,0,0,0-3.127H27.663a1.563,1.563,0,0,0,0,3.127Z" transform="translate(-26.1 -30.4)"></path>
-              <path id="Path_50264" data-name="Path 50264" d="M43.194,63.6H27.663a1.563,1.563,0,0,0,0,3.127H43.246a1.536,1.536,0,0,0,1.563-1.563A1.58,1.58,0,0,0,43.194,63.6Z" transform="translate(-26.1 -47.086)"></path>
-              <path id="Path_50265" data-name="Path 50265" d="M48.547,47H27.6a1.565,1.565,0,0,0,0,3.127H48.6a1.507,1.507,0,0,0,1.5-1.563A1.548,1.548,0,0,0,48.547,47Z" transform="translate(-26.1 -38.743)" ></path>
+        <button className={`hamburgerMenu ${isActive ? 'active' : ''}`}
+            onClick={handleClick}>
+            <svg
+                id="noun_menu_1119465"
+                width="23px"
+                height="23px"
+                viewBox="0 0 24 19.641"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    id="Path_50263"
+                    data-name="Path 50263"
+                    d="M27.663,33.527H43.246a1.563,1.563,0,0,0,0-3.127H27.663a1.563,1.563,0,0,0,0,3.127Z"
+                    transform="translate(-26.1 -30.4)"
+                ></path>
+                <path
+                    id="Path_50264"
+                    data-name="Path 50264"
+                    d="M43.194,63.6H27.663a1.563,1.563,0,0,0,0,3.127H43.246a1.536,1.536,0,0,0,1.563-1.563A1.58,1.58,0,0,0,43.194,63.6Z"
+                    transform="translate(-26.1 -47.086)"
+                ></path>
+                <path
+                    id="Path_50265"
+                    data-name="Path 50265"
+                    d="M48.547,47H27.6a1.565,1.565,0,0,0,0,3.127H48.6a1.507,1.507,0,0,0,1.5-1.563A1.548,1.548,0,0,0,48.547,47Z"
+                    transform="translate(-26.1 -38.743)"
+                ></path>
             </svg>
-          </button>
+        </button>
           <div className="logo " >
             <a>
               <img src={logo} className="egg chaldal_logo" alt="logo" />

@@ -3,6 +3,43 @@ import './css/Down.css';
 import FAQSection from './FAQ/FAQSection';
 
 const Down = () => {
+
+    const styles = {
+        inputGroup: {
+            fontSize: '10px',
+            border: '.5px solid #9b60e8',
+            borderRadius: '10px',
+            backgroundColor: 'white',
+            padding: '2px',
+        },
+        input: {
+            width: '285px',
+            height: '30px',
+            fontSize: '20px',
+            border: 'transparent',
+            borderRadius: '10px',
+            backgroundColor: 'white',
+            color: 'black',
+            outline: 'none',
+            transition: 'border 0.3s ease',
+        },
+        inputHover: {
+            borderColor: '#9b60e8',
+        },
+        button: {
+            height: '50px',
+            fontSize: '20px',
+            border: '.5px transparent',
+            borderRadius: '10px',
+            backgroundColor: '#9b60e8',
+            color: 'white',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s ease',
+        },
+        buttonHover: {
+            backgroundColor: '#7b40c8',
+        },
+    };
     return (
         <div>
             <section id="downloadChaldalApp" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/downloadAppBackground.png) no-repeat center', backgroundSize: 'cover' }}>
@@ -240,14 +277,27 @@ const Down = () => {
                     <section id="chaldalAppsSecond">
                         <div className="chaldalAppsContent">
                             <form>
-                                <div className="inputGroup" >
-                                    <div className="phoneNumberLoginFieldSecond">
-                                        <div className="input">
-                                            <input type="tel" value="+88" placeholder=""/>
-                                        </div>
-                                    </div>
-                                    <input type="submit" name="submit" value="Get app"/>
-                                </div>
+                            <div className="inputGroup" style={styles.inputGroup}>
+            <div className="phoneNumberLoginFieldSecond">
+                <div className="input">
+                    <input
+                        type="int"
+                        value={'+880'}
+                        style={styles.input}
+                        onMouseOver={(e) => (e.currentTarget.style.border = styles.inputHover.borderColor)}
+                        onMouseOut={(e) => (e.currentTarget.style.border = 'transparent')}
+                    />
+                    <button
+                        type="submit"
+                        style={styles.button}
+                        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = styles.buttonHover.backgroundColor)}
+                        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = styles.button.backgroundColor)}
+                    >
+                        Get App
+                    </button>
+                </div>
+            </div>
+        </div>
                             </form>
                         </div>
                     </section>
@@ -271,7 +321,7 @@ const Down = () => {
 
 
 
-                <div class="contact-section">
+    <div class="contact-section" >
     <div class="phone-number">
         <div class="wrap">
             <span>
@@ -283,13 +333,16 @@ const Down = () => {
                     </g>
                 </svg>
             </span>
+            <span>  </span>
             <span class="number">
                 <span>16710</span>
             </span>
+            <span>     </span>
         </div>
     </div>
-    <div class="email-address">
-        <span class="pre-text">or </span>
+    <div class="email-address" >
+        <span>   </span>
+        <span class="pre-text">  or  </span>
         <span class="email"><a href="mailto:support@chaldal.com">support@chaldal.com</a></span>
     </div>
 </div>

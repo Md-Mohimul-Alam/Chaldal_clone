@@ -813,118 +813,117 @@ section {
 
 
 
-
-
 #footerContainer {
   margin: auto;
-  padding: 0!important;
-  height: 100%;
-  font-size: 15px;
-  background-color: rgba(194,194,194,.2);
-  display: inline-block;
+  display: flex;
 
+  padding: 0!important;
+  height: 80%;
+  font-size: 15px;
+  background-color: rgba(194,194,194,.2)
+  
 }
 
 #footerContainer:after {
-  content: "";
+  
+  display: flex;
   clear: both
 }
 
-#footerContainer .footer-banner {
+.footer-banner {
   margin-bottom: 0!important;
   width: 100%;
   background-color: #f3f3f3;
   border: .5px solid #c2c2c2
 }
 
-#footerContainer .footer-banner:after {
+.footer-banner:after {
   content: "";
   display: block;
   clear: both
 }
 
-#footerContainer .footer-banner .banner {
+.footer-banner .banner {
   width: 100%;
   float: left;
   padding: 5px 0 5px 6.5%
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-banner .banner {
+    .footer-banner .banner {
       height:initial;
       width: 100%;
       padding-left: 0
   }
 }
 
-#footerContainer .footer-banner .banner .left-area {
+.footer-banner .banner .left-area {
   width: 25%
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-banner .banner .left-area {
+    .footer-banner .banner .left-area {
       width:100%;
       text-align: center
   }
 }
 
-#footerContainer .footer-banner .banner .left-area ul {
+.footer-banner .banner .left-area ul {
   list-style-type: none
 }
 
-#footerContainer .footer-banner .banner .left-area ul li {
+.footer-banner .banner .left-area ul li {
   margin: 5%;
   display: inline
 }
 
 @media(max-width: 300px) {
-  #footerContainer .footer-banner .banner .left-area ul li {
+    .footer-banner .banner .left-area ul li {
       display:flex;
       justify-content: center;
       flex-wrap: wrap
   }
 }
 
-#footerContainer .footer-banner .banner .left-area ul li.text {
+.footer-banner .banner .left-area ul li.text {
   font-size: 18px;
   font-weight: 700
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-banner .banner .left-area ul li.text {
+    .footer-banner .banner .left-area ul li.text {
       font-size:14px
   }
 }
 
-#footerContainer .footer-banner .banner .left-area ul li.cityText {
+.footer-banner .banner .left-area ul li.cityText {
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-banner .banner .left-area ul li.cityText {
+    .footer-banner .banner .left-area ul li.cityText {
       font-size:12px
   }
 }
 
-#footerContainer .footer-banner .banner .left-area ul li.cityText:hover {
+.footer-banner .banner .left-area ul li.cityText:hover {
   color: #ff686e
 }
-
-#footerContainer .footer-left {
-  width: 60%;
+.footer-left {
+  width: 50% !important;
   float: left;
   padding-top: 20px;
-  padding-right: 0px;
+  padding-right: 10px;
   padding-bottom: 20px;
   margin-bottom: 0;
   margin-left: auto
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-left {
-      width:100%;
+ .footer-left {
+      width: 50% !important;;
       border-right: none;
       float: none;
       padding-right: 0;
@@ -932,13 +931,13 @@ section {
   }
 }
 
-#footerContainer .footer-left .right-area {
+.footer-left .right-area {
   padding-left: 11%;
   float: left
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-left .right-area {
+    .footer-left .right-area {
       width:100%;
       text-align: center;
       font-size: 15px;
@@ -949,109 +948,110 @@ section {
   }
 }
 
-#footerContainer .footer-left .right-area ul {
+.footer-left .right-area ul {
   list-style-type: none
 }
 
-#footerContainer .footer-left .right-area ul li {
+.footer-left .right-area ul li {
   display: inline
 }
 
-#footerContainer .footer-left .right-area ul li.text {
+.footer-left .right-area ul li.text {
   font-size: 18px;
   margin-right: 5px;
   font-weight: 700
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-left .right-area ul li.text {
+    .footer-left .right-area ul li.text {
       font-size:14px
   }
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-left .right-area ul li.text {
+    .footer-left .right-area ul li.text {
       text-align:center;
       margin-right: 0
   }
 }
 
-#footerContainer .footer-left .right-area ul li.icon {
+.footer-left .right-area ul li.icon {
   padding: 5px
 }
 
-#footerContainer .footer-left .right-area ul li.icon img {
+.footer-left .right-area ul li.icon img {
   width: 35px;
   height: 35px;
   vertical-align: middle
 }
 
-#footerContainer .footer-left .right-area ul li.icon.bkash img,#footerContainer .footer-left .right-area ul li.icon.cod img {
+.footer-left .right-area ul li.icon.bkash img,  .footer-left .right-area ul li.icon.cod img {
   width: 35px;
   height: 30px
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-left .right-area ul li.icon {
+    .footer-left .right-area ul li.icon {
       padding:10px
   }
 }
 
-#footerContainer .footer-left .footerTop {
+.footer-left .footerTop {
   margin: auto auto 60px;
   max-width: 1170px
 }
 
-#footerContainer .footer-left .footerCenter {
+.footer-left .footerCenter {
   margin: auto auto 26px;
   max-width: 1170px;
   display: flex;
   flex-wrap: wrap
 }
 
-#footerContainer .footer-left .footerCenter .iconType {
+.footer-left .footerCenter .iconType {
   width: 48%;
   text-align: center
 }
 
 @media(max-width: 767px) {
-  #footerContainer .footer-left .footerCenter .iconType {
+    .footer-left .footerCenter .iconType {
       width:49%
   }
 }
 
-#footerContainer .footer-left .footerCenter .iconType .icon {
+.footer-left .footerCenter .iconType .icon {
   width: 60px;
   margin: auto
 }
 
-#footerContainer .footer-left .footerCenter .iconType .icon img {
+.footer-left .footerCenter .iconType .icon img {
   width: 100%
 }
 
-#footerContainer .footer-left .footerCenter .iconType .text {
+.footer-left .footerCenter .iconType .text {
   color: #b4b4b4
 }
 
-#footerContainer .footer-left .footerBottom {
-  margin-left: 11%;
-  max-width: 1170px;
+.footer-left .footerBottom {
+  margin-left: 9%;
+  width: 1070px;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  align-items: flex-start;
+  
 }
-
-#footerContainer .footer-left .footerBottom .list-type {
-  width: 33%
+.list-type {
+  width: 30%
 }
 
 @media(max-width: 767px) {
-  #footerContainer .footer-left .footerBottom .list-type {
-      width:100%;
+    .footer-left .footerBottom .list-type {
+      width:90%;
       margin-bottom: 30px
   }
 }
 
-#footerContainer .footer-left .footerBottom .list-type p {
+.footer-left .footerBottom .list-type p {
   width: 70%;
   font-weight: 700;
   font-size: 18px;
@@ -1059,17 +1059,17 @@ section {
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-left .footerBottom .list-type p {
-      width:100%;
+    .footer-left .footerBottom .list-type p {
+      width:95%;
       font-size: 14px
   }
 }
 
-#footerContainer .footer-left .footerBottom .list-type ul {
+.footer-left .footerBottom .list-type ul {
   list-style: none
 }
 
-#footerContainer .footer-left .footerBottom .list-type ul li {
+.footer-left .footerBottom .list-type ul li {
   padding-bottom: 10px;
   float: initial!important;
   text-align: left;
@@ -1077,43 +1077,43 @@ section {
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-left .footerBottom .list-type ul li {
+    .footer-left .footerBottom .list-type ul li {
       font-size:12px
   }
 }
 
 @media(max-width: 767px) {
-  #footerContainer .footer-left .footerBottom .list-type ul li {
+    .footer-left .footerBottom .list-type ul li {
       text-align:center
   }
 }
 
-#footerContainer .footer-left .footerBottom .list-type ul li a {
+.footer-left .footerBottom .list-type ul li a {
   text-decoration: none
 }
 
-#footerContainer .footer-left .footerBottom .list-type ul li a:hover {
+.footer-left .footerBottom .list-type ul li a:hover {
   color: #ff686e
 }
 
-#footerContainer .footer-left .footerBottom .footerNav {
+.footer-left .footerBottom .footerNav {
   width: 50%;
   display: flex;
   flex-wrap: wrap
 }
 
-#footerContainer .footer-left .footerBottom .footerNav>li {
+.footer-left .footerBottom .footerNav>li {
   width: 33.3%;
   margin-bottom: 30px
 }
 
-#footerContainer .footer-left .footerBottom .footerNav>li>a {
+.footer-left .footerBottom .footerNav>li>a {
   text-decoration: none;
   padding-bottom: 15px;
   position: relative
 }
 
-#footerContainer .footer-left .footerBottom .footerNav>li>a:after {
+.footer-left .footerBottom .footerNav>li>a:after {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -1125,22 +1125,22 @@ section {
   transition: all 300ms ease-in-out
 }
 
-#footerContainer .footer-left .footerBottom .footerNav>li>a:hover:after {
+.footer-left .footerBottom .footerNav>li>a:hover:after {
   height: 4px
 }
 
-#footerContainer .footer-left .footerBottom .footerSocial {
+.footer-left .footerBottom .footerSocial {
   width: 50%;
   display: flex;
   flex-wrap: wrap
 }
 
-#footerContainer .footer-left .footerBottom .footerSocial>li {
+.footer-left .footerBottom .footerSocial>li {
   width: 33.3%;
   font-size: 2.5em
 }
 
-#footerContainer .footer-left .footerBottom .footerSocial>li>a {
+.footer-left .footerBottom .footerSocial>li>a {
   display: block;
   margin: 7.5%;
   padding: 7.5%;
@@ -1149,158 +1149,170 @@ section {
   transition: all 300ms ease-in-out
 }
 
-#footerContainer .footer-left .footerBottom .footerSocial>li>a:hover {
+.footer-left .footerBottom .footerSocial>li>a:hover {
   color: #ff686e
 }
 
 @media screen and (max-width: 767px) {
-  #footerContainer .footer-left {
-      text-align:center
+    .footer-left {
+      text-align:center;
+      width: 50%;
   }
 
-  #footerContainer .footer-left .footerBottom {
+    .footer-left .footerBottom {
       flex-direction: row;
       flex-wrap: nowrap;
       max-width: 100%;
       margin-right: 10%
   }
 
-  #footerContainer .footer-left .footerBottom .footerNav,#footerContainer .footer-left .footerBottom .footerSocial {
+    .footer-left .footerBottom .footerNav,  .footer-left .footerBottom .footerSocial {
       width: 100%
   }
 }
 
 @media screen and (max-width: 300px) {
-  #footerContainer .footer-left {
+    .footer-left {
       text-align:center
   }
 
-  #footerContainer .footer-left .footerBottom {
+    .footer-left .footerBottom {
       flex-direction: row;
       flex-wrap: wrap
   }
 
-  #footerContainer .footer-left .footerBottom .footerNav,#footerContainer .footer-left .footerBottom .footerSocial {
+    .footer-left .footerBottom .footerNav,  .footer-left .footerBottom .footerSocial {
       width: 100%
   }
 }
 
-#footerContainer .footer-right {
-  width: 40%;
+.footer-right {
+  width: 50%;
   float: right;
-  padding-left: 10px;
-  padding-right: 70px
+  padding-left: 0px;
+  padding-right: 110px;
+  top: 0px;
+  position: relative;
+  display: contents;
+
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-right {
+    .footer-right {
       width:100%;
       border-left: none;
       float: none;
-      padding-right: 50px
+      padding-right: 10px;
+      top: 0px;
+      position: relative;
+      display: contents;
   }
 }
-blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul {
-    margin: 0;
-    padding: 0
-}
 
-#footerContainer .footer-right .mobileApp {
+
+.footer-right .mobileApp {
   display: flex;
-  margin-top: 25px
+  margin-top: 25px;
+  align-items: center;
+  justify-content:center;
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-right .mobileApp {
+    .footer-right .mobileApp {
       width:100%;
-      justify-content: center
+      align-items: flex-end;
+      justify-content: flex-end;
   }
 }
 
-#footerContainer .footer-right .app-download-section {
+.footer-right .app-download-section {
   margin-top: 3px;
   display: flex;
-  justify-content: flex-end
+  justify-content:center;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
-#footerContainer .footer-right .app-download-section .wrap {
+.footer-right .app-download-section .wrap {
   display: flex;
   float: right;
   margin: auto;
   justify-content: center
 }
 
-#footerContainer .footer-right .app-download-section .wrap .google_play_store {
+.footer-right .app-download-section .wrap .google_play_store {
   width: 100%;
   margin-right: 10px
 }
 
-#footerContainer .footer-right .app-download-section .wrap .app_store,#footerContainer .footer-right .app-download-section .wrap .google_play_store img {
+.footer-right .app-download-section .wrap .app_store,  .footer-right .app-download-section .wrap .google_play_store img {
   width: 100%
 }
 
-#footerContainer .footer-right .app-download-section .wrap .app_store img {
+.footer-right .app-download-section .wrap .app_store img {
   width: 50%
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-right .app-download-section .wrap {
+    .footer-right .app-download-section .wrap {
       float:none;
       margin: 0;
       justify-content: center
   }
 
-  #footerContainer .footer-right .app-download-section .wrap .google_play_store {
+    .footer-right .app-download-section .wrap .google_play_store {
       display: flex;
       width: 100%;
       margin: 10px;
       justify-content: right
   }
 
-  #footerContainer .footer-right .app-download-section .wrap .google_play_store img {
+    .footer-right .app-download-section .wrap .google_play_store img {
       width: 100%
   }
 
-  #footerContainer .footer-right .app-download-section .wrap .app_store {
+    .footer-right .app-download-section .wrap .app_store {
       display: flex;
       width: 100%;
       margin: 10px;
       justify-content: left
   }
 
-  #footerContainer .footer-right .app-download-section .wrap .app_store img {
+    .footer-right .app-download-section .wrap .app_store img {
       width: 100%
   }
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-right .app-download-section {
+    .footer-right .app-download-section {
       justify-content:center
   }
 }
 
-#footerContainer .footer-right .contact-section {
-  margin-bottom: 20px
+.footer-right .contact-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  white-space: pre;
 }
 
-#footerContainer .footer-right .contact-section .phone-number:after,#footerContainer .footer-right .contact-section:after {
-  content: "";
+.footer-right .contact-section .phone-number:after,  .footer-right .contact-section:after {
   display: block;
   clear: both
 }
 
-#footerContainer .footer-right .contact-section .phone-number .wrap {
+.footer-right .contact-section .phone-number .wrap {
   float: right
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-right .contact-section .phone-number .wrap {
+    .footer-right .contact-section .phone-number .wrap {
       float:none;
       text-align: center
   }
 }
 
-#footerContainer .footer-right .contact-section .phone-number .wrap .number {
+.footer-right .contact-section .phone-number .wrap .number {
   font-size: 20px;
   font-weight: 700;
   margin-left: 2px;
@@ -1308,85 +1320,85 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-right .contact-section .phone-number .wrap .number {
+    .footer-right .contact-section .phone-number .wrap .number {
       font-size:14px
   }
 }
 
-#footerContainer .footer-right .contact-section .email-address {
+.footer-right .contact-section .email-address {
   float: right;
   font-size: 18px
 }
 
 @media(max-width: 1100px) {
-  #footerContainer .footer-right .contact-section .email-address {
+    .footer-right .contact-section .email-address {
       float:none;
       text-align: center
   }
 }
 
 @media(max-width: 991px) {
-  #footerContainer .footer-right .contact-section .email-address {
+    .footer-right .contact-section .email-address {
       font-size:12px
   }
 }
 
-#footerContainer .footer-right .contact-section .email-address .pre-text {
+.footer-right .contact-section .email-address .pre-text {
   font-weight: 100;
   margin-right: 5px;
   color: #372d54
 }
 
-#footerContainer .footer-right .contact-section .email-address .email {
+.footer-right .contact-section .email-address .email {
   font-weight: 100;
   color: #372d54
 }
 
-#footerContainer .footer-right .contact-section .email-address .email a {
+.footer-right .contact-section .email-address .email a {
   text-decoration: none
 }
 
-#footerContainer .footer-right .contact-section .email-address .email a:hover {
+.footer-right .contact-section .email-address .email a:hover {
   color: #ff686e
 }
 
-#footerContainer .footer-right .social-section {
+.footer-right .social-section {
   margin-bottom: 20px
 }
 
-#footerContainer .footer-right .social-section:after {
+.footer-right .social-section:after {
   content: "";
   display: block;
   clear: both
 }
 
-#footerContainer .footer-right .social-section ul {
+.footer-right .social-section ul {
   list-style: none;
   float: right
 }
 
 @media(max-width: 980px) {
-  #footerContainer .footer-right .social-section ul {
+    .footer-right .social-section ul {
       float:none;
       text-align: center
   }
 }
 
-#footerContainer .footer-right .social-section ul li {
+.footer-right .social-section ul li {
   display: inline;
   float: initial
 }
 
-#footerContainer .footer-right .social-section ul li a {
+.footer-right .social-section ul li a {
   text-decoration: none
 }
 
-#footerContainer .footer-right .social-section ul li a img {
+.footer-right .social-section ul li a img {
   width: 40px;
   height: 40px
 }
 
-#footerContainer #footerSocial {
+#footerSocial {
   width: 100%;
   background: #fff;
   display: flex;
@@ -1401,7 +1413,7 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
   padding-right: 3%
 }
 
-#footerContainer #footerSocial .copyright-text {
+#footerSocial .copyright-text {
   font-size: 14px;
   font-weight: 500;
   float: left;
@@ -1409,36 +1421,37 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
 }
 
 @media(max-width: 480px) {
-  #footerContainer #footerSocial .copyright-text {
+    #footerSocial .copyright-text {
       font-size:11px
   }
 }
 
-#footerContainer #footerSocial .iconContainer {
+#footerSocial .iconContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 700px;
+  justify-content: flex-start;
+  padding-right: 80px;
+  margin-right: 80px;
 }
 
-#footerContainer #footerSocial .iconContainer .icons {
+#footerSocial .iconContainer .icons {
   display: flex;
   flex-wrap: wrap
 }
 
-#footerContainer #footerSocial .iconContainer .icons .icon {
+#footerSocial .iconContainer .icons .icon {
   padding: 5px;
   margin: 5px;
   border-radius: 50%;
   width: fit-content
 }
 
-#footerContainer #footerSocial .iconContainer .icons .icon img {
+#footerSocial .iconContainer .icons .icon img {
   width: 40px;
   height: 40px
 }
 
-#footerContainer #footerSocial .iconContainer .localeContainer {
+#footerSocial .iconContainer .localeContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1450,32 +1463,32 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
   cursor: pointer
 }
 
-#footerContainer #footerSocial .iconContainer .localeContainer .globeIcon {
+#footerSocial .iconContainer .localeContainer .globeIcon {
   padding-right: 5px
 }
 
-#footerContainer #footerSocial .iconContainer .localeContainer .text {
+#footerSocial .iconContainer .localeContainer .text {
   font-size: 14px;
   text-align: center;
   padding-bottom: 5%
 }
 
 @media(max-width: 767px) {
-  #footerContainer #footerSocial .iconContainer .localeContainer .text {
+    #footerSocial .iconContainer .localeContainer .text {
       font-size:11px
   }
 }
 
-#footerContainer #footerSocial .iconContainer .localeContainer .text:hover {
+#footerSocial .iconContainer .localeContainer .text:hover {
   color: #ff686e
 }
 
 @media(max-width: 900px) {
-  #footerContainer #footerSocial {
+    #footerSocial {
       width:100%
   }
 
-  #footerContainer #footerSocial .copyright-text {
+    #footerSocial .copyright-text {
       float: left;
       text-align: left;
       font-size: 12px;
@@ -1485,7 +1498,7 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
       width: 100%
   }
 
-  #footerContainer #footerSocial .iconContainer {
+    #footerSocial .iconContainer {
       display: flex;
       justify-content: space-between;
       padding-right: 0;
@@ -1494,12 +1507,12 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
       margin-right: 3%
   }
 
-  #footerContainer #footerSocial .iconContainer .icons {
+    #footerSocial .iconContainer .icons {
       display: flex;
       width: 60%
   }
 
-  #footerContainer #footerSocial .iconContainer .icons .icon {
+    #footerSocial .iconContainer .icons .icon {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -1508,12 +1521,12 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
       border-radius: 10px
   }
 
-  #footerContainer #footerSocial .iconContainer .icons .icon img {
+    #footerSocial .iconContainer .icons .icon img {
       width: 35px;
       height: 35px
   }
 
-  #footerContainer #footerSocial .iconContainer .localeContainer {
+    #footerSocial .iconContainer .localeContainer {
       float: right;
       justify-content: center;
       align-items: center;
@@ -1523,11 +1536,11 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
       margin: 0 5px 5px
   }
 
-  #footerContainer #footerSocial .iconContainer .localeContainer .globeIcon {
+    #footerSocial .iconContainer .localeContainer .globeIcon {
       padding-right: 5px
   }
 
-  #footerContainer #footerSocial .iconContainer .localeContainer .text {
+    #footerSocial .iconContainer .localeContainer .text {
       text-align: center;
       font-size: 10px;
       padding-bottom: 4%
@@ -1535,51 +1548,52 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
 }
 
 @media(max-width: 1450px) {
-  .sc-fullscreen #footerContainer .footer-right {
+  .sc-fullscreen   .footer-right {
       width:100%;
       padding-left: 8%
   }
 }
 
 @media(max-width: 1100px) {
-  .sc-fullscreen #footerContainer .footer-right {
+  .sc-fullscreen   .footer-right {
       width:100%;
       padding-left: 8%
   }
 }
 
 @media(max-width: 1450px) {
-  .sc-fullscreen #footerContainer .footer-right .mobileApp {
+  .sc-fullscreen   .footer-right .mobileApp {
       margin-top:0
   }
 }
 
 @media(max-width: 1450px) {
-  .sc-fullscreen #footerContainer .footer-right .app-download-section {
-      justify-content:flex-start
+  .sc-fullscreen   .footer-right .app-download-section {
+      justify-content:center;
+      align-items: center;
   }
 }
 
 @media(max-width: 1100px) {
-  .sc-fullscreen #footerContainer .footer-right .app-download-section {
+  .sc-fullscreen   .footer-right .app-download-section {
       justify-content:center!important
   }
 }
 
 @media(max-width: 1450px) {
-  .sc-fullscreen #footerContainer .footer-right .contact-section {
+  .sc-fullscreen   .footer-right .contact-section {
       display:flex
   }
 }
 
 @media(max-width: 1100px) {
-  .sc-fullscreen #footerContainer .footer-right .contact-section {
+  .sc-fullscreen   .footer-right .contact-section {
       justify-content:center
   }
 }
 
 @media(max-width: 1450px) {
-  .sc-fullscreen #footerContainer .footer-right .contact-section .phone-number {
+  .sc-fullscreen   .footer-right .contact-section .phone-number {
       display:flex;
       justify-content: flex-start;
       padding-right: 5%
@@ -1587,14 +1601,14 @@ blockquote,body,code,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,te
 }
 
 @media(max-width: 1100px) {
-  .sc-fullscreen #footerContainer .footer-right .contact-section .phone-number {
+  .sc-fullscreen   .footer-right .contact-section .phone-number {
       display:flex;
       justify-content: center
   }
 }
 
 @media(max-width: 1100px) {
-  .sc-fullscreen #footerContainer #footerSocial {
+  .sc-fullscreen   #footerSocial {
       justify-content:center;
       padding-top: 3%
   }
