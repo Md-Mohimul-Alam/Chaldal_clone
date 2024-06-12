@@ -1,10 +1,11 @@
 // sidebar.jsx
 import React from "react";
 import './css/sidebar.css';
- 
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+
   return (
     <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
       <div className="Main" style={{ width: '230px', background: '#fff'}}>
@@ -30,7 +31,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 
               </div>
             </div>
-            <div className="store-menu-block">
+            <Link  to="/Pharmacy/pharmacyDashboard" className="store-menu-block">
               <div className="store-item selected">
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 73.457 76">
                   <g data-name="Group 42412" transform="translate(24405 1908)">
@@ -46,9 +47,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </svg>
                 <h4 className="name">Pharmacy</h4>
               </div>
-            </div>
+            </Link>
             <div className="store-menu-block">
-              <div className="store-item selected">
+              <div className="store-item selected" >
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 23 23" data-reactid=".je1swuuv1e.4.0.1.0.0.2.0.0.0.$store-item-2.0">
                   <g data-name="Group 42518" transform="translate(-200 -125)">
                     <circle data-name="Ellipse 868" cx="11.5" cy="11.5" r="11.5" transform="translate(200 125)" fill="#4fb65c"></circle>
