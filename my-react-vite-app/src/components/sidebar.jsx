@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 
   return (
-    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'900px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
       <div className="Main" style={{ width: '230px', background: '#fff'}}>
           <div className="store-menu">
             <div className="store-menu-block">

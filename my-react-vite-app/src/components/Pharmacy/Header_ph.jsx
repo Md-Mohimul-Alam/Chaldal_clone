@@ -48,8 +48,10 @@ const Header_ph = () =>{
                     <img
                         className="egg chaldal_logo"
                             style={{
-                                    backgroundImage: 'url("https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/header/Header/images/logo-banglameds.png?q=low&webp=1&alpha=1")',
-                                     backgroundRepeat: 'no-repeat'
+                              width: "165px",
+
+                                    backgroundImage: 'url("https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/components/header/Header/images/logo-banglameds.png?q=low&webp=1&alpha=1")',
+                                     backgroundRepeat: 'no-repeat',
                                     }}
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     />
@@ -244,6 +246,9 @@ const Header_ph = () =>{
         </div>
     </div>
     {isSidebarOpen && <Sidebar_phr isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />}
+
+
+
 
     </div>
     );

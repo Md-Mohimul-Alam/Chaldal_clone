@@ -5,3 +5,68 @@ body {
     min-width: 320px;
     min-height: 100vh;
 }
+
+.bodyTable {
+
+    width: 100%;
+    height: inherit;
+    display: inline-block;
+}
+
+.app.catalog section.bodyTable>div {
+    height: 100%
+}
+
+.dashboard-container {
+    position: relative;
+    width: 1857px !important;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+  }
+  
+  .compress{
+    width: 100%;
+    margin-left: 0%;
+    transition: width 0.3s ease 0s, margin-left 0.3s ease 0s;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+
+  .frontPageBanners {
+    margin: 10px 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+}
+
+@media(max-width: 767px) {
+ .frontPageBanners {
+        display:block;
+        margin: 4px!important
+    }
+}
+
+@media(max-width: 1440px) and (min-width:1024px) {
+ .frontPageBanners {
+        min-height:196px;
+        min-width: 778px
+    }
+}
+
+@media(max-width: 1024px) and (min-width:800px) {
+ .frontPageBanners {
+        min-height:140px;
+        min-width: 600px
+    }
+}
+
+@media(min-width: 1440px) {
+ .frontPageBanners {
+        min-height:300px;
+        min-width: 1192px
+    }
+}
+

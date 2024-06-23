@@ -10,6 +10,8 @@ import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
 
+import Stickycart from './Sticky_chat/sticky_cart';
+
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -116,7 +118,7 @@ const Dashboard = () => {
 
       </header>
       <div className='compress' style={{ width: isSidebarOpen ? '100%' : '100%', marginLeft: isSidebarOpen ? '10%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
-        <div className="landingBanner" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-501/Default/stores/chaldal/components/landingPage2/LandingPage/images/landingBanner.png) no-repeat center', backgroundSize: 'cover', flex: '1' }}>
+        <div className="landingBanner" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-505/Default/stores/chaldal/components/landingPage2/LandingPage/images/landingBanner.png) no-repeat center', backgroundSize: 'cover', flex: '1' }}>
           <div className="floatingSearchBar">
             <meta content="https://chaldal.com/" />
             <div className="searchBarContainer">
@@ -132,12 +134,13 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="banner-image">
-            <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-501/Default/stores/chaldal/components/landingPage2/LandingPage/images/imageBanner.png?q=low&amp;webp=1" alt="banner" />
+            <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-505/Default/stores/chaldal/components/landingPage2/LandingPage/images/imageBanner.png?q=low&webp=1" alt="banner" />
           </div>
         </div>
         <DeliveryInfo/>
       </div>
-
+ 
+      <Stickycart/>
     </div>
   );
 };

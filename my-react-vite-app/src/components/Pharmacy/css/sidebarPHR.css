@@ -1,229 +1,240 @@
 @media(min-width: 767px) {
-    .menuWrapper {
-        left:0
-    }
+  .menuWrapper {
+      left:0
+  }
 }
 
 
 .menu-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap
+  position: sticky;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap
 }
 
- .menu-container .menu {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding-bottom: 10px;
-    overflow-y: auto;
-    padding-top: 10px;
-
+.menu-container .menu {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  overflow-y: auto;
+  padding-top: 20px;
+  margin-top: 30px;
+  padding-top: 20px;;
 }
 ul {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 ol, ul {
-    list-style: none;
-    color: #000;
+  list-style: none;
+  color: #000;
 
 }
 
 
 .mid_menu {
-    padding-left: 10px;
-    margin-bottom: 0px;
-    border-bottom: 1px solid #eee;
-    font-size: 12px;
-    font-weight: 200;
-    
-  }
+  padding-left: 10px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+  font-weight: 200;
   
-  .mid_menu .L_2 {
-    display: block;
-  }
-  
-  
-  .mid_menu .L_2 div.name {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-  }
-  
-  .L_2_A {
-    padding: 5px 0 5px 10px;
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    color: #000;
-    letter-spacing: 0.1px;
-  }
-
-  .name{
-    color: #000;
-  }
-
-
-
-  .level-1 {
-    display: none;
-  }
-  
-  .level-0 .selected .level-1 {
-    display: block;
-  }
-
-
-  
- .menu-container .menu::-webkit-scrollbar {
-    width: 3px
 }
 
- .menu-container .menu::-webkit-scrollbar-track {
-    background: #e6e6e6
-}
-
- .menu-container .menu::-webkit-scrollbar-thumb {
-    background: #888
-}
-
- .menu-container .menu::-webkit-scrollbar-thumb:hover {
-    background: #555
-}
-
- .menu-container .menu img.MenuItemIcons {
-    width: 20px;
-    display: inline-block;
-    vertical-align: text-bottom
-}
-
- .menu-container .menu .store-menu {
-    padding: 10px;
-    border-bottom: 1px solid #eee
-}
-
- .menu-container .menu .store-menu h4 {
-    font-size: 14px;
-    font-weight: 700;
-    padding-bottom: 5px
-}
-
- .menu-container .menu .store-menu .store-menu-block {
-    display: flex
-}
-
- .menu-container .menu .store-menu .store-menu-block .store-item {
-    background-color: #fff;
-    padding: 4px 5px;
-    min-width: 0;
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid #ff686e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-    border-radius: 5px
-}
-
- .menu-container .menu .store-menu .store-menu-block .store-item .name {
-    padding-top: 5px;
-    font-size: 11px;
-    font-weight: 600
-}
-
- .menu-container .menu .store-menu .store-menu-block   .store-item.selected {
-    background-color: white;
-    color: black
-  }
-  .menu-container .menu .store-menu .store-menu-block  .store-item:hover {
-    background-color: #ff686e;
-    color: white;
-    border-radius: 5px;
-  }
- .menu-container .menu .store-menu .store-menu-block .store-item:first-of-type {
-    margin-right: 5px
-}
-
- .menu-container .menu .store-menu .store-menu-block .store-item:last-of-type {
-    margin-left: 5px
-}
-
- .menu-container .menu .bottom-misc-menu {
-    padding-top: 10px;
-    margin-top: 10px;
-    border-top: 1px solid #eee
+.mid_menu .L_2 {
+  display: block;
 }
 
 
- .menu-container .menu .bottom-misc-menu li {
-    margin: 5px 0;
-  
-  }
-  
-  
- .menu-container .menu .bottom-misc-menu a {
-    text-decoration: none;
-    color: #000;
-    display: flex;
-    align-items: center;
-  }
+.mid_menu .L_2 div.name {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.L_2_A {
+  padding: 5px 0 5px 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: 0.1px;
+}
+
+.name{
+  color: #000;
+}
+
+
+
+.level-1 {
+  display: none;
+  margin-left: 30px;
+  border-left: 2px solid #eee;
+
+
+}
+
+.level-0 .selected .level-1 {
+  display: block;
+}
+
+
+
+.menu-container .menu::-webkit-scrollbar {
+  width: 3px
+}
+
+.menu-container .menu::-webkit-scrollbar-track {
+  background: #e6e6e6
+}
+
+.menu-container .menu::-webkit-scrollbar-thumb {
+  background: #888
+}
+
+.menu-container .menu::-webkit-scrollbar-thumb:hover {
+  background: #555
+}
+
+.menu-container .menu img.MenuItemIcons {
+  width: 20px;
+  display: inline-block;
+  vertical-align: text-bottom
+}
+
+.menu-container .menu .store-menu {
+  padding: 10px;
+  border-bottom: 1px solid #eee
+}
+
+.menu-container .menu .store-menu h4 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 5px
+}
+
+.menu-container .menu .store-menu .store-menu-block {
+  display: flex
+}
+
+.menu-container .menu .store-menu .store-menu-block .store-item {
+  background-color: #fff;
+  padding: 4px 5px;
+  min-width: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ff686e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 5px
+}
+
+.menu-container .menu .store-menu .store-menu-block .store-item .name {
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: 600
+}
+
+.menu-container .menu .store-menu .store-menu-block   .store-item.selected {
+  background-color: white;
+  color: black
+}
+.menu-container .menu .store-menu .store-menu-block  .store-item:hover {
+  background-color: #ff686e;
+  color: white;
+  border-radius: 5px;
+}
+.menu-container .menu .store-menu .store-menu-block .store-item:first-of-type {
+  margin-right: 5px
+}
+
+.menu-container .menu .store-menu .store-menu-block .store-item:last-of-type {
+  margin-left: 5px
+}
+
+.menu-container .menu .bottom-misc-menu {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-bottom: 30px;
+
+}
+
+
+.menu-container .menu .bottom-misc-menu li {
+  margin: 5px 0;
+
+}
+
+
+.menu-container .menu .bottom-misc-menu a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
 
 .quick-access-menu {
-    height: 40px;
-    width: 100%;
-    flex-shrink: 0;
-    border: 1px solid #eee;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    position: relative;
-    font-size: 13px;
-    box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
-    -webkit-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
-    -moz-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
-    clip-path: inset(-10px 0 0 0)
+  height: 40px;
+  width: 230px !important;
+  flex-shrink: 0;
+  bottom: 0px;
+  margin-bottom: 0px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  position: absolute !important;
+  font-size: 13px;
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
+  -webkit-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
+  -moz-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
+  clip-path: inset(-10px 0 0 0)
 }
 
 @media(max-width: 767px) {
-     .quick-access-menu {
-        font-size:14px;
-        margin-bottom: 15px
-    }
+   .quick-access-menu {
+      font-size:14px;
+      margin-bottom: 15px;
+      width: 230px;
+  }
 }
 
- .quick-access-menu a, .quick-access-menu div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    height: 100%
+.quick-access-menu a, .quick-access-menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%
 }
 
- .quick-access-menu a svg, .quick-access-menu div svg {
-    margin-right: 7px
+.quick-access-menu a svg, .quick-access-menu div svg {
+  margin-right: 7px
 }
 
- .quick-access-menu a:hover, .quick-access-menu div:hover {
-    background-color: #f1f1f1
+.quick-access-menu a:hover, .quick-access-menu div:hover {
+  background-color: #f1f1f1
 }
 
- .quick-access-menu .help {
-    border-right: 1px solid #eee;
-    width: 40%
+.quick-access-menu .help {
+  border-right: 1px solid #eee;
+  width: 50%
 }
 
- .quick-access-menu .complaint {
-    width: 60%;
-    cursor: pointer
+.quick-access-menu .complaint {
+  width: 50%;
+  cursor: pointer
 }
 
 
 div .name a{
-    color: #000;
-    font-family: sans-serif;
+  color: #000;
+  font-family: sans-serif;
 
 }

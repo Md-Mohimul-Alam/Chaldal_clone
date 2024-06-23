@@ -3,14 +3,16 @@
 import React from "react";
 import './css/sidebarPHR.css';
 import { Link } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
+
 
 
 const Sidebar_phr =({ isOpen, toggleSidebar })=>{
 
   return(
     <div class="headerWrapperWrapper" >
-    <div className={`menuWrapper ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'890px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
-      <div className="menu-container">
+    <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'relative',height:'970px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+      <div className="menu-container" style={{ width: '230px', background: '#fff', position: "fixed"}}>
         <div className="menu">
         <div className="store-menu">
             <Link  to="/" >
@@ -118,7 +120,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                   <a href="/pharmacy/common-conditions">Common Conditions</a>
                   <span>
                     <span>&nbsp; </span>
-                    <i className="arrow-right"></i>
+<IoIosArrowForward />
                   </span>
                 </div>
           <ul className="level-1">
@@ -127,7 +129,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                       <a href="/pharmacy/cough-cold-flu">Cough, Cold &amp; Flu</a>
                       <span>
                           <span>&nbsp; </span>
-                          <i className="arrow-right"></i>
+      <IoIosArrowForward />
                       </span>
                   </div>
             </li>
@@ -136,7 +138,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                       <a href="/pharmacy/fever-pain">Fever &amp; Pain</a>
                       <span>
                           <span>&nbsp; </span>
-                          <i className="arrow-right"></i>
+      <IoIosArrowForward />
                       </span>
                   </div>
               </li>
@@ -150,7 +152,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                       <a href="/pharmacy/eye-ear">Eye &amp; Ear</a>
                       <span>
                           <span>&nbsp; </span>
-                          <i className="arrow-right"></i>
+      <IoIosArrowForward />
                       </span>
                   </div>
               </li>
@@ -164,7 +166,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                       <a href="/pharmacy/allergy-asthma">Allergy &amp; Asthma</a>
                       <span>
                           <span>&nbsp; </span>
-                          <i className="arrow-right"></i>
+      <IoIosArrowForward />
                       </span>
                   </div>
               </li>
@@ -173,7 +175,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                       <a href="/pharmacy/blood-pressure-heart-disease">Blood Pressure &amp; Heart Disease</a>
                       <span>
                           <span>&nbsp; </span>
-                          <i className="arrow-right"></i>
+      <IoIosArrowForward />
                       </span>
                   </div>
               </li>
@@ -182,7 +184,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
                       <a href="/pharmacy/skin-hair-condition">Skin &amp; Hair Condition</a>
                       <span>
                           <span>&nbsp; </span>
-                          <i className="arrow-right"></i>
+      <IoIosArrowForward />
                       </span>
                   </div>
             </li>
@@ -259,7 +261,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
       </li>
       <li data-cid="1576" className="not-in-selection-tree unselected topLevel">
           <div className="name">
-          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103191&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&q=low&v=1&m=40&webp=1&alpha=1"/>
               <a href="/pharmacy/personal-care-1">Personal Care </a>
           </div>
       </li>
@@ -288,7 +290,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
       </li>
           <li data-cid="1570" className="not-in-selection-tree unselected topLevel">
             <div className="name">
-            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/first-aid-emergency-kits?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103185&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-accessories?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103184&q=low&v=1&m=40&webp=1&alpha=1"/>
 
               <a href="/pharmacy/first-aid-emergency-kits">First Aid &amp; Emergency Kits</a>
             </div>
@@ -307,14 +309,14 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
 
           <li className="unselected topLevel">
             <a href="#">
-              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/investIcon.svg?q=best&amp;webp=1" alt="biniyog.io" />
+              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-505/Default/components/header/CategoryMenuVertical/images/investIcon.svg?q=best&webp=1" alt="biniyog.io" />
               <span>biniyog.io</span>
             </a>
           </li>
         </ul>
  
-  
-        </div>
+
+        
       </div>
       <div className="quick-access-menu">
             <a href="#" className="help">
@@ -342,6 +344,7 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
               <span>Complaint</span>
             </div>
           </div>
+        </div>
     </div>
     </div>
   );

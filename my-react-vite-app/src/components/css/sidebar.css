@@ -202,7 +202,7 @@
 
   height: 40px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 00px;
   flex-shrink: 0;
   border: 1px solid #eee;
   background-color: #fff;
@@ -232,4 +232,27 @@
 
 .quick-access-menu .complaint span {
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .Main {
+    font-size: 8px; 
+  }
+  .store-menu {
+    flex-wrap: wrap; 
+  }
+  .store-menu Link {
+    font-size: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .Main {
+    font-size: 6px; 
+  }
+  .store-menu {
+    flex-direction: column; 
+  }
+  .store-menu Link {
+    font-size: 8px; 
+  }
 }

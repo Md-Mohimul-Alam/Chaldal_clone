@@ -58,10 +58,9 @@
 .headerWrapperWrapper .top-header .hamburgerMenu:active {
     box-shadow: inset 0 0 2px 2px rgba(0,0,0,.1)
 }
-.logo {
+img .chaldal_logo {
     background-image: url("https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/header/Header/images/logo-banglameds.png?q=low&webp=1&alpha=1");
-    width: 125px;
-    padding: 0 18px 0 12px;
+    width: 165px;
     height: 55px;
     box-sizing: content-box;
     display: -webkit-box;
