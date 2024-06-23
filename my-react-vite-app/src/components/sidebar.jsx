@@ -28,7 +28,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   </g>
                 </svg>
                 <h4 className="name">Grocery</h4>
-                
               </div>
             </div>
             <Link  to="/Pharmacy/pharmacyDashboard" className="store-menu-block">

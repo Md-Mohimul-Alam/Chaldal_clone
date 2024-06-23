@@ -1,19 +1,30 @@
-import React from "react"
+import React, {useState} from "react"
 import './css/header_ph.css';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
+import Sidebar_phr from './side_phr';
 
 
 const Header_ph = () =>{
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
+  const handleClick = () => {
+    setIsActive(!isActive);
+    toggleSidebar();
+};
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
     return(
+      <div>
         <div className='headerWrapper'>
             <div class="headerWrapperWrapper">
              <div ></div>   
              <STC_ChT/>
             <div itemScope="" itemtype="http://schema.org/WebSite" className="top-header">
-                <button className="hamburgerMenu hidden-xs">
+            <button className={`hamburgerMenu ${isActive ? 'active' : ''}`}  onClick={handleClick}>
                     <svg id="noun_menu_1119465" width="23px" height="23px" viewBox="0 0 24 19.641">
                         <path
                             id="Path_50263"
@@ -231,6 +242,9 @@ const Header_ph = () =>{
     </div>
         </div> 
         </div>
+    </div>
+    {isSidebarOpen && <Sidebar_phr isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />}
+
     </div>
     );
 

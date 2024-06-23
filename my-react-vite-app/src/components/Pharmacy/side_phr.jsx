@@ -1,6 +1,19 @@
-<div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'860px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
-      <div className="Main" style={{ width: '230px', background: '#fff'}}>
-          <div className="store-menu">
+
+
+import React from "react";
+import './css/sidebarPHR.css';
+import { Link } from 'react-router-dom';
+
+
+const Sidebar_phr =({ isOpen, toggleSidebar })=>{
+
+  return(
+    <div class="headerWrapperWrapper" >
+    <div className={`menuWrapper ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'890px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+      <div className="menu-container">
+        <div className="menu">
+        <div className="store-menu">
+            <Link  to="/" >
             <div className="store-menu-block">
               <div className="store-item selected">
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 82.068 82">
@@ -19,9 +32,9 @@
                   </g>
                 </svg>
                 <h4 className="name">Grocery</h4>
-                
               </div>
             </div>
+            </Link>
             <Link  to="/Pharmacy/pharmacyDashboard" className="store-menu-block">
               <div className="store-item selected">
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 73.457 76">
@@ -60,7 +73,7 @@
               </div>
             </div>
           </div>
-
+          
         <ul className="mid_menu">
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
@@ -89,104 +102,209 @@
           </li>
         </ul>
 
-        <aside className="sidebar">
-          <ul>
+          <ul className="favourite-menu">
             <li className="unselected topLevel">
-              
-              <ul className="name">
-                <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
-                  <a href="#">Favourites</a>
-              </ul>
-            </li>
-            <li data-cid="1506" className="not-in-selection-tree unselected topLevel">
-              <div className="name">
-              <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/summer-collection?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D155983&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-                <a href="#">Summer Collection</a>
+                <div className="name">
+                  <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-505/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1"/>
+                  <a href="/pharmacy/favourites">Favourites</a>
               </div>
             </li>
-
-            <li className="unselected topLevel">
-            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/flash-sales?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95784&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-
-              <a href="#">Flash Sales</a>
+          </ul>
+  
+          <ul className="hasSelection level-0">
+            <li data-cid="1556" className="in-selection-tree selected topLevel">
+                <div className="name"onClick="toggleDropdown(this)">
+                <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/common-conditions?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103190&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+                  <a href="/pharmacy/common-conditions">Common Conditions</a>
+                  <span>
+                    <span>&nbsp; </span>
+                    <i className="arrow-right"></i>
+                  </span>
+                </div>
+          <ul className="level-1">
+              <li data-cid="1563" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/cough-cold-flu">Cough, Cold &amp; Flu</a>
+                      <span>
+                          <span>&nbsp; </span>
+                          <i className="arrow-right"></i>
+                      </span>
+                  </div>
             </li>
-            <li className="unselected topLevel">
-            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95790&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-
-              <a href="#">Popular</a>
+            <li data-cid="1558" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/fever-pain">Fever &amp; Pain</a>
+                      <span>
+                          <span>&nbsp; </span>
+                          <i className="arrow-right"></i>
+                      </span>
+                  </div>
+              </li>
+              <li data-cid="1559" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/diabetes">Diabetes</a>
+                  </div>
+              </li>
+              <li data-cid="1560" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/eye-ear">Eye &amp; Ear</a>
+                      <span>
+                          <span>&nbsp; </span>
+                          <i className="arrow-right"></i>
+                      </span>
+                  </div>
+              </li>
+              <li data-cid="1561" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/digestive-health">Digestive Health</a>
+                  </div>
+              </li>
+              <li data-cid="1562" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/allergy-asthma">Allergy &amp; Asthma</a>
+                      <span>
+                          <span>&nbsp; </span>
+                          <i className="arrow-right"></i>
+                      </span>
+                  </div>
+              </li>
+              <li data-cid="1564" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/blood-pressure-heart-disease">Blood Pressure &amp; Heart Disease</a>
+                      <span>
+                          <span>&nbsp; </span>
+                          <i className="arrow-right"></i>
+                      </span>
+                  </div>
+              </li>
+              <li data-cid="1565" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/skin-hair-condition">Skin &amp; Hair Condition</a>
+                      <span>
+                          <span>&nbsp; </span>
+                          <i className="arrow-right"></i>
+                      </span>
+                  </div>
             </li>
-            <li className="unselected topLevel">
-            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-
-              <a href="#">Food</a>
-              
-
+              <li data-cid="1566" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/infection">Infection</a>
+                  </div>
             </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
-              <a href="#">Cleaning Supplies</a>
+              <li data-cid="1567" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/neurological-conditions">Neurological Conditions</a>
+                  </div>
             </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
-              <a href="#">Personal Care</a>
+              <li data-cid="1736" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/herbal">Herbal </a>
+                  </div>
             </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
-              <a href="#">Health & Wellness</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-              <a href="#">Baby Care</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
-              <a href="#">Home & Kitchen</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
-              <a href="#">Stationery & Office</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Pet Care</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/toys-sports?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103175&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Toys & Sports</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/beauty-makeup?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D116661&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Beauty & MakeUp</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Fashion & Lifestyle</a>
-            </li>
-            <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/vehicle-essentials?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95794&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Vehicle Essentials</a>
+              <li data-cid="1557" className="not-in-selection-tree unselected">
+                  <div className="name">
+                      <a href="/pharmacy/all-meds">All Meds</a>
+                  </div>
             </li>
           </ul>
-        </aside>
+      </li>
+      <li data-cid="1734" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/ayurvedic?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D152681&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-        <ul className="bottom-misc-menu">
+              <a href="/pharmacy/ayurvedic">Ayurvedic</a>
+          </div>
+      </li>
+      <li data-cid="1572" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/sexual-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115994&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/sexual-wellness">Sexual Wellness</a>
+          </div>
+      </li>
+      <li data-cid="1577" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/birth-control-contraceptives?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115993&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/birth-control-contraceptives">Birth Control Contraceptives</a>
+          </div>
+      </li>
+      <li data-cid="1568" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/vitamins-supplements?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103189&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/vitamins-supplements">Vitamins &amp; Supplements</a>
+              <span>
+                  <span>&nbsp; </span>
+                  <i className="arrow-right"></i>
+              </span>
+          </div>
+      </li>
+      <li data-cid="1735" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/pet-care-pharmacy?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D153454&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/pet-care-2">Pet Care - Pharmacy </a>
+          </div>
+      </li>
+      <li data-cid="1571" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-devices?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103186&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+
+              <a href="/pharmacy/medical-devices-2">Medical Devices</a>
+          </div>
+      </li>
+      <li data-cid="1573" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-accessories?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103184&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+
+              <a href="/pharmacy/medical-accessories">Medical Accessories</a>
+          </div>
+      </li>
+      <li data-cid="1576" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103191&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/personal-care-1">Personal Care </a>
+          </div>
+      </li>
+      <li data-cid="1569" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/mother-baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103187&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/mother-baby-care">Mother &amp; Baby Care</a>
+              <span>
+                  <span>&nbsp; </span>
+                  <i className="arrow-right"></i>
+              </span>
+          </div>
+      </li>
+      <li data-cid="1575" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115996&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+              <a href="/pharmacy/medical-food">Medical Food</a>
+          </div>
+      </li>
+      <li data-cid="1574" className="not-in-selection-tree unselected topLevel">
+          <div className="name">
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/discount-pharmacy?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115995&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+
+              <a href="/pharmacy/discount-pharmacy">Discount Pharmacy</a>
+          </div>
+      </li>
+          <li data-cid="1570" className="not-in-selection-tree unselected topLevel">
+            <div className="name">
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/first-aid-emergency-kits?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103185&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+
+              <a href="/pharmacy/first-aid-emergency-kits">First Aid &amp; Emergency Kits</a>
+            </div>
+          </li>
+          
+          </ul>
+  
+
+          <ul className="bottom-misc-menu">
           <li className="unselected topLevel">
             <a href="#">
               <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&amp;webp=1" alt="Premium Care" />
               <span>Premium Care</span>
             </a>
           </li>
-          <li className="unselected topLevel">
-            <a href="#">
-              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/recipe.svg?q=best&amp;webp=1" alt="Recipes" />
-              <span>Recipes</span>
-            </a>
-          </li>
+
           <li className="unselected topLevel">
             <a href="#">
               <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/investIcon.svg?q=best&amp;webp=1" alt="biniyog.io" />
@@ -195,34 +313,38 @@
           </li>
         </ul>
  
+  
         </div>
-
-        <div className="quick-access-menu">
-          <a href="#" className="help">
-            <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 512 512">
-              <path fill="url(#paint0_linear_1006_2150)" d="M256 42.666C138.24 42.666 42.667 138.24 42.667 256S138.24 469.333 256 469.333 469.333 373.76 469.333 256 373.76 42.666 256 42.666zm21.333 362.667h-42.666v-42.666h42.666v42.666zM321.493 240l-19.2 19.627C286.933 275.2 277.333 288 277.333 320h-42.666v-10.667c0-23.466 9.6-44.8 24.96-60.373l26.453-26.88c7.893-7.68 12.587-18.347 12.587-30.08 0-23.467-19.2-42.667-42.667-42.667-23.467 0-42.667 19.2-42.667 42.667h-42.666c0-47.147 38.186-85.333 85.333-85.333s85.333 38.186 85.333 85.333c0 18.773-7.68 35.84-19.84 48z"></path>
-              <defs>
-                <linearGradient id="paint0_linear_1006_2150" x1="256" x2="256" y1="42.666" y2="469.333" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#FD4A85"></stop>
-                  <stop offset="1" stopColor="#FF9D8C"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>Help</span>
-          </a>
-          <div className="complaint">
-            <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20">
-              <path fill="url(#paint0_linear_800_2512)" fillRule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
-              <defs>
-                <linearGradient id="paint0_linear_800_2512" x1="10" x2="10" y1="0" y2="20" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#FD4A85"></stop>
-                  <stop offset="1" stopColor="#FF9D8C"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>Complaint</span>
+      </div>
+      <div className="quick-access-menu">
+            <a href="#" className="help">
+              <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 512 512">
+                <path fill="url(#paint0_linear_1006_2150)" d="M256 42.666C138.24 42.666 42.667 138.24 42.667 256S138.24 469.333 256 469.333 469.333 373.76 469.333 256 373.76 42.666 256 42.666zm21.333 362.667h-42.666v-42.666h42.666v42.666zM321.493 240l-19.2 19.627C286.933 275.2 277.333 288 277.333 320h-42.666v-10.667c0-23.466 9.6-44.8 24.96-60.373l26.453-26.88c7.893-7.68 12.587-18.347 12.587-30.08 0-23.467-19.2-42.667-42.667-42.667-23.467 0-42.667 19.2-42.667 42.667h-42.666c0-47.147 38.186-85.333 85.333-85.333s85.333 38.186 85.333 85.333c0 18.773-7.68 35.84-19.84 48z"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_1006_2150" x1="256" x2="256" y1="42.666" y2="469.333" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#FD4A85"></stop>
+                    <stop offset="1" stopColor="#FF9D8C"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>Help</span>
+            </a>
+            <div className="complaint">
+              <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20">
+                <path fill="url(#paint0_linear_800_2512)" fillRule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_800_2512" x1="10" x2="10" y1="0" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#FD4A85"></stop>
+                    <stop offset="1" stopColor="#FF9D8C"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>Complaint</span>
+            </div>
           </div>
-        </div>
-
-      
     </div>
+    </div>
+  );
+
+};
+export default Sidebar_phr;

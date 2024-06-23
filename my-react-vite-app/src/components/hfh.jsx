@@ -66,7 +66,7 @@ const Delivery = () => {
                             </div>
                         </div>
                         <div id="videoContainer">
-                            <iframe src="https://www.youtube.com/embed/-Xg2kGPwePM" frameBorder="0" allowFullScreen title="video"></iframe>
+                            <iframe src="https://www.youtube.com/embed/-Xg2kGPwePM" allowFullScreen title="video"></iframe>
                         </div>
                     </div>
                 </div>

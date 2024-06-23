@@ -886,6 +886,7 @@ section {
 }
 
 .footer-banner .banner .left-area ul li.text {
+  color: #000;
   font-size: 18px;
   font-weight: 700
 }
@@ -897,6 +898,7 @@ section {
 }
 
 .footer-banner .banner .left-area ul li.cityText {
+  color: #000;
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer
@@ -957,6 +959,7 @@ section {
 }
 
 .footer-left .right-area ul li.text {
+  color: #000;
   font-size: 18px;
   margin-right: 5px;
   font-weight: 700
@@ -1052,6 +1055,7 @@ section {
 }
 
 .footer-left .footerBottom .list-type p {
+  color: #000;
   width: 70%;
   font-weight: 700;
   font-size: 18px;
@@ -1089,7 +1093,8 @@ section {
 }
 
 .footer-left .footerBottom .list-type ul li a {
-  text-decoration: none
+  text-decoration: none;
+  color: #000;
 }
 
 .footer-left .footerBottom .list-type ul li a:hover {
@@ -1414,6 +1419,7 @@ section {
 }
 
 #footerSocial .copyright-text {
+  color: black;
   font-size: 14px;
   font-weight: 500;
   float: left;
@@ -1468,6 +1474,7 @@ section {
 }
 
 #footerSocial .iconContainer .localeContainer .text {
+  color: #000;
   font-size: 14px;
   text-align: center;
   padding-bottom: 5%
@@ -1489,6 +1496,7 @@ section {
   }
 
     #footerSocial .copyright-text {
+      color: #000;
       float: left;
       text-align: left;
       font-size: 12px;
