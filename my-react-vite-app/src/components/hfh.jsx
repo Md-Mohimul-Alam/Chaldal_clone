@@ -28,7 +28,7 @@ const Delivery = () => {
                                 <p>The more you shop the more you earn - cash back, free shipping, exclusive offers and more. Discover the perks of <b>Egg Club</b> membership.</p>
                             </div>
                             <div className="imageContainer">
-                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/image.jpg?q=low&amp;webp=1" alt="Shop & Earn Points" />
+                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/image.jpg?q=low&webp=1" alt="Shop & Earn Points" />
                             </div>
                         </div>
                         <div className="container">
@@ -37,7 +37,7 @@ const Delivery = () => {
                                 <p>Stock up on your favorite groceries for less with our unbeatable deals! Don't miss out - limited stock</p>
                             </div>
                             <div className="imageContainer">
-                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/dailyDealsShopInfo.jpg?q=low&amp;webp=1" alt="Deal of the Day" />
+                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/dailyDealsShopInfo.jpg?q=low&webp=1" alt="Deal of the Day" />
                             </div>
                         </div>
                         <div className="container">
@@ -46,7 +46,7 @@ const Delivery = () => {
                                 <p>Too busy to place an order or handling order issues no need to worry as we give you option to take premium assistance.</p>
                             </div>
                             <div className="imageContainer">
-                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/premiumImage.jpg?q=low&amp;webp=1" alt="Premium Care" />
+                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/premiumImage.jpg?q=low&webp=1" alt="Premium Care" />
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Delivery = () => {
             <section id="how-to-shop">
                 <div className="wrapper">
                     <div className="container">
-                        <div id="chaldal-daily-necessities" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/dailyGrocery.png) no-repeat center', backgroundSize: 'cover', height: '300px' }}>
+                        <div id="chaldal-daily-necessities" style={{ background: "url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/dailyGrocery.png) no-repeat center", backgroundSize: 'cover', height: '300px' }}>
                             <div className="descriptionBox">
                                 <div className="label">
                                     <h3>Shop your daily necessities</h3>

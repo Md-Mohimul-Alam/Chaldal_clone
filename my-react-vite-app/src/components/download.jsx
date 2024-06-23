@@ -42,7 +42,7 @@ const Down = () => {
     };
     return (
         <div>
-            <section id="downloadChaldalApp" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/downloadAppBackground.png) no-repeat center', backgroundSize: 'cover' }}>
+            <section id="downloadChaldalApp" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/downloadAppBackground.png) no-repeat center', backgroundSize: 'cover' }}>
             <div className='wrapper'>
                 <div className="downloadAppContainer">
                     <div className="downloadApp" >
@@ -75,7 +75,7 @@ const Down = () => {
                     </div>
 
                     <div className="imageContainer">
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/downloadApp.png?q=low&amp;webp=1" alt="Download App"/></div>
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/downloadApp.png?q=low&webp=1" alt="Download App"/></div>
                     </div>
                     
                 </div>
@@ -193,7 +193,7 @@ const Down = () => {
             </section>
 
 
-        <div className="cityBox" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-504/Default/stores/chaldal/components/landingPage2/LandingPage/images/city-background.png) no-repeat center', backgroundSize: 'cover', height: '550px' }}>
+        <div className="cityBox" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/city-background.png) no-repeat center', backgroundSize: 'cover', height: '550px' }}>
             <div className="cityArea">                    
                 <h2>Currently Delivering in</h2>
                 <div className="deliveryCity">

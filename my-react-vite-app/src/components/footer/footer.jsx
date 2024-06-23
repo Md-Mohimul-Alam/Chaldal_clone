@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import './css/Down.css';
-import FAQSection from './FAQ/FAQSection';
 
 const Down = () => {
 
