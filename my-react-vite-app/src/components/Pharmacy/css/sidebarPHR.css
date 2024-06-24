@@ -48,6 +48,10 @@ ol, ul {
   font-weight: 200;
   
 }
+.arrow-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; 
+}
 
 .mid_menu .L_2 {
   display: block;

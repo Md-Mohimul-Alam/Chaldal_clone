@@ -1,15 +1,29 @@
 // sidebar.jsx
-import React from "react";
+import React, { useState } from "react";
 import './css/sidebar.css';
 import { Link } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  const [dropdowns, setDropdowns] = useState({});
+  const [rotation, setRotation] = useState(0);
 
+  const toggleDropdown = (cid) => {
+    setRotation(rotation + 90);
+    setDropdowns((prevDropdowns) => ({
+      ...prevDropdowns,
+      [cid]: !prevDropdowns[cid],
+    }));
+  };
   return (
-    <div className={`m1 ${isOpen ? 'open' : ''}`} style={{ position:'relative',height:'900px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
-      <div className="Main" style={{ width: '230px', background: '#fff'}}>
+    <div className="" >
+      <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'relative',height:'900px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+        <div className="menu-container" style={{ width: '230px', background: '#fff', position: "fixed"}}>
+        <div className="menu">
+
           <div className="store-menu">
+            <Link  to="/" >
             <div className="store-menu-block">
               <div className="store-item selected">
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 82.068 82">
@@ -30,6 +44,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <h4 className="name">Grocery</h4>
               </div>
             </div>
+            </Link>
             <Link  to="/Pharmacy/pharmacyDashboard" className="store-menu-block">
               <div className="store-item selected">
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 73.457 76">
@@ -98,7 +113,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         </ul>
 
         <aside className="sidebar">
-          <ul>
+          <ul className="level-0">
             <li className="unselected topLevel">
               
               <ul className="name">
@@ -118,65 +133,592 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
               <a href="#">Flash Sales</a>
             </li>
+
+
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95790&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
 
               <a href="#">Popular</a>
             </li>
+
+
+
+
+
             <li className="unselected topLevel">
+            <div className="name">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-
               <a href="#">Food</a>
+                  <span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+                  <IoIosArrowForward
+                className="arrow-icon"
+                style={{ transform: `rotate(${rotation}deg)` }}
+                onClick={(e) => { e.stopPropagation(); toggleDropdown(7); }}
+            />
+            </div>
+              {dropdowns[7] && (
+                <ul className="level-1">
+                <li data-cid="7" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/fruits-vegetables">Fruits &amp; Vegetables</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="23" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/meat-fish">Meat &amp; Fish</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="104" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/cooking">Cooking</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="1631" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/sauces-pickles">Sauces &amp; Pickles</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="58" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/dairy">Dairy &amp; Eggs</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="14" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/breakfast">Breakfast</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="51" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/candy-chocolate">Candy &amp; Chocolate</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="49" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/snacks">Snacks</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="17" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/beverages">Beverages</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="100" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/baking-needs">Baking</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="65" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/frozen-foods">Frozen &amp; Canned</a>
+                    <span>&nbsp;<i className="arrow-right"></i></span>
+                  </div>
+                </li>
+                <li data-cid="191" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/diabetic-food">Diabetic Food</a>
+                  </div>
+                </li>
+              </ul>
               
+              )}
 
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
               <a href="#">Cleaning Supplies</a>
+              <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+              <span>
+                <IoIosArrowForward
+                className="arrow-icon"
+                style={{ transform: `rotate(${rotation}deg)` }}
+                onClick={(e) => { e.stopPropagation(); toggleDropdown(83); }} />
+              </span>
+              {dropdowns[83] && (
+                <ul className="level-1">
+                <li data-cid="83" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/dish-wash">Dishwashing Supplies</a>
+                    </div>
+                </li>
+                <li data-cid="86" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/laundry">Laundry</a>
+                    </div>
+                </li>
+                <li data-cid="84" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/toilet-cleaning">Toilet Cleaners</a>
+                    </div>
+                </li>
+                <li data-cid="87" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/paper-products">Napkins &amp; Paper Products</a>
+                    </div>
+                </li>
+                <li data-cid="88" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/pest-control">Pest Control</a>
+                    </div>
+                </li>
+                <li data-cid="1542" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/floor-glass-cleaners">Floor &amp; Glass Cleaners</a>
+                    </div>
+                </li>
+                <li data-cid="1276" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/cleaning-accessories">Cleaning Accessories</a>
+                    </div>
+                </li>
+                <li data-cid="82" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/air-freshners">Air Fresheners</a>
+                    </div>
+                </li>
+                <li data-cid="90" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/trash-bags">Disposables &amp; Trash Bags</a>
+                    </div>
+                </li>
+                <li data-cid="89" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/shoe-care">Shoe Care</a>
+                    </div>
+                </li>
+                <li data-cid="1545" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/trash-bin-basket">Trash Bin &amp; Basket</a>
+                    </div>
+                </li>
+            </ul>
+            
+              )}
+
+            
             </li>
+
+
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
               <a href="#">Personal Care</a>
+              <span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+              <span>
+                <IoIosArrowForward
+                className="arrow-icon"
+                style={{ transform: `rotate(${rotation}deg)` }}
+                onClick={(e) => { e.stopPropagation(); toggleDropdown(1494); }} />
+              </span>
+              {dropdowns[1494] && (
+                <ul className="level-1">
+                <li data-cid="1494" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/female-care">Women's Care</a>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+
+                        <span>
+                          <IoIosArrowForward
+                            className="arrow-icon"
+                              style={{ transform: `rotate(${rotation}deg)` }}
+                              onClick={(e) => { e.stopPropagation(); toggleDropdown(1608); }} />
+                        </span>
+                        
+                    </div>
+                    {dropdowns[1608]&&(
+                      <ul className="level-2">
+                      <li data-cid="1608" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/womens-soaps">Women's Soaps</a>
+                          </div>
+                      </li>
+                      <li data-cid="33" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/hair-care">Hair Care</a>
+                          </div>
+                      </li>
+                      <li data-cid="1501" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/female-shampoo">Women's Shampoos &amp; Conditioners</a>
+                          </div>
+                      </li>
+                      <li data-cid="35" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/feminine-care">Feminine Care</a>
+                          </div>
+                      </li>
+                      <li data-cid="1497" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/female-moisturizer">Female Moisturizer</a>
+                          </div>
+                      </li>
+                      <li data-cid="1642" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/face-wash-scrub">Face Wash &amp; Scrub</a>
+                          </div>
+                      </li>
+                      <li data-cid="1499" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/female-deo">Female Deo</a>
+                          </div>
+                      </li>
+                      <li data-cid="1611" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/womens-perfume">Women's Perfume</a>
+                          </div>
+                      </li>
+                      <li data-cid="1610" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/womens-shower-gel">Women's Shower Gel</a>
+                          </div>
+                      </li>
+                      <li data-cid="1643" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/masks-cleansers">Masks &amp; Cleansers</a>
+                          </div>
+                      </li>
+                      <li data-cid="1644" className="not-in-selection-tree unselected">
+                          <div className="name">
+                              <a href="/serum-oil-toners">Serum, Oil &amp; Toners</a>
+                          </div>
+                      </li>
+                  </ul>
+                    )}                  
+                </li>
+                <li data-cid="1495" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/male-care">Men's Care</a>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                  <IoIosArrowForward
+                        className="arrow-icon"
+                        style={{ transform: `rotate(${rotation}deg)` }}
+                       onClick={(e) => { e.stopPropagation(); toggleDropdown(1636); }} />
+                </span>
+              </div>
+              {dropdowns[1636]&&(
+                <ul class="level-2">
+                <li data-cid="1636" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/mens-soaps">Men's Soaps</a>
+                    </div>
+                </li>
+                <li data-cid="1641" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/mens-perfume">Men's Perfume</a>
+                    </div>
+                </li>
+                <li data-cid="39" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/shampoo">Men's Shampoos &amp; Conditioners</a>
+                    </div>
+                </li>
+                <li data-cid="32" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/shaving-needs">Shaving Needs</a>
+                    </div>
+                </li>
+                <li data-cid="1468" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/beard-grooming">Beard Grooming</a>
+                    </div>
+                </li>
+                <li data-cid="31" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/deodorants">Men's Deodorants</a>
+                    </div>
+                </li>
+                <li data-cid="1640" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/razors-blades">Razors &amp; Blades</a>
+                    </div>
+                </li>
+                <li data-cid="1500" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/mens-hair-care">Men's Hair Care</a>
+                    </div>
+                </li>
+                <li data-cid="1354" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/lotion-cream">Cream &amp; Lotion</a>
+                    </div>
+                </li>
+                <li data-cid="1498" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/mens-facewash">Men's Facewash</a>
+                    </div>
+                </li>
+                <li data-cid="1639" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/mens-shower-gels">Men's Shower Gels</a>
+                    </div>
+                </li>
+            </ul>
+            
+              )}
+
+                </li>
+                <li data-cid="40" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/handwash">Handwash</a>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                          <IoIosArrowForward
+                        className="arrow-icon"
+                        style={{ transform: `rotate(${rotation}deg)` }}
+                       onClick={(e) => { e.stopPropagation(); toggleDropdown(1638); }} />
+                        </span>
+                    </div>
+                    {dropdowns[1638]&&(
+                      <ul class="level-2">
+                      <li data-cid="1638" class="not-in-selection-tree unselected">
+                          <div class="name">
+                              <a href="/liquid-handwash">Liquid Handwash</a>
+                          </div>
+                      </li>
+                      <li data-cid="1645" class="not-in-selection-tree unselected">
+                          <div class="name">
+                              <a href="/hand-sanitizer">Hand Sanitizer</a>
+                          </div>
+                      </li>
+                  </ul>
+                  
+                    )}
+                </li>
+                <li data-cid="41" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/tissue-wipes">Tissue &amp; Wipes</a>
+                    </div>
+                </li>
+                <li data-cid="1697" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/oral-care-2">Oral Care</a>
+                        <span>
+                            <span>&nbsp;</span>
+                            <i className="arrow-right"></i>
+                        </span>
+                    </div>
+                </li>
+                <li data-cid="1698" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/skin-care-2">Skin Care</a>
+                        <span>
+                            <span>&nbsp;</span>
+                            <i className="arrow-right"></i>
+                        </span>
+                    </div>
+                </li>
+                <li data-cid="190" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/talcom-powder">Talcom Powder</a>
+                    </div>
+                </li>
+                <li data-cid="1504" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/hair-color">Hair Color</a>
+                    </div>
+                </li>
+            </ul>
+            
+              )}
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
               <a href="#">Health & Wellness</a>
+              <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+              <span>
+                <IoIosArrowForward
+                className="arrow-icon"
+                style={{ transform: `rotate(${rotation}deg)` }}
+                onClick={(e) => { e.stopPropagation(); toggleDropdown(1505); }} />
+              </span>
+              {dropdowns[1505] && (
+                <ul className="level-1">
+                <li data-cid="1505" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/keto-food">Keto Food</a>
+                    </div>
+                </li>
+                <li data-cid="192" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/antiseptics">Antiseptics</a>
+                    </div>
+                </li>
+                <li data-cid="1660" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/handwash-handrub">Handwash &amp; Handrub</a>
+                    </div>
+                </li>
+                <li data-cid="232" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/herbal-products">Herbal &amp; Digestive Aids</a>
+                    </div>
+                </li>
+                <li data-cid="227" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/food-supplements">Food Supplements</a>
+                    </div>
+                </li>
+                <li data-cid="1658" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/face-masks-safety">Face Masks &amp; Safety</a>
+                    </div>
+                </li>
+                <li data-cid="47" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/family-planning">Family Planning</a>
+                    </div>
+                </li>
+                <li data-cid="1665" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/mouthwashes">Mouthwashes, Inhaler &amp; Balm</a>
+                    </div>
+                </li>
+                <li data-cid="1261" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/adult-diapers">Adult Diapers</a>
+                    </div>
+                </li>
+                <li data-cid="1666" className="not-in-selection-tree unselected">
+                    <div className="name">
+                        <a href="/medical-devices">Medical Devices</a>
+                    </div>
+                </li>
+            </ul>
+            
+              )}
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
               <a href="#">Baby Care</a>
+              <span>
+              <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+                  <IoIosArrowForward
+                className="arrow-icon"
+                style={{ transform: `rotate(${rotation}deg)` }}
+                onClick={(e) => { e.stopPropagation(); toggleDropdown(1673); }}/>
+                </span>
+          
+              {dropdowns[1673]&&(
+                <ul class="level-1">
+                <li data-cid="211" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/diapers">Diapers</a>
+                        <span>
+                        <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+                        <IoIosArrowForward
+                className="arrow-icon"
+                style={{ transform: `rotate(${rotation}deg)` }}
+                onClick={(e) => { e.stopPropagation(); toggleDropdown(1673); }}/>
+                </span>
+              </div>
+              {dropdowns[1673]&&(
+                <ul className="level-2">
+                <li data-cid="1673" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/medium-2">Medium (5-13 kg) Diapers</a>
+                  </div>
+                </li>
+                <li data-cid="1676" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/large-2">Large (10-16 kg) Diapers</a>
+                  </div>
+                </li>
+                <li data-cid="1672" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/small-2">Small (3-7 kg) Diapers</a>
+                  </div>
+                </li>
+                <li data-cid="1671" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/newborn-2">Newborn (2-5 kg) Diapers</a>
+                  </div>
+                </li>
+              </ul>
+              
+              )}
+                </li>
+                <li data-cid="216" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/fooding">Baby Food</a>
+                        <span>
+                            <span>&nbsp;</span>
+                            <i class="arrow-right"></i>
+                        </span>
+                    </div>
+                </li>
+                <li data-cid="223" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/bath-skincare">Baby Skincare</a>
+                    </div>
+                </li>
+                <li data-cid="212" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/wipes">Wipes</a>
+                    </div>
+                </li>
+                <li data-cid="1379" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/baby-oral-care">Baby Oral Care</a>
+                    </div>
+                </li>
+                <li data-cid="1483" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/newborn-essentials">Newborn Essentials</a>
+                    </div>
+                </li>
+                <li data-cid="1378" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/baby-accessories">Baby Accessories</a>
+                    </div>
+                </li>
+                <li data-cid="234" class="not-in-selection-tree unselected">
+                    <div class="name">
+                        <a href="/feeders">Feeders</a>
+                    </div>
+                </li>
+            </ul>
+            
+              )}
+
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
               <a href="#">Home & Kitchen</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
               <a href="#">Stationery & Office</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
               <a href="#">Pet Care</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/toys-sports?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103175&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/toys-sports?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103175&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
               <a href="#">Toys & Sports</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/beauty-makeup?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D116661&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/beauty-makeup?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D116661&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
               <a href="#">Beauty & MakeUp</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
               <a href="#">Fashion & Lifestyle</a>
             </li>
             <li className="unselected topLevel">
-            <img class="MenuItemIcons" src="https://chaldn.com/_mpimage/vehicle-essentials?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95794&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
+            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/vehicle-essentials?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95794&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
               <a href="#">Vehicle Essentials</a>
             </li>
           </ul>
@@ -199,14 +741,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </li>
           <li className="unselected topLevel">
             <a href="#">
-              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/investIcon.svg?q=best&amp;webp=1" alt="biniyog.io" />
+              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-505/Default/components/header/CategoryMenuVertical/images/investIcon.svg?q=best&webp=1" alt="biniyog.io" />
               <span>biniyog.io</span>
             </a>
           </li>
         </ul>
  
         </div>
-
+      </div>
         <div className="quick-access-menu">
           <a href="#" className="help">
             <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 512 512">
@@ -233,9 +775,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <span>Complaint</span>
           </div>
         </div>
-
-      
     </div>
+  </div>
   );
 };
 
