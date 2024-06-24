@@ -93,13 +93,22 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="right-area">
-                    <ul>
-                        <li className="text">Payment Methods</li>
-                        <li className="icon"><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/Amex.png?q=low&amp;webp=1&amp;alpha=1"/></li>
-                        <li className="icon"><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/mastercard.png?q=low&amp;webp=1&amp;alpha=1"/></li>
-                        <li className="icon"><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/VIsa.png?q=low&amp;webp=1&amp;alpha=1"/></li>
-                        <li className="icon bkash"><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/bkash.png?v=1&amp;q=low&amp;webp=1&amp;alpha=1"/></li>
+                <ul>
+                    <li class="text">Payment Methods</li>
+                        <li class="icon">
+                            <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/Amex.png?q=low&webp=1&alpha=1"/>
+                        </li>
+                        <li class="icon">
+                            <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/mastercard.png?q=low&webp=1&alpha=1"/>
+                        </li>
+                        <li class="icon">
+                            <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/VIsa.png?q=low&webp=1&alpha=1"/>
+                        </li>
+                        <li class="icon bkash">
+                            <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/bkash.png?v=1&q=low&webp=1&alpha=1"/>
+                            </li>
                     </ul>
+
                 </div>
             </div>
 
