@@ -66,6 +66,7 @@
     width: 65%;
     font-size: 12px;
     text-align: left;
+    color: #000;
     
 }
 
@@ -237,7 +238,8 @@
 }
 
 #product-categories .headerContainer .viewButton a {
-    text-decoration: none
+    text-decoration: none;
+    color: #e66466;
 }
 
 #product-categories .headerContainer .viewButton:hover {
@@ -247,22 +249,22 @@
 #product-categories .headerContainer .scrollLeft,#product-categories .headerContainer .scrollRight {
     position: relative;
     border-radius: 25px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 0;
     padding: 0;
     margin-top: 0;
     opacity: .8;
     z-index: 1;
-    box-shadow: 1px 1px 2px rgba(0,0,0,.3)
+    box-shadow: 1px 1px 2px rgb(255, 255, 255)
 }
-
 #product-categories .headerContainer .scrollLeft:active,#product-categories .headerContainer .scrollRight:active {
     box-shadow: none
 }
 
 #product-categories .headerContainer .scrollLeft:hover,#product-categories .headerContainer .scrollRight:hover {
-    opacity: .9
+    opacity: .9;
+    color: aliceblue;
 }
 
 #product-categories .headerContainer .scrollRight {
@@ -351,6 +353,7 @@
         background-color: #f5f5f5;
 
     }
+
 }
 
 #product-categories .mainTile .categoryContainer .categoryBox .categoryName {
@@ -362,7 +365,9 @@
 
 @media(min-width: 1200px) {
     #product-categories .mainTile .categoryContainer .categoryBox .categoryName {
-        font-size:18px
+        font-size:18px;
+        color: #000;
+        font-weight: 100;
     }
 }
 

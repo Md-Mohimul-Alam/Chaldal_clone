@@ -99,7 +99,7 @@ const DeliveryInfo = () => {
                         <a href="/fruits-vegetables">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/fruitsAndVegs.png?q=low&amp;webp=1" alt="Fruits & Vegetables" />
+                                    <img src="https://chaldn.com/_mpimage/fresh-vegetables?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D23773&q=low&v=1&m=400&webp=1" />
                                 </div>
                                 <div className="categoryName">Fruits & Vegetables</div>
                             </div>
@@ -107,7 +107,7 @@ const DeliveryInfo = () => {
                         <a href="/meat-fish">
                                 <div className="categoryBox" style={{background:'White'}}>                               
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/meatAndFish.png?q=low&amp;webp=1" alt="Meat & Fish" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/meatAndFish.png?q=low&webp=1" />
                                 </div>
                                 <div className="categoryName">Meat & Fish</div>
                             </div>
@@ -115,7 +115,7 @@ const DeliveryInfo = () => {
                         <a href="/cooking">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/cooking.png?q=low&amp;webp=1" alt="Cooking" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/cooking.png?q=low&webp=1" alt="Cooking" />
                                 </div>
                                 <div className="categoryName">Cooking</div>
                             </div>
@@ -123,7 +123,7 @@ const DeliveryInfo = () => {
                         <a href="/beverages">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/beverages.png?q=low&amp;webp=1" alt="Beverages" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/beverages.png?q=low&webp=1" alt="Beverages" />
                                 </div>
                                 <div className="categoryName">Beverages</div>
                             </div>
@@ -131,7 +131,7 @@ const DeliveryInfo = () => {
                         <a href="/cleaning">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/home-cleaning.png?q=low&amp;webp=1" alt="Home & Cleaning" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/home-cleaning.png?q=low&webp=1" alt="Home & Cleaning" />
                                 </div>
                                 <div className="categoryName">Home & Cleaning</div>
                             </div>
@@ -139,7 +139,7 @@ const DeliveryInfo = () => {
                         <a href="/pest-control">
                                 <div className="categoryBox" style={{background:'White'}}>                               
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/pest-control.png?q=low&amp;webp=1" alt="Pest Control" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/pest-control.png?q=low&webp=1" alt="Pest Control" />
                                 </div>
                                 <div className="categoryName">Pest Control</div>
                             </div>
@@ -147,7 +147,7 @@ const DeliveryInfo = () => {
                         <a href="/stationery-office">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/stationary.png?q=low&amp;webp=1" alt="Stationery & Office" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/stationary.png?q=low&webp=1" alt="Stationery & Office" />
                                 </div>
                                 <div className="categoryName">Stationery & Office</div>
                             </div>
@@ -155,7 +155,7 @@ const DeliveryInfo = () => {
                         <a href="#">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/beauty.png?q=low&amp;webp=1" alt="Beauty Products" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/beauty.png?q=low&webp=1" alt="Beauty Products" />
                                 </div>
                                 <div className="categoryName">Beauty Products</div>
                             </div>
@@ -163,7 +163,7 @@ const DeliveryInfo = () => {
                         <a href="/hygiene">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/healthCare.png?q=low&amp;webp=1" alt="Health Products" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/healthCare.png?q=low&webp=1" alt="Health Products" />
                                 </div>
                                 <div className="categoryName">Health Products</div>
                             </div>
@@ -171,7 +171,7 @@ const DeliveryInfo = () => {
                         <a href="/pet-care">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/petFood.png?q=low&amp;webp=1" alt="Pet Care" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/petFood.png?q=low&webp=1" alt="Pet Care" />
                                 </div>
                                 <div className="categoryName">Pet Care</div>
                             </div>
@@ -179,7 +179,7 @@ const DeliveryInfo = () => {
                         <a href="/kitchen-appliances">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/kitchen-appliances.png?q=low&amp;webp=1" alt="Kitchen Appliances" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/kitchen-appliances.png?q=low&webp=1" alt="Kitchen Appliances" />
                                 </div>
                                 <div className="categoryName">Kitchen Appliances</div>
                             </div>
@@ -187,7 +187,7 @@ const DeliveryInfo = () => {
                         <a href="/babycare">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/baby-care.png?q=low&amp;webp=1" alt="Baby Care" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/baby-care.png?q=low&webp=1" alt="Baby Care" />
                                 </div>
                                 <div className="categoryName">Baby Care</div>
                             </div>

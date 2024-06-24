@@ -6,7 +6,7 @@ import Sidebar_phr from './side_phr';
 
 
 const Header_ph = () =>{
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -20,10 +20,10 @@ const Header_ph = () =>{
     return(
       <div>
         <div className='headerWrapper'>
-            <div class="headerWrapperWrapper">
+            <div className="headerWrapperWrapper">
              <div ></div>   
              <STC_ChT/>
-            <div itemScope="" itemtype="http://schema.org/WebSite" className="top-header">
+            <div itemScope="" itemType="http://schema.org/WebSite" className="top-header">
             <button className={`hamburgerMenu ${isActive ? 'active' : ''}`}  onClick={handleClick}>
                     <svg id="noun_menu_1119465" width="23px" height="23px" viewBox="0 0 24 19.641">
                         <path
@@ -60,7 +60,7 @@ const Header_ph = () =>{
 
 
     <form
-      itemscope=""
+      itemScope=""
       itemProp="potentialAction"
       itemType="http://schema.org/SearchAction"
       className="searchArea hidden-xs"

@@ -86,8 +86,8 @@
 }
 
 #downloadChaldalApp .wrapper .imageContainer img {
-    width: 100%;
-    height: 100%
+    width: auto;
+    height: auto
 }
 
 @media screen and (min-width: 1800px) {

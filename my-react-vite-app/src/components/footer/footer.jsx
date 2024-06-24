@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import './css/Down.css';
+import './Footer.css';
 
-const Down = () => {
+const Footer = () => {
 
     const styles = {
         inputGroup: {
@@ -189,17 +189,17 @@ const Down = () => {
     <div className="icons">
       <div className="icon">
         <a href="https://www.facebook.com/chaldalcom">
-          <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/facebookImage.png?q=low&amp;webp=1&amp;alpha=1"/>
+          <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/facebookImage.png?q=low&webp=1&alpha=1"/>
         </a>
       </div>
       <div className="icon">
         <a href="https://twitter.com/chaldal">
-          <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/twitter.png?q=low&amp;webp=1&amp;alpha=1"/>
+          <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/twitter.png?q=low&webp=1&alpha=1"/>
         </a>
       </div>
       <div className="icon">
         <a href="https://www.instagram.com/chaldal_bd/">
-          <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-504/Default/components/shared/FooterForH4/images/instaImage.png?q=low&amp;webp=1&amp;alpha=1"/>
+          <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/instaImage.png?q=low&webp=1&alpha=1"/>
         </a>
       </div>
     </div>
@@ -222,4 +222,4 @@ const Down = () => {
     );
 };
 
-export default Down;
+export default Footer;

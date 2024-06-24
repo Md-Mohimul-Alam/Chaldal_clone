@@ -1,13 +1,21 @@
 
 
-import React from "react";
+import React, { useState } from "react";
 import './css/sidebarPHR.css';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 
 
 
-const Sidebar_phr =({ isOpen, toggleSidebar })=>{
+const Sidebar_phr = ({ isOpen, toggleSidebar }) => {
+  const [dropdowns, setDropdowns] = useState({});
+
+  const toggleDropdown = (cid) => {
+    setDropdowns((prevDropdowns) => ({
+      ...prevDropdowns,
+      [cid]: !prevDropdowns[cid],
+    }));
+  };
 
   return(
     <div class="headerWrapperWrapper" >
@@ -112,104 +120,248 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
               </div>
             </li>
           </ul>
-  
+
+          <ul className="whole">
           <ul className="hasSelection level-0">
             <li data-cid="1556" className="in-selection-tree selected topLevel">
-                <div className="name"onClick="toggleDropdown(this)">
-                <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/common-conditions?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103190&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-                  <a href="/pharmacy/common-conditions">Common Conditions</a>
+                <div className="name">
+                  <img
+                    className="MenuItemIcons"
+                    src="https://chaldn.com/_mpimage/common-conditions?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103190&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"
+                    alt="Common Conditions Icon"
+                  />
+                  <a href="#">Common Conditions </a>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+
                   <span>
-                    <span>&nbsp; </span>
-<IoIosArrowForward />
+                    <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1556); }} />
                   </span>
                 </div>
-          <ul className="level-1">
-              <li data-cid="1563" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/cough-cold-flu">Cough, Cold &amp; Flu</a>
-                      <span>
-                          <span>&nbsp; </span>
-      <IoIosArrowForward />
-                      </span>
-                  </div>
-            </li>
+                {dropdowns[1556] && (
+                  <ul className="level-1">
+                    <li data-cid="1563" className="not-in-selection-tree unselected">
+                      <div className="name">
+                        <a href="/pharmacy/cough-cold-flu">Cough, Cold &amp; Flu</a>
+                        <span>
+                        <span>&nbsp; </span>                  <span>&nbsp; </span>
+                        <span>&nbsp; </span>
+                        <span>&nbsp; </span>
+                        <span>&nbsp; </span>
+                          <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1719); }}/>
+                        </span>
+                      </div>
+                      {dropdowns[1719] && (
+                      <ul className="level-2">
+                        <li data-cid="1719" className="not-in-selection-tree unselected">
+                          <div className="name">
+                            <a href="/pharmacy/cough">Cough</a>
+                          </div>
+                        </li>
+                        <li data-cid="1720" class="not-in-selection-tree unselected">
+                          <div className="name">
+                            <a href="/pharmacy/cold-flu">Cold &amp; Flu</a>
+                          </div>
+                        </li>
+                      </ul>
+                       )}
+                    </li>
+
+
             <li data-cid="1558" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/fever-pain">Fever &amp; Pain</a>
-                      <span>
-                          <span>&nbsp; </span>
-      <IoIosArrowForward />
-                      </span>
-                  </div>
-              </li>
-              <li data-cid="1559" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/diabetes">Diabetes</a>
-                  </div>
-              </li>
-              <li data-cid="1560" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/eye-ear">Eye &amp; Ear</a>
-                      <span>
-                          <span>&nbsp; </span>
-      <IoIosArrowForward />
-                      </span>
-                  </div>
-              </li>
-              <li data-cid="1561" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/digestive-health">Digestive Health</a>
-                  </div>
-              </li>
-              <li data-cid="1562" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/allergy-asthma">Allergy &amp; Asthma</a>
-                      <span>
-                          <span>&nbsp; </span>
-      <IoIosArrowForward />
-                      </span>
-                  </div>
-              </li>
-              <li data-cid="1564" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/blood-pressure-heart-disease">Blood Pressure &amp; Heart Disease</a>
-                      <span>
-                          <span>&nbsp; </span>
-      <IoIosArrowForward />
-                      </span>
-                  </div>
-              </li>
-              <li data-cid="1565" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/skin-hair-condition">Skin &amp; Hair Condition</a>
-                      <span>
-                          <span>&nbsp; </span>
-      <IoIosArrowForward />
-                      </span>
-                  </div>
+              <div className="name">
+                <a href="/pharmacy/fever-pain">Fever &amp; Pain</a>
+                <span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp;  </span>
+
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1707); }}/>
+                </span>
+              </div>
+              {dropdowns[1707] && (
+                <ul className="level-2">
+                  <li data-cid="1707" className="not-in-selection-tree unselected">
+                    <div className="name">
+                      <a href="/pharmacy/pain">Pain</a>
+                    </div>
+                  </li>
+                  <li data-cid="1708" className="not-in-selection-tree unselected">
+                    <div className="name">
+                      <a href="/pharmacy/fever">Fever</a>
+                    </div>
+                  </li>
+                </ul>
+              )}
             </li>
-              <li data-cid="1566" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/infection">Infection</a>
-                  </div>
+            <li data-cid="1559" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/diabetes">Diabetes</a>
+              </div>
             </li>
-              <li data-cid="1567" className="not-in-selection-tree unselected">
+
+            <li data-cid="1560" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/eye-ear">Eye &amp; Ear</a>
+                <span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp;  </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1717); }}/>
+                </span>
+              </div>
+              {dropdowns[1717] && (
+                <ul className="level-2">
+                <li data-cid="1717" className="not-in-selection-tree unselected">
                   <div className="name">
-                      <a href="/pharmacy/neurological-conditions">Neurological Conditions</a>
+                    <a href="/pharmacy/eye">Eye</a>
                   </div>
+                </li>
+                <li data-cid="1718" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/ear">Ear</a>
+                  </div>
+                </li>
+              </ul>
+              
+              )}
             </li>
-              <li data-cid="1736" className="not-in-selection-tree unselected">
-                  <div className="name">
-                      <a href="/pharmacy/herbal">Herbal </a>
-                  </div>
+            <li data-cid="1561" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/digestive-health">Digestive Health</a>
+              </div>
             </li>
-              <li data-cid="1557" className="not-in-selection-tree unselected">
+            <li data-cid="1562" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/allergy-asthma">Allergy &amp; Asthma</a>
+                <span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp;  </span>                  <span>&nbsp; </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1723); }} />
+                </span>
+              </div>
+              {dropdowns[1723] && (
+                <ul className="level-2">
+                <li data-cid="1723" className="not-in-selection-tree unselected">
                   <div className="name">
-                      <a href="/pharmacy/all-meds">All Meds</a>
+                    <a href="/pharmacy/allergy">Allergy</a>
                   </div>
+                </li>
+                <li data-cid="1724" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/asthma">Asthma</a>
+                  </div>
+                </li>
+              </ul>
+              
+              )}
+
+            </li>
+            <li data-cid="1564" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/blood-pressure-heart-disease">Blood Pressure &amp; Heart Disease</a>
+                <span>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp;  </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp;  </span>
+                  <span>&nbsp; </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1721); }}/>
+                </span>
+              </div>
+              {dropdowns[1721] && (
+                <ul className="level-2">
+                <li data-cid="1721" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/blood-pressure">Blood Pressure</a>
+                  </div>
+                </li>
+                <li data-cid="1722" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/heart-disease">Heart Disease</a>
+                  </div>
+                </li>
+              </ul>
+              
+              )}
+
+
+            </li>
+            <li data-cid="1565" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/skin-hair-condition">Skin &amp; Hair Condition</a>
+                <span>
+                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1711); }}/>
+
+                </span>
+              </div>
+              {dropdowns[1711] && (
+                <ul className="level-2">
+                <li data-cid="1711" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/skin">Skin</a>
+                  </div>
+                </li>
+                <li data-cid="1712" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/hair-condition">Hair Condition</a>
+                  </div>
+                </li>
+              </ul>
+              
+              )}
+            </li>
+            <li data-cid="1566" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/infection">Infection</a>
+              </div>
+            </li>
+            <li data-cid="1567" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/neurological-conditions">Neurological Conditions</a>
+              </div>
+            </li>
+            <li data-cid="1736" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/herbal">Herbal</a>
+              </div>
+            </li>
+            <li data-cid="1557" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/all-meds">All Meds</a>
+              </div>
             </li>
           </ul>
+        )}
       </li>
+    </ul>
       <li data-cid="1734" className="not-in-selection-tree unselected topLevel">
           <div className="name">
           <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/ayurvedic?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D152681&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
@@ -234,10 +386,26 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
           <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/vitamins-supplements?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103189&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
               <a href="/pharmacy/vitamins-supplements">Vitamins &amp; Supplements</a>
               <span>
-                  <span>&nbsp; </span>
-                  <i className="arrow-right"></i>
+                  <span>&nbsp; </span><span>&nbsp; </span>
+                  <IoIosArrowForward  onClick={(e) => { e.stopPropagation(); toggleDropdown(1709); }}/>
               </span>
           </div>
+          {dropdowns[1709] && (
+            <ul className="level-1">
+            <li data-cid="1709" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/vitamins-2">Vitamins</a>
+              </div>
+            </li>
+            <li data-cid="1710" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/supplements">Supplements</a>
+              </div>
+            </li>
+          </ul>
+          
+          )}
+
       </li>
       <li data-cid="1735" className="not-in-selection-tree unselected topLevel">
           <div className="name">
@@ -262,44 +430,212 @@ const Sidebar_phr =({ isOpen, toggleSidebar })=>{
       <li data-cid="1576" className="not-in-selection-tree unselected topLevel">
           <div className="name">
           <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&q=low&v=1&m=40&webp=1&alpha=1"/>
-              <a href="/pharmacy/personal-care-1">Personal Care </a>
+              <a href="/pharmacy/personal-care-1"> Personal  Care </a>
+              <span>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                  
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>
+                  <IoIosArrowForward  onClick={(e) => { e.stopPropagation(); toggleDropdown(1494); }}/>
+              </span>
           </div>
+          {dropdowns[1494]&&(
+            <ul className="level-1">
+            <li data-cid="1494" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/female-care">Women's Care</a>
+                <span>
+                  <span>&nbsp;</span>                   <span>&nbsp; </span>                  
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                             
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                            
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>
+                  <IoIosArrowForward  onClick={(e) => { e.stopPropagation(); toggleDropdown(1501); }}/>
+                </span>
+              </div>
+              {dropdowns[1501]&&(
+                <ul className="level-2">
+                <li data-cid="1501" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/female-shampoo">Women's Shampoos & Conditioners</a>
+                  </div>
+                </li>
+                <li data-cid="35" className="not-in-selection-tree unselected">
+                  <div clasclassNames="name">
+                    <a href="#">Feminine Care</a>
+                  </div>
+                </li>
+              </ul>              
+              )}              
+
+            </li>
+            <li data-cid="1495" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/male-care">Men's Care</a>
+                <span>
+                  <span>&nbsp;</span>                   <span>&nbsp; </span>                  
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                   <span>&nbsp; </span>                  
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                    
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>               
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>
+                  <IoIosArrowForward  onClick={(e) => { e.stopPropagation(); toggleDropdown(39); }}/>
+                </span>
+              </div>
+              {dropdowns[39]&&(
+                <ul className="level-2">
+                <li data-cid="39" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/shampoo">Men's Shampoos & Conditioners</a>
+                  </div>
+                </li>
+                <li data-cid="32" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/shaving-needs">Shaving Needs</a>
+                  </div>
+                </li>
+                <li data-cid="1468" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/beard-grooming">Beard Grooming</a>
+                  </div>
+                </li>
+              </ul>
+              )}  
+            </li>
+            <li data-cid="40" className="not-in-selection-tree unselected">
+              <div class="name">
+                <a href="/pharmacy/handwash">Handwash</a>
+              </div>
+            </li>
+            <li data-cid="41" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/tissue-wipes">Tissue &amp; Wipes</a>
+              </div>
+            </li>
+          </ul>
+          )}
       </li>
       <li data-cid="1569" className="not-in-selection-tree unselected topLevel">
           <div className="name">
-          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/mother-baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103187&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-              <a href="/pharmacy/mother-baby-care">Mother &amp; Baby Care</a>
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&q=best&v=1&m=40&webp=1&alpha=1"/>
+              <a href="/pharmacy/mother-baby-care">Health  &amp; Wellness</a>
               <span>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
                   <span>&nbsp; </span>
-                  <i className="arrow-right"></i>
+                   <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(192); }}/>
               </span>
           </div>
+          {dropdowns[192]&&(
+            <ul className="level-1">
+            <li data-cid="192" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/antiseptics">Antiseptics</a>
+              </div>
+            </li>
+            <li data-cid="227" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/food-supplements">Food Supplements</a>
+              </div>
+            </li>
+            <li data-cid="47" className="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/family-planning">Family Planning</a>
+              </div>
+            </li>
+            <li data-cid="1261" className="not-in-selection-tree unselected">
+              <div class="name">
+                <a href="/pharmacy/adult-diapers">Adult Diapers</a>
+              </div>
+            </li>
+          </ul>          
+          )}
       </li>
       <li data-cid="1575" className="not-in-selection-tree unselected topLevel">
           <div className="name">
-          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115996&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-              <a href="/pharmacy/medical-food">Medical Food</a>
+          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&q=best&v=1&m=40&webp=1&alpha=1"/>
+              <a href="/pharmacy/medical-food">Baby Care</a>
+              <span>
+                  <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>                  <span>&nbsp; </span>
+                  <span>&nbsp; </span>
+                   <span>&nbsp; </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(211); }}/>
+              </span>
           </div>
+          {dropdowns[211]&&(
+            <ul class="level-1">
+            <li data-cid="211" class="not-in-selection-tree unselected">
+              <div className="name">
+                <a href="/pharmacy/diapers">Diapers</a>
+                <span>
+                  <span>&nbsp; </span>
+                  <IoIosArrowForward onClick={(e) => { e.stopPropagation(); toggleDropdown(1673); }}/>
+                </span>
+              </div>
+              {dropdowns[1673]&&(
+                <ul className="level-2">
+                <li data-cid="1673" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/medium-2">Medium (5-13 kg) Diapers</a>
+                  </div>
+                </li>
+                <li data-cid="1676" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/large-2">Large (10-16 kg) Diapers</a>
+                  </div>
+                </li>
+                <li data-cid="1672" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/small-2">Small (3-7 kg) Diapers</a>
+                  </div>
+                </li>
+                <li data-cid="1671" className="not-in-selection-tree unselected">
+                  <div className="name">
+                    <a href="/pharmacy/newborn-2">Newborn (2-5 kg) Diapers</a>
+                  </div>
+                </li>
+              </ul>
+              
+              )}
+            </li>
+            <li data-cid="223" class="not-in-selection-tree unselected">
+              <div class="name">
+                <a href="/pharmacy/bath-skincare">Baby Skincare</a>
+              </div>
+            </li>
+            <li data-cid="212" class="not-in-selection-tree unselected">
+              <div class="name">
+                <a href="/pharmacy/wipes">Wipes</a>
+              </div>
+            </li>
+            <li data-cid="1483" class="not-in-selection-tree unselected">
+              <div class="name">
+                <a href="/pharmacy/newborn-essentials">Newborn Essentials</a>
+              </div>
+            </li>
+          </ul>          
+          )}
       </li>
-      <li data-cid="1574" className="not-in-selection-tree unselected topLevel">
-          <div className="name">
-          <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/discount-pharmacy?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115995&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-
-              <a href="/pharmacy/discount-pharmacy">Discount Pharmacy</a>
-          </div>
-      </li>
-          <li data-cid="1570" className="not-in-selection-tree unselected topLevel">
-            <div className="name">
-            <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-accessories?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103184&q=low&v=1&m=40&webp=1&alpha=1"/>
-
-              <a href="/pharmacy/first-aid-emergency-kits">First Aid &amp; Emergency Kits</a>
-            </div>
-          </li>
-          
-          </ul>
+    </ul>
   
 
-          <ul className="bottom-misc-menu">
+      <ul className="bottom-misc-menu">
           <li className="unselected topLevel">
             <a href="#">
               <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&amp;webp=1" alt="Premium Care" />

@@ -10,10 +10,7 @@ const pharmacyDashboard = () =>{
     const searchBarRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
   
-    const handleClick = () => {
-      setIsActive(!isActive);
-      toggleSidebar();
-  };
+  
     const toggleSidebar = () => {
       setIsSidebarOpen(!isSidebarOpen);
     };
@@ -80,10 +77,10 @@ const pharmacyDashboard = () =>{
           </div>
           <section className="bodyWrapper">
             <div className="categoryHeader">
-              <ol className="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" className="crumb selected">
-                  <a href="/pharmacy/common-conditions" itemtype="http://schema.org/Thing" itemprop="item" id="Common Conditions" itemscope="">
-                    <span itemprop="name">Common Conditions</span>
+              <ol className="breadcrumb" itemScope="" itemType="http://schema.org/BreadcrumbList">
+                <li itemProp="itemListElement" itemScope="" itemType="http://schema.org/ListItem" className="crumb selected">
+                  <a href="/pharmacy/common-conditions" itemType="http://schema.org/Thing" itemProp="item" id="Common Conditions" itemScope="">
+                    <span itemProp="name">Common Conditions</span>
                   </a>
                 </li>
               </ol>
@@ -179,39 +176,23 @@ const pharmacyDashboard = () =>{
                     <div className="imageWrapper">
                       <img src="https://chaldn.com/_mpimage/women-health?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D106041&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Women's Health"/>
                     </div>
-                    <div className="name">Women's Health</div>
+                    <div className="name">Neurological Conditions</div>
                   </div>
                 </a>
                 <a href="/pharmacy/child-health-care" className="category">
                   <div>
                     <div className="imageWrapper">
-                      <img src="https://chaldn.com/_mpimage/child-health-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D106042&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Child Health Care"/>
+                      <img src="https://chaldn.com/_mpimage/insulin?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D152082&q=low&v=1&m=400&webp=1"/>
                     </div>
-                    <div className="name">Child Health Care</div>
+                    <div className="name">Insulin</div>
                   </div>
                 </a>
                 <a href="/pharmacy/vitamins-supplements" className="category">
                   <div>
                     <div className="imageWrapper">
-                      <img src="https://chaldn.com/_mpimage/vitamins-supplements?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D106043&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Vitamins &amp; Supplements"/>
+                      <img src="https://chaldn.com/_mpimage/herbal?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D154010&q=low&v=1&m=400&webp=1"/>
                     </div>
-                    <div className="name">Vitamins &amp; Supplements</div>
-                  </div>
-                </a>
-                <a href="/pharmacy/diet-fitness" className="category">
-                  <div>
-                    <div className="imageWrapper">
-                      <img src="https://chaldn.com/_mpimage/diet-fitness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D106044&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Diet &amp; Fitness"/>
-                    </div>
-                    <div className="name">Diet &amp; Fitness</div>
-                  </div>
-                </a>
-                <a href="/pharmacy/personal-care" className="category">
-                  <div>
-                    <div className="imageWrapper">
-                      <img src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D106045&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Personal Care"/>
-                    </div>
-                    <div className="name">Personal Care</div>
+                    <div className="name">Herbal</div>
                   </div>
                 </a>
               </div>
