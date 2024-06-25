@@ -9,7 +9,6 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
-
 import Stickycart from './Sticky_chat/sticky_cart';
 
 

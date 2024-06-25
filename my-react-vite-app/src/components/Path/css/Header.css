@@ -1,0 +1,217 @@
+.dashboard-container {
+    position: relative;
+    width: 1857px !important;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+header {
+  
+    width: 100% !important;
+    height: 67px;
+    position:fixed;
+    align-items: center;
+    top: 0;
+    box-sizing: border-box;
+    background-color: #fdd670;
+    min-width: 315px;
+    border-bottom: 1px solid #ffd670;
+    z-index: 1001;
+  }
+
+  .hamburgerMenu {
+    border: 0;
+    background: 0 0;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    height: auto;
+    outline: 0;
+    border-radius: 2px;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out
+}
+
+.hamburgerMenu:hover {
+    background-color: #ffd670
+}
+
+ .hamburgerMenu:active {
+    box-shadow: inset 0 0 2px 2px #ffd670
+}
+@media(max-width: 700px) {
+ .hamburgerMenu {
+        display:none
+    }
+}
+  .logo111{
+    width: 155px;
+    height: 45px;
+    place-items: center;
+    margin-top: 5px;
+    padding-top:5px;
+    padding-right: 10px;  }
+
+  .search_header{
+    width: 1100px;
+    position: relative;
+  }
+  .searchBarContainer{
+    margin-left:50px;
+    width:1000px;
+    position: sticky;
+  }
+  
+  .flex {
+    height: 67px;
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+  }
+  
+  .menu-button {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
+  
+  
+  .lcn {
+    position: fixed;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-end;
+    width: 87%;
+    height: 55px;
+    left: 230px;
+    top: 6px;
+  }
+  
+  .login_D {
+    width: 150px;
+    height: 55px;
+    place-items: center;
+    display: flex;
+  }
+  
+  .login .btn {
+  
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    width: 110px;
+    background: #ff686e;
+    border-bottom: 1px solid #ff4e56;
+    height: 35px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: 100ms ease-in-out
+  }
+  .login .btn:hover{
+    background:#ff4e56
+  }
+
+
+
+  .localeSwitch2 {
+    padding: 0 12px 0 10px;
+    margin-top: 16px;
+    margin-left: 0;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+  .localeSwitch2 p {
+    line-height: 22px;
+    padding: 0;
+    height: 50%;
+    margin-bottom: 3pxpx;
+    float: left;
+    font-size: 14px;
+    transition: all .1s ease-in-out;
+    cursor: pointer
+}
+
+  .localeSwitch2 p.selectedLocale2 {
+    color: #ff686e
+}
+
+  .localeSwitch2 p:first-child,  .localeSwitch2 p:last-child {
+    width: 45%;
+    font-weight: 700
+}
+
+  .localeSwitch2 p:first-child {
+    text-align: right;
+    border-left: none
+}
+
+  .localeSwitch2 p:first-child:hover {
+    color: #ff686e
+}
+
+  .localeSwitch2 p:last-child {
+    text-align: left
+}
+
+  .localeSwitch2 p:last-child:hover {
+    color: #ff686e
+}
+
+  .localeSwitch2 .localeLeftContainer {
+    padding-right: 5px
+}
+
+  .localeSwitch2 .localeRightContainer {
+    padding-left: 5px;
+    color: #000;
+}
+  
+  
+  
+  
+  .location_btn {
+    display: flex;
+    padding-left: 20px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+  }
+  
+  .location_btn :hover {
+    background-color: #eeb529;
+    color: #ff686e;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex {
+      margin-left: 5px;
+    }
+  
+    .lcn {
+      margin-left: 5px;
+    }
+  
+  }
+
+
+

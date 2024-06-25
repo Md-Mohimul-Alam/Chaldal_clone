@@ -87,12 +87,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <ul className="mid_menu">
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-              <Link className="L_2_A" to="/offers">
+              <a className="L_2_A" href="#">
                 <span>Offers</span>
                 <span className="nav-count-label offers-count">
-                <span>27</span>
+                  <span>27</span>
                 </span>
-              </Link>
+              </a>
             </div>
           </li>
           <li className="L_2">

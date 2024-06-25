@@ -1,0 +1,21 @@
+
+.app-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+}
+.Header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    align-items: stretch;
+    inset: 0px; 
+}
