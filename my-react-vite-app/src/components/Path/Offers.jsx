@@ -93,9 +93,8 @@ const Offers= () => {
         {isSidebarOpen && <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />}
 
       </header>
-        <div className='compress' style={{ width: isSidebarOpen ? '100%' : '100%', marginLeft: isSidebarOpen ? '12%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
         
-        <div class id="your-offers">
+        <div class id="your-offers"style={{ width: isSidebarOpen ? '100%' : '100%', marginLeft: isSidebarOpen ? '12%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
             <div className="filterTile">
                 <div className="filterHeader">
                     <div className="filterImg">
@@ -234,8 +233,10 @@ const Offers= () => {
 <h1 >Special Offers</h1>
 
 <ul className="offer-container">
+
+
+
   <li className="offer-item">
-    <h2>Mango Himshagor ± 50 gm 3 kg</h2>
     <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
     <div className="product">
       <div className="imageWrapper">
@@ -252,18 +253,1486 @@ const Offers= () => {
             <span>৳ </span><span>510</span>
           </div>
         </div>
-        <div className="overlay text">
-          <p className="addText">Add to Shopping Bag</p>
-          <span>
-            <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
-              <span>Details</span><span>  &gt;</span>
-            </a>
-            <div className="btnShowDetailsIcon">
-              <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
-                <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
-              </svg>
-            </div>
-          </span>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="/mango-himshagor-satkhira-50-gm-3-kg" className="btnShowDetails">
+          <span>Details</span><span>  &gt;</span>
+        </a>
+        <div className="btnShowDetailsIcon">
+          <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
+            <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
+          </svg>
+        </div>
+      </span>
+      <section className="addButtonWrapper border-radius-small">
+        <span className="fifteenMinute" id="svgIcon">
+          <svg width="22px" height="25px" style={{ display: 'inline-block', verticalAlign: 'middle' }} version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
+            <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
+          </svg>
+        </span>
+        <p className="buyText">Add to bag</p>
+      </section>
+    </div>
+  </li>
+
+  
+  <li className="offer-item">
+    <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D158759&amp;q=low&amp;v=1&amp;m=400&amp;webp=1" alt="Mango Himshagor ± 50 gm 3 kg-offer" className="offer-image"/>
+    <div className="product">
+      <div className="imageWrapper">
+        <div className="imageWrapperWrapper">
+          <img src="https://chaldn.com/_mpimage/mango-himshagor-50-gm-3-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78548&amp;q=best&amp;v=1&amp;m=400&amp;webp=1" size="400" style={{ backgroundColor: 'transparent' }} />
+        </div>
+        <div className="name">Mango Himshagor ± 50 gm</div>
+        <div className="subText">3 kg</div>
+        <div className="discountedPriceSection">
+          <div className="discountedPrice">
+            <span>৳ </span><span>399</span>
+          </div>
+          <div className="price">
+            <span>৳ </span><span>510</span>
+          </div>
         </div>
       </div>
       <span>
@@ -291,12 +1760,8 @@ const Offers= () => {
 
 
 
-
 </ul>
 </div>
-
-
-    </div>
         
 </Link>
   );

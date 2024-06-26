@@ -97,9 +97,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </li>
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-              <a className="L_2_A" href="#">
-                <span>Egg Club</span>
-              </a>
+                <Link className="L_2_A" to="/egg">
+                    <span>Egg Club</span>
+                </Link>
             </div>
           </li>
           <li className="L_2">

@@ -5,17 +5,6 @@ import Down from './download';
 const Delivery = () => {
     const categoryContainerRef = useRef(null);
 
-    const scrollLeft = () => {
-        if (categoryContainerRef.current) {
-            categoryContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-        }
-    };
-
-    const scrollRight = () => {
-        if (categoryContainerRef.current) {
-            categoryContainerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-        }
-    };
 
     return (
         <div>

@@ -7,8 +7,8 @@
 }
 
 .compress{
-  position: relative;
-  width: 100%;
+  position: F;
+  overflow-x: hidden;
 
 }
 
@@ -37,7 +37,7 @@ header {
     background-color: #fdd670;
     min-width: 315px;
     border-bottom: 1px solid #ffd670;
-    z-index: 1001;
+    z-index: 1000;
   }
 
   .hamburgerMenu {
