@@ -1,16 +1,8 @@
-@media(min-width: 767px) {
-  .menuWrapper {
-      left:0
-  }
-}
-.arrow-icon {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out; 
-}
 
 .menu-container {
   font-family: segoe ui, Helvetica, droid sans, Arial, lucida grande, tahoma, verdana, arial, sans-serif;
-  position: sticky;
+  position: relative;
+  top: 0px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -18,14 +10,14 @@
   border-right: 1px solid #ccc;
 }
 
+
 .menu-container .menu {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding-bottom: 100px;
   overflow-y: auto;
-  padding-top: 0px;;
-  margin-top: 0px;
+
 }
 .store-menu {
 
@@ -327,7 +319,7 @@ div.name a{
 
 
 .quick-access-menu {
-  height: 40px;
+  height: 50px;
   width: 230px !important;
   flex-shrink: 0;
   bottom: 0px;
@@ -337,8 +329,7 @@ div.name a{
   background-color: #fff;
   display: flex;
   align-items: center;
-  margin-top: auto;
-  position: absolute !important;
+  position: fixed !important;
   font-size: 13px;
   box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
   -webkit-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);

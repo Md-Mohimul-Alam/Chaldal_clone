@@ -10,6 +10,7 @@ import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
 import Stickycart from './Sticky_chat/sticky_cart';
+import { Link } from 'react-router-dom';
 
 
 const Dashboard = () => {
@@ -51,7 +52,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className='dashboard-container'>
+    <Link className='dashboard-container'>
       <header className="header" ref={logoRef}>
       <STC_ChT/>
         <div className='flex' >
@@ -140,7 +141,7 @@ const Dashboard = () => {
       </div>
  
       <Stickycart/>
-    </div>
+    </Link>
   );
 };
 

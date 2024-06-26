@@ -6,20 +6,19 @@ import { IoIosArrowForward } from "react-icons/io";
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
-  const [dropdowns, setDropdowns] = useState({});
-  const [rotation, setRotation] = useState(0);
-
-  const toggleDropdown = (cid) => {
-    setRotation(rotation + 90);
-    setDropdowns((prevDropdowns) => ({
-      ...prevDropdowns,
-      [cid]: !prevDropdowns[cid],
-    }));
-  };
+    const [dropdowns, setDropdowns] = useState({});
+    const [rotation, setRotation] = useState(0);
+  
+    const toggleDropdown = (cid) => {
+      setRotation(rotation + 90);
+      setDropdowns((prevDropdowns) => ({
+        ...prevDropdowns,
+        [cid]: !prevDropdowns[cid],
+      }));
+    };
   return (
-    <div className="" >
-      <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'relative',height:'900px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
-        <div className="menu-container" style={{ width: '230px', background: '#fff', position: "fixed"}}>
+      <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'absolute',height:'887px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+        <div className="menu-container" style={{ background: '#fff', position: "relative", top:'0px',paddingTop:'0px', marginTop:'0px'}}>
         <div className="menu">
 
           <div className="store-menu">
@@ -1695,7 +1694,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </div>
         </div>
     </div>
-  </div>
   );
 };
 

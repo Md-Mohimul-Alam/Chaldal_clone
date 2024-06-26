@@ -19,9 +19,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     }));
   };
   return(
-
-    <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'realative',height:'850px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
-      <div className="menu-container" style={{ width: '230px',height:'905px',background: '#fff',position:'fixed', top: '50px'}}>
+    <div class="headerWrapperWrapper" >
+    <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'relative',height:'970px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+      <div className="menu-container" style={{ width: '230px', background: '#fff', position: "fixed"}}>
         <div className="menu">
         <div className="store-menu">
             <Link  to="/" >
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <h4 className="name">Pharmacy</h4>
               </div>
             </Link>
-            <div className="store-menu-block">
+            <Link  to="/cookups/dash_Cook" className="store-menu-block">
               <div className="store-item selected" >
                 <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 23 23" data-reactid=".je1swuuv1e.4.0.1.0.0.2.0.0.0.$store-item-2.0">
                   <g data-name="Group 42518" transform="translate(-200 -125)">
@@ -82,7 +82,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </svg>
                 <h4 className="name">Cookups</h4>
               </div>
-            </div>
+            </Link>
           </div>
           
         <ul className="mid_menu">
@@ -98,7 +98,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </li>
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-                <Link className="L_2_A" to="/egg">
+                <Link className="L_2_A" to="/egg2">
                     <span>Egg Club</span>
                 </Link>
             </div>
@@ -713,7 +713,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </div>
         </div>
     </div>
-
+    </div>
   );
 
 };

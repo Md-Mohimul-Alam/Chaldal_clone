@@ -4,6 +4,8 @@ import PharmacyDashboard from './components/Pharmacy/pharmacyDashboard';
 import Dashboard from './components/dashboard';
 import CooksDash from './components/cookups/dash_Cook';
 import Offers from './components/Path/Offers'; 
+import Offers2 from './components/Path/Offers2'; 
+
 import Egg from './components/Path/egg'; 
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/Pharmacy/pharmacyDashboard" element={<PharmacyDashboard />} />
         <Route path="/cookups/dash_Cook" element={<CooksDash />} />
         <Route path="/Offers" element={<Offers />} />
+        <Route path="/Offers2" element={<Offers2 />} />
+
         <Route path="/egg" element={<Egg />} />
       </Routes>
     </Router>
