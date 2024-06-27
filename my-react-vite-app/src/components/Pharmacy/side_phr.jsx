@@ -9,14 +9,20 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [dropdowns, setDropdowns] = useState({});
-  const [rotation, setRotation] = useState(0);
+  const [rotations, setRotations] = useState({});
 
   const toggleDropdown = (cid) => {
-    setRotation(rotation + 90);
     setDropdowns((prevDropdowns) => ({
       ...prevDropdowns,
       [cid]: !prevDropdowns[cid],
     }));
+
+    if (!dropdowns[cid]) {
+      setRotations((prevRotations) => ({
+        ...prevRotations,
+        [cid]: 90,
+      }));
+    }
   };
   return(
 
@@ -98,17 +104,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </li>
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-                <Link className="L_2_A" to="/egg">
+                <Link className="L_2_A" to="/egg2">
                     <span>Egg Club</span>
                 </Link>
             </div>
           </li>
           <li className="L_2">
             <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-              <a className="L_2_A" href="#">
-                <span>Deal of the Day</span>
-                <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/DailyDeal.gif?q=best&amp;webp=1" alt="Dailydeal" />
-              </a>
+                <Link className="L_2_A" to="/Deal_P">
+                    <span>Deal of the Day</span>
+                    <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/DailyDeal.gif?q=best&amp;webp=1" alt="Dailydeal" />
+                </Link>
             </div>
           </li>
         </ul>
@@ -137,8 +143,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
                     <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1556); }} />
+                style={{ transform: `rotate(${rotations[ 1556] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleDropdown(1556); }} />
                   </span>
                 </div>
                 {dropdowns[1556] && (
@@ -151,8 +158,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         <span>&nbsp; </span>
                         <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1719); }}/>
+                style={{ transform: `rotate(${rotations[ 1719] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1719); }}/>
                         </span>
                       </div>
                       {dropdowns[1719] && (
@@ -187,8 +195,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1707); }}/>
+                style={{ transform: `rotate(${rotations[1707 ] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1707); }}/>
                 </span>
               </div>
               {dropdowns[1707] && (
@@ -228,8 +237,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp;  </span>
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1717); }}/>
+                style={{ transform: `rotate(${rotations[1717 ] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1717); }}/>
                 </span>
               </div>
               {dropdowns[1717] && (
@@ -264,8 +274,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                                    
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1723); }} />
+                style={{ transform: `rotate(${rotations[ 1723] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1723); }} />
                 </span>
               </div>
               {dropdowns[1723] && (
@@ -303,8 +314,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp; </span>
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1721); }}/>
+                style={{ transform: `rotate(${rotations[ 1721] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1721); }}/>
                 </span>
               </div>
               {dropdowns[1721] && (
@@ -332,8 +344,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp; </span>
                    <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1711); }}/>
+                style={{ transform: `rotate(${rotations[ 1711] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1711); }}/>
 
                 </span>
               </div>
@@ -404,8 +417,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp; </span>
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation();toggleDropdown(1709); }}/>
+                style={{ transform: `rotate(${rotations[ 1709] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation();toggleDropdown(1709); }}/>
               </span>
           </div>
           {dropdowns[1709] && (
@@ -459,8 +473,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                    <span>&nbsp; </span>
                    <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation();toggleDropdown(1494); }}/>
+                style={{ transform: `rotate(${rotations[ 1494] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation();toggleDropdown(1494); }}/>
               </span>
           </div>
           {dropdowns[1494]&&(
@@ -477,8 +492,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp; </span>
                    <IoIosArrowForward
                         className="arrow-icon"
-                        style={{ transform: `rotate(${rotation}deg)` }}
-                       onClick={(e) => { e.stopPropagation(); toggleDropdown(83); }} />
+                        style={{ transform: `rotate(${rotations[ 1501] || 0}deg)` }}
+
+                       onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(83); }} />
                   </span>
               </div>
               {dropdowns[1501]&&(
@@ -511,8 +527,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp; </span>
                   <IoIosArrowForward
                         className="arrow-icon"
-                        style={{ transform: `rotate(${rotation}deg)` }}
-                       onClick={(e) => { e.stopPropagation(); toggleDropdown(39); }} />
+                        style={{ transform: `rotate(${rotations[39 ] || 0}deg)` }}
+
+                       onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(39); }} />
                 </span>
               </div>
               {dropdowns[39]&&(
@@ -560,8 +577,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                    <span>&nbsp; </span>
                    <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(192); }}/>
+                style={{ transform: `rotate(${rotations[ 192] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(192); }}/>
               </span>
           </div>
           {dropdowns[192]&&(
@@ -597,8 +615,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(211); }}/>
+                style={{ transform: `rotate(${rotations[211 ] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(211); }}/>
               </span>
           </div>
           {dropdowns[211]&&(
@@ -610,8 +629,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <span>&nbsp; </span>
                   <IoIosArrowForward
                 className="arrow-icon"
-                style={{ transform: `rotate(${rotation}deg)` }}
-                onClick={(e) => { e.stopPropagation(); toggleDropdown(1673); }}/>
+                style={{ transform: `rotate(${rotations[1673 ] || 0}deg)` }}
+
+                onClick={(e) => { e.preventDefault(); e.preventDefault(); e.stopPropagation(); toggleDropdown(1673); }}/>
                 </span>
               </div>
               {dropdowns[1673]&&(

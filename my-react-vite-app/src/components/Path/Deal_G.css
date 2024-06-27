@@ -312,10 +312,9 @@
 }
 
 .faq-container {
-    width: 70%;
+    width: 50%;
     margin-right: 15px;
     margin-top: 10px;
-    color: #000;
 }
 
 @media (max-width: 992px) {
@@ -323,95 +322,16 @@
         width: 100%;
     }
 }
-
-.faq-item {
+.que{
+    background: none;
     border: 1.4px solid #e8e8e8;
-    border-left: 0;
-    border-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px 10px 15px 0;
-    cursor: pointer;
+    font-weight: 200;
 }
-
-.faq-item .query-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.faq-item .query-container .query {
-    font-size: clamp(14px, 2.5vw, 16px);
-    margin-right: 20px;
-    font-weight: 500;
-}
-
-.faq-item .query-container .transform-down {
-    transform: rotate(45deg);
-}
-
-.faq-item .query-container .transform-up {
-    transform: rotate(225deg);
-}
-
-.faq-item .answer-container {
-    color: #777;
-    font-size: clamp(12px, 2.5vw, 14px);
-    padding-top: 0;
-    line-height: 0;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.faq-item .answer-container ul {
-    list-style: disc;
-    padding-left: 40px;
-}
-
-.faq-item .answer-container li {
-    display: list-item;
-}
-
-.faq-item.selected-faq-item .query-container .query {
-    color: #302471;
-}
-
-.faq-item.selected-faq-item .answer-container {
-    padding-top: 20px;
-    opacity: 1;
-    line-height: 1.5;
-    transition: all 0.5s ease-in-out;
-}
-
-.heading-container {
-    margin-bottom: 15px;
-}
-
-.heading-container .heading {
-    font-size: 24px;
-    color: #302471;
-    font-weight: 500;
-}
-
-.faq-image-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-    height: 500px;
-}
-
-@media (max-width: 992px) {
-    .faq-image-container {
-        width: 100%;
-        height: auto;
-        margin: 30px 0;
-    }
-}
-
-.faq-image-container .faq-image {
-    max-width: 90%;
+.ans{
+    background: white;
+    border: 1.4px solid #e8e8e8;
+    border-radius: 10px;
+    color: black;
+    padding: 25px 15px 15px 15px;
+    font-weight: 400;
 }
