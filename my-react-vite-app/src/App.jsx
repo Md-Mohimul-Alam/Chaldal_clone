@@ -21,6 +21,8 @@ import Recipep from './components/Recipes_P';
 import Helpg from './components/Path/Help_G';
 import Helpp from './components/Path/Help_P';
 
+import FaqG from './components/Path/help_F_faq';
+
 
 
 
@@ -54,6 +56,8 @@ const App = () => {
 
         <Route path="/Help_G" element={<Helpg />} />
         <Route path="/Help_P" element={<Helpp />} /> 
+
+        <Route path="/help_F_faq" element={<FaqG />} />
 
       </Routes>
     </Router>

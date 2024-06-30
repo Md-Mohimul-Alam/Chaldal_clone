@@ -203,14 +203,14 @@ const DeliveryInfo = () => {
                 </div>
                 <div className="mainTile">
                     <div className="popularBrandContainer">
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/pran.png?q=low&amp;webp=1" alt="Pran" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/reckitt.png?q=low&amp;webp=1" alt="Reckitt" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/nestle.png?q=low&amp;webp=1" alt="Nestle" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/uniliver.png?q=low&amp;webp=1" alt="Unilever" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/marico.png?q=low&amp;webp=1" alt="Marico" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/godrej-seeklogo.png?q=low&amp;webp=1" alt="Godrej" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/coca-cola.png?q=low&amp;webp=1" alt="Coca-Cola" />
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-503/Default/stores/chaldal/components/landingPage2/LandingPage/images/fresh.png?q=low&amp;webp=1" alt="Fresh" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/pran.png?q=low&webp=1" alt="Pran" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/reckitt.png?q=low&webp=1" alt="Reckitt" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/nestle.png?q=low&webp=1" alt="Nestle" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/uniliver.png?q=low&webp=1" alt="Unilever" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/marico.png?q=low&webp=1" alt="Marico" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/godrej-seeklogo.png?q=low&webp=1" alt="Godrej" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/coca-cola.png?q=low&webp=1" alt="Coca-Cola" />
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/stores/chaldal/components/landingPage2/LandingPage/images/fresh.png?q=low&webp=1" alt="Fresh" />
                     </div>
                 </div>
             </section>

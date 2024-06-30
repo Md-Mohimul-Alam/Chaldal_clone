@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import './css/sidebar.css';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
+import { position } from "@chakra-ui/react";
+
+
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -21,6 +24,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         ...prevRotations,
         [cid]: 90,
       }));
+    }else{
+        setRotations((prevRotations) => ({
+            ...prevRotations,
+            [cid]: 0,
+          }));  
     }
   };
   return (
@@ -172,8 +180,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <IoIosArrowForward
                 className="arrow-icon"
                                        style={{ transform: `rotate(${rotations[12] || 0}deg)` }}
-                onClick={(e) => {e.preventDefault(); 
-    e.stopPropagation();  toggleDropdown(12); }}
+                onClick={(e) => {
+     toggleDropdown(12); }}
             />
               {dropdowns[12] && (
                 <ul className="level-2">

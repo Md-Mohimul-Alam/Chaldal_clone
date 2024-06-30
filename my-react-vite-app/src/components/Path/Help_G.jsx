@@ -105,11 +105,11 @@ const Helpg= () =>{
                                 <div className="link-section">
                                     <ul className="page-link">
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/Help">FAQ</a>
+                                            <Link  to="/help_F_faq" className="itemLinks">FAQ</Link>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links selectedLink">
-                                            <a className="itemLinks" href="/pharmacy/t/AboutUs">Our Story</a>
+                                            <Link  to="/Help_G" className="itemLinks" >Our Story</Link>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">

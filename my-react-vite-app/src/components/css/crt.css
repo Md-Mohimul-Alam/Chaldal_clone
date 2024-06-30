@@ -187,12 +187,12 @@
 
 
 #product-categories {
-    width: 1600px;
+    width: 100%;
     padding: 0;
 }
 
 #product-categories .headerContainer {
-    width: 1700px;
+    width: 1600px;
     display: flex;
     justify-content: center;
     margin: 0 2%
@@ -229,7 +229,7 @@
 }
 
 #product-categories .headerContainer .viewButton {
-    padding: 4px;
+    padding: 0px;
     margin-right: 2%;
     float: right;
     color: #ff6f71;

@@ -23,7 +23,7 @@
       height: 100%
     }
     
-    
+
 
 div.topicPage {
     margin: 0 20px;
@@ -378,17 +378,28 @@ div.topicPage .page-bg-image .link-section .page-link .links .itemLinks {
 }
 
 @media(max-width: 900px) {
-    div.topicPage .page-bg-image .link-section .page-link .selectedLink {
+    .selectedLink {
         color:#ff6f71!important
     }
 }
 
-div.topicPage .page-bg-image .link-section .page-link .selectedLink .itemUnderline {
+
+  
+  @keyframes scaleLine {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
+  div.topicPage .page-bg-image .link-section .page-link .selectedLink .itemUnderline {
     width: 50px;
     margin-left: auto;
     margin-right: auto;
     height: 2px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 !important;
     display: block;
     animation-name: scaleLine;
     animation-duration: .3s
@@ -400,3 +411,52 @@ div.topicPage .page-bg-image .link-section .page-link .selectedLink .itemUnderli
         background-color: #ff6f71
     }
 }
+
+.selectedLink .itemUnderline {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: #f1f1f1 !important;
+    display: block;
+    animation-name: scaleLine;
+    animation-duration: .3s !important;
+  }
+  
+  @keyframes scaleLine {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+/* OrderTable.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  thead tr {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  thead th, tbody td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  

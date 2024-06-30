@@ -21,6 +21,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         ...prevRotations,
         [cid]: 90,
       }));
+    }else{
+        setRotations((prevRotations) => ({
+            ...prevRotations,
+            [cid]: 0,
+          }));  
     }
   };
   return (
