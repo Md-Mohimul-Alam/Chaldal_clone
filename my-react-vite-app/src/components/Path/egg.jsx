@@ -54,9 +54,9 @@ const Egg= () => {
                     </svg>
         </button>
           <div className="logo_111 " >
-            <a>
+          <Link  to="/" >
               <img src={logo} className="egg chaldal_logo" alt="logo" />
-            </a>
+            </Link>
           </div>
 
                 <div className='search_header' style={{  top:'1px' ,paddingLeft: '30px'}}>

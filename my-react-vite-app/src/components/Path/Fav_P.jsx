@@ -1,20 +1,14 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
 import Sidebar_phr from './side_phr';
+import './css/fav.css';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'; 
 import { Link } from 'react-router-dom';
 
-import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,Box,
-  } from '@chakra-ui/react';
 
-
-
-const DealP= () => {
+const Favp= () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -26,7 +20,11 @@ const DealP= () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const handleFacebookLogin = () => {
+    console.log('Facebook login button clicked');
+  };
 
+  const [phone, setPhone] = useState('');
 
   return (
     <div className='dashboard-container'>
@@ -56,7 +54,6 @@ const DealP= () => {
                 </button>
             <div className="logo">
             <Link  to="/Pharmacy/pharmacyDashboard">
-
                     <img
                         className="egg chaldal_logo"
                             style={{
@@ -252,91 +249,93 @@ const DealP= () => {
     </div>
     {isSidebarOpen && <Sidebar_phr isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} className='off' />}
 
-    <div className="bodyTable"style={{ width: isSidebarOpen ? '100%' : '100%', marginLeft: isSidebarOpen ? '4%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
-            <div className="daily-deals">
-                <div className="daily-deals-inner-container">
-                    <div className="daily-deals-header">
-                        <div className="title">
-                            Deal of the Day
-                        </div>
-                        <div className="no-deal-message">
-                            <span>Fantastic deals every weekend!</span>
-                        </div>
-                    </div>
-                    <div className="faq-title">
-                        FAQ
-                    </div>
+      <div className="bodyTable"style={{ width: isSidebarOpen ? '100%' : '100%', marginLeft: isSidebarOpen ? '4%' : '0%', transition: 'width 0.3s ease, margin-left 0.3s ease' }}>
+      <section className="bodyTable1">
+          <div>
+              <div className="phoneNumberLogin outsideDialog authForm">
+              <div>
+              <div className="facebookLogin">
+                  <button
+                  className="facebookLoginButton loginBtn loginButton"
+                  onClick={handleFacebookLogin}
+                  >
+                  <svg
+                      width="20px"
+                      height="20px"
+                      style={{ fill: 'white', stroke: 'white', display: 'inline-block', verticalAlign: 'middle' }}
+                      viewBox="0 0 430.113 430.114"
+                  >
+                      <path
+                      id="Facebook"
+                      d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805 c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354 c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"
+                      />
+                  </svg>
+                  <div className="buttonText">
+                      <span>Sign Up or Login with <b>Facebook</b></span>
+                  </div>
+                  </button>
+              </div>
+              </div>
+        <button className="loginBtn emailLoginBtn">
+              <svg
+          style={{ display: 'inline-block', verticalAlign: 'middle' }}
+          width="25px"
+          height="25px"
+          version="1.1"
+          id="Layer_1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 491.52 491.52"
+          >
+          <rect y="85.914" style={{ fill: '#F6C358' }} width="491.52" height="319.693" />
+          <polygon style={{ fill: '#FCD462' }} points="245.76,217.258 491.52,405.604 0,405.604" />
+          <polygon style={{ fill: '#DC8744' }} points="245.76,291.673 0,85.916 491.52,85.916" />
+          <polygon style={{ fill: '#FCD462' }} points="245.76,274.261 0,85.916 491.52,85.916" />
+          </svg>
+          <span>Login with <b>Email</b></span>
+        </button>
+        <div className="orContainer">
+          <span>or</span>
+        </div>
+        <div className="loginWithPhoneMessage">PLEASE ENTER YOUR MOBILE PHONE NUMBER</div>
+
+        
+        <form className="phoneNumberInputContainer">
+        <div className="phoneNumberLoginField focused">
+          <div className='phone-i'>
+            <PhoneInput
+              value={phone}
+              onChange={(phone) => setPhone(phone)}
+            inputClass="phone-input"
+            dropdownClass="phone-dropdown"
+            placeholder='e.g. +8801672955886'
+            />
+          </div>
+          
+        </div>
+        <div className="errorContainer"></div>
+        <div className="actions">
+          <button className="loginBtn" type="submit">SIGN UP / LOGIN</button>
+        </div>
+      </form>
+
+      <div className="recaptcha">
+        <h5 className="recaptchaTxt">
+          <span>This site is protected by reCAPTCHA and the Google </span>
+            <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+            <span> and </span>
+            <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+            <span> apply.</span>
+          </h5>
+      </div>
 
 
-                    <div className="faq-outer-container">
-                        <div className="faq-container">
+        </div>
+      </div>
+    </section>
 
-                        <Accordion allowToggle >
-                            <AccordionItem style={{}}>
-                               
-                                <AccordionButton className='que'>
-                                    <Box as='span' flex='1' textAlign='left' style={{color:'black'}}>
-                                        What is 'Deal of the Day'?
-                                    </Box>
-                                    <AccordionIcon style={{color:'black'}}/>
-                                </AccordionButton>
-                               
-                                <AccordionPanel pb={4}  className='ans'>
-                                    'Deal of the Day' is a special opportunity for our customers to get a great deal! Under this program, every weekend, Chaldal offers a limited stock of selected products at special prices.<br /><br />The first 'Deal of the Day' runs from 10 PM on Thursday to 10 PM on Friday. This is followed by our 2nd 'Deal of the Day' from 10 PM on Friday to 10 PM on Saturday. To activate this offer, a minimum order value is required.<br /><br />
-                                </AccordionPanel>
-                            </AccordionItem>
-                            <br />
-                            <AccordionItem>
-                                
-                                <AccordionButton className='que'>
-                                     <Box as='span' flex='1' textAlign='left' style={{color:'black'}}>
-                                        How does it work?          
-                                    </Box>
-                                    <AccordionIcon style={{color:'black'}}/>
-                                </AccordionButton>
-                                
-                                <AccordionPanel pb={4}  className='ans'>
-                                    'Deal of the Day' is automatically activated through a minimum order value. You will not be able to avail this deal if your order value does not meet the deal's requirements.<br /><br />
-                                </AccordionPanel>
-                            </AccordionItem>
-                            <br />
-                            <AccordionItem>
-                                
-                                <AccordionButton className='que'>
-                                     <Box as='span' flex='1' textAlign='left' style={{color:'black'}}>
-                                        What is the minimum order value to activate 'Deal of the day'?
-                                    </Box>
-                                    <AccordionIcon style={{color:'black'}}/>
-                                </AccordionButton>
-                                
-                                <AccordionPanel pb={4}  className='ans'>
-                                    The minimum order value depends on the product selected by Chaldal for that specific 'Deal of the Day'.<br /><br />
-                                </AccordionPanel>
-                            </AccordionItem>
-                            
-                            <br />
-                            <AccordionItem>
-                                
-                                <AccordionButton className='que'>
-                                     <Box as='span' flex='1' textAlign='left' style={{color:'black'}}>
-                                        Is there a validity duration for 'Deal of the Day'?
-                                    </Box>
-                                    <AccordionIcon style={{color:'black'}}/>
-                                </AccordionButton>
-                                
-                                <AccordionPanel pb={4}  className='ans'>
-                                    Yes, 'Deal of the Day' is valid for 24 hours (1 day). However, you have to hurry as we only offer limited stock for 'Deal of the Day'. The deal is therefore subject to product availability and will end once products are sold out.<br /><br />
-                                </AccordionPanel>
-                            </AccordionItem>
-
-                            </Accordion>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div> 
+  </div> 
 </div>
   );
 };
-export default DealP;
+export default Favp;

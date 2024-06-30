@@ -48,7 +48,7 @@ const Offers= () => {
                     </svg>
                 </button>
             <div className="logo">
-                <a>
+                <Link  to="/Pharmacy/pharmacyDashboard">
                     <img
                         className="egg chaldal_logo"
                             style={{
@@ -59,7 +59,7 @@ const Offers= () => {
                                     }}
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     />
-                </a>
+                </Link>
             </div>
 
 

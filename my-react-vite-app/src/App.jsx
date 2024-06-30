@@ -12,6 +12,11 @@ import Egg2 from './components/Path/egg2';
 import DealG from './components/Path/Deal_G'; 
 import DealP from './components/Path/Deal_P'; 
 
+import Favp from './components/Path/Fav_P'; 
+import Favg from './components/Path/Fav_G'; 
+
+import Recipe from './components/Recipes'; 
+
 
 
 
@@ -36,6 +41,12 @@ const App = () => {
 
         <Route path="/Deal_G" element={<DealG />} />
         <Route path="/Deal_P" element={<DealP />} />
+
+        <Route path="/Fav_P" element={<Favp />} />
+        <Route path="/Fav_G" element={<Favg />} />
+
+        <Route path="/Recipes" element={<Recipe />} />
+
 
 
       </Routes>

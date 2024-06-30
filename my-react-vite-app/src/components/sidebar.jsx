@@ -124,7 +124,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               
               <ul className="name">
                 <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
-                  <a href="#">Favourites</a>
+                <Link to="/Fav_G">Favourites</Link>
               </ul>
             </li>
             <li data-cid="1506" className="not-in-selection-tree unselected topLevel">
@@ -1685,16 +1685,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
         <ul className="bottom-misc-menu">
           <li className="unselected topLevel">
-            <a href="#">
-              <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&amp;webp=1" alt="Premium Care" />
-              <span>Premium Care</span>
-            </a>
+            <Link to="/Fav_G">
+                <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&amp;webp=1" alt="Premium Care" />
+                <span>Premium Care</span>
+            </Link>
           </li>
+          
           <li className="unselected topLevel">
-            <a href="#">
+            <Link to="/Recipes">
               <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/recipe.svg?q=best&amp;webp=1" alt="Recipes" />
               <span>Recipes</span>
-            </a>
+            </Link>
           </li>
           <li className="unselected topLevel">
             <a href="#">
