@@ -16,6 +16,10 @@ import Favp from './components/Path/Fav_P';
 import Favg from './components/Path/Fav_G'; 
 
 import Recipe from './components/Recipes'; 
+import Recipep from './components/Recipes_P'; 
+
+import Helpg from './components/Path/Help_G';
+import Helpp from './components/Path/Help_P';
 
 
 
@@ -46,8 +50,10 @@ const App = () => {
         <Route path="/Fav_G" element={<Favg />} />
 
         <Route path="/Recipes" element={<Recipe />} />
+        <Route path="/Recipes_P" element={<Recipep />} />
 
-
+        <Route path="/Help_G" element={<Helpg />} />
+        <Route path="/Help_P" element={<Helpp />} /> 
 
       </Routes>
     </Router>

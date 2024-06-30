@@ -1,0 +1,402 @@
+
+@media (min-width: 768px) {
+    .everythingElseWrapper {
+            padding-top: 5px;
+        }
+    }
+    .everythingElseWrapper {
+       
+        padding-bottom: 65px;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -ms-transition: all .2s;
+        transition: all .2s;
+    }
+    section.bodyTable {
+      width: 100%;
+      height: inherit;
+      color: black;
+    }
+    
+    section.bodyTable>div {
+      height: 100%
+    }
+    
+    
+
+div.topicPage {
+    margin: 0 20px;
+    min-height: 900px
+}
+
+div.topicPage div.gpShopButton {
+    width: 208px;
+    background-color: #fd4d4f;
+    border-radius: 3%;
+    float: right;
+    margin-right: 89px;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 57px
+}
+
+div.topicPage div.gpShopButton section {
+    overflow: auto;
+    padding: 15px 25px 12px
+}
+
+div.topicPage div.gpShopButton section p {
+    color: #fff;
+    float: left;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+div.topicPage div.gpShopButton section i {
+    color: #fff;
+    float: right;
+    margin-left: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 5px
+}
+
+div.topicPage .banner img {
+    width: 100%
+}
+
+div.topicPage .banner {
+    position: relative
+}
+
+div.topicPage .banner .need-help-text-location {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+    display: flex;
+    font-size: 5vw;
+    font-weight: bolder;
+    color: #fff
+}
+
+@media screen and (min-width: 700px) and (max-width:900px) {
+    div.topicPage .banner .need-help-text-location {
+        font-size:4vw
+    }
+}
+
+div.topicPage .banner .need-help-text-location .text .help-text {
+    line-height: 25px;
+    margin-left: 40px
+}
+
+div.topicPage .banner .need-help-text-location .question-mark {
+    font-size: 8vw
+}
+
+div.topicPage div.startShoppingButtonBelow {
+    position: relative
+}
+
+div.topicPage div.startShoppingButtonBelow div.gpShopButton {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    margin-bottom: 20px
+}
+
+@media(max-width: 700px) {
+    div.topicPage div.startShoppingButtonBelow div.gpShopButton {
+        left:30%
+    }
+}
+
+@media(max-width: 500px) {
+    div.topicPage div.startShoppingButtonBelow div.gpShopButton {
+        left:20%
+    }
+}
+
+div.topicPage.isLoading div.loading {
+    margin-left: -230px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #aaa;
+    opacity: .8;
+    font-size: 60px;
+    position: fixed;
+    padding-top: 100px;
+    box-sizing: border-box;
+    z-index: 1
+}
+
+div.topicPage.isLoading div.loaded {
+    opacity: .1
+}
+
+div.topicPage h1 {
+    font-size: 23px;
+    color: #999
+}
+
+div.topicPage div.body {
+    font-size: 15px;
+    max-width: 1200px;
+    margin: auto
+}
+
+@media(max-width: 700px) {
+    div.topicPage div.body {
+        padding:0 10px
+    }
+}
+
+div.topicPage div.body img {
+    max-width: 100%
+}
+
+div.topicPage .needHelpItemBody {
+    padding-top: 20px
+}
+
+@media(max-width: 700px) {
+    div.topicPage .needHelpItemBody {
+        padding:20px 10px!important
+    }
+}
+
+div.topicPage .bodyHide {
+    display: none
+}
+
+div.topicPage strong {
+    font-weight: 700
+}
+div{
+    font-weight: 400;
+}
+div.topicPage p {
+    padding: 5px 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 22px
+}
+
+div.topicPage li {
+    font-size: 13px;
+    line-height: 22px;
+    opacity: .9;
+    list-style: disc;
+    margin-left: 15px
+}
+
+div.topicPage ul.topicLinks {
+    overflow: auto;
+    background-color: #fdd670;
+    border-radius: 2px
+}
+
+div.topicPage ul.topicLinks li {
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-right: 30px;
+    height: 35px;
+    color: #916f23;
+    float: left;
+    border-right: 1px solid #d3a847;
+    margin-left: 0;
+    list-style: none
+}
+
+div.topicPage ul.topicLinks li i {
+    margin-right: 5px
+}
+
+div.topicPage ul.topicLinks li:last-child {
+    border-right: none
+}
+
+div.topicPage ul.topicLinks li a {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+div.topicPage ul.topicLinks li a:hover {
+    text-decoration: underline
+}
+
+div.topicPage ul.topicLinks li.hasArrow {
+    padding-left: 16px
+}
+
+div.topicPage ul.topicLinks li.hasArrow i {
+    display: block;
+    float: left;
+    margin-top: 6px;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border-right: 2px solid #916f23;
+    border-bottom: 2px solid #916f23;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+@media(max-width: 700px) {
+    div.topicPage {
+        margin:0
+    }
+}
+
+div.topicPage .page-bg-image {
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 1200px
+}
+
+div.topicPage .page-bg-image .page-image {
+    min-height: 310px;
+    transition: .5s ease-in-out
+}
+
+@media(max-width: 1024px) {
+    div.topicPage .page-bg-image .page-image {
+        min-height:198px
+    }
+}
+
+@media(max-width: 767px) {
+    div.topicPage .page-bg-image .page-image {
+        min-height:188px
+    }
+}
+
+@media(max-width: 425px) {
+    div.topicPage .page-bg-image .page-image {
+        min-height:110px
+    }
+}
+
+div.topicPage .page-bg-image .page-title {
+    font-size: 28px;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+@media(max-width: 1000px) {
+    div.topicPage .page-bg-image .page-title {
+        font-size:26px
+    }
+}
+
+@media(max-width: 768px) {
+    div.topicPage .page-bg-image .page-title {
+        font-size:18px
+    }
+}
+
+@media(max-width: 425px) {
+    div.topicPage .page-bg-image .page-title {
+        font-size:16px
+    }
+}
+
+div.topicPage .page-bg-image .link-section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 25px
+}
+
+@media(max-width: 900px) {
+    div.topicPage .page-bg-image .link-section {
+        position:relative!important;
+        bottom: 0!important;
+        border-bottom: 1px solid #f0f0f0
+    }
+}
+
+div.topicPage .page-bg-image .link-section .page-link {
+    overflow: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+
+div.topicPage .page-bg-image .link-section .page-link .links {
+    color: #fff !important;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px
+}
+
+@media(max-width: 900px) {
+    div.topicPage .page-bg-image .link-section .page-link .links {
+        font-size:12px;
+        margin-left: 15px;
+        color: #a3a3a3
+    }
+}
+
+@media(max-width: 500px) {
+    div.topicPage .page-bg-image .link-section .page-link .links {
+        font-size:10px;
+        margin-left: 10px
+    }
+}
+
+@media(max-width: 375px) {
+    div.topicPage .page-bg-image .link-section .page-link .links {
+        font-size:9px;
+        font-weight: 400;
+        margin-left: 5px
+    }
+}
+
+div.topicPage .page-bg-image .link-section .page-link .links .itemLinks {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+@media(max-width: 900px) {
+    div.topicPage .page-bg-image .link-section .page-link .selectedLink {
+        color:#ff6f71!important
+    }
+}
+
+div.topicPage .page-bg-image .link-section .page-link .selectedLink .itemUnderline {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: #f1f1f1;
+    display: block;
+    animation-name: scaleLine;
+    animation-duration: .3s
+}
+
+@media(max-width: 900px) {
+    div.topicPage .page-bg-image .link-section .page-link .selectedLink .itemUnderline {
+        width:30px;
+        background-color: #ff6f71
+    }
+}
