@@ -27,6 +27,7 @@ import FaqP from './components/Path/help_P_faq';
 import TeamG from './components/Path/help_F_team';
 import TeamP from './components/Path/help_P_team';
 
+
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -63,6 +64,7 @@ const App = () => {
 
         <Route path="/help_F_team" element={<TeamG />} />
         <Route path="/help_P_team" element={<TeamP />} />
+
 
 
       </Routes>
