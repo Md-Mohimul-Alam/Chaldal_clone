@@ -4,42 +4,6 @@ import FAQSection from './FAQ/FAQSection';
 import Footer from './footer/footer';
 const Download = () => {
 
-    const styles = {
-        inputGroup: {
-            fontSize: '10px',
-            border: '.5px solid #9b60e8',
-            borderRadius: '10px',
-            backgroundColor: 'white',
-            padding: '2px',
-        },
-        input: {
-            width: '285px',
-            height: '30px',
-            fontSize: '20px',
-            border: 'transparent',
-            borderRadius: '10px',
-            backgroundColor: 'white',
-            color: 'black',
-            outline: 'none',
-            transition: 'border 0.3s ease',
-        },
-        inputHover: {
-            borderColor: '#9b60e8',
-        },
-        button: {
-            height: '50px',
-            fontSize: '20px',
-            border: '.5px transparent',
-            borderRadius: '10px',
-            backgroundColor: '#9b60e8',
-            color: 'white',
-            cursor: 'pointer',
-            transition: 'background-color 0.3s ease',
-        },
-        buttonHover: {
-            backgroundColor: '#7b40c8',
-        },
-    };
     return (
         <div>
             <section id="downloadChaldalApp" style={{ background: 'url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/downloadAppBackground.png) no-repeat center', backgroundSize: 'cover' }}>

@@ -13,7 +13,7 @@ import STC_ChT from './Sticky_chat/sticky_chat';
 
 
 const Offers= () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const logoRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
 

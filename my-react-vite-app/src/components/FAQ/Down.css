@@ -1,4 +1,5 @@
 #commonQuestions {
+  font-family: segoe ui, Helvetica, droid sans, Arial, lucida grande, tahoma, verdana, arial, sans-serif;
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
@@ -86,9 +87,6 @@
     content: '+';
 }
 
-.minus-sign::before {
-    content: '-';
-}
 
 .answer-container {
     display: none;

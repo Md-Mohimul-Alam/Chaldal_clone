@@ -22,9 +22,10 @@ import Helpg from './components/Path/Help_G';
 import Helpp from './components/Path/Help_P';
 
 import FaqG from './components/Path/help_F_faq';
+import FaqP from './components/Path/help_P_faq';
 
-
-
+import TeamG from './components/Path/help_F_team';
+import TeamP from './components/Path/help_P_team';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,6 +59,11 @@ const App = () => {
         <Route path="/Help_P" element={<Helpp />} /> 
 
         <Route path="/help_F_faq" element={<FaqG />} />
+        <Route path="/help_P_faq" element={<FaqP />} />
+
+        <Route path="/help_F_team" element={<TeamG />} />
+        <Route path="/help_P_team" element={<TeamP />} />
+
 
       </Routes>
     </Router>

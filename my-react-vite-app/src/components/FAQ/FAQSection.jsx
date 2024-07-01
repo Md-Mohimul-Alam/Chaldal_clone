@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FAQItem from './FAQItem';
 import './Down.css';
 
 const FAQSection = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
   const faqs = [
     {
       question: 'Q. How much do deliveries cost?',
@@ -66,6 +68,10 @@ const FAQSection = () => {
     }
   ];
 
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section id="commonQuestions" className="landingPage2">
       <div className="faqTop">
@@ -75,7 +81,13 @@ const FAQSection = () => {
         <div className="faq-items">
           <div className="faq-container">
             {faqs.map((faq, index) => (
-              <FAQItem key={index} question={faq.question} answer={faq.answer} />
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openIndex === index}
+                toggleFAQ={() => handleToggle(index)}
+              />
             ))}
           </div>
         </div>

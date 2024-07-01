@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Down.css';
 
-const FAQItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleFAQ = () => {
-    setIsOpen(!isOpen);
-  };
-
+const FAQItem = ({ question, answer, isOpen, toggleFAQ }) => {
   return (
     <div className={`faq-item faq-border-large-screen ${isOpen ? 'selected-faq-item' : ''}`} onClick={toggleFAQ}>
       <div className="query-container">

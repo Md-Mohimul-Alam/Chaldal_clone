@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 
 const Dashboard = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isSticky, setIsSticky] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(true);
   const logoRef = useRef(null);

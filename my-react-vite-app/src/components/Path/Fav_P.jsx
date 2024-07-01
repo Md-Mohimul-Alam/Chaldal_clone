@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 const Favp= () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {

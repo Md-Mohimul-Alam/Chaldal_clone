@@ -207,13 +207,14 @@ ol, ul {
   width: 230px !important;
   flex-shrink: 0;
   bottom: 0px;
+  top: px !important;
   margin-bottom: 0px;
   border: 1px solid #eee;
   background-color: #fff;
   display: flex;
   align-items: center;
   margin-top: auto;
-  position: absolute !important;
+  position: fixed !important;
   font-size: 13px;
   box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
   -webkit-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);

@@ -17,7 +17,7 @@ import './css/HP.css';
 
 const FaqG= () =>{
     
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const logoRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
 
@@ -120,37 +120,36 @@ const FaqG= () =>{
                             </NavLink>
                             </li>
                             <li className="links">
-                            <NavLink to="/Help_G" className="itemLinks selectedLink" >
+                            <NavLink to="/Help_G" className="itemLinks " >
                                 Our Story
-                                <span className="itemUnderline selectedLink"></span>
+                                <span className="itemUnderline"></span>
                             </NavLink>
                             </li>
                             <li className="links">
-                            <a className="itemLinks selectedLink" href="/t/Team">
-                                Team
-                                <span className="itemUnderline selectedLink"></span>
-                            </a>
+                            <NavLink  to="/help_F_team" className="itemLinks">Team
+                                <span className="itemUnderline"></span>
+                            </NavLink>
                             </li>
                             <li className="links">
-                            <a className="itemLinks selectedLink" href="/t/Career">
+                            <a className="itemLinks" href="/t/Career">
                                 Career
                                 <span className="itemUnderline"></span>
                             </a>
                             </li>
                             <li className="links">
-                            <a className="itemLinks selectedLink" href="/t/ContactUs">
+                            <a className="itemLinks" href="/t/ContactUs">
                                 Contact Us
                                 <span className="itemUnderline"></span>
                             </a>
                             </li>
                             <li className="links">
-                            <a className="itemLinks selectedLink" href="/t/PrivacyInfo">
+                            <a className="itemLinks" href="/t/PrivacyInfo">
                                 Privacy Policy
                                 <span className="itemUnderline"></span>
                             </a>
                             </li>
                             <li className="links">
-                            <a className="itemLinks selectedLink" href="/t/TermsOfUse">
+                            <a className="itemLinks" href="/t/TermsOfUse">
                                 Terms of Use
                                 <span className="itemUnderline"></span>
                             </a>

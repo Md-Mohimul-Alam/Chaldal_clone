@@ -9,7 +9,7 @@
   font-family: segoe ui, Helvetica, droid sans, Arial, lucida grande, tahoma, verdana, arial, sans-serif;
   position: absolute;
   top: 0px;
-  height: 100%;
+  height: 100% !important;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -339,7 +339,7 @@ div.name a{
   background-color: #fff;
   display: flex;
   align-items: center;
-  position: fixed !important;
+  position:sticky !important;
   font-size: 13px;
   box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
   -webkit-box-shadow: 0 3px 12px 0 rgba(0,0,0,.55);
@@ -405,4 +405,12 @@ div.name a{
   .store-menu Link {
     font-size: 8px; 
   }
+}
+@media(max-width: 767px) {
+  menu-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 }

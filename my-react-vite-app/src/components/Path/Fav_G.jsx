@@ -17,7 +17,7 @@ import 'react-phone-input-2/lib/style.css';
 
 
 const Favp= () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const logoRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
   

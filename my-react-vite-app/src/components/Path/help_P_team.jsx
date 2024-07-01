@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 
-const Helpp= ( ) => {
+const TeamP= ( ) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isActive, setIsActive] = useState(false);
 
@@ -251,8 +251,9 @@ const Helpp= ( ) => {
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <NavLink  to="/help_P_team" className="itemLinks">Team</NavLink>
-                                            <span className="itemUnderline"></span>
+                                            <NavLink  to="/help_F_team" className="itemLinks">Team
+                                                <span className="itemUnderline"></span>
+                                            </NavLink>
                                         </li>
                                         <li className="links">
                                             <a className="itemLinks" href="/pharmacy/t/Career">Career</a>
@@ -320,4 +321,4 @@ const Helpp= ( ) => {
     </div>
   );
 };
-export default Helpp;
+export default TeamP;

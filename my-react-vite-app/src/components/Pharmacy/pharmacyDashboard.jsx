@@ -4,7 +4,7 @@ import './css/dash_phr.css';
 
 
 const pharmacyDashboard = () =>{
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     const logoRef = useRef(null);
     const searchBarRef = useRef(null);

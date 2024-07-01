@@ -95,42 +95,44 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </Link>
           </div>
 
-        <ul className="mid_menu">
+          <ul className="mid_menu">
           <li className="L_2">
-            <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-              <Link className="L_2_A" to="/offers">
-                <span>Offers</span>
-                <span className="nav-count-label offers-count">
-                <span>27</span>
-                </span>
-              </Link>
-            </div>
+            <Link className="L_2_A" to="/offers">
+                <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
+                    <span>Offers</span>
+                    <span className="nav-count-label offers-count">
+                    <span>27</span>
+                    </span>
+                </div>
+            </Link>
           </li>
+
           <li className="L_2">
-            <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-                <Link className="L_2_A" to="/egg">
+            <Link className="L_2_A" to="/egg">
+                <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
                     <span>Egg Club</span>
-                </Link>
-            </div>
+                </div>
+            </Link>
           </li>
           <li className="L_2">
-            <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
-                <Link className="L_2_A" to="/Deal_G">
-                    <span>Deal of the Day</span>
-                    <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/DailyDeal.gif?q=best&amp;webp=1" alt="Dailydeal" />
-                </Link>
-            </div>
+            <Link className="L_2_A" to="/Deal_G">
+                <div style={{ display: 'inline-block', paddingLeft: '13px', position: 'relative' }}>
+                        <span>Deal of the Day</span>
+                        <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/DailyDeal.gif?q=best&amp;webp=1" alt="Dailydeal" />
+                </div>
+            </Link>
           </li>
         </ul>
 
         <aside className="sidebar">
           <ul className="level-0">
             <li className="unselected topLevel">
-              
-              <ul className="name">
-                <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
-                <Link to="/Fav_G">Favourites</Link>
-              </ul>
+                <Link to="/Fav_G">
+                    <div className="name">
+                        <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/favourites.svg?q=best&amp;webp=1" alt="Fav" />
+                        Favourites
+                    </div>
+                </Link>
             </li>
             <li data-cid="1506" className="not-in-selection-tree unselected topLevel">
               <div className="name">

@@ -21,7 +21,7 @@ import {
   } from '@chakra-ui/react';
 
 const DealG= () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const logoRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
 

@@ -12,9 +12,9 @@ import { Link, NavLink } from 'react-router-dom';
 import './css/HP.css';
 
 
-const Helpg= () =>{
+const TeamG= () =>{
     
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const logoRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
 
@@ -100,20 +100,20 @@ const Helpg= () =>{
                     <div className="topicPage">
                         <div className="loaded">
                             <div className="page-bg-image">
-                                <div className="page-image" style={{ backgroundImage: "url('https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-512/Default/components/page/Topic/images/story2.png?q=best&webp=1&alpha=1')", backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat' }}></div>
-                                <div className="page-title">Our Story</div>
+                                <div className="page-image" style={{ backgroundImage: "url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/page/Topic/images/team2.png?q=best&webp=1&alpha=1&quot)", backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat' }}></div>
+                                <div className="page-title">Team</div>
                                 <div className="link-section">
                                     <ul className="page-link">
                                         <li className="links">
                                             <NavLink  to="/help_F_faq" className="itemLinks">FAQ</NavLink>
                                             <span className="itemUnderline"></span>
                                         </li>
-                                        <li className="links selectedLink">
+                                        <li className="links">
                                             <NavLink  to="/Help_G" className="itemLinks" >Our Story</NavLink>
                                             <span className="itemUnderline"></span>
                                         </li>
-                                        <li className="links">
-                                            <NavLink  to="/help_F_team" className="itemLinks">Team</NavLink>
+                                        <li className="links selectedLink">
+                                            <NavLink  to="/help_F_faq" className="itemLinks">Team</NavLink>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
@@ -140,38 +140,56 @@ const Helpg= () =>{
                                 </div>
                             </div>
                             <div>
-                                <div className="body needHelpItemBody">
-                                    <div>
-                                        <strong>Our Story</strong>
+                                <section className="team-section">
+                                    <div className="heading">
+                                        "We are a team of dedicated people spread across the globe and working round the clock to bring about rapid progress in the Bangladeshi E-commerce ecosystem."
                                     </div>
-                                    <div>
-                                        Chaldal.com is an online shop available in Dhaka, Jashore and Chattogram. We believe the time is valuable to our fellow Dhaka residents, and that they should not have to waste hours in traffic, brave harsh weather, and wait in line just to buy necessities like eggs! This is why we deliver everyday needs to our customers’ door-steps across urban cities.
-                                        <br /><br />
+
+                                    <div class="team-block">
+                                        <div class="individualTeam">
+                                            <div class="img">
+                                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/page/Team/images/waseem_v3.png?q=best&amp;m=210&amp;webp=1&amp;alpha=1" size="210" style={{backgroundcolor: 'transparent'}}/>
+                                            </div>
+                                            <div class="info-block">
+                                                <div class="name">Waseem Alim</div>
+                                                <div class="position">Founder &amp; Chief Executive Officer</div>
+                                                <div class="description">
+                                                    <span>
+                                                        Before Chaldal, Waseem worked at Sigfig, a Silicon Valley fintech startup, where he led the development of a portfolio management software. He designed algorithms to monitor over $100 billion in assets.
+                                                        <br /><br /> 
+                                                        Waseem is a CFA Charterholder and graduated from the Wharton School. He aspires to change the culture in Bangladesh so that people value investment in bold ideas.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="arrowClass">
+                                                <div class="arrowHolder">
+                                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/page/Team/images/down-arrow.png?q=best&amp;m=25&amp;webp=1&amp;alpha=1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="individualTeam">
+                                            <div className="img">
+                                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/page/Team/images/waseem_v3.png?q=best&amp;m=210&amp;webp=1&amp;alpha=1" size="210" style={{backgroundcolor: 'transparent'}}/>
+                                            </div>
+                                            <div className="info-block">
+                                                <div className="name">Zia Ashraf</div>
+                                                <div className="position">Founder & Chief Operating Officer</div>
+                                                <div className="description">
+                                                    <span data-reactid=".28vrfj5pzgi.b.2.0.0.0.1.3.0.1.$core_team1.1.2.0">
+                                                        Prior to Chaldal, Zia was the Head of Operations at a garments factory. He managed over 1000 employees and oversaw all facets of the business including merchandising, production and marketing.<br/><br/>Zia has an autistic brother and hopes to work for autistic children. He believes a university degree is no measure of a person’s merit. Zia holds a BBA in Marketing from North South University.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="arrowClass">
+                                            <div className="arrowHolder">
+                                                <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/page/Team/images/down-arrow.png?q=best&amp;m=25&amp;webp=1&amp;alpha=1" />
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        Chaldal is a work in progress, and we hope to get better over time. We are firm believers in using technology and education to improve Bangladesh, and we will continue to invest all our effort in pushing the boundaries of technology.
-                                    </div>
-                                    <div>
-                                        If you have ideas on how we can improve, we would love to hear from you. Please do email us at 
-                                        <a href="mailto:founders@chaldal.com"><strong>info@chaldal.com</strong></a>.
-                                    </div>
-                                    <div>
-                                        <br />
-                                        <strong>Waseem (Founder &amp; CEO)</strong>
-                                        <br />
-                                        Before Chaldal, Waseem worked at Sigfig, a Silicon Valley financial technology startup. At Sigfig, he led the development of a web-based portfolio management software. He designed algorithms to monitor over $100 billion in brokerage assets held by retail investors. He aspires to change the culture in Bangladesh so that people value investment in bold ideas and are more accepting of new technology. Waseem graduated from the Wharton School, the University of Pennsylvania with a degree in Finance and Entrepreneurship.
-                                        <br /><br />
-                                        <strong>Zia (Founder &amp; COO)</strong>
-                                        <br />
-                                        Zia brings in experience from the field of management and marketing. Prior to Chaldal, he was the Head of Operations at a ready-made garments factory in Bangladesh. He managed over 1000 employees and oversaw all facets of the business including merchandising, production, commercial design, and marketing. Zia has an autistic brother, and he hopes to provide proper care and education to all autistic children. He also believes that a university degree is no measure of a person’s merit. Zia holds a BBA in Marketing from North South University.
-                                        <br /><br />
-                                        <strong>Tejas (Founder &amp; CTO)</strong>
-                                        <br />
-                                        Tejas is a full-stack engineer. Prior to Chaldal, he worked at Sigfig where he was in charge of tech infrastructure. His hobby includes research on Lisp machines and how we can develop better software. Tejas has a degree in Computer Science from the National University of Singapore. He invites you to read more about 
-                                        <a href="https://chaldal.tech"><strong>Chaldal Engineering</strong></a>.
-                                        <br /><br /><br />
-                                    </div>
-                                </div>
+                                 
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -181,4 +199,4 @@ const Helpg= () =>{
     </Link>
     );
 };
-export default Helpg;
+export default TeamG;

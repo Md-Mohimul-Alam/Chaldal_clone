@@ -8,7 +8,7 @@ import './css/Offers2.css';
 
 
 const Offers= () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
