@@ -14,7 +14,7 @@ import './css/HP.css';
 
 const Helpg= () =>{
     
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const logoRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
 

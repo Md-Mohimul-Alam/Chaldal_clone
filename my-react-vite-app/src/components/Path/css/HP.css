@@ -266,7 +266,7 @@ div.topicPage .page-bg-image {
 
 div.topicPage .page-bg-image .page-image {
     min-height: 310px;
-    transition: .5s ease-in-out
+    transition: .5s ease-in-out !important
 }
 
 @media(max-width: 1024px) {
@@ -501,7 +501,7 @@ table {
     max-width: 210px;
     border-radius: 50%;
     text-align: center;
-    transition: .5s ease-in-out
+    transition: .5s ease-in-out !important
 }
 
  .team-section .team-block .individualTeam .info-block {
@@ -509,7 +509,7 @@ table {
     padding-top: 75px;
     margin-top: -75px;
     height: 100%;
-    transition: .5s ease-in-out
+    transition: .5s ease-in-out !important
 }
 
  .team-section .team-block .individualTeam .info-block .name {
@@ -529,7 +529,7 @@ table {
     padding: 5px 10px;
     text-align: center;
     opacity: 0;
-    transition: .5s ease-in-out
+    transition: .5s ease-in-out !important
 }
 
  .team-section .team-block .individualTeam .info-block .descriptionBn {
@@ -538,17 +538,17 @@ table {
 
  .team-section .team-block .individualTeam.selected .img img {
     width: 40%;
-    transition: .5s ease-in-out
+    transition: .5s ease-in-out !important
 }
 
  .team-section .team-block .individualTeam.selected .info-block {
     padding-top: 50px;
-    transition: .5s ease-in-out
+    transition: .5s ease-in-out !important
 }
 
  .team-section .team-block .individualTeam.selected .info-block .description {
-    opacity: 1;
-    transition: .5s ease-in-out
+    opacity: 1 !important;
+    transition: .5s ease-in-out !important
 }
 
  .team-section .team-block .arrowClass {
@@ -563,7 +563,7 @@ table {
         left: 0;
         right: 0;
         opacity: 1;
-        transition: .5s ease-in-out
+        transition: .5s ease-in-out !important
     }
 }
 
@@ -573,5 +573,125 @@ table {
 
  .team-section .team-block .arrowClassHide {
     opacity: 0;
-    transition: .3s ease-in-out
+    transition: .3s ease-in-out !important
+}
+
+.team-page {
+    max-width: 1200px;
+    margin: auto
+}
+
+.team-section {
+    width: 100%
+}
+
+.team-section .heading {
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background: -moz-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(249,249,249,.5) 6%,rgba(237,237,237,.5) 19%,rgba(237,237,237,.5) 83%,rgba(245,245,245,.5) 91%,rgba(255,255,255,.5) 100%);
+    background: -webkit-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(249,249,249,.5) 6%,rgba(237,237,237,.5) 19%,rgba(237,237,237,.5) 83%,rgba(245,245,245,.5) 91%,rgba(255,255,255,.5) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,.5) 0,rgba(249,249,249,.5) 6%,rgba(237,237,237,.5) 19%,rgba(237,237,237,.5) 83%,rgba(245,245,245,.5) 91%,rgba(255,255,255,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff',endColorstr='#80ffffff',GradientType=1)
+}
+
+.team-section .team-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.team-section .team-block .individualTeam {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 440px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.team-section .team-block .individualTeam .img {
+    margin: 30px
+}
+
+.team-section .team-block .individualTeam .img img {
+    width: 100%;
+    max-width: 210px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s ease-in-out !important
+}
+
+.team-section .team-block .individualTeam .info-block {
+    background: #f9f9f9;
+    padding-top: 75px;
+    margin-top: -75px;
+    height: 100%;
+    transition: .5s ease-in-out !important
+}
+
+.team-section .team-block .individualTeam .info-block .name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center
+}
+
+.team-section .team-block .individualTeam .info-block .position {
+    font-size: 15px;
+    text-align: center
+}
+
+.team-section .team-block .individualTeam .info-block .description {
+    display: block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease-in-out !important
+}
+
+.team-section .team-block .individualTeam .info-block .descriptionBn {
+    font-size: 11.5px!important
+}
+
+.team-section .team-block .individualTeam.selected .img img {
+    width: 40%;
+    transition: .5s ease-in-out !important
+}
+
+.team-section .team-block .individualTeam.selected .info-block {
+    padding-top: 50px;
+    transition: .5s ease-in-out !important
+}
+
+.team-section .team-block .individualTeam.selected .info-block .description {
+    opacity: 1;
+    transition: .5s ease-in-out !important
+}
+
+.team-section .team-block .arrowClass {
+    display: none
+}
+
+@media(max-width: 600px) {
+    .team-section .team-block .arrowClass {
+        display:block;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        transition: .5s ease-in-out !important
+    }
+}
+
+.team-section .team-block .arrowClass .arrowHolder {
+    position: relative
+}
+
+.team-section .team-block .arrowClassHide {
+    opacity: 0;
+    transition: .3s ease-in-out !important
 }

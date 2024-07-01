@@ -8,7 +8,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 const Helpp= ( ) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
