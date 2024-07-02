@@ -27,7 +27,6 @@ import FaqP from './components/Path/help_P_faq';
 import TeamG from './components/Path/help_F_team';
 import TeamP from './components/Path/help_P_team';
 
-
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,30 +42,20 @@ const App = () => {
         <Route path="/cookups/dash_Cook" element={<CooksDash />} />
         <Route path="/Offers" element={<Offers />} />
         <Route path="/Offers2" element={<Offers2 />} />
-
         <Route path="/egg" element={<Egg />} />
         <Route path="/egg2" element={<Egg2 />} />
-
         <Route path="/Deal_G" element={<DealG />} />
         <Route path="/Deal_P" element={<DealP />} />
-
         <Route path="/Fav_P" element={<Favp />} />
         <Route path="/Fav_G" element={<Favg />} />
-
         <Route path="/Recipes" element={<Recipe />} />
         <Route path="/Recipes_P" element={<Recipep />} />
-
         <Route path="/Help_G" element={<Helpg />} />
-        <Route path="/Help_P" element={<Helpp />} /> 
-
+        <Route path="/Help_P" element={<Helpp />} />
         <Route path="/help_F_faq" element={<FaqG />} />
         <Route path="/help_P_faq" element={<FaqP />} />
-
         <Route path="/help_F_team" element={<TeamG />} />
         <Route path="/help_P_team" element={<TeamP />} />
-
-
-
       </Routes>
     </Router>
   );

@@ -374,14 +374,26 @@ div.name a{
 .quick-access-menu .help {
   color: #000;
   border-right: 1px solid #eee;
-  width: 50%
+  width: 40% !important
 }
 
 .quick-access-menu .complaint {
-  width: 50%;
-  cursor: pointer
-}
+  display: flex;
+  
+  border-radius: 0px;
+  width: 65% !important;
+  height: 38px;
+  color: #000;
+  background-color: #fffefe ;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
+}
+.complaint:hover{
+  outline: none;
+  opacity: 1;
+  background-color: #f1f1f1;
+  outline: transparent;
+}
 
 @media (max-width: 768px) {
   .Main {

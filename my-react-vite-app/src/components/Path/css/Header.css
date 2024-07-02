@@ -214,4 +214,681 @@ header {
   }
 
 
+  
+
+#citySelectionLink {
+  text-decoration: none;
+  position: relative;
+  margin-right: 10px
+}
+
+ #citySelectionLink .metropolitanAreaTooltip {
+  height: 30px;
+  width: auto;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  right: 25px;
+  top: 45px;
+  z-index: 99;
+  border-radius: 3px;
+  background-color: #4f4f4f
+}
+
+@media(max-width: 500px) {
+ #citySelectionLink .metropolitanAreaTooltip {
+      top:45px;
+      right: 0
+  }
+}
+
+ #citySelectionLink .metropolitanAreaTooltip p {
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  line-height: 30px;
+  padding: 0 10px
+}
+
+ #citySelectionLink .metropolitanAreaTooltip:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #4f4f4f;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent
+}
+
+ #citySelectionLink .mismatched-location-tooltip {
+  min-height: 30px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  right: -4px;
+  top: 60px;
+  z-index: 99;
+  border-radius: 3px;
+  background-color: #4f4f4f;
+  opacity: .9
+}
+
+ #citySelectionLink .mismatched-location-tooltip p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400!important;
+  color: #fff;
+  padding: 0 10px
+}
+
+ #citySelectionLink .mismatched-location-tooltip:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #4f4f4f;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent
+}
+
+ #citySelectionLink .headerAddressComponent {
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: max-content;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .headerAddressComponent {
+      position:fixed;
+      top: 50px;
+      width: 100%;
+      left: 0
+  }
+}
+
+@media(max-width: 500px) {
+ #citySelectionLink .headerAddressComponent {
+      position:fixed;
+      top: 50px;
+      width: 100%;
+      left: 0
+  }
+}
+
+ #citySelectionLink .visible {
+  display: block
+}
+
+ #citySelectionLink .citySelectionArea {
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  cursor: pointer
+}
+#citySelectionLink .citySelectionArea:hover {
+  background-color: #eebf4a  !important
+}
+
+
+ #citySelectionLink .citySelectionArea .locationMarkerIcon {
+  margin-right: 1px
+}
+
+ #citySelectionLink .citySelectionArea .locationMarkerIcon svg {
+  fill: #615e58
+}
+
+ #citySelectionLink .citySelectionArea p {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea p {
+      font-size:12px
+  }
+}
+
+ #citySelectionLink .citySelectionArea .metropolitanAreaName {
+  text-align: left;
+  padding: 0 10px 0 5px
+}
+
+ #citySelectionLink .citySelectionArea .metropolitanAreaName span {
+  font-weight: 700;
+  color: #ff6f71;
+  font-size: 16px;
+  display: block
+}
+
+ #citySelectionLink .citySelectionArea .metropolitanAreaName span:last-of-type {
+  margin-top: -2px
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea .metropolitanAreaName {
+      display:block
+  }
+
+ #citySelectionLink .citySelectionArea .metropolitanAreaName span {
+      font-size: 14px
+  }
+}
+
+ #citySelectionLink .citySelectionArea p:last-of-type {
+  margin-left: auto
+}
+
+ #citySelectionLink .citySelectionArea p:last-of-type .arrow-down {
+  border: solid #ff6f71;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0 0 0 auto
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea p:last-of-type .arrow-down {
+      display:none
+  }
+}
+
+ #citySelectionLink .citySelectionArea:hover {
+  background-color: #eeb529
+}
+
+ #citySelectionLink .citySelectionArea:hover .citySelectionChoices {
+  position: absolute;
+  top: 25px;
+  right: -30px;
+  display: flex;
+  align-items: center
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea:hover .citySelectionChoices {
+      right:-30px
+  }
+}
+
+ #citySelectionLink .citySelectionArea:hover .citySelectionChoices-triangle:after, #citySelectionLink .citySelectionArea:hover .citySelectionChoices-triangle:before {
+  display: block
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea:hover .citySelectionChoices-triangle:before {
+      right:-1px
+  }
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea:hover .citySelectionChoices-triangle:after {
+      right:0;
+      top: 8.5px
+  }
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink .citySelectionArea {
+      position:fixed;
+      left: 50px;
+      top: 0
+  }
+
+ #citySelectionLink .citySelectionArea .locationMarkerIcon {
+      margin-right: 0
+  }
+}
+
+@media(max-width: 767px) {
+ #citySelectionLink {
+      position:fixed;
+      margin: auto;
+      max-width: 90px;
+      left: 50px
+  }
+}
+
+.address-list {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  box-shadow: 0 3px 15px #ccc;
+  border-radius: 0 0 12px 12px;
+  z-index: 99;
+  overflow: hidden;
+  background-color: #fff
+}
+
+@media(max-width: 500px) {
+  .address-list {
+      width:100%
+  }
+}
+
+.address-list .topAddressSearchBar .horizontalivider {
+  margin-top: 10px;
+  border: 0;
+  border-top: 1px solid #efefef
+}
+
+.address-list .topAddressSearchBar .currentLocationNotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  color: #000;
+  text-align: center
+}
+
+.address-list .topAddressSearchBar .currentLocationArea {
+  text-align: left;
+  cursor: pointer
+}
+
+.address-list .topAddressSearchBar .currentLocationArea:hover {
+  background-color: #feebec
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .currentLocationText {
+  font-size: 12px;
+  color: #ff686e;
+  position: relative;
+  left: 70px;
+  margin-bottom: 2px;
+  margin-top: 5px
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 10px;
+  cursor: pointer
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .tickIconContainer {
+  height: auto;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -8px
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .tickIconContainer input[type=radio] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  appearance: none;
+  outline: #ff686e solid 1px
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .tickIconContainer input[type=radio]:checked {
+  background-color: #ff686e;
+  position: relative;
+  appearance: none;
+  border: 3px solid #fff;
+  outline: #ff686e solid 1px
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .address-details-container {
+  width: 260px;
+  display: block;
+  flex: 1;
+  min-width: 0;
+  text-align: left
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .address-details-container span {
+  text-align: left;
+  font-weight: 500
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .address-details-container .area-name {
+  display: block;
+  font-size: 12px
+}
+
+.address-list .topAddressSearchBar .currentLocationArea .addressSearchContainer .address-details-container .street-address {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000
+}
+
+.address-list .confirmAddressTitle {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 12px 0;
+  color: #000;
+  text-align: left;
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.address-list .confirmAddressTitle .closeButton {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  border-radius: 50%;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+@media(max-width: 767px) {
+  .address-list .confirmAddressTitle .closeButton {
+      display:flex
+  }
+}
+
+.address-list .confirmAddressTitle .closeButton .after,.address-list .confirmAddressTitle .closeButton .before {
+  content: '';
+  position: absolute;
+  background-color: #444;
+  border-radius: 0;
+  -webkit-transition: 350ms ease-out;
+  -moz-transition: 350ms ease-out;
+  -o-transition: 350ms ease-out;
+  transition: 350ms ease-out;
+  z-index: 0
+}
+
+.address-list .confirmAddressTitle .closeButton .before {
+  width: 18px;
+  height: 2px;
+  top: 13px;
+  left: 5px
+}
+
+.address-list .confirmAddressTitle .closeButton .after {
+  width: 2px;
+  height: 18px;
+  left: 13px;
+  top: 5px
+}
+
+.address-list .confirmAddressTitle .closeButton:hover {
+  background-color: #feebec
+}
+
+.address-list .confirmAddressTitle .closeButton:hover .after,.address-list .confirmAddressTitle .closeButton:hover .before {
+  background-color: #ff666b
+}
+
+.address-list .geolocationOffTitle {
+  font-weight: 400!important;
+  padding: 15px 12px 5px
+}
+
+.address-list .geolocationOffTitle b {
+  font-weight: 700!important
+}
+
+.address-list .continueButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+  padding: 10px 20px
+}
+
+.address-list .continueButtonContainer button[type=submit] {
+  border-color: #eb484b;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 1px 6px rgba(0,0,0,.5);
+  box-shadow: 0 1px 6px rgba(0,0,0,.5);
+  text-transform: none;
+  flex: 1;
+  font-size: 14px;
+  border-radius: 12px
+}
+
+.address-list .continueButtonContainer button[type=submit]:disabled {
+  color: #828282
+}
+
+.address-list .loggedInStyle svg {
+  width: 35px!important;
+  height: 35px!important
+}
+
+.address-list .loggedInStyle p {
+  font-size: 14px!important;
+  color: #ff686e!important;
+  font-weight: 700!important
+}
+
+.address-list .useCurrentLocation {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer
+}
+
+.address-list .useCurrentLocation:hover {
+  background-color: #feebec
+}
+
+.address-list .useCurrentLocation svg {
+  margin-right: 10px;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,.16));
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0,0,0,.16));
+  width: 40px;
+  height: 40px
+}
+
+.address-list .useCurrentLocation p {
+  font-size: 15px;
+  color: #1c1c1c;
+  font-weight: 500
+}
+
+.address-list .changeCityContainer div {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer
+}
+
+.address-list .changeCityContainer div:hover {
+  background-color: #feebec
+}
+
+.address-list .changeCityContainer div svg {
+  margin-right: 10px;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,.16));
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0,0,0,.16));
+  width: 35px;
+  height: 35px
+}
+
+.address-list .changeCityContainer div p {
+  font-size: 15px;
+  color: #1c1c1c;
+  font-weight: 500
+}
+
+.address-list .recentAddressTitle {
+  font-size: 14px;
+  color: #626262;
+  text-align: left;
+  padding: 8px 25px
+}
+
+.address-list div>.address {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: 8px 10px;
+  color: #615e58;
+  cursor: pointer
+}
+
+.address-list div>.address:hover {
+  background-color: #feebec
+}
+
+.address-list div>.address .tickIconContainer {
+  height: auto;
+  width: 50px;
+  display: block;
+  position: relative;
+  top: 5px
+}
+
+.address-list div>.address .tickIconContainer input[type=radio] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  appearance: none;
+  outline: #ff686e solid 1px
+}
+
+.address-list div>.address .address-details-container {
+  width: 260px;
+  display: block;
+  min-width: 0;
+  cursor: pointer
+}
+
+.address-list div>.address .address-details-container:hover {
+  background-color: #feebec
+}
+
+.address-list div>.address .address-details-container span {
+  text-align: left;
+  font-weight: 500
+}
+
+.address-list div>.address .address-details-container .area-name {
+  display: block;
+  font-weight: 700;
+  color: #000;
+  font-size: 14px
+}
+
+.address-list div>.address .address-details-container .street-address {
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+.address-list div>.selectedAddress .tickIconContainer {
+  display: block
+}
+
+.address-list div>.selectedAddress .tickIconContainer input[type=radio] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  appearance: none;
+  border: 1px solid #ff686e;
+  outline: #ff686e solid 2px;
+  background-color: #fff
+}
+
+.address-list div>.selectedAddress .tickIconContainer input[type=radio]:checked {
+  background-color: #ff686e;
+  position: relative;
+  appearance: none;
+  border: 3px solid #fff;
+  outline: #ff686e solid 1px
+}
+
+.address-list .address-details-container {
+  margin-left: 10px
+}
+
+.manage-all-address {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500!important;
+  padding: 14px 0 14px 65px;
+  color: #ff686e;
+  width: 100%;
+  background-color: #fff;
+  border: 0;
+  height: 40px!important
+}
+
+.manage-all-address:hover {
+  cursor: pointer
+}
+
+.manage-all-address:hover:hover {
+  background-color: #feebec
+}
+
+.horizontalivider {
+  margin-top: 10px;
+  border: 0;
+  border-top: 1px solid #efefef
+}
+
+.touchBlocker {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rebeccapurple;
+  opacity: 0
+}
+
+@media(max-width: 768px) {
+  .touchBlocker {
+      display:block;
+      opacity: .56;
+      background-color: #131213
+  }
+}
+
+
+
 

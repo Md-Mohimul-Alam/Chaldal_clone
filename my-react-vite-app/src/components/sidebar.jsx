@@ -1728,7 +1728,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         </linearGradient>
                     </defs>
                     </svg>
-                    <span>Complaint</span>
+                    <span>File a Complaint</span>
                 </div>
 
 
