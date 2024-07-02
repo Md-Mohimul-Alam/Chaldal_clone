@@ -33,7 +33,7 @@
 header {
   
     width: 100% !important;
-    height: 67px;
+    height: 67px !important;
     position:fixed;
     align-items: center;
     top: 0;
@@ -58,11 +58,11 @@ header {
 }
 
 .hamburgerMenu:hover {
-    background-color: #ffd670
+    background-color: #f1bc36 !important
 }
 
  .hamburgerMenu:active {
-    box-shadow: inset 0 0 2px 2px #ffd670
+    box-shadow: inset 0 0 2px 2px #f1b51b
 }
 @media(max-width: 700px) {
  .hamburgerMenu {

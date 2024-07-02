@@ -78,17 +78,17 @@ const DeliveryInfo = () => {
                     <div className="viewButton hidden-xs hidden-sm" >
                         <a href="/#">View All</a>
                     </div>
-                    <div className="scrollButtons">
-                        <button className="scrollLeft" onClick={scrollLeft} style={{ background: 'White' }}>
-                            <svg width="10px" height="10px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 100 100">
+                    <div className="scrollButtons" style={{width:'100px',display:'flex'}}>
+                        <div className="scrollLeft" onClick={scrollLeft} style={{ backgroundColor: 'white' , alignItems:'center'}}>
+                            <svg width="10px" height="10px" style={{ display: 'inline-block',alignItems:'center', verticalAlign: 'middle' }} viewBox="0 0 100 100">
                                 <path transform="translate(0 -952.36)" d="m31.918 1045.4l36.164-31.684 12.918-11.316-12.918-11.316-36.164-31.684-12.918 11.316 36.168 31.684-36.168 31.684zm0 0" stroke="#000" strokeLinecap="round" strokeWidth="2"></path>
                             </svg>
-                        </button>
-                        <button className="scrollRight" onClick={scrollRight} style={{ background: 'White' }}>
-                            <svg width="10px" height="10px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 100 100">
+                        </div>
+                        <div className="scrollRight" onClick={scrollRight} style={{ background: 'White', alignItems:'center'  }}>
+                            <svg width="10px" height="10px" style={{ display: 'inline-block',alignItems:'center', verticalAlign: 'middle' }} viewBox="0 0 100 100">
                                 <path transform="translate(0 -952.36)" d="m31.918 1045.4l36.164-31.684 12.918-11.316-12.918-11.316-36.164-31.684-12.918 11.316 36.168 31.684-36.168 31.684zm0 0" stroke="#000" strokeLinecap="round" strokeWidth="2"></path>
                             </svg>
-                        </button>
+                        </div>
                     </div>
 
                 </div>

@@ -11,7 +11,14 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 
 
+
+
 const Dashboard = () => {
+
+
+
+
+  
 
   const [dropdowns, setDropdowns] = useState({});
   const [rotations, setRotations] = useState({});
@@ -260,6 +267,8 @@ const Dashboard = () => {
       </div>
  
       <Stickycart/>
+      
+
     </Link>
   );
 };

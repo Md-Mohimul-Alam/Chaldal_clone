@@ -3,11 +3,14 @@ import React, { useState } from "react";
 import './css/sidebar.css';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
+import Modal from './Modal';
+import './css/Modal.css'; // Create a CSS file for styling the modal
+import Popup from 'reactjs-popup';
 
 
 
 
-const Sidebar = ({ isOpen, toggleSidebar }) => {
+const Sidebar = ({ isOpen, toggleSidebar,onClose }) => {
   const [dropdowns, setDropdowns] = useState({});
   const [rotations, setRotations] = useState({});
   
@@ -30,8 +33,21 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           }));  
     }
   };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    console.log('Opening Modal');
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    console.log('Closing Modal');
+    setIsModalOpen(false);
+  };
+
   return (
-      <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'absolute',height:'887px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
+      <div className={`menuWrapper ${isOpen ? 'open' : ''}`}  style={{ position:'absolute',height:'890px', width: '230px', background: '#fff' }} onClick={toggleSidebar}>
         <div className="menu-container" style={{ background: '#fff', position: "relative", top:'0px',paddingTop:'0px', marginTop:'0px'}}>
             <div className="menu" style={{ background: '#fff', position: "relative",overflow:'auto'}}>
             <div className="store-menu">
@@ -160,6 +176,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
 
                 <li className="unselected topLevel">
+
+                    
                     <div className="name">
                         <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
                         <a href="#">Food</a>
@@ -1616,10 +1634,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <span>
                     <span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                     <IoIosArrowForward
-                    className="arrow-icon"
-                                        style={{ transform: `rotate(${rotations[1254 ] || 0}deg)` }}
-                    onClick={(e) => {e.preventDefault(); 
-        e.stopPropagation();  toggleDropdown(1254); }}/>
+                    className="arrow-icon" style={{ transform: `rotate(${rotations[1254 ] || 0}deg)` }} onClick={(e) => {e.preventDefault(); e.stopPropagation();  toggleDropdown(1254); }}/>
                     </span>
                 {dropdowns[1254]&&(
                     <ul className="level-1">
@@ -1683,6 +1698,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
 
             <ul className="bottom-misc-menu">
+                
             <li className="unselected topLevel">
                 <Link to="/Fav_G">
                     <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&amp;webp=1" alt="Premium Care" />
@@ -1703,6 +1719,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </a>
             </li>
             </ul>
+
+
+
+            
     
             </div>
             <div className="quick-access-menu" style={{ background: '#fff', position: "fixed", bottom:'0px'}}>
@@ -1718,27 +1738,92 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     </svg>
                     <span>Help</span>
                 </Link>
-                <div className="complaint" >
-                    <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20">
-                    <path fill="url(#paint0_linear_800_2512)" fillRule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
-                    <defs>
-                        <linearGradient id="paint0_linear_800_2512" x1="10" x2="10" y1="0" y2="20" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#FD4A85"></stop>
-                        <stop offset="1" stopColor="#FF9D8C"></stop>
-                        </linearGradient>
-                    </defs>
-                    </svg>
-                    <span>File a Complaint</span>
-                </div>
+                
+                <Popup className="complaint"
+                    trigger={
+                        <div onClick={openModal}>
+                            <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20">
+                            <path fill="url(#paint0_linear_800_2512)" fillRule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_800_2512" x1="10" x2="10" y1="0" y2="20" gradientUnits="userSpaceOnUse">
+                                <stop stopColor="#FD4A85"></stop>
+                                <stop offset="1" stopColor="#FF9D8C"></stop>
+                                </linearGradient>
+                            </defs>
+                            </svg>
+                            <span>File a Complaint</span>
+                        </div>}
+                    modal
+                    nested
+                >
+                    {close => (
+                    <div className="ModalDialog fullScreenOnMobile">
+                        <div className="ModalTitle">File a complaint</div>
+                        <div className="close" onClick={close}>&times;</div>
+
+                        <div className="ModalDialogContent">
+                                <div className="file-a-complaint">
+                                <div className="imageUploadModule">
+                                    <div className="errorContainer">
+                                    <div className="errorText hide">Please make sure your picture type is valid!</div>
+                                    </div>
+                                    <input type="file" name="file" hidden multiple className="imageInput" accept="image/*" />
+                                    <div className="uploadButtonContainer">
+                                    <button className="upload-complaint-button">
+                                        <svg width="80px" height="80px" style={{ display: 'inline-block', verticalAlign: 'middle' }} fill="#E77571" viewBox="0 0 37.434 37.434">
+                                        <path d="M32.932 8.578H27.52v-.556c0-2.484-2.016-4.5-4.5-4.5h-8.607a4.501 4.501 0 00-4.5 4.5v.556H4.5a4.5 4.5 0 00-4.5 4.5v16.334c0 2.484 2.015 4.5 4.5 4.5h28.434c2.485 0 4.5-2.016 4.5-4.5V13.078a4.503 4.503 0 00-4.502-4.5zM18.715 29.244c-4.688 0-8.5-3.812-8.5-8.5 0-4.687 3.812-8.5 8.5-8.5 4.688 0 8.5 3.812 8.5 8.5 0 4.688-3.813 8.5-8.5 8.5zm4.5-8.5c0 2.479-2.02 4.5-4.5 4.5s-4.5-2.021-4.5-4.5c0-2.48 2.02-4.5 4.5-4.5s4.5 2.02 4.5 4.5z"></path>
+                                        </svg>
+                                        <span className="line1">Upload a Photo</span>
+                                        <span className="line2">of your complaint</span>
+                                    </button>
+                                    </div>
+                                </div>
+                                <div className="complaint-description">
+                                    <div className="inputContainer alternateStyle">
+                                    <div className="input-label"><span>Description (optional)</span></div>
+                                    <textarea name="name" required maxLength="500" rows="3" placeholder=""></textarea>
+                                    <span className="input-error"></span>
+                                    <span className="input-description">Ex. Quality of product is not as expected</span>
+                                    <span className="input-extra-content"></span>
+                                    </div>
+                                </div>
+                                <div className="action-buttons">
+                                    <button className="btn btn-secondary" onClick={closeModal}>Cancel</button>
+                                    <button className="btn btn-primary">Submit</button>
+                                </div>
+                                </div>
+
+                                
+                            </div>
 
 
+                    </div>
+                    )}
+                </Popup>
+                            
+                
             </div>
         </div>
-
-
-
     </div>
   );
 };
 
 export default Sidebar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
