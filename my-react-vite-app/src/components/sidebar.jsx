@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import './css/sidebar.css';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
-import Modal from './Modal';
-import './css/Modal.css'; // Create a CSS file for styling the modal
+import './css/Modal.css'; 
 import Popup from 'reactjs-popup';
 
 
@@ -1719,12 +1718,9 @@ const Sidebar = ({ isOpen, toggleSidebar,onClose }) => {
                 </a>
             </li>
             </ul>
-
-
+            </div>
 
             
-    
-            </div>
             <div className="quick-access-menu" style={{ background: '#fff', position: "fixed", bottom:'0px'}}>
                 <Link to="/Help_G" className="help">
                     <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 512 512">

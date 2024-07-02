@@ -428,7 +428,22 @@ div.name a{
 }
 
 
-
+.ModalDialog{
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0px !important;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(0,0,0,.4);
+  overflow: auto;
+  z-index: 9999999 !important;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease
+}
 
 .ModalDialogContainer {
   position: fixed !important;
