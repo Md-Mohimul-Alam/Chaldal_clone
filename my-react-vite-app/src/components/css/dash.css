@@ -131,7 +131,8 @@ header {
   }
   
   .login .btn {
-  
+    text-align: center;
+    padding-top: 5px;
     margin: 20px;
     border: 0;
     border-radius: 5px;

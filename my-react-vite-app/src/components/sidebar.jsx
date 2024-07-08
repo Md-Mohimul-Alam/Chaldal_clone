@@ -41,7 +41,6 @@ const Sidebar = ({ isOpen, toggleSidebar,onClose }) => {
   };
 
   const closeModal = () => {
-    console.log('Closing Modal');
     setIsModalOpen(false);
   };
 
@@ -1735,9 +1734,9 @@ const Sidebar = ({ isOpen, toggleSidebar,onClose }) => {
                     <span>Help</span>
                 </Link>
                 
-                <Popup className="complaint"
+                <Popup className="complaint" onClick={openModal} style={{ cursor: 'pointer', display: 'inline-block' }}
                     trigger={
-                        <div onClick={openModal}>
+                        <div>
                             <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20">
                             <path fill="url(#paint0_linear_800_2512)" fillRule="evenodd" d="M10 0a10 10 0 100 20A10 10 0 0010 0zm3.333 5L10 8.333 6.667 5 5 6.667 8.333 10 5 13.333 6.667 15 10 11.667 13.333 15 15 13.333 11.667 10 15 6.667 13.333 5z" clipRule="evenodd"></path>
                             <defs>

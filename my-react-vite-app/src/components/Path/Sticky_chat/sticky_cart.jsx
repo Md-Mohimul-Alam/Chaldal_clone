@@ -1,5 +1,5 @@
 import React from "react";
-import './sticky_cart.css'; // Import CSS file if needed
+import './sticky_cart.css'; 
 
 const Stickycart = () => {
     return (
