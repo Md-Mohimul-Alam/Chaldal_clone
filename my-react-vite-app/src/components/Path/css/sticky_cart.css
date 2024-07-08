@@ -1,0 +1,730 @@
+
+@media(min-width: 768px) {
+    .cartContainer {
+        left:0;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -ms-transition: all .2s;
+        transition: all .2s
+    }
+}
+.headerWrapper .headerWrapperWrapper {
+    background-color: #fff;
+    background-size: cover;
+    position: relative
+}
+
+@media(max-width: 768px) {
+     .headerWrapper .headerWrapperWrapper {
+        background-color:transparent
+    }
+}
+
+ .headerWrapperLandingPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10
+}
+
+
+.cartContainer .shoppingCartButton {
+    cursor: pointer;
+    position: absolute;
+    left: -16px;
+    top: 45%;
+    margin: auto;
+    height: 70px;
+    width: 16px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #fff;
+    background-color: #b7b7b7;
+    border: 1px solid rgba(0,0,0,.1)
+}
+
+.cartContainer .shoppingCartButton:hover {
+    background-color: #a3a3a3
+}
+
+.cartContainer .shoppingCartButton:before {
+    content: "";
+    width: 15px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    -ms-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    -o-transform: rotate(65deg);
+    transform: rotate(65deg);
+    margin-top: 26px
+}
+
+.cartContainer .shoppingCartButton:after {
+    content: "";
+    width: 15px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    -ms-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+    margin-top: 38px
+}
+
+.cartContainer .fullscreenOverlay {
+    position: relative
+}
+
+.cartContainer .fullscreenOverlay svg {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    margin: -30px 0 0 -30px;
+    z-index: 99999999999
+}
+
+.cartContainer .fullscreenOverlay::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    background: rgba(201,201,201,.4);
+    z-index: 999999999;
+    left: 0;
+    top: 0
+}
+
+
+.shoppingCart {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #fff;
+    width: 320px;
+    box-sizing: border-box;
+    box-shadow: -2px 0 12px 0 rgba(143,143,143,.38)
+}
+
+.shoppingCart .deliveryFeeHeader {
+    display: flex;
+    flex-direction: column
+}
+
+.shoppingCart .deliveryFeeHeader .viewSlotsContainer {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    font-size: 10px;
+    color: #0fa50f!important;
+    padding-left: 5px;
+    background-color: #dafde0!important;
+    font-weight: 700
+}
+
+.shoppingCart>section.stickyHeader {
+    opacity: .7;
+    cursor: pointer;
+    position: fixed;
+    width: 65px;
+    height: 75px;
+    background: #f5fceb;
+    right: 0;
+    top: calc(110px + 30%);
+    box-shadow: 0 0 16px -1px rgba(0,0,0,.75);
+    display: none;
+    transition: .1s ease-in-out
+}
+
+.shoppingCart>section.stickyHeader div.itemCount {
+    height: 50px;
+    background: #55584d;
+    width: 100%
+}
+
+.shoppingCart>section.stickyHeader div.itemCount svg {
+    margin-top: 3px;
+    margin-left: 22px
+}
+
+.shoppingCart>section.stickyHeader div.itemCount p {
+    color: #fdd670;
+    margin-top: -2px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 0
+}
+
+.shoppingCart>section.stickyHeader div.total {
+    height: 20px;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 5px
+}
+
+.shoppingCart>section.stickyHeader div.total div.odometer {
+    padding-left: 5px;
+    display: inline-block
+}
+
+.shoppingCart>section.stickyHeader:hover {
+    opacity: 1
+}
+
+.shoppingCart>.header {
+    width: 100% !important;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #e4e0e1;
+    height: 39px;
+    box-sizing: border-box;
+    display: none;
+    padding: 0 0 0 20px
+}
+
+.shoppingCart>.header>div {
+    height: 100%;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.shoppingCart>.header div.itemCount {
+    text-align: left;
+    width: 80px;
+    font-weight: 700;
+    color: #4f4f4f
+}
+
+.shoppingCart>.header div.itemCount .count-mobile {
+    display: none
+}
+
+.shoppingCart>.header div.cart {
+    margin-top: 4px;
+    width: 30px
+}
+
+.shoppingCart>.header div.cart svg {
+    margin-top: 4px;
+    fill: #4e4e4e!important;
+    stroke: #4e4e4e!important
+}
+
+.shoppingCart>.header div.total {
+    padding-top: 4px;
+    font-weight: 700;
+    text-align: center
+}
+
+.shoppingCart>.header div.total>div {
+    padding-left: 5px;
+    display: inline-block;
+    top: 1px
+}
+
+.shoppingCart>.header div.checkoutButton {
+    width: 110px;
+    text-align: center;
+    font-weight: 700;
+    display: none;
+    vertical-align: top;
+    padding-top: 3px
+}
+
+.shoppingCart>.header div.checkoutButton button {
+    height: 32px;
+    padding: 0 5px
+}
+
+.shoppingCart>.header div.checkoutButton button span {
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    top: -2px
+}
+
+@media(max-width: 767px) {
+    .shoppingCart>.header {
+        display:table
+    }
+}
+
+.shoppingCart.collapsed>.header {
+    border-bottom-left-radius: 5px
+}
+
+.shoppingCart.collapsed>.stickyHeader.bounce {
+    animation: bounce .9s ease-in-out
+}
+
+.shoppingCart.collapsed .closeCartButtonTop {
+    display: none
+}
+
+.shoppingCart.expanded>.header {
+    display: table
+}
+
+.shoppingCart.expanded .closeCartButtonTop {
+    display: block;
+    float: right;
+    background: 0 0;
+    border: 1px solid #62615f;
+    padding: 3px 15px 5px;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: #4f4f4f
+}
+
+.shoppingCart.expanded .closeCartButtonTop:hover {
+    background: #bdbaba
+}
+
+.shoppingCart.expanded .closeCartButtonTop:active {
+    background: #8e8c8c;
+    color: #fff
+}
+
+.shoppingCart.expanded .itemsHeader {
+    background-color: #f6f6f6!important;
+    height: 39px!important
+}
+
+.shoppingCart.expanded .itemsHeader .cartItemsHeaderIcon {
+    display: inline-block;
+    margin-right: 5px
+}
+
+.shoppingCart.expanded .itemsHeader .cartItemsHeaderIcon svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    fill: #4e4e4e
+}
+
+.shoppingCart.expanded .itemsHeader span {
+    color: #4e4e4e;
+    font-weight: 700
+}
+
+.shoppingCart.expanded .discountCodeContainer {
+    position: absolute;
+    bottom: 131px;
+    width: 100%
+}
+
+.shoppingCart.expanded .discountCodeContainer .discount-top-content {
+    padding-bottom: 5px
+}
+
+@media(max-width: 991px) {
+    .shoppingCart.expanded .discountCodeContainer {
+        position:fixed;
+        left: 0;
+        bottom: 50px;
+        width: 100%
+    }
+}
+
+@media(min-width: 768px) {
+    .shoppingCart.collapsed {
+        width:200px
+    }
+
+    .shoppingCart.collapsed section.stickyHeader {
+        display: block
+    }
+}
+
+.shoppingCart div.body {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto
+}
+
+@media(max-width: 767px) {
+    .shoppingCart div.body {
+        padding-bottom:65px
+    }
+}
+
+.shoppingCart div.body .discount-section {
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #039d40;
+    border-bottom: 1px solid #ededed
+}
+
+.shoppingCart div.body section.itemsHeader {
+    height: 30px
+}
+
+.shoppingCart div.body section.itemsHeader i {
+    color: #fff
+}
+
+.shoppingCart div.body section.itemsHeader>i {
+    float: left;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 7px
+}
+
+.shoppingCart div.body section.itemsHeader>span {
+    position: relative;
+    float: right;
+    font-size: 10px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 6px;
+    margin-top: 12px;
+    opacity: .7
+}
+
+.shoppingCart div.body section.itemsHeader>span i {
+    font-size: 13px;
+    font-weight: 700;
+    float: right;
+    margin-top: 3px;
+    margin-right: 5px
+}
+
+.shoppingCart div.body section.itemsHeader.expressHeader,.shoppingCart div.body section.itemsHeader.fifteenMinuteHeader {
+    background-color: #f6f6f6
+}
+
+.shoppingCart div.body section.itemsHeader.expressHeader>div,.shoppingCart div.body section.itemsHeader.fifteenMinuteHeader>div {
+    color: #4e4e4e;
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+.shoppingCart div.body section.itemsHeader.couponHeader,.shoppingCart div.body section.itemsHeader.outOfStockHeader,.shoppingCart div.body section.itemsHeader.regularHeader {
+    background-color: #f6f6f6
+}
+
+.shoppingCart div.body section.itemsHeader.couponHeader>div,.shoppingCart div.body section.itemsHeader.outOfStockHeader>div,.shoppingCart div.body section.itemsHeader.regularHeader>div {
+    color: #4e4e4e;
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 700
+}
+
+.shoppingCart div.body section.itemsHeader.outOfStockHeader {
+    background-color: #999
+}
+
+.shoppingCart div.body section.itemsHeader.couponHeader {
+    background-color: #bc3a29;
+    text-transform: uppercase;
+    font-style: italic
+}
+
+.shoppingCart div.body section.itemsHeader.couponHeader>div:after {
+    content: '\f145';
+    font-family: FontAwesome;
+    margin-left: 10px;
+    font-style: normal;
+    font-size: 1.2em
+}
+
+.shoppingCart div.body .outofstockitem {
+    opacity: .5
+}
+
+.shoppingCart div.footer {
+    background: #fff;
+    height: 132px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3)
+}
+
+.shoppingCart div.footer .shoppingtCartActionButtons>span {
+    font-size: 11px;
+    display: block;
+    font-weight: 700
+}
+
+.shoppingCart div.footer .closeCartButton {
+    display: none;
+    height: 50px;
+    width: 200px;
+    letter-spacing: 2px;
+    background: #c4c4c4;
+    color: #fff;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.24);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.24);
+    box-shadow: 0 1px 4px rgba(0,0,0,.24)
+}
+
+.shoppingCart div.footer .closeCartButton span {
+    font-size: 15px
+}
+
+.shoppingCart div.footer .mui-raised-button {
+    height: 50px;
+    width: 200px
+}
+
+.shoppingCart div.footer .mui-raised-button .mui-raised-button-container {
+    background-color: #ff686e
+}
+
+.shoppingCart div.footer .mui-raised-button .mui-raised-button-container:hover {
+    background-color: #ff353d
+}
+
+.shoppingCart div.footer .mui-raised-button button {
+    height: 50px
+}
+
+.shoppingCart div.footer .mui-raised-button .mui-raised-button-label {
+    font-weight: 700;
+    font-size: 20px
+}
+
+.shoppingCart div.footer div span.mui-raised-button-label {
+    font-size: 18px
+}
+
+.shoppingCart .checkoutFooter div.footer,.shoppingCart.empty div.footer {
+    padding-top: 12px;
+    font-size: 17px;
+    color: #aaa;
+    font-weight: 700;
+    text-align: center
+}
+
+@media(max-width: 1001px) {
+    .shoppingCart .checkoutFooter div.footer,.shoppingCart.empty div.footer {
+        text-align:center
+    }
+}
+
+.shoppingCart div.emptyCart {
+    text-align: center;
+    font-size: 17px;
+    color: #aaa;
+    display: table;
+    width: 100%;
+    margin-top: 20%
+}
+
+@media(max-width: 767px) {
+    .shoppingCart div.emptyCart {
+        margin-top:0
+    }
+}
+
+.shoppingCart div.emptyCart .nothingToSeeHereMoveOn {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    box-sizing: border-box
+}
+
+.shoppingCart div.emptyCart .nothingToSeeHereMoveOn span {
+    margin-top: 5px;
+    padding: 0 5px
+}
+
+.shoppingCart div.emptyCart .nothingToSeeHereMoveOn img {
+    width: 230px;
+    height: 230px;
+    margin-top: 30px
+}
+
+.shoppingCart div.orderItem {
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear
+}
+
+.shoppingCart div.orderItem:first-child {
+    padding-top: 5px
+}
+
+.shoppingCart div.orderItem:last-child {
+    margin-bottom: 0
+}
+
+.shoppingCart div.orderItem:hover .caret {
+    opacity: .5
+}
+
+@media(max-width: 767px) {
+    .shoppingCart.responsive {
+        box-shadow:none
+    }
+
+    .shoppingCart.responsive div.orderItem>div.quantity div.caret {
+        width: 37px;
+        height: 30px
+    }
+
+    .shoppingCart.responsive div.orderItem>div.quantity div.caret svg {
+        width: 34px;
+        height: 34px
+    }
+
+    .shoppingCart.responsive div.orderItem>div.amount .remove svg {
+        width: 24px;
+        height: 24px
+    }
+
+    .shoppingCart.responsive.collapsed .header {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        position: relative;
+        color: #ff686e;
+        background-color: transparent!important
+    }
+
+    .shoppingCart.responsive.collapsed .header.theme-grocery,.theme-grocery .shoppingCart.responsive.collapsed .header {
+        color: #ff686e
+    }
+
+    .shoppingCart.responsive.collapsed .header>div {
+        display: block
+    }
+
+    .shoppingCart.responsive.collapsed .header .itemCount,.shoppingCart.responsive.collapsed .header .toggle,.shoppingCart.responsive.collapsed .header .total {
+        display: none
+    }
+
+    .shoppingCart.responsive.collapsed .header .cart {
+        width: 30px;
+        float: left;
+        color: #ff686e;
+        margin-top: 0
+    }
+
+    .shoppingCart.responsive.collapsed .header .cart svg {
+        fill: #ff6f71!important;
+        stroke: #ff6f71!important;
+        margin-top: 0
+    }
+
+    .shoppingCart.responsive.collapsed .header .itemCount,.shoppingCart.responsive.collapsed .header .total {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: right;
+        width: 80px;
+        float: right;
+        padding-right: 10px;
+        height: auto
+    }
+
+    .shoppingCart.responsive.collapsed .header .itemCount {
+        display: inline-block;
+        color: #000;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        width: auto;
+        padding: 5px 6px 3px;
+        border-radius: 9px;
+        line-height: 1em;
+        -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.5);
+        -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.5);
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,.5)
+    }
+
+    .shoppingCart.responsive.collapsed .header .itemCount>span {
+        display: none
+    }
+
+    .shoppingCart.responsive.collapsed .header .itemCount .count-mobile {
+        display: block
+    }
+
+    .shoppingCart.responsive.collapsed .header .itemCount.bounce {
+        animation: bounce .9s ease-in-out
+    }
+
+    .shoppingCart.responsive.collapsed.empty {
+        width: 40px
+    }
+
+    .shoppingCart.responsive.collapsed.empty .itemCount,.shoppingCart.responsive.collapsed.empty .toggle {
+        display: none
+    }
+
+    .shoppingCart.responsive.collapsed.empty .checkoutButton {
+        display: none!important
+    }
+
+    .shoppingCart.responsive.collapsed.non-empty {
+        width: 40px
+    }
+
+    .shoppingCart.responsive.collapsed.non-empty .checkoutButton {
+        display: none!important
+    }
+
+    .shoppingCart.responsive.expanded {
+        width: 100%
+    }
+}
+
+@media(max-width: 767px) and (max-width:767px) {
+    .shoppingCart.responsive.collapsed .header .cart svg {
+        fill:#4f4f4f!important;
+        stroke: #4f4f4f!important
+    }
+}
+
+@media(max-width: 767px) and (max-width:767px) {
+    .shoppingCart.responsive.collapsed .header .itemCount {
+        color:#fff;
+        background: #ff6f71;
+        margin-left: 23px;
+        margin-bottom: 10px;
+        padding: 6px 3px 3px;
+        opacity: 1;
+        font-size: 10px
+    }
+}
+
+@media(max-width: 900px) {
+    .shoppingCart {
+        box-shadow:none
+    }
+}
+
+

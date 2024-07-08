@@ -1128,3 +1128,56 @@ header {
   }
 }
 
+section.stickyHeader {
+  opacity: .8;
+  cursor: pointer;
+  position: fixed;
+  width: 65px;
+  height: 75px;
+  background: #f5fceb;
+  right: 0;
+  top: calc(110px + 30%);
+  box-shadow: 0 0 16px -1px rgba(0,0,0,.75);
+  transition: .1s ease-in-out;
+  position: fixed !important;
+  z-index: 1000 !important;
+}
+
+section.stickyHeader div.itemCount {
+  height: 50px;
+  background: #55584d;
+  width: 100%
+}
+
+section.stickyHeader div.itemCount svg {
+  margin-top: 3px;
+  margin-left: 22px
+}
+
+section.stickyHeader div.itemCount p {
+  color: #fdd670;
+  margin-top: -2px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 0
+}
+
+section.stickyHeader div.total {
+  height: 20px;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 5px
+}
+
+section.stickyHeader div.total div.odometer {
+  padding-left: 5px;
+  display: inline-block
+}
+
+section.stickyHeader:hover {
+  opacity: 1
+}

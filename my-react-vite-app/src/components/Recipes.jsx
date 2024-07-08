@@ -10,7 +10,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import DeliveryInfo from './crt';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
-import Stickycart from './Sticky_chat/sticky_cart';
 import { Link } from 'react-router-dom';
 
 
