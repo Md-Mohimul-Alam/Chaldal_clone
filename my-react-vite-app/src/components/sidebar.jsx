@@ -1699,7 +1699,7 @@ const Sidebar = ({ isOpen, toggleSidebar,onClose }) => {
                 
             <li className="unselected topLevel">
                 <Link to="/Fav_G">
-                    <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-489/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&amp;webp=1" alt="Premium Care" />
+                    <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-517/Default/components/header/CategoryMenuVertical/images/premiumCare.svg?q=best&webp=1" alt="Premium Care" />
                     <span>Premium Care</span>
                 </Link>
             </li>

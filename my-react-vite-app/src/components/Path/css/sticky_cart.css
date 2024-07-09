@@ -1,4 +1,25 @@
+.shoppingCartWrapper {
+    width: 320px;
+    position:sticky;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    right: 0px;
+    z-index: 1000;
+    top: 0px;
+    height: 1500px !important;
+    display: flex !important;
+    flex-direction: row;
+}
 
+@media(max-width: 767px) {
+    .shoppingCartWrapper {
+        top:auto;
+        right: 0
+    }
+}
 @media(min-width: 768px) {
     .cartContainer {
         left:0;
@@ -9,30 +30,6 @@
         transition: all .2s
     }
 }
-.headerWrapper .headerWrapperWrapper {
-    background-color: #fff;
-    background-size: cover;
-    position: relative
-}
-
-@media(max-width: 768px) {
-     .headerWrapper .headerWrapperWrapper {
-        background-color:transparent
-    }
-}
-
- .headerWrapperLandingPage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    z-index: 10
-}
-
-
 .cartContainer .shoppingCartButton {
     cursor: pointer;
     position: absolute;
@@ -100,7 +97,6 @@
     content: "";
     display: block;
     position: fixed;
-    overflow: hidden;
     background: rgba(201,201,201,.4);
     z-index: 999999999;
     left: 0;
@@ -114,77 +110,17 @@
     background-color: #fff;
     width: 320px;
     box-sizing: border-box;
-    box-shadow: -2px 0 12px 0 rgba(143,143,143,.38)
+    box-shadow: -2px 0 12px 0 rgba(143,143,143,.38);
+    padding-top: 47px;
+    margin-top: 20px;
 }
 
 .shoppingCart .deliveryFeeHeader {
     display: flex;
-    flex-direction: column
 }
 
-.shoppingCart .deliveryFeeHeader .viewSlotsContainer {
-    display: flex;
-    align-items: center;
-    height: 34px;
-    font-size: 10px;
-    color: #0fa50f!important;
-    padding-left: 5px;
-    background-color: #dafde0!important;
-    font-weight: 700
-}
 
-.shoppingCart>section.stickyHeader {
-    opacity: .7;
-    cursor: pointer;
-    position: fixed;
-    width: 65px;
-    height: 75px;
-    background: #f5fceb;
-    right: 0;
-    top: calc(110px + 30%);
-    box-shadow: 0 0 16px -1px rgba(0,0,0,.75);
-    display: none;
-    transition: .1s ease-in-out
-}
 
-.shoppingCart>section.stickyHeader div.itemCount {
-    height: 50px;
-    background: #55584d;
-    width: 100%
-}
-
-.shoppingCart>section.stickyHeader div.itemCount svg {
-    margin-top: 3px;
-    margin-left: 22px
-}
-
-.shoppingCart>section.stickyHeader div.itemCount p {
-    color: #fdd670;
-    margin-top: -2px;
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 0
-}
-
-.shoppingCart>section.stickyHeader div.total {
-    height: 20px;
-    width: 100%;
-    font-weight: 700;
-    text-align: center;
-    font-size: 13px;
-    padding-top: 5px
-}
-
-.shoppingCart>section.stickyHeader div.total div.odometer {
-    padding-left: 5px;
-    display: inline-block
-}
-
-.shoppingCart>section.stickyHeader:hover {
-    opacity: 1
-}
 
 .shoppingCart>.header {
     width: 100% !important;
@@ -324,18 +260,18 @@
     font-weight: 700
 }
 
-.shoppingCart.expanded .discountCodeContainer {
-    position: absolute;
-    bottom: 131px;
+.discountCodeContainer {
+    position: fixed !important;
+    bottom: 0px !important;
     width: 100%
 }
 
-.shoppingCart.expanded .discountCodeContainer .discount-top-content {
+.discountCodeContainer .discount-top-content {
     padding-bottom: 5px
 }
 
 @media(max-width: 991px) {
-    .shoppingCart.expanded .discountCodeContainer {
+    .discountCodeContainer {
         position:fixed;
         left: 0;
         bottom: 50px;
@@ -354,6 +290,7 @@
 }
 
 .shoppingCart div.body {
+    background-color: rgba(255, 255, 255, 0.87);
     width: 100%;
     box-sizing: border-box;
     overflow: auto
@@ -534,7 +471,8 @@
     color: #aaa;
     display: table;
     width: 100%;
-    margin-top: 20%
+    margin-top: 20%;
+    overflow: hidden !important;
 }
 
 @media(max-width: 767px) {
@@ -728,3 +666,848 @@
 }
 
 
+#shipping-cost-meter.meter-full .costMeterSection .costMeter .progress .bar {
+    background-color: #97cd6d!important;
+    background-image: -moz-linear-gradient(top,#99ce6f,#97cc6e)!important;
+    background-image: -ms-linear-gradient(top,#99ce6f,#97cc6e)!important;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#99ce6f,#97cc6e))!important;
+    background-image: -webkit-linear-gradient(top,#99ce6f,#97cc6e)!important;
+    background-image: -o-linear-gradient(top,#99ce6f,#97cc6e)!important;
+    background-image: linear-gradient(top,#99ce6f,#97cc6e)!important
+}
+
+#shipping-cost-meter.fifteenMinuteActivated .costMeterSection .costMeter .progress .bar {
+    background-color: #735181!important;
+    background-image: -moz-linear-gradient(top,#735181,#8c639c)!important;
+    background-image: -ms-linear-gradient(top,#735181,#8c639c)!important;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#735181,#8c639c))!important;
+    background-image: -webkit-linear-gradient(top,#735181,#8c639c)!important;
+    background-image: -o-linear-gradient(top,#735181,#8c639c)!important;
+    background-image: linear-gradient(top,#735181,#8c639c)!important
+}
+
+#shipping-cost-meter .costMeterSection {
+    width: 107%;
+    float: left
+}
+
+#shipping-cost-meter .costMeterSection .infoText {
+    text-align: center;
+    color: #686868;
+    margin-top: -5px;
+    margin-right: 10px;
+    font-size: 12px
+}
+
+#shipping-cost-meter .costMeterSection .costMeter {
+    width: 100%
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .container {
+    width: 100%;
+    float: left
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .progress {
+    position: relative;
+    overflow: hidden;
+    height: 34px;
+    background-color: #7a7879;
+    background-image: -moz-linear-gradient(top,#7f7d7e,#757374);
+    background-image: -ms-linear-gradient(top,#7f7d7e,#757374);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#7f7d7e,#757374));
+    background-image: -webkit-linear-gradient(top,#7f7d7e,#757374);
+    background-image: -o-linear-gradient(top,#7f7d7e,#757374);
+    background-image: linear-gradient(top,#7f7d7e,#757374);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5',endColorstr='#f9f9f9',GradientType=0);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .progress .bar {
+    height: 35px;
+    position: absolute;
+    background-color: #ff6d6e;
+    background-image: -moz-linear-gradient(top,#ff5d6e,#ff7d6e);
+    background-image: -ms-linear-gradient(top,#ff5d6e,#ff7d6e);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ff5d6e),to(#ff7d6e));
+    background-image: -webkit-linear-gradient(top,#ff5d6e,#ff7d6e);
+    background-image: -o-linear-gradient(top,#ff5d6e,#ff7d6e);
+    background-image: linear-gradient(top,#ff5d6e,#ff7d6e);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#149bdf',endColorstr='#0480be',GradientType=0);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: width .6s ease;
+    -moz-transition: width .6s ease;
+    -ms-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText {
+    background-color: #615e58;
+    color: #fff;
+    width: 100%;
+    line-height: 35px
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextLeft {
+    float: left;
+    margin-left: 5px;
+    width: 65%
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextLeft.banglaLang {
+    font-weight: 400
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextLeftForSlotFreeShipping {
+    width: 80%
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextRight {
+    float: right;
+    margin-right: 5px
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextRight .helpIcon {
+    display: inline-block;
+    width: 27px;
+    text-align: center
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextRight .helpIcon svg {
+    margin-bottom: 3px
+}
+
+#shipping-cost-meter .costMeterSection .costMeter .meterInfoText .InfoTextRight .helpIcon:hover {
+    cursor: pointer
+}
+
+@media(max-width: 767px) {
+    #shipping-cost-meter.isNewNavBarHeader {
+        top:99px!important
+    }
+}
+
+@media(max-width: 1050px) {
+    #shipping-cost-meter.at-page,#shipping-cost-meter.in-shopping-cart {
+        top:110px
+    }
+}
+
+@media(max-width: 767px) {
+    #shipping-cost-meter.at-page,#shipping-cost-meter.in-shopping-cart {
+        top:80px;
+        width: 100%;
+        right: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0
+    }
+}
+
+.shippingCostMeterHelpDialog.mui-dialog {
+    padding-top: 120px!important
+}
+
+@media(max-width: 320px) {
+    .shippingCostMeterHelpDialog.mui-dialog {
+        padding-top:60px!important
+    }
+}
+
+.shippingCostMeterHelpDialog .helpBody {
+    text-align: center
+}
+
+.shippingCostMeterHelpDialog .helpBody .title {
+    color: #e65f63;
+    font-size: 17px;
+    font-weight: 600;
+    width: 85%;
+    margin: 0 auto
+}
+
+.shippingCostMeterHelpDialog .helpBody .deliveryChargePolicyContainer {
+    margin-top: 20px
+}
+
+.shippingCostMeterHelpDialog .helpBody .deliveryChargePolicyContainer .policy {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #464646;
+    text-align: left
+}
+
+.shippingCostMeterHelpDialog .helpBody .closeBtn {
+    margin-top: 15px;
+    background: #ff6d6d;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+.shippingCostMeterHelpDialog .helpBody .userDeliveryChargeDescriptionContainer {
+    border: 1.3px solid #bfbab2;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px
+}
+
+.shippingCostMeterHelpDialog .helpBody .userDeliveryChargeDescriptionContainer .promotionalOfferText {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000
+}
+
+.star-ratings-div .star.hover svg {
+    fill: rgba(255,198,112,.57)!important
+}
+
+.star-ratings-div .star.selected svg {
+    fill: #fdd468
+}
+
+.star-ratings-div .star:hover {
+    cursor: pointer
+}
+
+.star-ratings-div .star.disabled:hover {
+    cursor: not-allowed
+}
+
+.paymentMethodItem {
+    width: 100%;
+    font-size: 14px;
+    color: #262525;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    position: relative;
+    z-index: 2
+}
+
+.paymentMethodItem:hover {
+    background-color: #f3f3f3
+}
+
+.paymentMethodItem:active,.paymentMethodItem:focus {
+    outline: 0
+}
+
+.paymentMethodItem:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+.paymentMethodItem .paymentMethodItemContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: row
+}
+
+.paymentMethodItem .paymentMethodItemContent span {
+    margin-right: auto
+}
+
+.paymentMethodItem .paymentMethodItemContent .imageContainer {
+    height: 20px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px
+}
+
+.checkoutConfirmComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent {
+    max-width: 600px
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent>div {
+    padding-bottom: 15px
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent h3.error {
+    color: #ff524f
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent h4 {
+    font-size: 20px;
+    padding: 20px 0
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent h4 b {
+    color: #39b87c
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .braintreeCheckout {
+    margin: 0 20px
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods {
+    width: 100%
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods #braintree-dropin-frame {
+    z-index: 1!important
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods .selectedPaymentMethod .braintreePayment,.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods .selectedPaymentMethod .oldBkashPayment {
+    border-color: #ff686e
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent section.paymentMethods .brainTree {
+    max-width: 300px;
+    margin: 0 auto
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .usdTotal {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .usdTotal label {
+    font-size: 20px;
+    color: #797373
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentProceedBtn {
+    margin: 20px auto 0;
+    width: 250px;
+    padding: 15px;
+    border: none;
+    outline: 0;
+    display: block;
+    text-align: center;
+    line-height: 16px
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentPendingVerification {
+    background: #ffdede!important
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentMessageContainer {
+    width: 100%;
+    padding: 35px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    background: #e8f0f3
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentMessageContainer .loading {
+    position: relative;
+    display: block;
+    background: 0 0
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentMessageContainer .loading .loader {
+    margin: 0 auto 45px
+}
+
+@media(max-width: 900px) {
+    .checkoutConfirmComponent .inlinePaymentComponent .paymentMessageContainer {
+        padding:35px 15px
+    }
+}
+
+@media(max-width: 425px) {
+    .checkoutConfirmComponent .inlinePaymentComponent .paymentMessageContainer {
+        padding:35px 10px
+    }
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentSuccessContainer {
+    background-color: #e0fce3
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentSuccessContainer .paymentSuccess {
+    color: #129138
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .walletSuccess {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .leftContent {
+    display: flex;
+    align-items: center
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .leftContent img {
+    height: 30px;
+    margin-right: 5px
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .leftContent .walletSuccessMsg {
+    color: #585d60;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: left
+}
+
+@media(max-width: 900px) {
+    .checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .leftContent .walletSuccessMsg {
+        font-size:16px
+    }
+}
+
+@media(max-width: 425px) {
+    .checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .leftContent .walletSuccessMsg {
+        font-size:14px
+    }
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .leftContent .walletSuccessMsg b {
+    color: #0ab972;
+    font-weight: 700
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .rightContent span {
+    color: #ff686e;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0
+}
+
+@media(max-width: 900px) {
+    .checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .rightContent span {
+        font-size:14px
+    }
+}
+
+@media(max-width: 425px) {
+    .checkoutConfirmComponent .inlinePaymentComponent .walletSuccess .rightContent span {
+        font-size:12px
+    }
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentSuccess {
+    color: #585d60
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .paymentError {
+    color: #f44
+}
+
+.checkoutConfirmComponent .inlinePaymentComponent .loading {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.5)
+}
+
+.bkashIframeClass {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999
+}
+.discountCodeContainer {
+    position: absolute;
+    bottom: 131px;
+    width: 100%;
+}
+section.discountCodeContainer .discountCodeHeader {
+    display: flex !important;
+    color: #000;
+}
+
+section.discountCodeContainer .discountCodeHeader:hover {
+    background: #eee
+}
+
+section.discountCodeContainer .discountCodeHeader:active {
+    background: #d3d3d3
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount {
+    
+    border: 0;
+    background: 0 0;
+    font-size: 14px;
+    height: 30px;
+    width: 50%;
+    outline: 0
+}
+
+@media(max-width: 1000px) {
+    section.discountCodeContainer .discountCodeHeader button.btnDiscount {
+        height:40px
+    }
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-icon {
+    border-radius: 10px;
+    border: 1px solid #787878;
+    padding: 0 3px;
+    margin-right: 10px
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-up svg {
+    transform: rotate(-90deg);
+    margin-top: -3px
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-down svg {
+    transform: rotate(90deg)
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp {
+    background: 0 0;
+    display: flex;
+    padding-top: 0!important;
+    border: 0;
+    outline: 0
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:hover {
+    background: #cdcdcd
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:active {
+    background: #939393
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:active svg {
+    fill: #fff
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp svg {
+    fill: #787878;
+    width: 19px
+}
+
+section.discountCodeContainer .discountCodeContent {
+    display: none
+}
+
+
+section.discountCodeContainer {
+    background-color: #fff
+}
+
+section.discountCodeContainer .main-discount-container {
+    text-align: center;
+    color: #787878;
+    align-items: center;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ededed;
+    background: #f7f7f7
+}
+
+section.discountCodeContainer .couponAvailableContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 8px;
+    color: #868686;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 4px
+}
+
+section.discountCodeContainer .couponAvailableContainer .couponAvailableTextContainer {
+    margin: 0 8px;
+    color: #0fa50f
+}
+
+section.discountCodeContainer .couponAvailableContainer .seeAllTextContainer {
+    color: #868686
+}
+
+section.discountCodeContainer .couponAvailableContainer .seeAllTextContainer a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+section.discountCodeContainer .couponAvailableContainer .seeAllTextContainer a:hover {
+    color: #62615f
+}
+
+section.discountCodeContainer .couponAvailableContainer .seeAllTextContainer svg {
+    color: #868686;
+    fill: #868686;
+    stroke-width: 1;
+    margin-left: 5px
+}
+
+section.discountCodeContainer .referralMessageContainer {
+    background-color: #99ce6f;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10px 15px 8px
+}
+
+section.discountCodeContainer .referralMessageContainer .referralMessage {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 15px
+}
+
+section.discountCodeContainer .referralMessageContainer .closeIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+section.discountCodeContainer .referralMessageContainer .closeIconInnerContainer :hover {
+    background-color: #fdd670
+}
+
+section.discountCodeContainer .warningReferralMessageContainer {
+    background-color: #e8c238
+}
+
+section.discountCodeContainer .discountCodeHeader {
+    display: flex
+}
+
+section.discountCodeContainer .discountCodeHeader:hover {
+    background: #eee
+}
+
+section.discountCodeContainer .discountCodeHeader:active {
+    background: #d3d3d3
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount {
+    border: 0;
+    background: 0 0;
+    font-size: 14px;
+    height: 30px;
+    width: 100%;
+    outline: 0
+}
+
+@media(max-width: 1000px) {
+    section.discountCodeContainer .discountCodeHeader button.btnDiscount {
+        height:40px
+    }
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-icon {
+    border-radius: 10px;
+    border: 1px solid #787878;
+    padding: 0 3px;
+    margin-right: 10px
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-up svg {
+    transform: rotate(-90deg);
+    margin-top: -3px
+}
+
+section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-down svg {
+    transform: rotate(90deg)
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp {
+    background: 0 0;
+    display: flex;
+    padding-top: 0!important;
+    border: 0;
+    outline: 0
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:hover {
+    background: #cdcdcd
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:active {
+    background: #939393
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:active svg {
+    fill: #fff
+}
+
+section.discountCodeContainer .discountCodeHeader button.discountCodeHelp svg {
+    fill: #787878;
+    width: 19px
+}
+
+section.discountCodeContainer .discountCodeContent {
+    display: none
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn {
+    width: 290px;
+    display: block;
+    text-align: center;
+    margin: auto auto 10px
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn input {
+    background: #e3e3e3;
+    border: 0;
+    font-size: 14px;
+    border-radius: 5px;
+    height: 33px;
+    width: 180px;
+    text-align: center;
+    outline: 0;
+    float: left;
+    margin: 10px 8px 0 0
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn input:focus {
+    background: #dbdbdb;
+    border: 1px solid #cdcdcd
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSubmitBtn {
+    background: #ff686e;
+    color: #fff;
+    font-size: 14px;
+    text-transform: none;
+    border: none;
+    border-radius: 3px;
+    line-height: 28px;
+    width: 50px;
+    float: left;
+    margin: 11px 0 0 8px;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSubmitBtn:hover {
+    background: #ff1b25
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSubmitBtn:active {
+    margin-bottom: 0;
+    margin-top: 11px
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn .discountCloseBtn {
+    float: left;
+    width: 40px;
+    padding: 0;
+    margin: 16px 0 0 2px;
+    border: 0;
+    background: 0 0
+}
+
+section.discountCodeContainer .discountCodeContent .inputNbtn:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+section.discountCodeContainer .discountCodeContent .error {
+    color: #db1e3d
+}
+
+section.discountCodeContainer .discountCodeContent .discountApplied h4 {
+    color: #787878;
+    padding: 10px 0 5px
+}
+
+section.discountCodeContainer .discountCodeContent .discountApplied h5 {
+    color: #787878;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 15px
+}
+
+section.discountCodeContainer .discountCodeContent .discountApplied .mui-flat-button {
+    background: 0 0;
+    color: #ff686e;
+    text-transform: none
+}
+
+section.discountCodeContainer .discountFooter {
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px
+}
+
+section.discountCodeContainer .discountFooter .discountCloseBtn {
+    float: left;
+    border: 0;
+    background: 0 0
+}
+
+section.discountCodeContainer .discountFooter .discountCodeHelp {
+    float: right;
+    border: 0;
+    background: 0 0;
+    outline: 0;
+    padding: 0
+}
+
+section.discountCodeContainer .discountFooter .discountCodeHelp svg {
+    fill: #a2a2a2
+}
+
+section.discountCodeContainer.expanded .grey-box {
+    background: #f6f6f6
+}
+
+section.discountCodeContainer.expanded .discountCodeHeader button.btnDiscount {
+    padding-left: 0
+}
+
+section.discountCodeContainer.expanded .discountCodeHeader button.discountCodeHelp {
+    display: none
+}
+
+section.discountCodeContainer.expanded .discountCodeContent {
+    display: block
+}

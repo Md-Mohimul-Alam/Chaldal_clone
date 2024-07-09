@@ -21,25 +21,21 @@ import TeamG from './components/Path/help_F_team';
 import TeamP from './components/Path/help_P_team';
 
 import { CartProvider } from './components/Path/CartContext';
-import Stickycart from './components/Path/sticky_cart';
 
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-  const toggleCart = () => {
-    setIsCartOpen(!isCartOpen);
-  };
+ 
   return (
     <CartProvider>
     <Router>
 
         <Routes>
-          <Route path="/" element={<Dashboard isOpen={isOpen} toggleSidebar={toggleSidebar} toggleCart={toggleCart} />} />
+          <Route path="/" element={<Dashboard isOpen={isOpen} toggleSidebar={toggleSidebar}  />} />
           <Route path="/Pharmacy/pharmacyDashboard" element={<PharmacyDashboard />} />
           <Route path="/cookups/dash_Cook" element={<CooksDash />} />
           <Route path="/Offers" element={<Offers />} />
@@ -59,8 +55,6 @@ const App = () => {
           <Route path="/help_F_team" element={<TeamG />} />
           <Route path="/help_P_team" element={<TeamP />} />
         </Routes>
-        <Stickycart style={{ position: 'fixed' }} />
-
     </Router>
     </CartProvider>
   );

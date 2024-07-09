@@ -1,8 +1,8 @@
 
 .dashboard-container {
   position: relative;
-  width: 1857px !important;
-  overflow: hidden;
+  width: 1855px !important;
+  overflow:hidden;
   background-color: white;
 }
 
@@ -1180,4 +1180,7 @@ section.stickyHeader div.total div.odometer {
 
 section.stickyHeader:hover {
   opacity: 1
+}
+.hidden {
+  display: none !important;
 }
