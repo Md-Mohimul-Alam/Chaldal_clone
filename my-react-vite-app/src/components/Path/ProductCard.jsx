@@ -2,10 +2,37 @@ import React, { useState } from "react";
 import './css/Offers.css';
 
 const ItemCard = ({ item, addToCart }) => {
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(0); 
+    const [showQuantityEditor, setShowQuantityEditor] = useState(false);
 
-    const handleQuantityChange = (event) => {
-        setQuantity(event.target.value);
+    const handleIncrement = () => {
+        setQuantity(prevQuantity => {
+            const newQuantity = prevQuantity + 1;
+            addToCart(item, newQuantity); // Add the updated quantity to the cart
+            return newQuantity;
+        });
+    };
+
+    const handleDecrement = () => {
+        setQuantity(prevQuantity => {
+            const newQuantity = prevQuantity - 1;
+            if (newQuantity <= 0) {
+                setShowQuantityEditor(false);
+                addToCart(item, 0); // Remove the item from cart or set quantity to 0
+                return 0;
+            } else {
+                addToCart(item, newQuantity); // Update the cart with new quantity
+                return newQuantity;
+            }
+        });
+    };
+
+    const handleAddToBag = () => {
+        setShowQuantityEditor(!showQuantityEditor);
+        if (!showQuantityEditor && quantity === 0) {
+            setQuantity(1);
+            addToCart(item, 1);
+        }
     };
 
     return (
@@ -14,35 +41,52 @@ const ItemCard = ({ item, addToCart }) => {
                 <img src={item.image} alt={item.name} className="offer-image" />
                 <div className="product">
                     <div className="imageWrapper">
-                        <div className="imageWrapperWrapper">
-                            <img src={item.image} alt={item.name} size="400" style={{ backgroundColor: 'transparent' }} />
-                        </div>
-                        <div className="name">{item.name}</div>
-                        <div className="subText">
-                            <input type="number" value={quantity} onChange={handleQuantityChange} min="1" />
-                        </div>
-                        <div className="discountedPriceSection">
-                            <div className="discountedPrice">
-                                <span>৳ </span><span>{item.price}</span>
+                        
+                        <div className="choto" style={{alignItems:'center', position:'relative'}}>
+                            <div className="imageWrapperWrapper">
+                                <img src={item.image} alt={item.name} size="400" style={{ backgroundColor: 'transparent', width:'100%', padding:'5px',marginLeft:'2px'}} />
                             </div>
-                            <div className="price">
-                                <span>৳ </span><span>{item.originalPrice}</span>
+                            <div className="name">{item.name}</div>
+
+                            <div className="subText">
+                                {item.quantity_inKGorPCS}
                             </div>
+
+                            <div className="discountedPriceSection" style={{ display:'flex' }}>
+                                <div className="discountedPrice">
+                                    <span>৳ </span><span>{item.price}</span>
+                                </div>
+                                <div className="price">
+                                    <span>৳ </span><span>{item.originalPrice}</span>
+                                </div>
+                            </div>
+
                         </div>
+                        
+                        
+                        {showQuantityEditor ? (
+                            <div className="productQuantityEditor addButtonWrapper border-radius-small">
+                                <button className="minusQuantity" onClick={handleDecrement}>–</button>
+
+                                <div className="QuantityTextContainer" >
+                                    <span>{quantity}</span>
+                                    <span> </span>
+                                    <span>in bag</span>
+                                </div>
+
+                                <button className="plusQuantity"  onClick={handleIncrement}>+</button>
+                            </div>
+                        ) : (
+                            <section className="addButtonWrapper border-radius-small" style={{display:'flex', alignItems:'center',justifyContent:'center'}}  onClick={handleAddToBag}>
+                                <span class="fifteenMinute" id="svgIcon"><svg style={{display:'inline-block', verticalAlign:'middle'}} width="22px" height="25px" version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012"><path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path></svg></span>
+                                <div className="buyText" style={{ color: '#ff8182' }}>
+                                    {showQuantityEditor ? "Cancel" : "Add to bag"}
+                                </div>
+                            </section>
+                        )}
+
                     </div>
-                    <span>
-                        <a href="/item-details" className="btnShowDetails">
-                            <span>Details</span><span>  &gt;</span>
-                        </a>
-                        <div className="btnShowDetailsIcon">
-                            <svg width="24px" height="24px" style={{ fill: '#e1e1e1', stroke: '#e1e1e1', display: 'inline-block', verticalAlign: 'middle' }} version="1.1" viewBox="0 0 100 100">
-                                <path d="m50 5c-24.898 0-45 20.102-45 45s20.102 45 45 45 45-20.102 45-45-20.102-45-45-45zm7.1016 70c0 2.1992-1.8984 4.1016-4.1016 4.1016h-6.1992c-2.1992 0-4.1016-1.8984-4.1016-4.1016v-26.199c0-2.3008 1.8984-4.1016 4.1016-4.1016h6.1992c2.1992 0 4.1016 1.8984 4.1016 4.1016zm-7.2031-37.102c-4.6016 0-8.3984-3.8008-8.3984-8.5 0-4.6992 3.8008-8.5 8.3984-8.5 4.6992 0 8.5 3.8008 8.5 8.5 0 4.7031-3.7969 8.5-8.5 8.5z"></path>
-                            </svg>
-                        </div>
-                    </span>
-                    <section className="addButtonWrapper border-radius-small">
-                        <div onClick={() => addToCart(item, quantity)} className="buyText" style={{ color: '#ff8182' }}>Add to bag</div>
-                    </section>
+
                 </div>
             </li>
         </ul>

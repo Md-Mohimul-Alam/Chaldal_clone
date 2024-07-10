@@ -85,13 +85,6 @@ const CartSidebar = ({ isCartOpen, toggleCart }) => {
                         )}
 
 
-                        <div className="addToBagButton">
-                            <button onClick={() => addToBag({ item})}>
-                                Add Example Product to Shopping Bag
-                            </button>
-                        </div>
-
-
                     </div>
                 </div>
             </div>

@@ -632,7 +632,10 @@ div.product .productQuantityEditor {
     color: #fff;
     -webkit-box-shadow: 1px 1px 1px rgba(204,204,204,.5);
     -moz-box-shadow: 1px 1px 1px rgba(204,204,204,.5);
-    box-shadow: 1px 1px 1px rgba(204,204,204,.5)
+    box-shadow: 1px 1px 1px rgba(204,204,204,.5);
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
 }
 
 div.product .productQuantityEditor .minusQuantity,div.product .productQuantityEditor .plusQuantity {
@@ -643,7 +646,8 @@ div.product .productQuantityEditor .minusQuantity,div.product .productQuantityEd
     outline: 0;
     font-weight: 700;
     color: #fff;
-    border-radius: 0 3px 3px 0
+    border-radius: 0 3px 3px 0;
+    align-items: center !important;
 }
 
 div.product .productQuantityEditor .minusQuantity:active,div.product .productQuantityEditor .plusQuantity:active {
@@ -1049,13 +1053,13 @@ div.product .stockRequestLoadingAnimation {
     }
 }
 
-#your-offers .offer-container {
-    display: flex;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap
+.offer-container  {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
 }
 
-#your-offers .offer-container .offer-item {
+.offer-container  .offer-item {
     padding: 15px 0 15px 15px;
     height: 330px;
     border: 1px solid #eee;
@@ -1069,24 +1073,24 @@ div.product .stockRequestLoadingAnimation {
     transition: all 300ms ease-in-out
 }
 
-#your-offers .offer-container .offer-item:hover {
+.offer-container  .offer-item:hover {
     -webkit-box-shadow: 0 1px 15px #a7a7a7;
     -moz-box-shadow: 0 1px 15px #a7a7a7;
     box-shadow: 0 1px 15px #a7a7a7
 }
 
-#your-offers .offer-container .offer-item h2 {
+.offer-container  .offer-item h2 {
     display: none
 }
 
-#your-offers .offer-container .offer-item>img {
+.offer-container  .offer-item>img {
     max-height: 100%;
     width: 400px;
     height: auto;
     margin-right: 15px
 }
 
-#your-offers .offer-container .offer-item>img{
+.offer-container  .offer-item>img{
     float: none;
     display: inline-block;
     justify-content: start;
@@ -1094,30 +1098,30 @@ div.product .stockRequestLoadingAnimation {
 }
 
 @media screen and (max-width: 700px) {
-    #your-offers .offer-container {
+    .offer-container  {
         width:100%;
         text-align: center
     }
 }
 
 @media screen and (max-width: 991px) {
-    #your-offers .offer-container .offer-item {
+    .offer-container  .offer-item {
         height:auto;
         padding: 10px
     }
 
-    #your-offers .offer-container .offer-item>img {
+    .offer-container  .offer-item>img {
         max-width: 100%;
         margin: 0
     }
 
-    #your-offers .offer-container .offer-item>.product {
+    .offer-container  .offer-item>.product {
         width: 100%;
         height: auto;
         margin: 0
     }
 
-    #your-offers .offer-container .offer-item>.product .imageWrapper {
+    .offer-container  .offer-item>.product .imageWrapper {
         width: 100%;
         height: auto;
         display: flex;
@@ -1133,20 +1137,20 @@ div.product .stockRequestLoadingAnimation {
       color: #fff;
   }
 
-    #your-offers .offer-container .offer-item>.product .imageWrapper .imageWrapperWrapper {
+    .offer-container  .offer-item>.product .imageWrapper .imageWrapperWrapper {
         position: absolute;
         left: 0;
         top: 0
     }
 
-    #your-offers .offer-container .offer-item>.product .imageWrapper .discountedPriceSection,#your-offers .offer-container .offer-item>.product .imageWrapper .name,#your-offers .offer-container .offer-item>.product .imageWrapper .subText {
+    .offer-container  .offer-item>.product .imageWrapper .discountedPriceSection,.offer-container  .offer-item>.product .imageWrapper .name,.offer-container  .offer-item>.product .imageWrapper .subText {
         width: 100%;
         height: auto;
         text-align: left;
         justify-content: flex-start
     }
 
-    #your-offers .offer-container .offer-item>.product .addButtonWrapper .buyText {
+    .offer-container  .offer-item>.product .addButtonWrapper .buyText {
         float: none;
         text-align: center;
         margin-left: 40px
@@ -1154,13 +1158,19 @@ div.product .stockRequestLoadingAnimation {
 }
 
 @media screen and (max-width: 700px) {
-    #your-offers .offer-container .offer-item>.product {
+    .offer-container  .offer-item>.product {
         margin:0
     }
 
-    #your-offers .offer-container .offer-item>.product .imageWrapper .imageWrapperWrapper {
+    .offer-container  .offer-item>.product .imageWrapper .imageWrapperWrapper {
         width: 145px;
         height: 145px
     }
 }
 
+.choto:hover{
+    color: #fff;
+    border: 1px solid #ccc;
+    background-color: rgba(40, 40, 40, .75);
+
+}
