@@ -1142,6 +1142,7 @@
 }
 section.discountCodeContainer .discountCodeHeader {
     display: flex !important;
+    align-items: center !important;
     color: #000;
 }
 
@@ -1154,16 +1155,20 @@ section.discountCodeContainer .discountCodeHeader:active {
 }
 
 section.discountCodeContainer .discountCodeHeader button.btnDiscount {
+    display: inline-flex;
     border: 0;
     font-size: 14px;
     height: 30px;
     width: 50%;
     outline: 0;
+    align-items: center !important;
 }
 
 @media(max-width: 1000px) {
     section.discountCodeContainer .discountCodeHeader button.btnDiscount {
-        height:40px
+        height:40px;
+        align-items: center !important;
+
     }
 }
 
@@ -1338,7 +1343,7 @@ form {
     unicode-bidi: isolate;
     width: 100%;
 }
-input, select, textarea {
+.MMMM, select, textarea {
     background: #E3E3E3;
     font-family: inherit;
     font-size: inherit;
