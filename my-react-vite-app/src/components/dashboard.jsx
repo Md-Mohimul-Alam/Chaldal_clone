@@ -9,6 +9,7 @@ import STC_ChT from './Sticky_chat/sticky_chat';
 import CartSidebar from './Path/sticky_cart';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
+import { useCart } from './Path/CartContext'; 
 
 
 
@@ -17,7 +18,8 @@ const Dashboard = () => {
 
   const [dropdowns, setDropdowns] = useState({});
   const [rotations, setRotations] = useState({});
-  
+  const { cart, totalPrice, totalItems, addToCart } = useCart(); 
+
   const toggleDropdown = (cid) => {
     setDropdowns((prevDropdowns) => ({
       ...prevDropdowns,
@@ -285,12 +287,12 @@ const Dashboard = () => {
                   c-0.007-0.557-0.01-1.112-0.021-1.665l6.549,0.39L83.165,40.766z"></path>
               </g>
             </svg>
-            <p><span>0 ITEMS</span></p>
+            <p><span>{totalItems}</span></p>
           </div>
           <div className="total" style={{ color: 'black' }}>
             <span>৳ </span>
             <div className="odometer odometer-auto-theme odometer-animating-down odometer-animating">
-              <span>00.00 </span>
+              <span>{totalPrice}</span>
             </div>
           </div>
         </section>

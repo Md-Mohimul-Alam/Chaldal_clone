@@ -130,7 +130,6 @@
     background-color: #e4e0e1;
     height: 39px;
     box-sizing: border-box;
-    display: none;
     padding: 0 0 0 20px
 }
 
@@ -148,9 +147,6 @@
     color: #4f4f4f
 }
 
-.shoppingCart>.header div.itemCount .count-mobile {
-    display: none
-}
 
 .shoppingCart>.header div.cart {
     margin-top: 4px;
@@ -179,7 +175,6 @@
     width: 110px;
     text-align: center;
     font-weight: 700;
-    display: none;
     vertical-align: top;
     padding-top: 3px
 }
@@ -210,9 +205,6 @@
     animation: bounce .9s ease-in-out
 }
 
-.shoppingCart.collapsed .closeCartButtonTop {
-    display: none
-}
 
 .shoppingCart.expanded>.header {
     display: table
@@ -262,8 +254,10 @@
 
 .discountCodeContainer {
     position: fixed !important;
-    bottom: 0px !important;
-    width: 100%
+    bottom: 130px !important;
+    width: 100%;
+    color: #000;
+    background-color: #F7F7F7;
 }
 
 .discountCodeContainer .discount-top-content {
@@ -391,7 +385,10 @@
     opacity: .5
 }
 
-.shoppingCart div.footer {
+ div.footer {
+    width: 320px;
+    height: 200px !important;
+    position: fixed !important;
     background: #fff;
     height: 132px;
     text-align: center;
@@ -409,7 +406,6 @@
 }
 
 .shoppingCart div.footer .closeCartButton {
-    display: none;
     height: 50px;
     width: 200px;
     letter-spacing: 2px;
@@ -559,9 +555,7 @@
         display: block
     }
 
-    .shoppingCart.responsive.collapsed .header .itemCount,.shoppingCart.responsive.collapsed .header .toggle,.shoppingCart.responsive.collapsed .header .total {
-        display: none
-    }
+
 
     .shoppingCart.responsive.collapsed .header .cart {
         width: 30px;
@@ -603,9 +597,7 @@
         box-shadow: 0 1px 5px 0 rgba(0,0,0,.5)
     }
 
-    .shoppingCart.responsive.collapsed .header .itemCount>span {
-        display: none
-    }
+
 
     .shoppingCart.responsive.collapsed .header .itemCount .count-mobile {
         display: block
@@ -619,21 +611,10 @@
         width: 40px
     }
 
-    .shoppingCart.responsive.collapsed.empty .itemCount,.shoppingCart.responsive.collapsed.empty .toggle {
-        display: none
-    }
-
-    .shoppingCart.responsive.collapsed.empty .checkoutButton {
-        display: none!important
-    }
-
     .shoppingCart.responsive.collapsed.non-empty {
         width: 40px
     }
 
-    .shoppingCart.responsive.collapsed.non-empty .checkoutButton {
-        display: none!important
-    }
 
     .shoppingCart.responsive.expanded {
         width: 100%
@@ -1173,13 +1154,11 @@ section.discountCodeContainer .discountCodeHeader:active {
 }
 
 section.discountCodeContainer .discountCodeHeader button.btnDiscount {
-    
     border: 0;
-    background: 0 0;
     font-size: 14px;
     height: 30px;
     width: 50%;
-    outline: 0
+    outline: 0;
 }
 
 @media(max-width: 1000px) {
@@ -1229,9 +1208,6 @@ section.discountCodeContainer .discountCodeHeader button.discountCodeHelp svg {
     width: 19px
 }
 
-section.discountCodeContainer .discountCodeContent {
-    display: none
-}
 
 
 section.discountCodeContainer {
@@ -1340,78 +1316,51 @@ section.discountCodeContainer .discountCodeHeader button.btnDiscount {
     }
 }
 
-section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-icon {
-    border-radius: 10px;
-    border: 1px solid #787878;
-    padding: 0 3px;
-    margin-right: 10px
-}
 
-section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-up svg {
-    transform: rotate(-90deg);
-    margin-top: -3px
+.lekha{
+    color:  black !important;
+    font-size: larger;
 }
-
-section.discountCodeContainer .discountCodeHeader button.btnDiscount .arrow-down svg {
-    transform: rotate(90deg)
-}
-
-section.discountCodeContainer .discountCodeHeader button.discountCodeHelp {
-    background: 0 0;
-    display: flex;
-    padding-top: 0!important;
-    border: 0;
-    outline: 0
-}
-
-section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:hover {
-    background: #cdcdcd
-}
-
-section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:active {
-    background: #939393
-}
-
-section.discountCodeContainer .discountCodeHeader button.discountCodeHelp:active svg {
-    fill: #fff
-}
-
-section.discountCodeContainer .discountCodeHeader button.discountCodeHelp svg {
-    fill: #787878;
-    width: 19px
-}
-
-section.discountCodeContainer .discountCodeContent {
-    display: none
-}
-
-section.discountCodeContainer .discountCodeContent .inputNbtn {
-    width: 290px;
-    display: block;
+.discountCodeContent {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start;
     text-align: center;
-    margin: auto auto 10px
+    color: #787878;
+    align-items: center;
+    border-style: solid;
+    border-color: #ededed;
+    background: #f7f7f7;
 }
-
-section.discountCodeContainer .discountCodeContent .inputNbtn input {
-    background: #e3e3e3;
-    border: 0;
-    font-size: 14px;
-    border-radius: 5px;
-    height: 33px;
+form {
+    display: block !important;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+    width: 100%;
+}
+input, select, textarea {
+    background: #E3E3E3;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border-color: #ededed;
     width: 180px;
+    height: 33px;
+    border-radius: 5px ;
+}
+.inputNbtn {
+    align-items: center;
+    background-color: #f1eded;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    outline: 0;
-    float: left;
-    margin: 10px 8px 0 0
+    margin: auto auto 10px;
 }
-
-section.discountCodeContainer .discountCodeContent .inputNbtn input:focus {
-    background: #dbdbdb;
-    border: 1px solid #cdcdcd
-}
-
-section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSubmitBtn {
-    background: #ff686e;
+.discountSubmitBtn {
+    background: #ff686e !important;
     color: #fff;
     font-size: 14px;
     text-transform: none;
@@ -1423,91 +1372,64 @@ section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSub
     margin: 11px 0 0 8px;
     -webkit-box-shadow: 0 0 5px #ccc;
     -moz-box-shadow: 0 0 5px #ccc;
-    box-shadow: 0 0 5px #ccc
+    box-shadow: 0 0 5px #ccc;
 }
-
-section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSubmitBtn:hover {
-    background: #ff1b25
-}
-
-section.discountCodeContainer .discountCodeContent .inputNbtn button.discountSubmitBtn:active {
-    margin-bottom: 0;
-    margin-top: 11px
-}
-
 section.discountCodeContainer .discountCodeContent .inputNbtn .discountCloseBtn {
     float: left;
     width: 40px;
     padding: 0;
     margin: 16px 0 0 2px;
     border: 0;
-    background: 0 0
-}
-
-section.discountCodeContainer .discountCodeContent .inputNbtn:after {
-    content: "";
-    display: block;
-    clear: both
-}
-
-section.discountCodeContainer .discountCodeContent .error {
-    color: #db1e3d
-}
-
-section.discountCodeContainer .discountCodeContent .discountApplied h4 {
-    color: #787878;
-    padding: 10px 0 5px
-}
-
-section.discountCodeContainer .discountCodeContent .discountApplied h5 {
-    color: #787878;
-    font-size: 15px;
-    line-height: 25px;
-    padding: 0 15px
-}
-
-section.discountCodeContainer .discountCodeContent .discountApplied .mui-flat-button {
     background: 0 0;
-    color: #ff686e;
-    text-transform: none
+    color: #000;
+}
+#placeOrderButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 40px;
+    background: #ff8182;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    line-height: 37px;
+    padding: 0;
+    -webkit-box-shadow: 0 0 3px #b1aeae;
+    -moz-box-shadow: 0 0 3px #b1aeae;
+    box-shadow: 0 0 3px #b1aeae;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
 }
 
-section.discountCodeContainer .discountFooter {
-    display: inline-block;
-    width: 100%;
-    padding: 0 10px
+@media(min-width: 1000px) {
+    #placeOrderButton:hover {
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow: none
+    }
 }
 
-section.discountCodeContainer .discountFooter .discountCloseBtn {
-    float: left;
-    border: 0;
-    background: 0 0
+@media(max-width: 767px) {
+    #placeOrderButton .placeOrderText {
+        margin-right:115px
+    }
 }
 
-section.discountCodeContainer .discountFooter .discountCodeHelp {
+@media(max-width: 320px) {
+    #placeOrderButton .placeOrderText {
+        margin-right:0
+    }
+}
+.totalMoneyCount {
+    background: #e04f54;
     float: right;
-    border: 0;
-    background: 0 0;
-    outline: 0;
-    padding: 0
-}
-
-section.discountCodeContainer .discountFooter .discountCodeHelp svg {
-    fill: #a2a2a2
-}
-
-section.discountCodeContainer.expanded .grey-box {
-    background: #f6f6f6
-}
-
-section.discountCodeContainer.expanded .discountCodeHeader button.btnDiscount {
-    padding-left: 0
-}
-
-section.discountCodeContainer.expanded .discountCodeHeader button.discountCodeHelp {
-    display: none
-}
-
-section.discountCodeContainer.expanded .discountCodeContent {
-    display: block
+    height: 100%;
+    width: 40%;
+    margin-right: -5px;
+    line-height: 40px;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
 }

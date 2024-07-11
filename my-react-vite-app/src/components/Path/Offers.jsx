@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, {useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './css/Offers.css';
 import logo from './img/logo.png';
@@ -9,6 +9,7 @@ import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
 import CartSidebar from './sticky_cart';
 import ItemCard from './ProductCard';
+import { useCart } from './CartContext'; 
 
 const Offers = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -16,15 +17,9 @@ const Offers = () => {
   const [isActive, setIsActive] = useState(false);
   const [dropdowns, setDropdowns] = useState({});
   const [rotations, setRotations] = useState({});
-  const [cart, setCart] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  // Calculate total items in cart
-  const totalItems = Object.keys(cart.reduce((acc, item) => {
-    acc[item.id] = true;
-    return acc;
-  }, {})).length;
+  const { cart, totalPrice, totalItems, addToCart, removeFromCart, updateCartItemQuantity} = useCart(); 
 
   const handleClick = () => {
     setIsActive(!isActive);
@@ -61,40 +56,6 @@ const Offers = () => {
     width: isSidebarOpen ? '85.8%' : '100%',
     marginLeft: isSidebarOpen ? '12%' : '0%',
     transition: 'width 0.3s ease, margin-left 0.3s ease',
-  };
-
-  const addToCart = (item, quantity) => {
-    setCart(prevCart => {
-      let updatedCart = [...prevCart];
-
-      // Find the index of the item in cart
-      const itemIndex = updatedCart.findIndex(cartItem => cartItem.id === item.id);
-
-      if (itemIndex !== -1) {
-        // Item exists in cart
-        if (quantity > 0) {
-          // Update quantity if greater than 0
-          updatedCart[itemIndex].quantity = quantity;
-        } else {
-          // Remove item from cart if quantity is 0
-          updatedCart.splice(itemIndex, 1);
-        }
-      } else {
-        // Add new item to cart if not already present
-        if (quantity > 0) {
-          updatedCart.push({ ...item, quantity });
-        }
-      }
-
-      // Calculate total price based on updated cart
-      const updatedTotalPrice = updatedCart.reduce((sum, cartItem) => {
-        return sum + (cartItem.price * cartItem.quantity);
-      }, 0);
-
-      setTotalPrice(updatedTotalPrice);
-
-      return updatedCart;
-    });
   };
 
   const handleClickCart = () => {
@@ -203,6 +164,7 @@ const Offers = () => {
   const handleAddToCart = (item, quantity) => {
     addToCart(item, quantity);
   };
+
   return (
     <Link className='dashboard-container'>
      

@@ -1,15 +1,36 @@
 import React, { useState } from "react";
 import './css/sticky_cart.css';
+import { IoIosArrowForward } from "react-icons/io";
 
 const CartSidebar = ({ isCartOpen, toggleCart }) => {
-    // State to hold items in the shopping bag
     const [shoppingBagItems, setShoppingBagItems] = useState([]);
 
-    // Function to add an item to the shopping bag
     const addToBag = (item) => {
-        // Add item to the shopping bag array
         setShoppingBagItems([...shoppingBagItems, item]);
-    };
+    };    const [showDiscountForm, setShowDiscountForm] = useState(false);
+
+
+    const [dropdowns, setDropdowns] = useState({});
+    const [rotations, setRotations] = useState({});
+
+    const toggleDropdown = (cid) => {
+        setDropdowns((prevDropdowns) => ({
+          ...prevDropdowns,
+          [cid]: !prevDropdowns[cid],
+        }));
+        if (!dropdowns[cid]) {
+          setRotations((prevRotations) => ({
+            ...prevRotations,
+            [cid]: 90,
+          }));
+        } else {
+          setRotations((prevRotations) => ({
+            ...prevRotations,
+            [cid]: 0,
+          }));
+        }
+      };
+    
 
     return (
         <div className="app catalog shoppingCartIsExpanded navOpen chaldal-theme">
@@ -84,7 +105,55 @@ const CartSidebar = ({ isCartOpen, toggleCart }) => {
                             </div>
                         )}
 
+                        <section className="discountCodeContainer">
+                            <div className="main-discount-container">
+                                <div className="discountCodeHeader">
+                                    <div className="btnDiscount">
+                                        <IoIosArrowForward className="arrow-icon" 
+                                        style={{ transform: `rotate(${rotations[1] || 0}deg)`,color:'#ff4e56' }} 
+                                        onClick={(e) => {e.preventDefault();  
+                                        e.stopPropagation();  toggleDropdown(1); }}
+                                        />
+                                        <span>Have a special code?</span>
+                                        {dropdowns[1] && (
+                                        <div className="discountCodeContent">
+                                            <form>
+                                                <span className="inputNbtn">
+                                                    <input required maxLength="100" type="text" placeholder="Referral/Discount Code" />
+                                                    <div className="discountSubmitBtn">
+                                                        <span>
+                                                            <span> </span>
+                                                            <span>Go</span>
+                                                            <span> </span>
+                                                        </span>
+                                                    </div>
+                                                    <div className="discountCloseBtn"  
+                                                        onClick={(e) => {e.preventDefault();  
+                                                        e.stopPropagation();  toggleDropdown(1); }}>Close</div>
+                                                </span>
+                                            </form>
+                                            
+                                        </div>
+                                        
+                                        )}
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="shoppingtCartActionButtons">
+                                    <div id="placeOrderButton">
+                                        <span class="placeOrderText" style={{alignItems:'center', marginLeft:'20px',paddingLeft:'25px'}}>Place Order</span>
+                                        <span class="totalMoneyCount">
+                                            <span>৳ </span>
+                                            <span></span>
+                                            <span> </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </section>
                     </div>
                 </div>
             </div>

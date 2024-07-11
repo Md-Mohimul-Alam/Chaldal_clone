@@ -22,7 +22,6 @@ import TeamP from './components/Path/help_P_team';
 
 import { CartProvider } from './components/Path/CartContext';
 
-
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
