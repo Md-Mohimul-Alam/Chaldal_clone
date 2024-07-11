@@ -1140,10 +1140,12 @@
     bottom: 131px;
     width: 100%;
 }
-section.discountCodeContainer .discountCodeHeader {
+.discountCodeHeader {
     display: flex !important;
     align-items: center !important;
     color: #000;
+    padding-left: 50px;
+    margin-left: 15px;
 }
 
 section.discountCodeContainer .discountCodeHeader:hover {
