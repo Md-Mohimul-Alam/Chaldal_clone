@@ -117,6 +117,8 @@
 
 .shoppingCart .deliveryFeeHeader {
     display: flex;
+    background-color: #f6f6f6;
+
 }
 
 
@@ -1141,11 +1143,10 @@
     width: 100%;
 }
 .discountCodeHeader {
-    display: flex !important;
+    
     align-items: center !important;
     color: #000;
-    padding-left: 50px;
-    margin-left: 15px;
+
 }
 
 section.discountCodeContainer .discountCodeHeader:hover {
@@ -1339,12 +1340,7 @@ section.discountCodeContainer .discountCodeHeader button.btnDiscount {
     border-color: #ededed;
     background: #f7f7f7;
 }
-form {
-    display: block !important;
-    margin-top: 0em;
-    unicode-bidi: isolate;
-    width: 100%;
-}
+
 .MMMM, select, textarea {
     background: #E3E3E3;
     font-family: inherit;
@@ -1354,8 +1350,11 @@ form {
     width: 180px;
     height: 33px;
     border-radius: 5px ;
+    color: #000;
+
 }
 .inputNbtn {
+    color: #000;
     align-items: center;
     background-color: #f1eded;
     padding-right: 10px;
@@ -1439,4 +1438,31 @@ section.discountCodeContainer .discountCodeContent .inputNbtn .discountCloseBtn 
     -webkit-border-radius: 0 2px 2px 0;
     -moz-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
+}
+.cartItemsHeaderIcon {
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    display: inline-flex !important;
+    justify-content: space-around;
+    margin: 0px !important;
+    background-color: #f6f6f6;
+
+}
+.item_dis{
+    font-size: small;
+    width: 300px;
+    height: 65px;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex !important;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+
 }
