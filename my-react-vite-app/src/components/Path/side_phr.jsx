@@ -176,7 +176,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                               <a href="/pharmacy/cough">Cough</a>
                             </div>
                           </li>
-                          <li data-cid="1720" class="not-in-selection-tree unselected">
+                          <li data-cid="1720" className="not-in-selection-tree unselected">
                             <div className="name">
                               <a href="/pharmacy/cold-flu">Cold &amp; Flu</a>
                             </div>
@@ -559,7 +559,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   )}  
                 </li>
                 <li data-cid="40" className="not-in-selection-tree unselected">
-                  <div class="name">
+                  <div className="name">
                     <a href="/pharmacy/handwash">Handwash</a>
                   </div>
                 </li>
@@ -606,7 +606,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   </div>
                 </li>
                 <li data-cid="1261" className="not-in-selection-tree unselected">
-                  <div class="name">
+                  <div className="name">
                     <a href="/pharmacy/adult-diapers">Adult Diapers</a>
                   </div>
                 </li>
@@ -627,8 +627,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   </span>
               </div>
               {dropdowns[211]&&(
-                <ul class="level-1">
-                <li data-cid="211" class="not-in-selection-tree unselected">
+                <ul className="level-1">
+                <li data-cid="211" className="not-in-selection-tree unselected">
                   <div className="name">
                     <a href="/pharmacy/diapers">Diapers</a>
                     <span>
@@ -666,18 +666,18 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   
                   )}
                 </li>
-                <li data-cid="223" class="not-in-selection-tree unselected">
-                  <div class="name">
+                <li data-cid="223" className="not-in-selection-tree unselected">
+                  <div className="name">
                     <a href="/pharmacy/bath-skincare">Baby Skincare</a>
                   </div>
                 </li>
-                <li data-cid="212" class="not-in-selection-tree unselected">
-                  <div class="name">
+                <li data-cid="212" className="not-in-selection-tree unselected">
+                  <div className="name">
                     <a href="/pharmacy/wipes">Wipes</a>
                   </div>
                 </li>
-                <li data-cid="1483" class="not-in-selection-tree unselected">
-                  <div class="name">
+                <li data-cid="1483" className="not-in-selection-tree unselected">
+                  <div className="name">
                     <a href="/pharmacy/newborn-essentials">Newborn Essentials</a>
                   </div>
                 </li>
