@@ -413,7 +413,7 @@ const Offers = () => {
                       <div className="productQuantityEditor addButtonWrapper border-radius-small">
                         <button type="button" className="minusQuantity" onClick={() => handleDecrement(item.id)}>–</button>
                         <div className="QuantityTextContainer">
-                          <span>{quantities[item.id]}</span>
+                          <span>{items.quantity}</span>
                           <span> </span>
                           <span>in bag</span>
                         </div>
