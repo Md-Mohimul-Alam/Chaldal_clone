@@ -1,0 +1,84 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-dialog {
+    background: white;
+    border-radius: 8px;
+    width: 400px;
+    padding: 20px;
+    position: relative;
+}
+
+.modal-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facebook-login-button, .email-login-btn {
+    background: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-login-button:hover, .email-login-btn:hover {
+    background: #365492;
+}
+
+.or-container {
+    margin: 10px 0;
+}
+
+.login-with-phone-message {
+    margin: 10px 0;
+}
+
+.phone-number-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-number-login-field {
+    width: 100%;
+}
+
+.country-selector {
+    margin-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

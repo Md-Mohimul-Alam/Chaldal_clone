@@ -111,7 +111,7 @@ const Dashboard = () => {
     transition: 'width 0.3s ease, margin-left 0.3s ease'
   };
   return (
-    <Link className='dashboard-container'>
+    <div className='dashboard-container'>
       <header className="header" ref={logoRef}>
       <STC_ChT/>
         <div className='flex' >
@@ -249,12 +249,10 @@ const Dashboard = () => {
 
 
             
-            <div className="login_D" onClick={handlePopupOpen} >
-              <div className='login'>
+              <div className='login' onClick={handlePopupOpen}>
                 <Popup trigger={<div className='btn'> Login </div>} position="left center"open={isPopupOpen} closeOnDocumentClick={false} onClose={closePopup} >
-                <section className="bodyTable1">
-                  <div>
-                    <button onClick={closePopup}>&times;</button>
+                <div className="bodyTable1" >
+                  <div >
                       <div className="phoneNumberLogin outsideDialog authForm">
                         <div>
                           <div className="facebookLogin">
@@ -332,10 +330,10 @@ const Dashboard = () => {
                       </div>
                     </div>
                   </div>
-                </section>
+                </div>
                 </Popup>
               </div>
-            </div>
+            
           </div>
         </div>
 
@@ -397,7 +395,7 @@ const Dashboard = () => {
         {isCartOpen && <CartSidebar className='hidden' isCartOpen={isCartOpen} toggleCart={toggleCart} />}
 
       </div>
-    </Link>
+    </div>
   );
 };
 

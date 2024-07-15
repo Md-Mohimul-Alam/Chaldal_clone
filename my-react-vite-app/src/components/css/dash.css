@@ -131,9 +131,12 @@ header {
   }
   
   .login .btn {
+    position: relative;
+    top: 10px;
+    margin-top: 0px !important;
     text-align: center;
     padding-top: 5px;
-    margin: 20px;
+    margin-bottom: 20px;
     border: 0;
     border-radius: 5px;
     width: 110px;
@@ -1185,13 +1188,15 @@ section.stickyHeader:hover {
   display: none !important;
 }
 .bodyTable1{
+  position: relative;
   top: 60px;
   left: 750px;
-  position: fixed;
-  z-index: 10000 !important;
+  z-index: 1000 !important; 
   background-color: rgb(255, 255, 255);
 }
-
+body{
+  z-index: -10;
+}
 .recaptcha .recaptchaTxt {
   text-align: center;
   font-size: 13px;
