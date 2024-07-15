@@ -240,23 +240,23 @@ const TeamG= () =>{
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/Career">Career</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/Career">Career</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/ContactUs">Contact Us</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/ContactUs">Contact Us</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/PrivacyInfo">Privacy Policy</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/PrivacyInfo">Privacy Policy</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/TermsOfUse">Terms of Use</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/TermsOfUse">Terms of Use</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/PharmacyLicense">Pharmacy License</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/PharmacyLicense">Pharmacy License</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                     </ul>

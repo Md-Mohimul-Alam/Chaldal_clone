@@ -301,9 +301,9 @@ const Favp= () => {
       <div className="recaptcha">
         <h5 className="recaptchaTxt">
           <span>This site is protected by reCAPTCHA and the Google </span>
-            <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+            <span  href="https://policies.google.com/privacy" target="_blank">Privacy Policy</span>
             <span> and </span>
-            <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+            <span  href="https://policies.google.com/terms" target="_blank">Terms of Service</span>
             <span> apply.</span>
           </h5>
       </div>

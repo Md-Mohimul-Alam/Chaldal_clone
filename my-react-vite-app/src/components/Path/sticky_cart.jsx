@@ -4,31 +4,12 @@ import { IoIosArrowForward } from "react-icons/io";
 import { useCart } from './CartContext';
 
 const CartSidebar = ({ isCartOpen, toggleCart   }) => {
-    const { items, cart,totalItems, removeFromCart,updateCartItemQuantity } = useCart();
+    const { items, cart,totalItems, removeFromCart,updateCartItemQuantity,handleDecrement,handleIncrement } = useCart();
     const {totalPrice } = useCart(); 
     const [dropdowns, setDropdowns] = useState({});
     const [rotations, setRotations] = useState({});
 
 
-    const handleIncrement = (itemId) => {
-        const item = cart.find(item => item.id === itemId);
-        if (item) {
-            const newQuantity = item.quantity + 1;
-            updateCartItemQuantity(itemId, newQuantity);
-        }
-    };
-
-    const handleDecrement = (itemId) => {
-        const item = cart.find(item => item.id === itemId);
-        if (item) {
-            const newQuantity = item.quantity - 1;
-            if (newQuantity <= 0) {
-                removeFromCart(itemId);
-            } else {
-                updateCartItemQuantity(itemId, newQuantity);
-            }
-        }
-    };
 
     const toggleDropdown = (cid) => {
         setDropdowns((prevDropdowns) => ({
@@ -51,7 +32,6 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
 
 
     return (
-        <div className="app catalog shoppingCartIsExpanded navOpen chaldal-theme">
             <div className={`shoppingCartWrapper ${isCartOpen ? 'open' : ''}`}>
                 <div className="shoppingCart expanded empty responsive">
                     <div className="header">
@@ -119,12 +99,12 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
                                     {cart.map((items, index) => (
                                         <li key={index} className="item_dis">
                                             <div className="Button" style={{height:'auto', width: 'auto'}}>
-                                                <div type="button" className="minusQuantity" onClick={() => handleDecrement(items.id)}>–</div>
+                                                <div type="button" className="minusQuantity" id='same'onClick={() => handleDecrement(items.id)}>–</div>
                                                     <div className="QuantityTextContainer">
                                                         <span>{items.quantity}</span>
                                                         <span> </span>
                                                     </div>
-                                                <div type="button" className="plusQuantity"  onClick={() => handleIncrement(items.id)}>+</div>
+                                                <div type="button" className="plusQuantity" id='same' onClick={() => handleIncrement(items.id)}>+</div>
                                             </div>
                                             <div className="img" style={{width:'40px',height:'40px'}}>
                                                 <img src={items.image} alt={items.name} style={{width:'40px',height:'40px'}}/>
@@ -140,14 +120,14 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
                                             </div>
                                             <div className="price" style={{display:'block'}}>
                                                 <div style={{height:'auto', width: 'auto', color:'#e43215'}}>
-                                                    {items.price}
+                                                    ৳{items.price * items.quantity}
                                                 </div>
-                                                <div style={{height:'auto', width: 'auto'}}>
-                                                    {items.originalPrice}
+                                                <div style={{height:'auto', width: 'auto', textDecoration:'line-through red'}}>
+                                                    ৳{items.originalPrice * items.quantity}
                                                 </div>
                                             </div>
                                             <div className="remove" title="Remove from bag" onClick={removeFromCart} style={{display:'block'}}>
-                                                <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" data-reactid=".1vmdwo75538.3.0.3.3.0.5:$express_15055_Grocery.4.1.0"><rect x="19.49" y="46.963" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 121.571 49.0636)" width="62.267" height="5.495" data-reactid=".1vmdwo75538.3.0.3.3.0.5:$express_15055_Grocery.4.1.0.0"></rect><rect x="18.575" y="47.876" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 49.062 121.5686)" width="62.268" height="5.495" data-reactid=".1vmdwo75538.3.0.3.3.0.5:$express_15055_Grocery.4.1.0.1"></rect></svg>
+                                                <span>&nbsp;&nbsp;X&nbsp;</span>
                                             </div>
                                         </li>
                                     ))}
@@ -215,7 +195,6 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

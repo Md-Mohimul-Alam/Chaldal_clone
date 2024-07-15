@@ -51,7 +51,7 @@ const Delivery = () => {
                                     <h3>Shop your daily necessities</h3>
                                     <p>Shop from our popular category, Explore special offers and receive grocery on your doorsteps within 1 hour.</p>
                                 </div>
-                                <a href="/popular">Start Shopping</a>
+                                <span  href="/popular">Start Shopping</span>
                             </div>
                         </div>
                         <div id="videoContainer">

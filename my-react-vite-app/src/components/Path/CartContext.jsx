@@ -104,26 +104,26 @@ export const CartProvider = ({ children }) => {
         },
     ];
 
-    const addToCart = (item, quantity) => {
-        if (!item || !item.id) {
-            console.error('Invalid item payload:', item);
+    const addToCart = (items, quantity) => {
+        if (!items || !items .id) {
+            console.error('Invalid items payload:', items);
             return;
         }
 
         setCart(prevCart => {
             let updatedCart = [...prevCart];
 
-            const itemIndex = updatedCart.findIndex(cartItem => cartItem.id === item.id);
+            const itemsIndex = updatedCart.findIndex(cartItem => cartItem.id === items.id);
 
-            if (itemIndex !== -1) {
+            if (itemsIndex !== -1) {
                 if (quantity > 0) {
-                    updatedCart[itemIndex].quantity = quantity;
+                    updatedCart[itemsIndex].quantity = quantity;
                 } else {
-                    updatedCart.splice(itemIndex, 1);
+                    updatedCart.splice(itemsIndex, 1);
                 }
             } else {
                 if (quantity > 0) {
-                    updatedCart.push({ ...item, quantity });
+                    updatedCart.push({ ...items, quantity });
                 }
             }
 
@@ -137,9 +137,9 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    const removeFromCart = (itemId) => {
+    const removeFromCart = (itemsId) => {
         setCart(prevCart => {
-            const updatedCart = prevCart.filter(cartItem => cartItem.id !== itemId);
+            const updatedCart = prevCart.filter(cartItem => cartItem.id !== itemsId);
 
             const updatedTotalPrice = updatedCart.reduce((sum, cartItem) => {
                 return sum + (cartItem.price * cartItem.quantity);
@@ -151,13 +151,13 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    const updateCartItemQuantity = (itemId, quantity) => {
+    const updateCartItemQuantity = (itemsId, quantity) => {
         setCart(prevCart => {
-            const updatedCart = prevCart.map(item => {
-                if (item.id === itemId) {
-                    return { ...item, quantity };
+            const updatedCart = prevCart.map(items => {
+                if (items.id === itemsId) {
+                    return { ...items, quantity };
                 }
-                return item;
+                return items;
             });
 
             const updatedTotalPrice = updatedCart.reduce((sum, cartItem) => {
@@ -171,29 +171,29 @@ export const CartProvider = ({ children }) => {
     };
     
 
-    const handleIncrement = (itemId) => {
-        const item = cart.find(item => item.id === itemId);
-        if (item) {
-            const newQuantity = item.quantity + 1;
-            updateCartItemQuantity(itemId, newQuantity);
+    const handleIncrement = (itemsId) => {
+        const items = cart.find(items => items.id === itemsId);
+        if (items) {
+            const newQuantity = items.quantity + 1;
+            updateCartItemQuantity(itemsId, newQuantity);
         }
     };
 
-    const handleDecrement = (itemId) => {
-        const item = cart.find(item => item.id === itemId);
-        if (item) {
-            const newQuantity = item.quantity - 1;
+    const handleDecrement = (itemsId) => {
+        const items = cart.find(items => items.id === itemsId);
+        if (items) {
+            const newQuantity = items.quantity - 1;
             if (newQuantity <= 0) {
-                removeFromCart(itemId);
+                removeFromCart(itemsId);
             } else {
-                updateCartItemQuantity(itemId, newQuantity);
+                updateCartItemQuantity(itemsId, newQuantity);
             }
         }
     };
 
     const totalItems = useMemo(() => {
-        return Object.keys(cart.reduce((acc, item) => {
-            acc[item.id] = true;
+        return Object.keys(cart.reduce((acc, items) => {
+            acc[items.id] = true;
             return acc;
         }, {})).length;
     }, [cart]);

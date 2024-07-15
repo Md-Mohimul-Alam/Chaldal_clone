@@ -76,7 +76,7 @@ const DeliveryInfo = () => {
                         </h2>
                     </div>
                     <div className="viewButton hidden-xs hidden-sm" >
-                        <a href="/#">View All</a>
+                        <span  href="/#">View All</span>
                     </div>
                     <div className="scrollButtons" style={{width:'100px',display:'flex'}}>
                         <div className="scrollLeft" onClick={scrollLeft} style={{ backgroundColor: 'white' , alignItems:'center'}}>
@@ -96,102 +96,102 @@ const DeliveryInfo = () => {
 
                 <div className="mainTile">
                     <div className="categoryContainer" ref={categoryContainerRef} >
-                        <a href="/fruits-vegetables">
+                        <span  href="/fruits-vegetables">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/_mpimage/fresh-vegetables?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D23773&q=low&v=1&m=400&webp=1" />
                                 </div>
                                 <div className="categoryName">Fruits & Vegetables</div>
                             </div>
-                        </a>
-                        <a href="/meat-fish">
+                        </span>
+                        <span  href="/meat-fish">
                                 <div className="categoryBox" style={{background:'White'}}>                               
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/meatAndFish.png?q=low&webp=1" />
                                 </div>
                                 <div className="categoryName">Meat & Fish</div>
                             </div>
-                        </a>
-                        <a href="/cooking">
+                        </span>
+                        <span  href="/cooking">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/cooking.png?q=low&webp=1" alt="Cooking" />
                                 </div>
                                 <div className="categoryName">Cooking</div>
                             </div>
-                        </a>
-                        <a href="/beverages">
+                        </span>
+                        <span  href="/beverages">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-517/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/beverages.png?q=low&amp;webp=1" alt="Beverages" />
                                 </div>
                                 <div className="categoryName">Beverages</div>
                             </div>
-                        </a>
-                        <a href="/cleaning">
+                        </span>
+                        <span  href="/cleaning">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/home-cleaning.png?q=low&webp=1" alt="Home & Cleaning" />
                                 </div>
                                 <div className="categoryName">Home & Cleaning</div>
                             </div>
-                        </a>
-                        <a href="/pest-control">
+                        </span>
+                        <span  href="/pest-control">
                                 <div className="categoryBox" style={{background:'White'}}>                               
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-517/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/pest-control.png?q=low&webp=1" alt="Pest Control" />
                                 </div>
                                 <div className="categoryName">Pest Control</div>
                             </div>
-                        </a>
-                        <a href="/stationery-office">
+                        </span>
+                        <span  href="/stationery-office">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/stationary.png?q=low&webp=1" alt="Stationery & Office" />
                                 </div>
                                 <div className="categoryName">Stationery & Office</div>
                             </div>
-                        </a>
-                        <a href="#">
+                        </span>
+                        <span  href="#">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/beauty.png?q=low&webp=1" alt="Beauty Products" />
                                 </div>
                                 <div className="categoryName">Beauty Products</div>
                             </div>
-                        </a>
-                        <a href="/hygiene">
+                        </span>
+                        <span  href="/hygiene">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-517/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/healthCare.png?q=low&webp=11" alt="Health Products" />
                                 </div>
                                 <div className="categoryName">Health Products</div>
                             </div>
-                        </a>
-                        <a href="/pet-care">
+                        </span>
+                        <span  href="/pet-care">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb/1.0.0-Deploy-Release-517/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/petFood.png?q=low&webp=1" alt="Pet Care" />
                                 </div>
                                 <div className="categoryName">Pet Care</div>
                             </div>
-                        </a>
-                        <a href="/kitchen-appliances">
+                        </span>
+                        <span  href="/kitchen-appliances">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/kitchen-appliances.png?q=low&webp=1" alt="Kitchen Appliances" />
                                 </div>
                                 <div className="categoryName">Kitchen Appliances</div>
                             </div>
-                        </a>
-                        <a href="/babycare">
+                        </span>
+                        <span  href="/babycare">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
                                     <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/baby-care.png?q=low&webp=1" alt="Baby Care" />
                                 </div>
                                 <div className="categoryName">Baby Care</div>
                             </div>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </section>
@@ -218,11 +218,11 @@ const DeliveryInfo = () => {
         </div>
 
     <section id="bannerContainer">
-        <a href="/invest">
+        <span  href="/invest">
             <div className="bannerContent">
                 <img src="https://chaldn.com/videos/Chaldal-biniyog-wide-banner.jpg"/>
             </div>
-        </a>
+        </span>
     </section>
   
     <Delivery/>

@@ -144,7 +144,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       src="https://chaldn.com/_mpimage/common-conditions?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103190&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"
                       alt="Common Conditions Icon"
                     />
-                    <a href="#">Common Conditions </a>
+                    <span href="#">Common Conditions </span>
                     <span>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
 
                       <IoIosArrowForward
@@ -158,7 +158,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     <ul className="level-1">
                       <li data-cid="1563" className="not-in-selection-tree unselected">
                         <div className="name">
-                          <a href="/pharmacy/cough-cold-flu">Cough, Cold &amp; Flu</a>
+                          <span href="/pharmacy/cough-cold-flu">Cough, Cold &amp; Flu</span>
                           <span>
                           <span>&nbsp; </span>                  <span>&nbsp; </span>
                           <span>&nbsp; </span>
@@ -173,12 +173,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         <ul className="level-2">
                           <li data-cid="1719" className="not-in-selection-tree unselected">
                             <div className="name">
-                              <a href="/pharmacy/cough">Cough</a>
+                              <span href="/pharmacy/cough">Cough</span>
                             </div>
                           </li>
                           <li data-cid="1720" className="not-in-selection-tree unselected">
                             <div className="name">
-                              <a href="/pharmacy/cold-flu">Cold &amp; Flu</a>
+                              <span href="/pharmacy/cold-flu">Cold &amp; Flu</span>
                             </div>
                           </li>
                         </ul>
@@ -188,7 +188,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
               <li data-cid="1558" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/fever-pain">Fever &amp; Pain</a>
+                  <span href="/pharmacy/fever-pain">Fever &amp; Pain</span>
                   <span>
                     <span>&nbsp; </span>
                     <span>&nbsp; </span>
@@ -210,12 +210,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <ul className="level-2">
                     <li data-cid="1707" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/pain">Pain</a>
+                        <span href="/pharmacy/pain">Pain</span>
                       </div>
                     </li>
                     <li data-cid="1708" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/fever">Fever</a>
+                        <span href="/pharmacy/fever">Fever</span>
                       </div>
                     </li>
                   </ul>
@@ -223,13 +223,13 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
               <li data-cid="1559" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/diabetes">Diabetes</a>
+                  <span href="/pharmacy/diabetes">Diabetes</span>
                 </div>
               </li>
 
               <li data-cid="1560" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/eye-ear">Eye &amp; Ear</a>
+                  <span href="/pharmacy/eye-ear">Eye &amp; Ear</span>
                   <span>
                     <span>&nbsp; </span>
                     <span>&nbsp; </span>
@@ -252,12 +252,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <ul className="level-2">
                   <li data-cid="1717" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/eye">Eye</a>
+                      <span href="/pharmacy/eye">Eye</span>
                     </div>
                   </li>
                   <li data-cid="1718" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/ear">Ear</a>
+                      <span href="/pharmacy/ear">Ear</span>
                     </div>
                   </li>
                 </ul>
@@ -266,12 +266,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
               <li data-cid="1561" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/digestive-health">Digestive Health</a>
+                  <span href="/pharmacy/digestive-health">Digestive Health</span>
                 </div>
               </li>
               <li data-cid="1562" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/allergy-asthma">Allergy &amp; Asthma</a>
+                  <span href="/pharmacy/allergy-asthma">Allergy &amp; Asthma</span>
                   <span>
                     <span>&nbsp; </span>
                     <span>&nbsp; </span>
@@ -289,12 +289,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <ul className="level-2">
                   <li data-cid="1723" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/allergy">Allergy</a>
+                      <span href="/pharmacy/allergy">Allergy</span>
                     </div>
                   </li>
                   <li data-cid="1724" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/asthma">Asthma</a>
+                      <span href="/pharmacy/asthma">Asthma</span>
                     </div>
                   </li>
                 </ul>
@@ -304,7 +304,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
               <li data-cid="1564" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/blood-pressure-heart-disease">Blood Pressure &amp; Heart Disease</a>
+                  <span href="/pharmacy/blood-pressure-heart-disease">Blood Pressure &amp; Heart Disease</span>
                   <span>
                     <span>&nbsp; </span>                  <span>&nbsp; </span>
                     <span>&nbsp; </span>
@@ -329,12 +329,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <ul className="level-2">
                   <li data-cid="1721" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/blood-pressure">Blood Pressure</a>
+                      <span href="/pharmacy/blood-pressure">Blood Pressure</span>
                     </div>
                   </li>
                   <li data-cid="1722" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/heart-disease">Heart Disease</a>
+                      <span href="/pharmacy/heart-disease">Heart Disease</span>
                     </div>
                   </li>
                 </ul>
@@ -345,7 +345,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
               <li data-cid="1565" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/skin-hair-condition">Skin &amp; Hair Condition</a>
+                  <span href="/pharmacy/skin-hair-condition">Skin &amp; Hair Condition</span>
                   <span>
                     <span>&nbsp; </span>
                     <IoIosArrowForward
@@ -360,12 +360,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   <ul className="level-2">
                   <li data-cid="1711" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/skin">Skin</a>
+                      <span href="/pharmacy/skin">Skin</span>
                     </div>
                   </li>
                   <li data-cid="1712" className="not-in-selection-tree unselected">
                     <div className="name">
-                      <a href="/pharmacy/hair-condition">Hair Condition</a>
+                      <span href="/pharmacy/hair-condition">Hair Condition</span>
                     </div>
                   </li>
                 </ul>
@@ -374,22 +374,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </li>
               <li data-cid="1566" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/infection">Infection</a>
+                  <span href="/pharmacy/infection">Infection</span>
                 </div>
               </li>
               <li data-cid="1567" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/neurological-conditions">Neurological Conditions</a>
+                  <span href="/pharmacy/neurological-conditions">Neurological Conditions</span>
                 </div>
               </li>
               <li data-cid="1736" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/herbal">Herbal</a>
+                  <span href="/pharmacy/herbal">Herbal</span>
                 </div>
               </li>
               <li data-cid="1557" className="not-in-selection-tree unselected">
                 <div className="name">
-                  <a href="/pharmacy/all-meds">All Meds</a>
+                  <span href="/pharmacy/all-meds">All Meds</span>
                 </div>
               </li>
             </ul>
@@ -400,25 +400,25 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/ayurvedic?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D152681&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-                  <a href="/pharmacy/ayurvedic">Ayurvedic</a>
+                  <span href="/pharmacy/ayurvedic">Ayurvedic</span>
               </div>
           </li>
           <li data-cid="1572" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/sexual-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115994&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-                  <a href="/pharmacy/sexual-wellness">Sexual Wellness</a>
+                  <span href="/pharmacy/sexual-wellness">Sexual Wellness</span>
               </div>
           </li>
           <li data-cid="1577" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/birth-control-contraceptives?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D115993&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-                  <a href="/pharmacy/birth-control-contraceptives">Birth Control Contraceptives</a>
+                  <span href="/pharmacy/birth-control-contraceptives">Birth Control Contraceptives</span>
               </div>
           </li>
           <li data-cid="1568" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/vitamins-supplements?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103189&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-                  <a href="/pharmacy/vitamins-supplements">Vitamins &amp; Supplements</a>
+                  <span href="/pharmacy/vitamins-supplements">Vitamins &amp; Supplements</span>
                   <span>
                       <span>&nbsp; </span>
                       <IoIosArrowForward
@@ -432,12 +432,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="1709" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/vitamins-2">Vitamins</a>
+                    <span href="/pharmacy/vitamins-2">Vitamins</span>
                   </div>
                 </li>
                 <li data-cid="1710" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/supplements">Supplements</a>
+                    <span href="/pharmacy/supplements">Supplements</span>
                   </div>
                 </li>
               </ul>
@@ -448,27 +448,27 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <li data-cid="1735" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/pet-care-pharmacy?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D153454&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-                  <a href="/pharmacy/pet-care-2">Pet Care - Pharmacy </a>
+                  <span href="/pharmacy/pet-care-2">Pet Care - Pharmacy </span>
               </div>
           </li>
           <li data-cid="1571" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-devices?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103186&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-                  <a href="/pharmacy/medical-devices-2">Medical Devices</a>
+                  <span href="/pharmacy/medical-devices-2">Medical Devices</span>
               </div>
           </li>
           <li data-cid="1573" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/medical-accessories?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103184&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-                  <a href="/pharmacy/medical-accessories">Medical Accessories</a>
+                  <span href="/pharmacy/medical-accessories">Medical Accessories</span>
               </div>
           </li>
           <li data-cid="1576" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&q=low&v=1&m=40&webp=1&alpha=1"/>
-                  <a href="/pharmacy/personal-care-1"> Personal  Care </a>
+                  <span href="/pharmacy/personal-care-1"> Personal  Care </span>
                   <span>
                       <span>&nbsp; </span>                  <span>&nbsp; </span>
                       <span>&nbsp; </span>
@@ -488,7 +488,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="1494" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/female-care">Women's Care</a>
+                    <span href="/pharmacy/female-care">Women's Care</span>
                     <span>
                       <span>&nbsp;</span>                   <span>&nbsp; </span>                  
                       <span>&nbsp; </span>
@@ -507,12 +507,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     <ul className="level-2">
                     <li data-cid="1501" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/female-shampoo">Women's Shampoos & Conditioners</a>
+                        <span href="/pharmacy/female-shampoo">Women's Shampoos & Conditioners</span>
                       </div>
                     </li>
                     <li data-cid="35" className="not-in-selection-tree unselected">
                       <div clasclassNames="name">
-                        <a href="#">Feminine Care</a>
+                        <span href="#">Feminine Care</span>
                       </div>
                     </li>
                   </ul>              
@@ -521,7 +521,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1495" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/male-care">Men's Care</a>
+                    <span href="/pharmacy/male-care">Men's Care</span>
                     <span>
                       <span>&nbsp;</span>                   <span>&nbsp; </span>                  
                       <span>&nbsp; </span>
@@ -542,17 +542,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     <ul className="level-2">
                     <li data-cid="39" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/shampoo">Men's Shampoos & Conditioners</a>
+                        <span href="/pharmacy/shampoo">Men's Shampoos & Conditioners</span>
                       </div>
                     </li>
                     <li data-cid="32" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/shaving-needs">Shaving Needs</a>
+                        <span href="/pharmacy/shaving-needs">Shaving Needs</span>
                       </div>
                     </li>
                     <li data-cid="1468" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/beard-grooming">Beard Grooming</a>
+                        <span href="/pharmacy/beard-grooming">Beard Grooming</span>
                       </div>
                     </li>
                   </ul>
@@ -560,12 +560,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="40" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/handwash">Handwash</a>
+                    <span href="/pharmacy/handwash">Handwash</span>
                   </div>
                 </li>
                 <li data-cid="41" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/tissue-wipes">Tissue &amp; Wipes</a>
+                    <span href="/pharmacy/tissue-wipes">Tissue &amp; Wipes</span>
                   </div>
                 </li>
               </ul>
@@ -574,7 +574,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <li data-cid="1569" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&q=best&v=1&m=40&webp=1&alpha=1"/>
-                  <a href="/pharmacy/mother-baby-care">Health  &amp; Wellness</a>
+                  <span href="/pharmacy/mother-baby-care">Health  &amp; Wellness</span>
                   <span>
                       <span>&nbsp; </span>                  <span>&nbsp; </span>
                       <span>&nbsp; </span>
@@ -592,22 +592,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="192" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/antiseptics">Antiseptics</a>
+                    <span href="/pharmacy/antiseptics">Antiseptics</span>
                   </div>
                 </li>
                 <li data-cid="227" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/food-supplements">Food Supplements</a>
+                    <span href="/pharmacy/food-supplements">Food Supplements</span>
                   </div>
                 </li>
                 <li data-cid="47" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/family-planning">Family Planning</a>
+                    <span href="/pharmacy/family-planning">Family Planning</span>
                   </div>
                 </li>
                 <li data-cid="1261" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/adult-diapers">Adult Diapers</a>
+                    <span href="/pharmacy/adult-diapers">Adult Diapers</span>
                   </div>
                 </li>
               </ul>          
@@ -616,7 +616,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <li data-cid="1575" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&q=best&v=1&m=40&webp=1&alpha=1"/>
-                  <a href="/pharmacy/medical-food">Baby Care</a>
+                  <span href="/pharmacy/medical-food">Baby Care</span>
                   <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
 
                       <IoIosArrowForward
@@ -630,7 +630,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="211" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/diapers">Diapers</a>
+                    <span href="/pharmacy/diapers">Diapers</span>
                     <span>
                       <span>&nbsp; </span>
                       <IoIosArrowForward
@@ -644,22 +644,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     <ul className="level-2">
                     <li data-cid="1673" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/medium-2">Medium (5-13 kg) Diapers</a>
+                        <span href="/pharmacy/medium-2">Medium (5-13 kg) Diapers</span>
                       </div>
                     </li>
                     <li data-cid="1676" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/large-2">Large (10-16 kg) Diapers</a>
+                        <span href="/pharmacy/large-2">Large (10-16 kg) Diapers</span>
                       </div>
                     </li>
                     <li data-cid="1672" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/small-2">Small (3-7 kg) Diapers</a>
+                        <span href="/pharmacy/small-2">Small (3-7 kg) Diapers</span>
                       </div>
                     </li>
                     <li data-cid="1671" className="not-in-selection-tree unselected">
                       <div className="name">
-                        <a href="/pharmacy/newborn-2">Newborn (2-5 kg) Diapers</a>
+                        <span href="/pharmacy/newborn-2">Newborn (2-5 kg) Diapers</span>
                       </div>
                     </li>
                   </ul>
@@ -668,17 +668,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="223" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/bath-skincare">Baby Skincare</a>
+                    <span href="/pharmacy/bath-skincare">Baby Skincare</span>
                   </div>
                 </li>
                 <li data-cid="212" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/wipes">Wipes</a>
+                    <span href="/pharmacy/wipes">Wipes</span>
                   </div>
                 </li>
                 <li data-cid="1483" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/newborn-essentials">Newborn Essentials</a>
+                    <span href="/pharmacy/newborn-essentials">Newborn Essentials</span>
                   </div>
                 </li>
               </ul>          

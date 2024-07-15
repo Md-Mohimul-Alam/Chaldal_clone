@@ -11,7 +11,7 @@ const STC_ChT = () => {
     return (
         <div>
             {!isOpen && (
-                <a className="chat_area" style={{ width: "auto", height: "auto", position: "fixed", bottom: "10px", right: "34px", zIndex: "999" }} onClick={toggleChat}>
+                <div className="chat_area" style={{ width: "auto", height: "auto", position: "fixed", bottom: "10px", right: "34px", zIndex: "999" }} onClick={toggleChat}>
                     <span className="chatIcon" style={{ display: "inline-block", width: "65px", height: "65px" }}>
                         <svg width="45px" height="45px" viewBox="0 0 78 78">
                             <g id="Component_10_3" transform="translate(9 9)">
@@ -31,7 +31,7 @@ const STC_ChT = () => {
                             </g>
                         </svg>
                     </span>
-                </a>
+                </div>
             )}
             {isOpen && (
                 <div className="hide chat-section" style={{ position: "fixed", width: "300px", height: "450px", right: "80px", bottom: "0", zIndex: "4", boxShadow: "0 12px 34px 0 rgba(0,0,0,.175)" }}>

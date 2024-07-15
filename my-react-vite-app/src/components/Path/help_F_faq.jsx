@@ -238,28 +238,28 @@ const FaqG= () =>{
                             </NavLink>
                             </li>
                             <li className="links">
-                            <a className="itemLinks" href="/t/Career">
+                            <span  className="itemLinks" href="/t/Career">
                                 Career
                                 <span className="itemUnderline"></span>
-                            </a>
+                            </span>
                             </li>
                             <li className="links">
-                            <a className="itemLinks" href="/t/ContactUs">
+                            <span  className="itemLinks" href="/t/ContactUs">
                                 Contact Us
                                 <span className="itemUnderline"></span>
-                            </a>
+                            </span>
                             </li>
                             <li className="links">
-                            <a className="itemLinks" href="/t/PrivacyInfo">
+                            <span  className="itemLinks" href="/t/PrivacyInfo">
                                 Privacy Policy
                                 <span className="itemUnderline"></span>
-                            </a>
+                            </span>
                             </li>
                             <li className="links">
-                            <a className="itemLinks" href="/t/TermsOfUse">
+                            <span  className="itemLinks" href="/t/TermsOfUse">
                                 Terms of Use
                                 <span className="itemUnderline"></span>
-                            </a>
+                            </span>
                             </li>
                         </ul>
                         </div>

@@ -11,7 +11,7 @@ import CartSidebar from './sticky_cart';
 import { useCart } from './CartContext'; 
 
 const Offers = () => {
-  const { items, addToCart, totalItems, cart, totalPrice, removeFromCart, updateCartItemQuantity } = useCart(); 
+  const { quantity ,items, addToCart, totalItems, cart, totalPrice, removeFromCart, updateCartItemQuantity } = useCart(); 
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const logoRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
@@ -60,31 +60,31 @@ const Offers = () => {
   const handleClickCart = () => {
     setIsCartOpen(!isCartOpen);
   };
-  const handleAddToCart = (item) => {
-    addToCart(item, 1);
-    setShowQuantityEditor((prev) => ({ ...prev, [item.id]: true }));
-    setQuantities((prev) => ({ ...prev, [item.id]: 1 }));
+  const handleAddToCart = (items) => {
+    addToCart(items, 1);
+    setShowQuantityEditor((prev) => ({ ...prev, [items.id]: true }));
+    setQuantities((prev) => ({ ...prev, [items.id]: 1 }));
   };
 
-  const handleIncrement = (itemId) => {
-    const item = cart.find(item => item.id === itemId);
-    if (item) {
-      const newQuantity = item.quantity + 1;
-      updateCartItemQuantity(itemId, newQuantity);
-      setQuantities((prev) => ({ ...prev, [itemId]: newQuantity }));
+  const handleIncrement = (itemsId) => {
+    const items = cart.find(items => items.id === itemsId);
+    if (items) {
+      const newQuantity = items.quantity + 1;
+      updateCartItemQuantity(itemsId, newQuantity);
+      setQuantities((prev) => ({ ...prev, [itemsId]: newQuantity }));
     }
   };
 
-  const handleDecrement = (itemId) => {
-    const item = cart.find(item => item.id === itemId);
-    if (item) {
-      const newQuantity = item.quantity - 1;
+  const handleDecrement = (itemsId) => {
+    const items = cart.find(items => items.id === itemsId);
+    if (items) {
+      const newQuantity = items.quantity - 1;
       if (newQuantity <= 0) {
-        removeFromCart(itemId);
-        setShowQuantityEditor((prev) => ({ ...prev, [itemId]: false }));
+        removeFromCart(itemsId);
+        setShowQuantityEditor((prev) => ({ ...prev, [itemsId]: false }));
       } else {
-        updateCartItemQuantity(itemId, newQuantity);
-        setQuantities((prev) => ({ ...prev, [itemId]: newQuantity }));
+        updateCartItemQuantity(itemsId, newQuantity);
+        setQuantities((prev) => ({ ...prev, [itemsId]: newQuantity }));
       }
     }
   };
@@ -257,7 +257,7 @@ const Offers = () => {
               </div>
             </div>
           <div  className="mainTile">
-              <a  className="">
+              <span    className="">
                   <div  className="categoryBox">
                       <div  className="categoryName">
                           <span>Summer Collection</span>
@@ -272,8 +272,8 @@ const Offers = () => {
                           <img src="https://chaldn.com/_mpimage/summer-collection?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D155983&amp;q=best&amp;v=1&amp;webp=1&amp;alpha=1"/>
                       </div>
                   </div>
-              </a>
-                <a  className="">
+              </span>
+                <span    className="">
                   <div  className="categoryBox">
                     <div  className="categoryName">
                       <span>Flash Sales </span>
@@ -288,8 +288,8 @@ const Offers = () => {
                       <img src="https://chaldn.com/_mpimage/flash-sales?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95784&amp;q=best&amp;v=1&amp;webp=1&amp;alpha=1"/>
                     </div>
                   </div>
-                </a>
-                <a  className="">
+                </span>
+                <span    className="">
                   <div  className="categoryBox">
                     <div  className="categoryName">
                       <span>Popular</span>
@@ -304,8 +304,8 @@ const Offers = () => {
                       <img src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95790&amp;q=best&amp;v=1&amp;webp=1&amp;alpha=1"/>
                     </div>
                   </div>
-                </a>
-                <a  className="">
+                </span>
+                <span    className="">
                   <div  className="categoryBox">
                     <div  className="categoryName">
                       <span>Food</span>
@@ -320,8 +320,8 @@ const Offers = () => {
                       <img src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;webp=1&amp;alpha=1"/>
                     </div>
                   </div>
-                </a>
-                <a  className="">
+                </span>
+                <span    className="">
                   <div  className="categoryBox">
                     <div  className="categoryName">
                       <span>Cleaning Supplies</span>
@@ -336,8 +336,8 @@ const Offers = () => {
                       <img src="https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&amp;q=best&amp;v=1&amp;webp=1&amp;alpha=1"/>
                     </div>
                   </div>
-                </a>
-                <a  className="">
+                </span>
+                <span    className="">
                   <div  className="categoryBox">
                     <div  className="categoryName">
                       <span>Personal Care</span>
@@ -352,8 +352,8 @@ const Offers = () => {
                       <img src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&amp;q=low&amp;v=1&amp;webp=1&amp;alpha=1"/>
                     </div>
                   </div>
-                </a>
-                <a  className="">
+                </span>
+                <span    className="">
                   <div  className="categoryBox">
                     <div  className="categoryName">
                       <span>Health &amp; Wellness</span>
@@ -368,7 +368,7 @@ const Offers = () => {
                       <img src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&amp;q=best&amp;v=1&amp;webp=1&amp;alpha=1"/>
                     </div>
                   </div>
-                </a>
+                </span>
             </div>
           <div className="offers-container">
           <h2 style={{
@@ -384,50 +384,51 @@ const Offers = () => {
             backgroundColor: '#fff',
             lineHeight: 'normal'
           }}>Special Offers</h2>
-
-          {items.map((item) => (
-            <ul className="offer-container" key={item.id}>
+          
+          {items.map((items) => (
+            <ul className="offer-container" key={items.id}>
               <li className="offer-item">
-                <img src={item.image} alt={item.name} className="offer-image" />
+                <img src={items.image} alt={items.name} className="offer-image" />
                 <div className="product">
                   <div className="imageWrapper">
                     <div className="choto" style={{ alignItems: 'center', position: 'relative' }}>
                       <div className="imageWrapperWrapper">
-                        <img src={item.image} alt={item.name} size="400" style={{ backgroundColor: 'transparent', width: '100%', padding: '5px', marginLeft: '2px' }} />
+                        <img src={items.image} alt={items.name} size="400" style={{ backgroundColor: 'transparent', width: '100%', padding: '5px', marginLeft: '2px' }} />
                       </div>
-                      <div className="name">{item.name}</div>
+                      <div className="name">{items.name}</div>
                       <div className="subText">
-                        {item.quantity_inKGorPCS}
+                        {items.quantity_inKGorPCS}
                       </div>
                       <div className="discountedPriceSection" style={{ display: 'flex' }}>
                         <div className="discountedPrice">
-                          <span>৳ {item.price.toString()}</span>
+                          <span>৳ {items.price.toString()}</span>
                         </div>
                         <div className="price">
-                          <span>৳ {item.originalPrice}</span>
+                          <span>৳ {items.originalPrice}</span>
                         </div>
                       </div>
                     </div>
+                    
 
-                    {showQuantityEditor[item.id] ? (
+                    {showQuantityEditor[items.id] ? (
                       <div className="productQuantityEditor addButtonWrapper border-radius-small">
-                        <button type="button" className="minusQuantity" onClick={() => handleDecrement(item.id)}>–</button>
+                        <button type="button" id="same" className="minusQuantity" onClick={() => handleDecrement(items.id)}>–</button>
                         <div className="QuantityTextContainer">
-                          <span>{items.quantity}</span>
+                          <span>{quantities[items.id]}</span>
                           <span> </span>
                           <span>in bag</span>
                         </div>
-                        <button type="button" className="plusQuantity" onClick={() => handleIncrement(item.id)}>+</button>
+                        <button type="button" className="plusQuantity" onClick={() => handleIncrement(items.id)}>+</button>
                       </div>
                     ) : (
-                      <section className="addButtonWrapper border-radius-small" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleAddToCart(item)}>
+                      <section className="addButtonWrapper border-radius-small" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleAddToCart(items)}>
                         <span className="fifteenMinute" id="svgIcon">
                           <svg style={{ display: 'inline-block', verticalAlign: 'middle' }} width="22px" height="25px" version="1.1" x="0px" y="0px" viewBox="0 -5 5.153 40.012">
                             <path d="M38.487 11.472H31.78l6.12-9.643h-8.457L21.9 16.906h5.723l-6.289 14.935z" transform="translate(-21.334 -1.829)"></path>
                           </svg>
                         </span>
                         <div className="buyText" style={{ color: '#ff8182' }}>
-                          {showQuantityEditor[item.id] ? "Cancel" : "Add to bag"}
+                          {showQuantityEditor[items.id] ? "Cancel" : "Add to bag"}
                         </div>
                       </section>
                     )}

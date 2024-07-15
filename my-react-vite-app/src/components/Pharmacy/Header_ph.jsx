@@ -68,7 +68,7 @@ const Header_ph = () =>{
                     </svg>
                 </div>
             <div className="logo">
-                <a>
+                <span>
                     <img
                         className="egg chaldal_logo"
                             style={{
@@ -79,7 +79,7 @@ const Header_ph = () =>{
                                     }}
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     />
-                </a>
+                </span>
             </div>
 
 

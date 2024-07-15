@@ -224,23 +224,23 @@ const Helpg= () =>{
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/Career">Career</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/Career">Career</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/ContactUs">Contact Us</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/ContactUs">Contact Us</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/PrivacyInfo">Privacy Policy</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/PrivacyInfo">Privacy Policy</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/TermsOfUse">Terms of Use</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/TermsOfUse">Terms of Use</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                         <li className="links">
-                                            <a className="itemLinks" href="/pharmacy/t/PharmacyLicense">Pharmacy License</a>
+                                            <span  className="itemLinks" href="/pharmacy/t/PharmacyLicense">Pharmacy License</span>
                                             <span className="itemUnderline"></span>
                                         </li>
                                     </ul>
@@ -260,7 +260,7 @@ const Helpg= () =>{
                                     </div>
                                     <div>
                                         If you have ideas on how we can improve, we would love to hear from you. Please do email us at 
-                                        <a href="mailto:founders@chaldal.com"><strong>info@chaldal.com</strong></a>.
+                                        <span  href="mailto:founders@chaldal.com"><strong>info@chaldal.com</strong></span>.
                                     </div>
                                     <div>
                                         <br />
@@ -275,7 +275,7 @@ const Helpg= () =>{
                                         <strong>Tejas (Founder &amp; CTO)</strong>
                                         <br />
                                         Tejas is a full-stack engineer. Prior to Chaldal, he worked at Sigfig where he was in charge of tech infrastructure. His hobby includes research on Lisp machines and how we can develop better software. Tejas has a degree in Computer Science from the National University of Singapore. He invites you to read more about 
-                                        <a href="https://chaldal.tech"><strong>Chaldal Engineering</strong></a>.
+                                        <span  href="https://chaldal.tech"><strong>Chaldal Engineering</strong></span>.
                                         <br /><br /><br />
                                     </div>
                                 </div>

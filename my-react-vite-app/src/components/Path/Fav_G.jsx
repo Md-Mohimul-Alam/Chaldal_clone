@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 import logo from './img/logo.png';
 import Sidebar from './sidebar';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CustomizedInputBase from './search';
 import STC_ChT from './Sticky_chat/sticky_chat';
 import { IoIosArrowForward } from "react-icons/io";
@@ -263,36 +260,34 @@ const Favp= () => {
       <div className="loginWithPhoneMessage">PLEASE ENTER YOUR MOBILE PHONE NUMBER</div>
 
       
-      <form className="phoneNumberInputContainer">
-      <div className="phoneNumberLoginField focused">
-        <div className='phone-i'>
-          <PhoneInput
-            value={phone}
-            onChange={(phone) => setPhone(phone)}
-           inputClass="phone-input"
-           dropdownClass="phone-dropdown"
-           placeholder='e.g. +8801672955886'
-          />
+        <form className="phoneNumberInputContainer">
+        <div className="phoneNumberLoginField focused">
+          <div className='phone-i'>
+            <PhoneInput
+              value={phone}
+              onChange={(phone) => setPhone(phone)}
+            inputClass="phone-input"
+            dropdownClass="phone-dropdown"
+            placeholder='e.g. +8801672955886'
+            />
+          </div>
+          
         </div>
-        
+        <div className="errorContainer"></div>
+        <div className="actions">
+          <button className="loginBtn" type="submit">SIGN UP / LOGIN</button>
+        </div>
+      </form>
+
+      <div className="recaptcha">
+        <h5 className="recaptchaTxt">
+          <span>This site is protected by reCAPTCHA and the Google </span>
+            <span  href="https://policies.google.com/privacy" target="_blank">Privacy Policy</span>
+            <span> and </span>
+            <span  href="https://policies.google.com/terms" target="_blank">Terms of Service</span>
+            <span> apply.</span>
+          </h5>
       </div>
-      <div className="errorContainer"></div>
-      <div className="actions">
-        <button className="loginBtn" type="submit">SIGN UP / LOGIN</button>
-      </div>
-    </form>
-
-    <div className="recaptcha">
-      <h5 className="recaptchaTxt">
-        <span>This site is protected by reCAPTCHA and the Google </span>
-          <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
-          <span> and </span>
-          <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
-          <span> apply.</span>
-        </h5>
-    </div>
-
-
     </div>
   </div>
 </section>

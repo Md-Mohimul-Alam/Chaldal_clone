@@ -137,21 +137,21 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <li data-cid="1506" className="not-in-selection-tree unselected topLevel">
               <div className="name">
               <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/summer-collection?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D155983&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-                <a href="#">Summer Collection</a>
+                <span  href="#">Summer Collection</span>
               </div>
             </li>
 
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/flash-sales?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95784&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
 
-              <a href="#">Flash Sales</a>
+              <span  href="#">Flash Sales</span>
             </li>
 
 
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/popular?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95790&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
 
-              <a href="#">Popular</a>
+              <span  href="#">Popular</span>
             </li>
 
 
@@ -161,7 +161,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <li className="unselected topLevel">
             <div className="name">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Food</a>
+              <span  href="#">Food</span>
                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -174,7 +174,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="7" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/fruits-vegetables">Fruits &amp; Vegetables</a>
+                    <span  href="/fruits-vegetables">Fruits &amp; Vegetables</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -186,12 +186,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="12" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/fresh-vegetable">Fresh Vegetables</a>
+                        <span  href="/fresh-vegetable">Fresh Vegetables</span>
                     </div>
                 </li>
                 <li data-cid="11" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/fresh-fruit">Fresh Fruits</a>
+                        <span  href="/fresh-fruit">Fresh Fruits</span>
                     </div>
                 </li>
             </ul>
@@ -201,7 +201,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="23" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/meat-fish">Meat &amp; Fish</a>
+                    <span  href="/meat-fish">Meat &amp; Fish</span>
                     <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -213,32 +213,32 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1593" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/chicken-poultry">Chicken &amp; Poultry</a>
+                        <span  href="/chicken-poultry">Chicken &amp; Poultry</span>
                     </div>
                 </li>
                 <li data-cid="1725" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/premium-perishables">Premium Perishables</a>
+                        <span  href="/premium-perishables">Premium Perishables</span>
                     </div>
                 </li>
                 <li data-cid="1235" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/frozen-fish">Frozen Fish</a>
+                        <span  href="/frozen-fish">Frozen Fish</span>
                     </div>
                 </li>
                 <li data-cid="1696" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/meat-new">Meat</a>
+                        <span  href="/meat-new">Meat</span>
                     </div>
                 </li>
                 <li data-cid="9" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/tofu-meat-alternatives">Tofu &amp; Meat Alternatives</a>
+                        <span  href="/tofu-meat-alternatives">Tofu &amp; Meat Alternatives</span>
                     </div>
                 </li>
                 <li data-cid="1238" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/dried-fish">Dried Fish</a>
+                        <span  href="/dried-fish">Dried Fish</span>
                     </div>
                 </li>
             </ul>
@@ -248,7 +248,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="104" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/cooking">Cooking</a>
+                    <span  href="/cooking">Cooking</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -260,57 +260,57 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="107" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/spices">Spices</a>
+                        <span  href="/spices">Spices</span>
                     </div>
                 </li>
                 <li data-cid="111" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/salt-sugar">Salt &amp; Sugar</a>
+                        <span  href="/salt-sugar">Salt &amp; Sugar</span>
                     </div>
                 </li>
                 <li data-cid="80" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/rices">Rice</a>
+                        <span  href="/rices">Rice</span>
                     </div>
                 </li>
                 <li data-cid="198" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/dal-or-lentil">Dal or Lentil</a>
+                        <span  href="/dal-or-lentil">Dal or Lentil</span>
                     </div>
                 </li>
                 <li data-cid="110" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/ready-mix">Ready Mix</a>
+                        <span  href="/ready-mix">Ready Mix</span>
                     </div>
                 </li>
                 <li data-cid="1352" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/shemai-suji">Shemai &amp; Suji</a>
+                        <span  href="/shemai-suji">Shemai &amp; Suji</span>
                     </div>
                 </li>
                 <li data-cid="200" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/miscellaneous">Special Ingredients</a>
+                        <span  href="/miscellaneous">Special Ingredients</span>
                     </div>
                 </li>
                 <li data-cid="108" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/oil">Oil</a>
+                        <span  href="/oil">Oil</span>
                     </div>
                 </li>
                 <li data-cid="1372" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/colors-flavours">Colors &amp; Flavours</a>
+                        <span  href="/colors-flavours">Colors &amp; Flavours</span>
                     </div>
                 </li>
                 <li data-cid="109" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/ghee">Ghee</a>
+                        <span  href="/ghee">Ghee</span>
                     </div>
                 </li>
                 <li data-cid="1266" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/premium-ingredients">Premium Ingredients</a>
+                        <span  href="/premium-ingredients">Premium Ingredients</span>
                     </div>
                 </li>
             </ul>
@@ -320,7 +320,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1631" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/sauces-pickles">Sauces &amp; Pickles</a>
+                    <span  href="/sauces-pickles">Sauces &amp; Pickles</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -332,22 +332,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1632" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/tomato-sauces">Tomato Sauces</a>
+                        <span  href="/tomato-sauces">Tomato Sauces</span>
                     </div>
                 </li>
                 <li data-cid="78" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/pickles">Pickles</a>
+                        <span  href="/pickles">Pickles</span>
                     </div>
                 </li>
                 <li data-cid="1703" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cooking-sauces">Cooking Sauces</a>
+                        <span  href="/cooking-sauces">Cooking Sauces</span>
                     </div>
                 </li>
                 <li data-cid="1633" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/other-sauces">Other Table Sauces</a>
+                        <span  href="/other-sauces">Other Table Sauces</span>
                     </div>
                 </li>
             </ul>
@@ -358,7 +358,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="58" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/dairy">Dairy &amp; Eggs</a>
+                    <span  href="/dairy">Dairy &amp; Eggs</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -370,37 +370,37 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="61" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/eggs">Eggs</a>
+                        <span  href="/eggs">Eggs</span>
                     </div>
                 </li>
                 <li data-cid="1580" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/powder-milk">Powder Milk</a>
+                        <span  href="/powder-milk">Powder Milk</span>
                     </div>
                 </li>
                 <li data-cid="1380" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/liquid-uht-milk">Liquid & UHT Milk</a>
+                        <span  href="/liquid-uht-milk">Liquid & UHT Milk</span>
                     </div>
                 </li>
                 <li data-cid="64" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/yogurt">Yogurt & Sweets</a>
+                        <span  href="/yogurt">Yogurt & Sweets</span>
                     </div>
                 </li>
                 <li data-cid="60" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cheeses">Cheese</a>
+                        <span  href="/cheeses">Cheese</span>
                     </div>
                 </li>
                 <li data-cid="1583" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/condensed-milk-cream">Condensed Milk & Cream</a>
+                        <span  href="/condensed-milk-cream">Condensed Milk & Cream</span>
                     </div>
                 </li>
                 <li data-cid="59" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/butter-sour-cream">Butter & Sour Cream</a>
+                        <span  href="/butter-sour-cream">Butter & Sour Cream</span>
                     </div>
                 </li>
             </ul>
@@ -410,7 +410,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="14" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/breakfast">Breakfast</a>
+                    <span  href="/breakfast">Breakfast</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -422,47 +422,47 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1702" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/eggs-2">Eggs</a>
+                        <span  href="/eggs-2">Eggs</span>
                     </div>
                 </li>
                 <li data-cid="74" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/breads">Breads</a>
+                        <span  href="/breads">Breads</span>
                     </div>
                 </li>
                 <li data-cid="1597" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/tea-coffee-2">Tea & Coffee</a>
+                        <span  href="/tea-coffee-2">Tea & Coffee</span>
                     </div>
                 </li>
                 <li data-cid="228" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/local-breakfast">Local Breakfast</a>
+                        <span  href="/local-breakfast">Local Breakfast</span>
                     </div>
                 </li>
                 <li data-cid="16" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cereals">Cereals</a>
+                        <span  href="/cereals">Cereals</span>
                     </div>
                 </li>
                 <li data-cid="77" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/honey">Honey</a>
+                        <span  href="/honey">Honey</span>
                     </div>
                 </li>
                 <li data-cid="1596" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/spreads-syrups">Dips, Spreads & Syrups</a>
+                        <span  href="/spreads-syrups">Dips, Spreads & Syrups</span>
                     </div>
                 </li>
                 <li data-cid="235" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/energy-boosters">Energy Boosters</a>
+                        <span  href="/energy-boosters">Energy Boosters</span>
                     </div>
                 </li>
                 <li data-cid="1594" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/jams-jellies">Jams & Jellies</a>
+                        <span  href="/jams-jellies">Jams & Jellies</span>
                     </div>
                 </li>
             </ul>
@@ -472,7 +472,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="51" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/candy-chocolate">Candy &amp; Chocolate</a>
+                    <span  href="/candy-chocolate">Candy &amp; Chocolate</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -484,27 +484,27 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1600" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/chocolates">Chocolates</a>
+                        <span  href="/chocolates">Chocolates</span>
                     </div>
                 </li>
                 <li data-cid="1602" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/wafers">Wafers</a>
+                        <span  href="/wafers">Wafers</span>
                     </div>
                 </li>
                 <li data-cid="1599" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/candies">Candies</a>
+                        <span  href="/candies">Candies</span>
                     </div>
                 </li>
                 <li data-cid="1605" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mints-mouth-fresheners">Gums, Mints & Mouth Fresheners</a>
+                        <span  href="/mints-mouth-fresheners">Gums, Mints & Mouth Fresheners</span>
                     </div>
                 </li>
                 <li data-cid="1607" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/halal-marshmallows">Jellies & Marshmallows</a>
+                        <span  href="/halal-marshmallows">Jellies & Marshmallows</span>
                     </div>
                 </li>
             </ul>
@@ -514,7 +514,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="49" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/snacks">Snacks</a>
+                    <span  href="/snacks">Snacks</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -526,67 +526,67 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="93" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/noodles">Noodles</a>
+                        <span  href="/noodles">Noodles</span>
                     </div>
                 </li>
                 <li data-cid="1629" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cookies-2">Cookies</a>
+                        <span  href="/cookies-2">Cookies</span>
                     </div>
                 </li>
                 <li data-cid="52" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/local-snacks">Local Snacks</a>
+                        <span  href="/local-snacks">Local Snacks</span>
                     </div>
                 </li>
                 <li data-cid="53" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/chips-pretzels">Chips & Pretzels</a>
+                        <span  href="/chips-pretzels">Chips & Pretzels</span>
                     </div>
                 </li>
                 <li data-cid="1619" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/plain-biscuits">Plain Biscuits</a>
+                        <span  href="/plain-biscuits">Plain Biscuits</span>
                     </div>
                 </li>
                 <li data-cid="1625" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/toast-biscuits">Toast & Bakery Biscuits</a>
+                        <span  href="/toast-biscuits">Toast & Bakery Biscuits</span>
                     </div>
                 </li>
                 <li data-cid="1621" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cream-biscuits">Cream Biscuits</a>
+                        <span  href="/cream-biscuits">Cream Biscuits</span>
                     </div>
                 </li>
                 <li data-cid="1381" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/pasta-macaroni">Pasta & Macaroni</a>
+                        <span  href="/pasta-macaroni">Pasta & Macaroni</span>
                     </div>
                 </li>
                 <li data-cid="194" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/soups">Soups</a>
+                        <span  href="/soups">Soups</span>
                     </div>
                 </li>
                 <li data-cid="56" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/popcorn-nuts">Popcorn & Nuts</a>
+                        <span  href="/popcorn-nuts">Popcorn & Nuts</span>
                     </div>
                 </li>
                 <li data-cid="1623" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/salted-biscuits">Salted Biscuits</a>
+                        <span  href="/salted-biscuits">Salted Biscuits</span>
                     </div>
                 </li>
                 <li data-cid="196" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cakes">Cakes</a>
+                        <span  href="/cakes">Cakes</span>
                     </div>
                 </li>
                 <li data-cid="79" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/salad-dressing">Salad Dressing</a>
+                        <span  href="/salad-dressing">Salad Dressing</span>
                     </div>
                 </li>
             </ul>
@@ -596,7 +596,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="17" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/beverages">Beverages</a>
+                    <span  href="/beverages">Beverages</span>
                     <span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -608,32 +608,32 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="18" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/beverages-tea">Tea</a>
+                        <span  href="/beverages-tea">Tea</span>
                     </div>
                 </li>
                 <li data-cid="20" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/soft-drinks">Soft Drinks</a>
+                        <span  href="/soft-drinks">Soft Drinks</span>
                     </div>
                 </li>
                 <li data-cid="1377" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/coffees">Coffee</a>
+                        <span  href="/coffees">Coffee</span>
                     </div>
                 </li>
                 <li data-cid="189" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/powder-mixes">Syrups &amp; Powder Drinks</a>
+                        <span  href="/powder-mixes">Syrups &amp; Powder Drinks</span>
                     </div>
                 </li>
                 <li data-cid="19" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/juice">Juice</a>
+                        <span  href="/juice">Juice</span>
                     </div>
                 </li>
                 <li data-cid="22" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/water">Water</a>
+                        <span  href="/water">Water</span>
                     </div>
                 </li>
             </ul>
@@ -643,7 +643,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="100" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/baking-needs">Baking</a>
+                    <span  href="/baking-needs">Baking</span>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -655,27 +655,27 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="103" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/flour">Flour</a>
+                        <span  href="/flour">Flour</span>
                     </div>
                 </li>
                 <li data-cid="8" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/nuts-dried-fruits">Nuts &amp; Dried Fruits</a>
+                        <span  href="/nuts-dried-fruits">Nuts &amp; Dried Fruits</span>
                     </div>
                 </li>
                 <li data-cid="102" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/baking-ingredients">Baking Ingredients</a>
+                        <span  href="/baking-ingredients">Baking Ingredients</span>
                     </div>
                 </li>
                 <li data-cid="1493" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/baking-tools">Baking Tools</a>
+                        <span  href="/baking-tools">Baking Tools</span>
                     </div>
                 </li>
                 <li data-cid="101" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/baking-mixes">Baking &amp; Dessert Mixes</a>
+                        <span  href="/baking-mixes">Baking &amp; Dessert Mixes</span>
                     </div>
                 </li>
             </ul>
@@ -685,7 +685,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="65" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/frozen-foods">Frozen &amp; Canned</a>
+                    <span  href="/frozen-foods">Frozen &amp; Canned</span>
                     <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
                 className="arrow-icon"
@@ -697,47 +697,47 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1595" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/chicken-snacks">Chicken Snacks</a>
+                        <span  href="/chicken-snacks">Chicken Snacks</span>
                     </div>
                 </li>
                 <li data-cid="1609" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/frozen-parathas-roti">Frozen Parathas &amp; Roti</a>
+                        <span  href="/frozen-parathas-roti">Frozen Parathas &amp; Roti</span>
                     </div>
                 </li>
                 <li data-cid="1606" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/vegetable-snacks">Vegetable Snacks</a>
+                        <span  href="/vegetable-snacks">Vegetable Snacks</span>
                     </div>
                 </li>
                 <li data-cid="1612" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mushroom-cans">Mushroom Cans</a>
+                        <span  href="/mushroom-cans">Mushroom Cans</span>
                     </div>
                 </li>
                 <li data-cid="1598" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/beef-snacks">Beef Snacks</a>
+                        <span  href="/beef-snacks">Beef Snacks</span>
                     </div>
                 </li>
                 <li data-cid="1615" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/vegetable-cans">Vegetable Cans</a>
+                        <span  href="/vegetable-cans">Vegetable Cans</span>
                     </div>
                 </li>
                 <li data-cid="1618" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/fish-cans">Fish Cans</a>
+                        <span  href="/fish-cans">Fish Cans</span>
                     </div>
                 </li>
                 <li data-cid="1617" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/canned-fruits">Canned Fruits &amp; Sweets</a>
+                        <span  href="/canned-fruits">Canned Fruits &amp; Sweets</span>
                     </div>
                 </li>
                 <li data-cid="1604" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/fish-snacks">Fish Snacks</a>
+                        <span  href="/fish-snacks">Fish Snacks</span>
                     </div>
                 </li>
             </ul>
@@ -747,7 +747,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="191" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/diabetic-food">Diabetic Food</a>
+                    <span  href="/diabetic-food">Diabetic Food</span>
                   </div>
                 </li>
               </ul>
@@ -757,7 +757,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-              <a href="#">Cleaning Supplies</a>
+              <span  href="#">Cleaning Supplies</span>
               <span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
               <span>
                 <IoIosArrowForward
@@ -770,57 +770,57 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="83" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/dish-wash">Dishwashing Supplies</a>
+                        <span  href="/dish-wash">Dishwashing Supplies</span>
                     </div>
                 </li>
                 <li data-cid="86" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/laundry">Laundry</a>
+                        <span  href="/laundry">Laundry</span>
                     </div>
                 </li>
                 <li data-cid="84" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/toilet-cleaning">Toilet Cleaners</a>
+                        <span  href="/toilet-cleaning">Toilet Cleaners</span>
                     </div>
                 </li>
                 <li data-cid="87" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/paper-products">Napkins &amp; Paper Products</a>
+                        <span  href="/paper-products">Napkins &amp; Paper Products</span>
                     </div>
                 </li>
                 <li data-cid="88" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/pest-control">Pest Control</a>
+                        <span  href="/pest-control">Pest Control</span>
                     </div>
                 </li>
                 <li data-cid="1542" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/floor-glass-cleaners">Floor &amp; Glass Cleaners</a>
+                        <span  href="/floor-glass-cleaners">Floor &amp; Glass Cleaners</span>
                     </div>
                 </li>
                 <li data-cid="1276" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cleaning-accessories">Cleaning Accessories</a>
+                        <span  href="/cleaning-accessories">Cleaning Accessories</span>
                     </div>
                 </li>
                 <li data-cid="82" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/air-freshners">Air Fresheners</a>
+                        <span  href="/air-freshners">Air Fresheners</span>
                     </div>
                 </li>
                 <li data-cid="90" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/trash-bags">Disposables &amp; Trash Bags</a>
+                        <span  href="/trash-bags">Disposables &amp; Trash Bags</span>
                     </div>
                 </li>
                 <li data-cid="89" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/shoe-care">Shoe Care</a>
+                        <span  href="/shoe-care">Shoe Care</span>
                     </div>
                 </li>
                 <li data-cid="1545" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/trash-bin-basket">Trash Bin &amp; Basket</a>
+                        <span  href="/trash-bin-basket">Trash Bin &amp; Basket</span>
                     </div>
                 </li>
             </ul>
@@ -834,7 +834,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-              <a href="#">Personal Care</a>
+              <span  href="#">Personal Care</span>
               <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
               <span>
                 <IoIosArrowForward
@@ -847,7 +847,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="1494" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/female-care">Women's Care</a>
+                        <span  href="/female-care">Women's Care</span>
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
 
                         <span>
@@ -863,57 +863,57 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul className="level-2">
                       <li data-cid="1608" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/womens-soaps">Women's Soaps</a>
+                              <span  href="/womens-soaps">Women's Soaps</span>
                           </div>
                       </li>
                       <li data-cid="33" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/hair-care">Hair Care</a>
+                              <span  href="/hair-care">Hair Care</span>
                           </div>
                       </li>
                       <li data-cid="1501" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/female-shampoo">Women's Shampoos &amp; Conditioners</a>
+                              <span  href="/female-shampoo">Women's Shampoos &amp; Conditioners</span>
                           </div>
                       </li>
                       <li data-cid="35" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/feminine-care">Feminine Care</a>
+                              <span  href="/feminine-care">Feminine Care</span>
                           </div>
                       </li>
                       <li data-cid="1497" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/female-moisturizer">Female Moisturizer</a>
+                              <span  href="/female-moisturizer">Female Moisturizer</span>
                           </div>
                       </li>
                       <li data-cid="1642" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/face-wash-scrub">Face Wash &amp; Scrub</a>
+                              <span  href="/face-wash-scrub">Face Wash &amp; Scrub</span>
                           </div>
                       </li>
                       <li data-cid="1499" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/female-deo">Female Deo</a>
+                              <span  href="/female-deo">Female Deo</span>
                           </div>
                       </li>
                       <li data-cid="1611" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/womens-perfume">Women's Perfume</a>
+                              <span  href="/womens-perfume">Women's Perfume</span>
                           </div>
                       </li>
                       <li data-cid="1610" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/womens-shower-gel">Women's Shower Gel</a>
+                              <span  href="/womens-shower-gel">Women's Shower Gel</span>
                           </div>
                       </li>
                       <li data-cid="1643" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/masks-cleansers">Masks &amp; Cleansers</a>
+                              <span  href="/masks-cleansers">Masks &amp; Cleansers</span>
                           </div>
                       </li>
                       <li data-cid="1644" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/serum-oil-toners">Serum, Oil &amp; Toners</a>
+                              <span  href="/serum-oil-toners">Serum, Oil &amp; Toners</span>
                           </div>
                       </li>
                   </ul>
@@ -921,7 +921,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1495" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/male-care">Men's Care</a>
+                        <span  href="/male-care">Men's Care</span>
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                   <IoIosArrowForward
                         className="arrow-icon"
@@ -934,57 +934,57 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1636" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mens-soaps">Men's Soaps</a>
+                        <span  href="/mens-soaps">Men's Soaps</span>
                     </div>
                 </li>
                 <li data-cid="1641" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mens-perfume">Men's Perfume</a>
+                        <span  href="/mens-perfume">Men's Perfume</span>
                     </div>
                 </li>
                 <li data-cid="39" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/shampoo">Men's Shampoos &amp; Conditioners</a>
+                        <span  href="/shampoo">Men's Shampoos &amp; Conditioners</span>
                     </div>
                 </li>
                 <li data-cid="32" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/shaving-needs">Shaving Needs</a>
+                        <span  href="/shaving-needs">Shaving Needs</span>
                     </div>
                 </li>
                 <li data-cid="1468" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/beard-grooming">Beard Grooming</a>
+                        <span  href="/beard-grooming">Beard Grooming</span>
                     </div>
                 </li>
                 <li data-cid="31" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/deodorants">Men's Deodorants</a>
+                        <span  href="/deodorants">Men's Deodorants</span>
                     </div>
                 </li>
                 <li data-cid="1640" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/razors-blades">Razors &amp; Blades</a>
+                        <span  href="/razors-blades">Razors &amp; Blades</span>
                     </div>
                 </li>
                 <li data-cid="1500" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mens-hair-care">Men's Hair Care</a>
+                        <span  href="/mens-hair-care">Men's Hair Care</span>
                     </div>
                 </li>
                 <li data-cid="1354" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/lotion-cream">Cream &amp; Lotion</a>
+                        <span  href="/lotion-cream">Cream &amp; Lotion</span>
                     </div>
                 </li>
                 <li data-cid="1498" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mens-facewash">Men's Facewash</a>
+                        <span  href="/mens-facewash">Men's Facewash</span>
                     </div>
                 </li>
                 <li data-cid="1639" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mens-shower-gels">Men's Shower Gels</a>
+                        <span  href="/mens-shower-gels">Men's Shower Gels</span>
                     </div>
                 </li>
             </ul>
@@ -994,7 +994,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="40" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/handwash">Handwash</a>
+                        <span  href="/handwash">Handwash</span>
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1007,12 +1007,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul className="level-2">
                       <li data-cid="1638" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/liquid-handwash">Liquid Handwash</a>
+                              <span  href="/liquid-handwash">Liquid Handwash</span>
                           </div>
                       </li>
                       <li data-cid="1645" className="not-in-selection-tree unselected">
                           <div className="name">
-                              <a href="/hand-sanitizer">Hand Sanitizer</a>
+                              <span  href="/hand-sanitizer">Hand Sanitizer</span>
                           </div>
                       </li>
                   </ul>
@@ -1021,12 +1021,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="41" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/tissue-wipes">Tissue &amp; Wipes</a>
+                        <span  href="/tissue-wipes">Tissue &amp; Wipes</span>
                     </div>
                 </li>
                 <li data-cid="1697" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/oral-care-2">Oral Care</a>
+                        <span  href="/oral-care-2">Oral Care</span>
                           <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1039,17 +1039,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="1613"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/toothpastes">Toothpastes</a>
+                              <span  href="/toothpastes">Toothpastes</span>
                           </div>
                       </li>
                       <li data-cid="1614"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/toothbrushes">Toothbrushes</a>
+                              <span  href="/toothbrushes">Toothbrushes</span>
                           </div>
                       </li>
                       <li data-cid="1616"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/mouthwash-others">Mouthwash &amp; Others</a>
+                              <span  href="/mouthwash-others">Mouthwash &amp; Others</span>
                           </div>
                       </li>
                   </ul>
@@ -1059,7 +1059,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1698" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/skin-care-2">Skin Care</a>
+                        <span  href="/skin-care-2">Skin Care</span>
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1072,37 +1072,37 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="1620"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/soaps">Soaps</a>
+                              <span  href="/soaps">Soaps</span>
                           </div>
                       </li>
                       <li data-cid="1628"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/lotions">Lotions</a>
+                              <span  href="/lotions">Lotions</span>
                           </div>
                       </li>
                       <li data-cid="1624"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/petroleum-jelly">Petroleum Jelly</a>
+                              <span  href="/petroleum-jelly">Petroleum Jelly</span>
                           </div>
                       </li>
                       <li data-cid="1630"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/creams">Creams</a>
+                              <span  href="/creams">Creams</span>
                           </div>
                       </li>
                       <li data-cid="1627"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/face-wash-mask">Face Wash &amp; Mask</a>
+                              <span  href="/face-wash-mask">Face Wash &amp; Mask</span>
                           </div>
                       </li>
                       <li data-cid="1622"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/body-hair-oil">Body &amp; Hair Oil</a>
+                              <span  href="/body-hair-oil">Body &amp; Hair Oil</span>
                           </div>
                       </li>
                       <li data-cid="1635"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/lipsticks-lip-balm">Lipsticks &amp; Lip Balm</a>
+                              <span  href="/lipsticks-lip-balm">Lipsticks &amp; Lip Balm</span>
                           </div>
                       </li>
                   </ul>
@@ -1112,12 +1112,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="190" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/talcom-powder">Talcom Powder</a>
+                        <span  href="/talcom-powder">Talcom Powder</span>
                     </div>
                 </li>
                 <li data-cid="1504" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/hair-color">Hair Color</a>
+                        <span  href="/hair-color">Hair Color</span>
                     </div>
                 </li>
             </ul>
@@ -1127,7 +1127,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-              <a href="#">Health & Wellness</a>
+              <span  href="#">Health & Wellness</span>
               <span>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
               <span>
                 <IoIosArrowForward
@@ -1140,52 +1140,52 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="1505" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/keto-food">Keto Food</a>
+                        <span  href="/keto-food">Keto Food</span>
                     </div>
                 </li>
                 <li data-cid="192" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/antiseptics">Antiseptics</a>
+                        <span  href="/antiseptics">Antiseptics</span>
                     </div>
                 </li>
                 <li data-cid="1660" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/handwash-handrub">Handwash &amp; Handrub</a>
+                        <span  href="/handwash-handrub">Handwash &amp; Handrub</span>
                     </div>
                 </li>
                 <li data-cid="232" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/herbal-products">Herbal &amp; Digestive Aids</a>
+                        <span  href="/herbal-products">Herbal &amp; Digestive Aids</span>
                     </div>
                 </li>
                 <li data-cid="227" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/food-supplements">Food Supplements</a>
+                        <span  href="/food-supplements">Food Supplements</span>
                     </div>
                 </li>
                 <li data-cid="1658" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/face-masks-safety">Face Masks &amp; Safety</a>
+                        <span  href="/face-masks-safety">Face Masks &amp; Safety</span>
                     </div>
                 </li>
                 <li data-cid="47" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/family-planning">Family Planning</a>
+                        <span  href="/family-planning">Family Planning</span>
                     </div>
                 </li>
                 <li data-cid="1665" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/mouthwashes">Mouthwashes, Inhaler &amp; Balm</a>
+                        <span  href="/mouthwashes">Mouthwashes, Inhaler &amp; Balm</span>
                     </div>
                 </li>
                 <li data-cid="1261" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/adult-diapers">Adult Diapers</a>
+                        <span  href="/adult-diapers">Adult Diapers</span>
                     </div>
                 </li>
                 <li data-cid="1666" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/medical-devices">Medical Devices</a>
+                        <span  href="/medical-devices">Medical Devices</span>
                     </div>
                 </li>
             </ul>
@@ -1194,7 +1194,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
-              <a href="#">Baby Care</a>
+              <span  href="#">Baby Care</span>
               <span>
               <span>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
@@ -1208,7 +1208,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="211" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/diapers">Diapers</a>
+                        <span  href="/diapers">Diapers</span>
                         <span>
                         <span>&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                         <IoIosArrowForward
@@ -1222,22 +1222,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-2">
                 <li data-cid="1673" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/medium-2">Medium (5-13 kg) Diapers</a>
+                    <span  href="/pharmacy/medium-2">Medium (5-13 kg) Diapers</span>
                   </div>
                 </li>
                 <li data-cid="1676" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/large-2">Large (10-16 kg) Diapers</a>
+                    <span  href="/pharmacy/large-2">Large (10-16 kg) Diapers</span>
                   </div>
                 </li>
                 <li data-cid="1672" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/small-2">Small (3-7 kg) Diapers</a>
+                    <span  href="/pharmacy/small-2">Small (3-7 kg) Diapers</span>
                   </div>
                 </li>
                 <li data-cid="1671" className="not-in-selection-tree unselected">
                   <div className="name">
-                    <a href="/pharmacy/newborn-2">Newborn (2-5 kg) Diapers</a>
+                    <span  href="/pharmacy/newborn-2">Newborn (2-5 kg) Diapers</span>
                   </div>
                 </li>
               </ul>
@@ -1246,7 +1246,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="216" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/fooding">Baby Food</a>
+                        <span  href="/fooding">Baby Food</span>
                             
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
@@ -1260,17 +1260,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="221"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/milk-juice-drinks">Milk, Juice &amp; Drinks</a>
+                              <span  href="/milk-juice-drinks">Milk, Juice &amp; Drinks</span>
                           </div>
                       </li>
                       <li data-cid="219"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/toddler-food">Baby &amp; Toddler Food</a>
+                              <span  href="/toddler-food">Baby &amp; Toddler Food</span>
                           </div>
                       </li>
                       <li data-cid="217"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/formula">Formula</a>
+                              <span  href="/formula">Formula</span>
                           </div>
                       </li>
                   </ul>
@@ -1280,32 +1280,32 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="223" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/bath-skincare">Baby Skincare</a>
+                        <span  href="/bath-skincare">Baby Skincare</span>
                     </div>
                 </li>
                 <li data-cid="212" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/wipes">Wipes</a>
+                        <span  href="/wipes">Wipes</span>
                     </div>
                 </li>
                 <li data-cid="1379" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/baby-oral-care">Baby Oral Care</a>
+                        <span  href="/baby-oral-care">Baby Oral Care</span>
                     </div>
                 </li>
                 <li data-cid="1483" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/newborn-essentials">Newborn Essentials</a>
+                        <span  href="/newborn-essentials">Newborn Essentials</span>
                     </div>
                 </li>
                 <li data-cid="1378" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/baby-accessories">Baby Accessories</a>
+                        <span  href="/baby-accessories">Baby Accessories</span>
                     </div>
                 </li>
                 <li data-cid="234" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/feeders">Feeders</a>
+                        <span  href="/feeders">Feeders</span>
                     </div>
                 </li>
             </ul>
@@ -1316,7 +1316,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-              <a href="#">Home & Kitchen</a>
+              <span  href="#">Home & Kitchen</span>
               <span>
                  <span>&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
@@ -1329,17 +1329,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="85" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/kitchen-accessories">Kitchen Accessories</a>
+                        <span  href="/kitchen-accessories">Kitchen Accessories</span>
                     </div>
                 </li>
                 <li data-cid="1269" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/kitchen-appliances">Kitchen Appliances</a>
+                        <span  href="/kitchen-appliances">Kitchen Appliances</span>
                     </div>
                 </li>
                 <li data-cid="1267" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/lights-electrical">Lights &amp; Electrical</a>
+                        <span  href="/lights-electrical">Lights &amp; Electrical</span>
                                                 <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1352,22 +1352,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="1713"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/lights">Lights</a>
+                              <span  href="/lights">Lights</span>
                           </div>
                       </li>
                       <li data-cid="1714"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/mosquito-swatter">Mosquito Swatter</a>
+                              <span  href="/mosquito-swatter">Mosquito Swatter</span>
                           </div>
                       </li>
                       <li data-cid="1715"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/electric-multiplug">Electric &amp; Multiplug</a>
+                              <span  href="/electric-multiplug">Electric &amp; Multiplug</span>
                           </div>
                       </li>
                       <li data-cid="1716"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/electronics">Electronics</a>
+                              <span  href="/electronics">Electronics</span>
                           </div>
                       </li>
                   </ul>
@@ -1376,32 +1376,32 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1268" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/tools-hardware">Tools &amp; Hardware</a>
+                        <span  href="/tools-hardware">Tools &amp; Hardware</span>
                     </div>
                 </li>
                 <li data-cid="1543" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/baskets-buckets">Basket &amp; Bucket</a>
+                        <span  href="/baskets-buckets">Basket &amp; Bucket</span>
                     </div>
                 </li>
                 <li data-cid="1544" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/box-container">Box &amp; Container</a>
+                        <span  href="/box-container">Box &amp; Container</span>
                     </div>
                 </li>
                 <li data-cid="1527" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/gardening">Gardening</a>
+                        <span  href="/gardening">Gardening</span>
                     </div>
                 </li>
                 <li data-cid="1541" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/rack-organizer">Rack &amp; Organizer</a>
+                        <span  href="/rack-organizer">Rack &amp; Organizer</span>
                     </div>
                 </li>
                 <li data-cid="1540" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/disposables">Disposables</a>
+                        <span  href="/disposables">Disposables</span>
                     </div>
                 </li>
             </ul>
@@ -1410,7 +1410,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1"/>
 
-              <a href="#">Stationery & Office</a>
+              <span  href="#">Stationery & Office</span>
               <span>
                  <span>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
@@ -1423,7 +1423,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="1530" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/office-electronics">Office Electronics</a>
+                        <span  href="/office-electronics">Office Electronics</span>
                                                 <span>&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1436,12 +1436,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="230"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/batteries">Batteries</a>
+                              <span  href="/batteries">Batteries</span>
                           </div>
                       </li>
                       <li data-cid="1539"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/calculators">Calculators</a>
+                              <span  href="/calculators">Calculators</span>
                           </div>
                       </li>
                   </ul>
@@ -1451,7 +1451,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="201" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/organizers">Organizers</a>
+                        <span  href="/organizers">Organizers</span>
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1464,37 +1464,37 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="226"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/glue-tapes">Tapes, Glues &amp; Adhesive</a>
+                              <span  href="/glue-tapes">Tapes, Glues &amp; Adhesive</span>
                           </div>
                       </li>
                       <li data-cid="1533"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/stapler-punch">Stapler &amp; Punch</a>
+                              <span  href="/stapler-punch">Stapler &amp; Punch</span>
                           </div>
                       </li>
                       <li data-cid="202"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/organizing-accessories">Organizing Accessories</a>
+                              <span  href="/organizing-accessories">Organizing Accessories</span>
                           </div>
                       </li>
                       <li data-cid="204"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/cutting-2">Cutting</a>
+                              <span  href="/cutting-2">Cutting</span>
                           </div>
                       </li>
                       <li data-cid="203"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/file-folder">Files &amp; Folders</a>
+                              <span  href="/file-folder">Files &amp; Folders</span>
                           </div>
                       </li>
                       <li data-cid="1535"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/measuring">Measuring Tools</a>
+                              <span  href="/measuring">Measuring Tools</span>
                           </div>
                       </li>
                       <li data-cid="1532"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/desk-organizers">Desk Organizers</a>
+                              <span  href="/desk-organizers">Desk Organizers</span>
                           </div>
                       </li>
                   </ul>
@@ -1504,7 +1504,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="113" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/writing">Writing &amp; Printing</a>
+                        <span  href="/writing">Writing &amp; Printing</span>
                           <span> &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1517,27 +1517,27 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="114"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/pens">Pens</a>
+                              <span  href="/pens">Pens</span>
                           </div>
                       </li>
                       <li data-cid="116"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/highlighters">Highlighters &amp; Markers</a>
+                              <span  href="/highlighters">Highlighters &amp; Markers</span>
                           </div>
                       </li>
                       <li data-cid="208"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/printer-ink">Toner &amp; Ink</a>
+                              <span  href="/printer-ink">Toner &amp; Ink</span>
                           </div>
                       </li>
                       <li data-cid="115"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/pencils">Pencils</a>
+                              <span  href="/pencils">Pencils</span>
                           </div>
                       </li>
                       <li data-cid="117"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/erasers-correction-fluid">Erasers &amp; Correction Fluid</a>
+                              <span  href="/erasers-correction-fluid">Erasers &amp; Correction Fluid</span>
                           </div>
                       </li>
                   </ul>
@@ -1547,7 +1547,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1529" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/paper-supplies">Paper Supplies</a>
+                        <span  href="/paper-supplies">Paper Supplies</span>
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1560,17 +1560,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="207"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/printing-paper">Printing Paper</a>
+                              <span  href="/printing-paper">Printing Paper</span>
                           </div>
                       </li>
                       <li data-cid="119"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/notebook-diary">Diaries &amp; Notebooks</a>
+                              <span  href="/notebook-diary">Diaries &amp; Notebooks</span>
                           </div>
                       </li>
                       <li data-cid="205"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/card-envelope">Cards &amp; Envelopes</a>
+                              <span  href="/card-envelope">Cards &amp; Envelopes</span>
                           </div>
                       </li>
                   </ul>
@@ -1579,12 +1579,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </li>
                 <li data-cid="1531" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/school-supplies">School Supplies</a>
+                        <span  href="/school-supplies">School Supplies</span>
                     </div>
                 </li>
                 <li data-cid="1475" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/arts-crafts">Arts &amp; Crafts</a>
+                        <span  href="/arts-crafts">Arts &amp; Crafts</span>
                             <span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                           <IoIosArrowForward
                         className="arrow-icon"
@@ -1597,17 +1597,17 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       <ul  className="level-2">
                       <li data-cid="225"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/color-pencil">Color Pencils</a>
+                              <span  href="/color-pencil">Color Pencils</span>
                           </div>
                       </li>
                       <li data-cid="1537"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/pastel-crayon">Pastel &amp; Crayon</a>
+                              <span  href="/pastel-crayon">Pastel &amp; Crayon</span>
                           </div>
                       </li>
                       <li data-cid="1538"  className="not-in-selection-tree unselected">
                           <div  className="name">
-                              <a href="/oil-water-color">Oil &amp; Watercolor</a>
+                              <span  href="/oil-water-color">Oil &amp; Watercolor</span>
                           </div>
                       </li>
                   </ul>
@@ -1620,7 +1620,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/stationery-office?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95792&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Pet Care</a>
+              <span  href="#">Pet Care</span>
               <span>
                  <span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>                  
                   <IoIosArrowForward
@@ -1633,37 +1633,37 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="level-1">
                 <li data-cid="1254" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cat-food">Cat Food</a>
+                        <span  href="/cat-food">Cat Food</span>
                     </div>
                 </li>
                 <li data-cid="1257" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/cat-litters">Cat Litters</a>
+                        <span  href="/cat-litters">Cat Litters</span>
                     </div>
                 </li>
                 <li data-cid="1383" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/kitten-food">Kitten Food</a>
+                        <span  href="/kitten-food">Kitten Food</span>
                     </div>
                 </li>
                 <li data-cid="1255" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/dog-food">Dog Food</a>
+                        <span  href="/dog-food">Dog Food</span>
                     </div>
                 </li>
                 <li data-cid="1547" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/pet-grooming-cleaning">Grooming &amp; Cleaning</a>
+                        <span  href="/pet-grooming-cleaning">Grooming &amp; Cleaning</span>
                     </div>
                 </li>
                 <li data-cid="1679" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/bird-food">Bird &amp; Other Pet Food</a>
+                        <span  href="/bird-food">Bird &amp; Other Pet Food</span>
                     </div>
                 </li>
                 <li data-cid="1682" className="not-in-selection-tree unselected">
                     <div className="name">
-                        <a href="/aquarium-fish-food">Aquarium Fish Food</a>
+                        <span  href="/aquarium-fish-food">Aquarium Fish Food</span>
                     </div>
                 </li>
             </ul>
@@ -1671,19 +1671,19 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/toys-sports?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D103175&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Toys & Sports</a>
+              <span  href="#">Toys & Sports</span>
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/beauty-makeup?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D116661&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Beauty & MakeUp</a>
+              <span  href="#">Beauty & MakeUp</span>
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&amp;q=low&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Fashion & Lifestyle</a>
+              <span  href="#">Fashion & Lifestyle</span>
             </li>
             <li className="unselected topLevel">
             <img className="MenuItemIcons" src="https://chaldn.com/_mpimage/vehicle-essentials?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95794&amp;q=best&amp;v=1&amp;m=40&amp;webp=1&amp;alpha=1" />
-              <a href="#">Vehicle Essentials</a>
+              <span  href="#">Vehicle Essentials</span>
             </li>
           </ul>
         </aside>
@@ -1704,10 +1704,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </Link>
           </li>
           <li className="unselected topLevel">
-            <a href="#">
+            <span  href="#">
               <img className="MenuItemIcons" src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-505/Default/components/header/CategoryMenuVertical/images/investIcon.svg?q=best&webp=1" alt="biniyog.io" />
               <span>biniyog.io</span>
-            </a>
+            </span>
           </li>
         </ul>
  

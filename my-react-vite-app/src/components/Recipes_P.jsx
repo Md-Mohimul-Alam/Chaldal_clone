@@ -238,9 +238,9 @@ const Recipep = () => {
                                     <ul>
                                         <li style={{width: '1440px'}}>
                                         <div className="banner-image">
-                                            <a href="/recipes">
+                                            <span  href="/recipes">
                                             <img src="https://chaldn.com/_mpimage?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D46218&amp;q=low&amp;v=1&amp;webp=1" className="banner-img-class"/>
-                                            </a>
+                                            </span>
                                         </div>
                                         </li>
                                     </ul>
@@ -253,46 +253,46 @@ const Recipep = () => {
                         <section className="item-section">
                             <div className="content">
                                 <div className="recipe-item">
-                                <a href="/recipes/category/bangladesher-pitha">
+                                <span  href="/recipes/category/bangladesher-pitha">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/desserts?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40089&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Desserts</div>
-                                </a>
+                                </span>
                                 </div>
                                 <div className="recipe-item">
-                                <a href="/recipes/category/hilsha-special">
+                                <span  href="/recipes/category/hilsha-special">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/fish-recipe?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40133&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Fish recipe</div>
-                                </a>
+                                </span>
                                 </div>
                                 <div className="recipe-item">
-                                <a href="/recipes/category/beef-meat">
+                                <span  href="/recipes/category/beef-meat">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/beef?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40137&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Beef</div>
-                                </a>
+                                </span>
                                 </div>
                                 <div className="recipe-item">
-                                <a href="/recipes/category/delicious-chicken-recipe">
+                                <span  href="/recipes/category/delicious-chicken-recipe">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/chicken?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40142&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Chicken</div>
-                                </a>
+                                </span>
                                 </div>
                                 <div className="recipe-item">
-                                <a href="/recipes/category/variety-egg-recipes">
+                                <span  href="/recipes/category/variety-egg-recipes">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/eggs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40145&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Eggs</div>
-                                </a>
+                                </span>
                                 </div>
                                 <div className="recipe-item">
-                                <a href="/recipes/category/assorted-vegetable-recipe">
+                                <span  href="/recipes/category/assorted-vegetable-recipe">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/mash-veggies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40157&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Mash & veggies</div>
-                                </a>
+                                </span>
                                 </div>
                                 <div className="recipe-item">
-                                <a href="/recipes/category/snacks-recipe-collection">
+                                <span  href="/recipes/category/snacks-recipe-collection">
                                     <img className="recipe-img" src="https://chaldn.com/_mpimage/snacks?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D43375&amp;q=low&amp;v=1&amp;m=75&amp;webp=1"/>
                                     <div className="recipe-title">Snacks</div>
-                                </a>
+                                </span>
                                 </div>
                             </div>
                         </section>
@@ -303,7 +303,7 @@ const Recipep = () => {
                             </div>
                             <div className="recipeItemsSection" >
                                 <div className="individual-recipe">
-                                    <a href="/recipes/nescafe-hot-latte-coffee" className="individual-recipe-item">
+                                    <span  href="/recipes/nescafe-hot-latte-coffee" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                         <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/nescafe-hot-latte-coffee?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D131795&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                         <div className="individual-recipe-title">
@@ -311,8 +311,8 @@ const Recipep = () => {
                                             <h5><span><em>Cook Time :</em> 15 Mins</span></h5>
                                         </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/nescafe-mocha-frappuccino" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/nescafe-mocha-frappuccino" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                         <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/nescafe-mocha-frappuccino?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D131793&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                         <div className="individual-recipe-title">
@@ -320,8 +320,8 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 15 Mins</h5>
                                         </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/pistachio-ice-cream" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/pistachio-ice-cream" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                         <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/pistachio-ice-cream?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D131863&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                         <div className="individual-recipe-title">
@@ -329,8 +329,8 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 25 Mins</h5>
                                         </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/nescafe-milkshake-with-dry-fruits-2" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/nescafe-milkshake-with-dry-fruits-2" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/nescafe-milkshake-with-dry-fruits?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D131594&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -338,9 +338,9 @@ const Recipep = () => {
                                                 <h5><em>Cook Time :</em> 15 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/mango-smoothie" className="individual-recipe-item">
+                                    <span  href="/recipes/mango-smoothie" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/mango-smoothie?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D79204&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -348,8 +348,8 @@ const Recipep = () => {
                                                 <h5><em>Cook Time :</em> 5 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/nescafe-milkshake-with-dry-fruits-2" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/nescafe-milkshake-with-dry-fruits-2" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/nescafe-milkshake-with-dry-fruits?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D131594&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -357,8 +357,8 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 15 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/mango-smoothie" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/mango-smoothie" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/mango-smoothie?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D79204&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -366,8 +366,8 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 5 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/mango-royale" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/mango-royale" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/mango-royale?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D78965&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -375,9 +375,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 30 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/lipton-tea" className="individual-recipe-item">
+                                    <span  href="/recipes/lipton-tea" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/lipton-tea?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D62891&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -385,9 +385,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 10 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/custard-trifle" className="individual-recipe-item">
+                                    <span  href="/recipes/custard-trifle" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/custard-trifle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D60174&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -395,9 +395,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 10 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/pineapple-iced-tea" className="individual-recipe-item">
+                                    <span  href="/recipes/pineapple-iced-tea" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/pineapple-iced-tea?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D60155&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -405,9 +405,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 10 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/watermelon-iced-tea" className="individual-recipe-item">
+                                    <span  href="/recipes/watermelon-iced-tea" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/watermelon-iced-tea?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D60113&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -415,9 +415,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 10 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/gurer-payesh" className="individual-recipe-item">
+                                    <span  href="/recipes/gurer-payesh" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/gurer-payesh?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D46225&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -425,9 +425,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 30 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/pan-cake" className="individual-recipe-item">
+                                    <span  href="/recipes/pan-cake" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/pan-cake?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D44976&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -435,9 +435,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 15 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/fruits-salad" className="individual-recipe-item">
+                                    <span  href="/recipes/fruits-salad" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/fruits-salad?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D44336&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -445,9 +445,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 15 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/laccha-shemai" className="individual-recipe-item">
+                                    <span  href="/recipes/laccha-shemai" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/laccha-shemai?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D43932&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -455,9 +455,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 20 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/gajor-halva" className="individual-recipe-item">
+                                    <span  href="/recipes/gajor-halva" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/gajor-halva?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D43124&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -465,9 +465,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 30 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/boot-daal-barfi" className="individual-recipe-item">
+                                    <span  href="/recipes/boot-daal-barfi" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/boot-daal-barfi?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D43122&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -475,9 +475,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 25 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/suji-halva" className="individual-recipe-item">
+                                    <span  href="/recipes/suji-halva" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/suji-halva?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D43113&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -485,9 +485,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 12 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/egg-pudding" className="individual-recipe-item">
+                                    <span  href="/recipes/egg-pudding" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/egg-pudding?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40146&q=low&v=1&m=300&webp=1"/>
                                             <div className="individual-recipe-title">
@@ -495,8 +495,8 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 40 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/recipes/taler-pitha-recipe" className="individual-recipe-item">
+                                    </span>
+                                    <span  href="/recipes/taler-pitha-recipe" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/taler-pitha-recipe?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40100&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -504,9 +504,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 60 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/patishapta-pitha-recipe" className="individual-recipe-item">
+                                    <span  href="/recipes/patishapta-pitha-recipe" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/patishapta-pitha-recipe?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40098&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -514,9 +514,9 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 60 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
 
-                                    <a href="/recipes/dudhchitoy-pitha-recipe" className="individual-recipe-item">
+                                    <span  href="/recipes/dudhchitoy-pitha-recipe" className="individual-recipe-item">
                                         <div className="individual-recipe-block">
                                             <img className="individual-recipe-img" src="https://chaldn.com/_mpimage/dudhchitoy-pitha-recipe?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D40094&amp;q=low&amp;v=1&amp;m=300&amp;webp=1"/>
                                             <div className="individual-recipe-title">
@@ -524,7 +524,7 @@ const Recipep = () => {
                                             <h5><em>Cook Time :</em> 60 Mins</h5>
                                             </div>
                                         </div>
-                                    </a>
+                                    </span>
                                 </div>
                                 <div className="hasMoreRecipeLoading"></div>
                             </div>
@@ -590,21 +590,21 @@ const Recipep = () => {
                                     <div className="list-type customer-service">
                                         <p><span></span><span>Customer Service</span><span></span></p>
                                         <ul><span></span>
-                                            <li><a href="/recipes/t/ContactUs">Contact Us</a></li>
-                                            <li><a href="/recipes/t/Help">FAQ</a></li><span></span>
+                                            <li><span  href="/recipes/t/ContactUs">Contact Us</span></li>
+                                            <li><span  href="/recipes/t/Help">FAQ</span></li><span></span>
                                         </ul>
                                     </div>
                                     <div className="list-type customer-service">
                                         <p><span></span><span>About Chaldal</span><span></span></p>
                                         <ul><span></span>
-                                            <li><a href="/recipes/t/PrivacyInfo">Privacy Policy</a></li>
-                                            <li><a href="/recipes/t/TermsOfUse">Terms of Use</a></li><span></span>
+                                            <li><span  href="/recipes/t/PrivacyInfo">Privacy Policy</span></li>
+                                            <li><span  href="/recipes/t/TermsOfUse">Terms of Use</span></li><span></span>
                                         </ul>
                                     </div>
                                     <div className="list-type customer-service">
                                         <p><span></span><span>For Business</span><span></span></p>
                                         <ul><span></span>
-                                            <li><a href="/recipes/corporate">Corporate</a></li><span></span>
+                                            <li><span  href="/recipes/corporate">Corporate</span></li><span></span>
                                         </ul>
                                     </div>
                                 </div>
@@ -612,8 +612,8 @@ const Recipep = () => {
                             <div className="footer-right">
                                 <div className="app-download-section">
                                     <div className="wrap">
-                                        <div className="google_play_store"><a href="https://play.google.com/store/apps/details?id=com.chaldal.poached"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/google_play_store.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></a></div>
-                                        <div className="app_store"><a href="https://itunes.apple.com/us/app/chaldal-online-grocery/id1104493220"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/app_store.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></a></div>
+                                        <div className="google_play_store"><span  href="https://play.google.com/store/apps/details?id=com.chaldal.poached"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/google_play_store.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></span></div>
+                                        <div className="app_store"><span  href="https://itunes.apple.com/us/app/chaldal-online-grocery/id1104493220"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/app_store.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></span></div>
                                     </div>
                                 </div>
                                 <div className="contact-section">
@@ -626,10 +626,10 @@ const Recipep = () => {
                                 </div>
                                 <div className="social-section">
                                     <ul>
-                                        <li><a href="https://www.facebook.com/chaldalcom" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/Facebook.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></a></li>
-                                        <li><a href="https://twitter.com/Chaldal" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/twitter.png?q=low&webp=1&alpha=1"/><span></span></a></li>
-                                        <li><a href="https://www.instagram.com/chaldal/" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/Instagram.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></a></li>
-                                        <li><a href="https://www.linkedin.com/company/chaldal/" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/Youtube.png?q=low&webp=1&alpha=1"/><span></span></a></li>
+                                        <li><span  href="https://www.facebook.com/chaldalcom" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/Facebook.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></span></li>
+                                        <li><span  href="https://twitter.com/Chaldal" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/twitter.png?q=low&webp=1&alpha=1"/><span></span></span></li>
+                                        <li><span  href="https://www.instagram.com/chaldal/" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/Instagram.png?q=low&amp;webp=1&amp;alpha=1"/><span></span></span></li>
+                                        <li><span  href="https://www.linkedin.com/company/chaldal/" target="_blank"><span></span><img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-512/Default/components/shared/NewFooter/images/Youtube.png?q=low&webp=1&alpha=1"/><span></span></span></li>
                                     </ul>
                                 </div>
                             </div>
