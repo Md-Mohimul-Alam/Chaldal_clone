@@ -576,3 +576,137 @@ div.name a{
   width: 55%
 }
 
+
+
+.modal-overlay {
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002; /* ensure modal is on top */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%; /* adjust width as needed */
+  max-height: 80%; /* adjust height as needed */
+  overflow: auto; /* allow scrolling if content exceeds dimensions */
+}
+
+.ModalDialogContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px !important;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(0,0,0,.4);
+  overflow: auto;
+  z-index: 9999999 !important;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease
+}
+
+.ModalDialog {
+  background: #fff;
+  display: block;
+  z-index: 9999999;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 14px 45px rgba(0,0,0,.25);
+  box-shadow: 0 14px 45px rgba(0,0,0,.25);
+  margin: 50px auto;
+  overflow: initial;
+  width: 100%;
+  max-width: 380px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+  padding: 20px
+}
+
+.ModalDialog .ModalTitle {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px
+}
+
+.ModalDialog .modalTitleProps {
+  font-weight: 700;
+  color: #000
+}
+
+.ModalDialog .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 0;
+  background: 0 0;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  z-index: 999
+}
+
+.ModalDialog .close:hover:after,.ModalDialog .close:hover:before {
+  border-color: #ee4054
+}
+
+.ModalDialog .close:after,.ModalDialog .close:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  margin: -1px -12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid #444
+}
+
+.ModalDialog .close:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+
+.ModalDialog .ModalDialogContent {
+  width: 100%;
+  overflow: hidden
+}
+
+@media screen and (max-width: 768px) {
+  .ModalDialogContainer {
+      padding:0
+  }
+
+  .ModalDialogContainer .ModalDialog {
+      margin: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      max-width: 100%
+  }
+
+  .ModalDialogContainer .fullScreenOnMobile {
+      height: 100%;
+      overflow: auto!important
+  }
+}

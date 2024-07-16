@@ -45,7 +45,7 @@ const Delivery = () => {
             <section id="how-to-shop">
                 <div className="wrapper">
                     <div className="container">
-                        <div id="chaldal-daily-necessities" style={{ background: "url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-506/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/dailyGrocery.png) no-repeat center", backgroundSize: 'cover', height: '300px' }}>
+                        <div id="chaldal-daily-necessities" style={{ background:"background:url(https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-518/Default/stores/chaldal/components/landingPage2/LandingPage/images/shop_and_get_More/dailyGrocery.png) no-repeat center", backgroundSize: 'cover', height: '300px' }}>
                             <div className="descriptionBox">
                                 <div className="label">
                                     <h3>Shop your daily necessities</h3>

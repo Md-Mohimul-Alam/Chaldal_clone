@@ -147,7 +147,7 @@ const DeliveryInfo = () => {
                         <span  href="/stationery-office">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/stationary.png?q=low&webp=1" alt="Stationery & Office" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-518/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/stationary.png?q=low&webp=1" alt="Stationery & Office" />
                                 </div>
                                 <div className="categoryName">Stationery & Office</div>
                             </div>
@@ -179,7 +179,7 @@ const DeliveryInfo = () => {
                         <span  href="/kitchen-appliances">
                                 <div className="categoryBox" style={{background:'White'}}>                                
                                 <div className="categoryImg">
-                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/kitchen-appliances.png?q=low&webp=1" alt="Kitchen Appliances" />
+                                    <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-518/Default/stores/chaldal/components/landingPage2/LandingPageCategories/images/categories/kitchen-appliances.png?q=low&webp=1" alt="Kitchen Appliances" />
                                 </div>
                                 <div className="categoryName">Kitchen Appliances</div>
                             </div>

@@ -105,7 +105,7 @@ const Footer = () => {
             <ul>
                 <li className="text">Payment Methods</li>
                     <li className="icon">
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/Amex.png?q=low&webp=1&alpha=1"/>
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-518/Default/components/shared/FooterForH4/images/Amex.png?q=low&webp=1&alpha=1"/>
                     </li>
                     <li className="icon">
                         <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/mastercard.png?q=low&webp=1&alpha=1"/>
@@ -198,7 +198,7 @@ const Footer = () => {
                 <div className="icons">
                     <div className="icon">
                         <span  href="https://www.facebook.com/chaldalcom">
-                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-508/Default/components/shared/FooterForH4/images/facebookImage.png?q=low&webp=1&alpha=1"/>
+                        <img src="https://chaldn.com/asset/Egg.ChaldalWeb.Fabric/Egg.ChaldalWeb1/1.0.0-Deploy-Release-518/Default/components/shared/FooterForH4/images/facebookImage.png?q=low&webp=1&alpha=1"/>
                         </span>
                     </div>
                     <div className="icon">

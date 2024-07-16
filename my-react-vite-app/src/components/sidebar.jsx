@@ -3,17 +3,23 @@ import React, { useState } from "react";
 import './css/sidebar.css';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
-import './css/Modal.css'; 
-import Popup from 'reactjs-popup';
+import ModalComponent from './ModalComponent';
 
 
 
 
-const Sidebar = ({ isOpen, toggleSidebar, onClose }) => {
-  const [dropdowns, setDropdowns] = useState({});
-  const [rotations, setRotations] = useState({});
+const Sidebar = ({ isOpen, toggleSidebar }) => {
+
+    const [showTrackOrderPopup, setShowTrackOrderPopup] = useState(false);
+    const handleCloseTrackOrderPopup = () => setShowTrackOrderPopup(false);
+    const handleShowTrackOrderPopup = (e) => {
+      e.stopPropagation(); // Prevent triggering the sidebar toggle
+      setShowTrackOrderPopup(true);
+    };
   
 
+  const [dropdowns, setDropdowns] = useState({});
+  const [rotations, setRotations] = useState({});
 
   const toggleDropdown = (cid) => {
     setDropdowns((prevDropdowns) => ({
@@ -49,29 +55,29 @@ const Sidebar = ({ isOpen, toggleSidebar, onClose }) => {
         <div className="menu-container" style={{ background: '#fff', position: "relative", top:'0px',paddingTop:'0px', marginTop:'0px'}}>
             <div className="menu" style={{ background: '#fff', position: "relative",overflow:'auto'}}>
             <div className="store-menu">
-                <Link  to="/" >
-                <div className="store-menu-block">
-                <div className="store-item selected">
-                    <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 82.068 82">
-                    <defs>
-                        <linearGradient id="linear-gradient" x1="0.732" x2="0.297" y1="0.882" y2="0.298" gradientUnits="objectBoundingBox">
-                        <stop offset="0" stopColor="#ff9c69"></stop>
-                        <stop offset="0.995" stopColor="#ffccac"></stop>
-                        </linearGradient>
-                    </defs>
-                    <g data-name="Group 42411" transform="translate(-34 -144)">
-                        <circle cx="38.582" cy="38.582" r="38.582" fill="#ffed7a" data-name="Ellipse 855" transform="translate(34 144)"></circle>
-                        <path fill="#ebd023" d="M0 0h46.153v34.3a41.864 41.864 0 01-11.087 5.98 40.532 40.532 0 01-12.8 2.1 35.444 35.444 0 01-14.381-3A104.423 104.423 0 01.079 35.6z" data-name="Path 68291" transform="rotate(-42 280.061 27.68)"></path>
-                        <g transform="translate(51.648 151.599)">
-                        <path fill="url(#linear-gradient)" d="M129.56 51.76c-4.83-17.288-13.631-21.689-17.454-22.8a6.646 6.646 0 00-3.713 0c-3.824 1.112-12.624 5.514-17.454 22.8 0 0-8.094 26.171 11.848 32.823a23.622 23.622 0 0014.926 0c19.941-6.652 11.847-32.823 11.847-32.823z" data-name="Path 68284" transform="translate(-89.314 -28.694)"></path>
+                
+                <Link  to="/" style={{textDecoration:'none'}} className="store-menu-block">
+                    <div className="store-item selected">
+                        <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 82.068 82">
+                        <defs>
+                            <linearGradient id="linear-gradient" x1="0.732" x2="0.297" y1="0.882" y2="0.298" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stopColor="#ff9c69"></stop>
+                            <stop offset="0.995" stopColor="#ffccac"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g data-name="Group 42411" transform="translate(-34 -144)">
+                            <circle cx="38.582" cy="38.582" r="38.582" fill="#ffed7a" data-name="Ellipse 855" transform="translate(34 144)"></circle>
+                            <path fill="#ebd023" d="M0 0h46.153v34.3a41.864 41.864 0 01-11.087 5.98 40.532 40.532 0 01-12.8 2.1 35.444 35.444 0 01-14.381-3A104.423 104.423 0 01.079 35.6z" data-name="Path 68291" transform="rotate(-42 280.061 27.68)"></path>
+                            <g transform="translate(51.648 151.599)">
+                            <path fill="url(#linear-gradient)" d="M129.56 51.76c-4.83-17.288-13.631-21.689-17.454-22.8a6.646 6.646 0 00-3.713 0c-3.824 1.112-12.624 5.514-17.454 22.8 0 0-8.094 26.171 11.848 32.823a23.622 23.622 0 0014.926 0c19.941-6.652 11.847-32.823 11.847-32.823z" data-name="Path 68284" transform="translate(-89.314 -28.694)"></path>
+                            </g>
                         </g>
-                    </g>
-                    </svg>
-                    <h4 className="name">Grocery</h4>
-                </div>
-                </div>
+                        </svg>
+                        <h4 className="name">Grocery</h4>
+                    </div>
                 </Link>
-                <Link  to="/Pharmacy/pharmacyDashboard" className="store-menu-block">
+
+                <Link  to="/Pharmacy/pharmacyDashboard" className="store-menu-block" style={{textDecoration:'none'}}>
                 <div className="store-item selected">
                     <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 73.457 76">
                     <g data-name="Group 42412" transform="translate(24405 1908)">
@@ -88,7 +94,7 @@ const Sidebar = ({ isOpen, toggleSidebar, onClose }) => {
                     <h4 className="name">Pharmacy</h4>
                 </div>
                 </Link>
-                <Link  to="/cookups/dash_Cook" className="store-menu-block">
+                <Link  to="/cookups/dash_Cook" className="store-menu-block" style={{textDecoration:'none'}}>
                 <div className="store-item selected" >
                     <svg  className="svg-icon" style={{ display: 'inline-block', verticalAlign: 'middle' }} width="30px" height="30px" viewBox="0 0 23 23" data-reactid=".je1swuuv1e.4.0.1.0.0.2.0.0.0.$store-item-2.0">
                     <g data-name="Group 42518" transform="translate(-200 -125)">
@@ -1734,8 +1740,11 @@ const Sidebar = ({ isOpen, toggleSidebar, onClose }) => {
                     <span>Help</span>
                 </Link>
                 
-                
-                
+                <div className="complaint" onClick={handleShowTrackOrderPopup}>
+                    <svg width="20px" height="20px" style={{ display: 'inline-block', verticalAlign: 'middle' }} viewBox="0 0 20 20" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0"><g id="dislike" transform="translate(-7.77)" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0"><path id="Path_1" data-name="Path 1" d="M164.107,16.47a8.448,8.448,0,0,1-1.625-2.007.529.529,0,0,1,.151-.692,7.615,7.615,0,1,0-11.152-9.833l8.246,11.45A10.853,10.853,0,0,0,163.845,17,.308.308,0,0,0,164.107,16.47Z" transform="translate(-137.893)" fill="#dfebfa" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.0"></path><path id="Path_2" data-name="Path 2" d="M159.493,92.684l7.921,11a9.064,9.064,0,0,0,1.173.674,7.621,7.621,0,0,0-9.094-11.674Z" transform="translate(-145.579 -88.296)" fill="#b1dbfc" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.1"></path><path id="Path_3" data-name="Path 3" d="M15.384,92.023A7.615,7.615,0,0,0,10.9,105.794a.529.529,0,0,1,.151.692,8.449,8.449,0,0,1-1.625,2.007.308.308,0,0,0,.262.531,10.762,10.762,0,0,0,4.242-1.7.751.751,0,0,1,.526-.128,7.615,7.615,0,1,0,.925-15.173Z" transform="translate(0 -88.297)" fill="#ff656f" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.2"></path><path id="Path_4" data-name="Path 4" d="M11.077,108.493a8.448,8.448,0,0,0,1.625-2.007.529.529,0,0,0-.151-.692,7.615,7.615,0,0,1,3.656-13.727,7.7,7.7,0,0,0-.823-.044A7.615,7.615,0,0,0,10.9,105.794a.529.529,0,0,1,.151.692,8.448,8.448,0,0,1-1.625,2.007.308.308,0,0,0,.262.531,12.251,12.251,0,0,0,1.285-.3A.3.3,0,0,1,11.077,108.493Z" transform="translate(0 -88.297)" fill="#ff4756" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.3"></path><g id="Group_1" data-name="Group 1" transform="translate(10.893 8.487)" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.4"><path id="Path_5" data-name="Path 5" d="M88.094,211.653a.313.313,0,0,1-.313-.313,1.125,1.125,0,1,0-2.25,0,.313.313,0,0,1-.626,0,1.751,1.751,0,1,1,3.5,0A.313.313,0,0,1,88.094,211.653Z" transform="translate(-84.906 -209.589)" fill="#fc2d39" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.4.0"></path><path id="Path_6" data-name="Path 6" d="M223.451,211.653a.313.313,0,0,1-.313-.313,1.125,1.125,0,1,0-2.25,0,.313.313,0,0,1-.626,0,1.751,1.751,0,0,1,3.5,0A.313.313,0,0,1,223.451,211.653Z" transform="translate(-214.782 -209.589)" fill="#fc2d39" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.4.1"></path><path id="Path_7" data-name="Path 7" d="M106.776,321.589a.312.312,0,0,1-.225-.1,4.678,4.678,0,0,0-6.742,0,.313.313,0,0,1-.451-.434,5.3,5.3,0,0,1,7.644,0,.313.313,0,0,1-.225.53Z" transform="translate(-98.689 -314.984)" fill="#fc2d39" data-reactid=".o1j8g3zxdw.4.0.1.0.0.2.1.1.0.0.4.2"></path></g></g></svg>
+                    File a Complaint
+                </div>
+                <ModalComponent show={showTrackOrderPopup} handleClose={handleCloseTrackOrderPopup} />
             </div>
         </div>
     </div>
