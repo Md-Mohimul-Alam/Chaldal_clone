@@ -49,12 +49,12 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
                         <button className="closeCartButtonTop" onClick={toggleCart}>Close</button>
                     </div>
 
-                    <div className="deliveryFeeHeader" style={{ display: 'flex' }}>
+                    <div className="deliveryFeeHeader" >
                         <section className="in-shopping-cart isNewNavBarHeader" id="shipping-cost-meter">
                             <div className="costMeterSection">
                                 <div className="costMeter">
-                                    <div className="container">
-                                        <div className="progress">
+                                    <div className="container" style={{}}>
+                                        <div className="progress"  >
                                             <div style={{ width: '0%' }} className="bar"></div>
                                             <div className="meterInfoText">
                                                 <div className="InfoTextLeft">
@@ -94,8 +94,8 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
                             </div>
                         </div>
                         {cart.length > 0 ? (
-                            <div className="shoppingBagItems" >
-                                <ul>
+                            <div className="shoppingBagItems" style={{width:'300px'}}>
+                                <ul style={{paddingLeft:'5px'}}>
                                     {cart.map((items, index) => (
                                         <li key={index} className="item_dis">
                                             <div className="Button" style={{height:'auto', width: 'auto'}}>
@@ -126,7 +126,7 @@ const CartSidebar = ({ isCartOpen, toggleCart   }) => {
                                                     ৳{items.originalPrice * items.quantity}
                                                 </div>
                                             </div>
-                                            <div className="remove" title="Remove from bag" onClick={removeFromCart} style={{display:'block'}}>
+                                            <div className="remove" title="Remove from bag"  onClick={() => removeFromCart(items.id)} style={{display:'block'}}>
                                                 <span>&nbsp;&nbsp;X&nbsp;</span>
                                             </div>
                                         </li>

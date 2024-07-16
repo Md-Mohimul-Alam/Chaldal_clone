@@ -1,5 +1,5 @@
 .shoppingCartWrapper {
-    width: 320px;
+    width: 300px;
     position:sticky;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
@@ -117,6 +117,9 @@
 
 .shoppingCart .deliveryFeeHeader {
     display: flex;
+    height:'45px' !important ;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
     background-color: #f6f6f6;
 
 }
@@ -429,7 +432,8 @@
 }
 
 .shoppingCart div.footer .mui-raised-button .mui-raised-button-container {
-    background-color: #ff686e
+    background-color: #ff686e;
+
 }
 
 .shoppingCart div.footer .mui-raised-button .mui-raised-button-container:hover {
@@ -687,8 +691,11 @@
 }
 
 #shipping-cost-meter .costMeterSection .costMeter .container {
-    width: 100%;
-    float: left
+    width: 320px;
+    height: 14px;
+    float: left;
+    padding-left: 0px;
+    
 }
 
 #shipping-cost-meter .costMeterSection .costMeter .progress {
@@ -737,7 +744,7 @@
 #shipping-cost-meter .costMeterSection .costMeter .meterInfoText {
     background-color: #615e58;
     color: #fff;
-    width: 100%;
+    width: 320px;
     line-height: 35px
 }
 
@@ -782,7 +789,10 @@
 
 @media(max-width: 1050px) {
     #shipping-cost-meter.at-page,#shipping-cost-meter.in-shopping-cart {
-        top:110px
+        top:110px;
+        width: 335px !;
+
+
     }
 }
 
@@ -1393,7 +1403,7 @@ section.discountCodeContainer .discountCodeContent .inputNbtn .discountCloseBtn 
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 75%;
     height: 40px;
     background: #ff8182;
     border: none;

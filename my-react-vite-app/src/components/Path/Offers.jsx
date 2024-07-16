@@ -440,7 +440,7 @@ const Offers = () => {
         </div>
       </div>
 
-        <div style={{position:'fixed', zIndex:'1000', left:'1538px'}}>
+        <div style={{position:'fixed', zIndex:'1000', left:'1555px'}}>
         {!isCartOpen && (
         <section className={`stickyHeader ${isActive ? 'active' : ''} ${isCartOpen ? 'hidden' : ''}`} onClick={handleClickCart}>
           <div className="itemCount">
