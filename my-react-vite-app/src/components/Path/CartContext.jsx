@@ -1,10 +1,19 @@
-import React, { createContext, useState, useContext, useMemo } from 'react';
+import React, { createContext, useState, useContext, useEffect, useMemo } from 'react';
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState([]);
-    const [totalPrice, setTotalPrice] = useState(0);
+    const [cart, setCart] = useState(() => {
+        // Initialize cart from local storage
+        const savedCart = localStorage.getItem('cart');
+        return savedCart ? JSON.parse(savedCart) : [];
+    });
+    const [totalPrice, setTotalPrice] = useState(() => {
+        // Initialize totalPrice from local storage
+        const savedTotalPrice = localStorage.getItem('totalPrice');
+        return savedTotalPrice ? JSON.parse(savedTotalPrice) : 0;
+    });
+
     const items = [
         {
             id: 1,
@@ -85,7 +94,7 @@ export const CartProvider = ({ children }) => {
             price: 190,
             originalPrice: 220,
             image: "https://chaldn.com/_mpimage/trix-lemon-dishwashing-liquid-bottle-500-ml-refill-250-ml-combo?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D154549&q=best&v=1&m=400&webp=1",
-        },    
+        },
         {
             id: 11,
             name: "Mortein Mosquito Killer Aerosol Spray",
@@ -104,26 +113,32 @@ export const CartProvider = ({ children }) => {
         },
     ];
 
-    const addToCart = (items, quantity) => {
-        if (!items || !items .id) {
-            console.error('Invalid items payload:', items);
+    useEffect(() => {
+        // Sync cart and totalPrice with local storage whenever they change
+        localStorage.setItem('cart', JSON.stringify(cart));
+        localStorage.setItem('totalPrice', JSON.stringify(totalPrice));
+    }, [cart, totalPrice]);
+
+    const addToCart = (item, quantity) => {
+        if (!item || !item.id) {
+            console.error('Invalid item payload:', item);
             return;
         }
 
         setCart(prevCart => {
             let updatedCart = [...prevCart];
 
-            const itemsIndex = updatedCart.findIndex(cartItem => cartItem.id === items.id);
+            const itemIndex = updatedCart.findIndex(cartItem => cartItem.id === item.id);
 
-            if (itemsIndex !== -1) {
+            if (itemIndex !== -1) {
                 if (quantity > 0) {
-                    updatedCart[itemsIndex].quantity = quantity;
+                    updatedCart[itemIndex].quantity = quantity;
                 } else {
-                    updatedCart.splice(itemsIndex, 1);
+                    updatedCart.splice(itemIndex, 1);
                 }
             } else {
                 if (quantity > 0) {
-                    updatedCart.push({ ...items, quantity });
+                    updatedCart.push({ ...item, quantity });
                 }
             }
 
@@ -137,9 +152,9 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    const removeFromCart = (itemsId) => {
+    const removeFromCart = (itemId) => {
         setCart(prevCart => {
-            const updatedCart = prevCart.filter(cartItem => cartItem.id !== itemsId);
+            const updatedCart = prevCart.filter(cartItem => cartItem.id !== itemId);
 
             const updatedTotalPrice = updatedCart.reduce((sum, cartItem) => {
                 return sum + (cartItem.price * cartItem.quantity);
@@ -151,13 +166,13 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    const updateCartItemQuantity = (itemsId, quantity) => {
+    const updateCartItemQuantity = (itemId, quantity) => {
         setCart(prevCart => {
-            const updatedCart = prevCart.map(items => {
-                if (items.id === itemsId) {
-                    return { ...items, quantity };
+            const updatedCart = prevCart.map(item => {
+                if (item.id === itemId) {
+                    return { ...item, quantity };
                 }
-                return items;
+                return item;
             });
 
             const updatedTotalPrice = updatedCart.reduce((sum, cartItem) => {
@@ -169,33 +184,29 @@ export const CartProvider = ({ children }) => {
             return updatedCart;
         });
     };
-    
 
-    const handleIncrement = (itemsId) => {
-        const items = cart.find(items => items.id === itemsId);
-        if (items) {
-            const newQuantity = items.quantity + 1;
-            updateCartItemQuantity(itemsId, newQuantity);
+    const handleIncrement = (itemId) => {
+        const item = cart.find(item => item.id === itemId);
+        if (item) {
+            const newQuantity = item.quantity + 1;
+            updateCartItemQuantity(itemId, newQuantity);
         }
     };
 
-    const handleDecrement = (itemsId) => {
-        const items = cart.find(items => items.id === itemsId);
-        if (items) {
-            const newQuantity = items.quantity - 1;
+    const handleDecrement = (itemId) => {
+        const item = cart.find(item => item.id === itemId);
+        if (item) {
+            const newQuantity = item.quantity - 1;
             if (newQuantity <= 0) {
-                removeFromCart(itemsId);
+                removeFromCart(itemId);
             } else {
-                updateCartItemQuantity(itemsId, newQuantity);
+                updateCartItemQuantity(itemId, newQuantity);
             }
         }
     };
 
     const totalItems = useMemo(() => {
-        return Object.keys(cart.reduce((acc, items) => {
-            acc[items.id] = true;
-            return acc;
-        }, {})).length;
+        return cart.length;
     }, [cart]);
 
     const contextValue = {
