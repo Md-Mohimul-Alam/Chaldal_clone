@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { useCart } from './CartContext';
 
 const CartSidebar = ({ isCartOpen, toggleCart   }) => {
-    const { items, cart,totalItems, removeFromCart,updateCartItemQuantity,handleDecrement,handleIncrement } = useCart();
+    const { items, cart,totalItems, removeFromCart,handleDecrement,handleIncrement } = useCart();
     const {totalPrice } = useCart(); 
     const [dropdowns, setDropdowns] = useState({});
     const [rotations, setRotations] = useState({});
